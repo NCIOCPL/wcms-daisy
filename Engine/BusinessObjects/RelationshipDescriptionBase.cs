@@ -6,9 +6,7 @@ using System.Xml.Serialization;
 
 namespace MigrationEngine.BusinessObjects
 {
-    [XmlInclude(typeof(RelationshipDescriptionWithPath)),
-    XmlInclude(typeof(RelationshipDescriptionWithMigrationID))]
-    public abstract class RelationshipDescriptionBase : IMigrationData
+    public abstract class RelationshipDescriptionBase : MigrationData
     {
         public String DependentContentType;
         public String DependentMigrationID;

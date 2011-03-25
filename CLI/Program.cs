@@ -13,12 +13,8 @@ namespace Prototype
     {
         void Doit()
         {
-            Migrator migrator = new Migrator();
-
-            XmlSerializer serializer = new XmlSerializer(typeof(Migrator));
-            TextWriter writer = new StreamWriter(@"C:\WCMTeam\Tools\MigrationTools\Prototype\data.xml");
-
-            serializer.Serialize(writer, migrator);
+            Migrator engine = new Migrator();
+            engine.Save(@"C:\WCMTeam\Tools\MigrationTools\Prototype\data.xml");
         }
 
         static void Main(string[] args)

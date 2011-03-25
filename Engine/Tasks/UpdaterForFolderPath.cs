@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MigrationEngine.Tasks
 {
-    public class UpdaterForFolderPath : ContentUpdater
+    public class UpdaterForFolderPath : ContentUpdaterBase
     {
         public override void Doit()
         {

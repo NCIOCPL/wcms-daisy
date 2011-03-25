@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MigrationEngine.BusinessObjects
 {
-    class FullContentItemDescription : ContentDescriptionBase
+    public class FullContentItemDescription : ContentDescriptionBase
     {
         public String MigrationID;
         public String Path;

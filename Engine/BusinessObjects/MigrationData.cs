@@ -6,9 +6,6 @@ using System.Xml.Serialization;
 
 namespace MigrationEngine.BusinessObjects
 {
-    [XmlInclude(typeof(FolderDescription)),
-    XmlInclude(typeof(ContentDescriptionBase)),
-    XmlInclude(typeof(RelationshipDescriptionBase))]
     public abstract class MigrationData : IMigrationData
     {
     }

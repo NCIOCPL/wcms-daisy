@@ -6,9 +6,7 @@ using System.Xml.Serialization;
 
 namespace MigrationEngine.Tasks
 {
-    [XmlInclude(typeof(RelaterForMigrationID)),
-        XmlInclude(typeof(RelaterForFolderPath))]
-    public abstract class RelationshipCreator : MigrationTask, IRelationshipCreator
+    public abstract class ContentUpdaterBase : MigrationTask, IContentUpdater
     {
         public abstract override void Doit();
     }

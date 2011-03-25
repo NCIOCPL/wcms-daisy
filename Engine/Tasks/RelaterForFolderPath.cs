@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MigrationEngine.Tasks
 {
-    public class RelaterForFolderPath : RelationshipCreator
+    public class RelaterForFolderPath : RelationshipCreatorBase
     {
         public override void Doit()
         {

@@ -8,8 +8,8 @@ using MigrationEngine.BusinessObjects;
 
 namespace MigrationEngine.DataAccess
 {
-    [XmlInclude(typeof(DatabaseDataGetter<FolderDescription>)),
-    XmlInclude(typeof(FloozlewarpDataGetter<FolderDescription>))]
+    //[XmlInclude(typeof(DatabaseDataGetter<FolderDescription>)),
+    //XmlInclude(typeof(FloozlewarpDataGetter<FolderDescription>))]
     public abstract class DataGetter<ReturnType>
         : IDataGetter<ReturnType> where ReturnType : MigrationData
     {

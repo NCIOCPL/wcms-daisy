@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MigrationEngine.Tasks
 {
-    public class GeneralContentCreator : ContentCreator
+    public class GeneralContentCreator : ContentCreatorBase
     {
         override public void Doit()
         {

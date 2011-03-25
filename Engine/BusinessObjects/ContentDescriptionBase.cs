@@ -6,13 +6,11 @@ using System.Xml.Serialization;
 
 namespace MigrationEngine.BusinessObjects
 {
-    [XmlInclude(typeof(FullContentItemDescription)),
-    XmlInclude(typeof(ItemWithMigrationID)),
-    XmlInclude(typeof(ItemWithPath))]
     abstract public class ContentDescriptionBase : MigrationData
     {
         public String Community;
         public String ContentType;
-        public Dictionary<string, string> Fields;
+        // Cannot serialize. Probably shouldn't anyhow.
+        //public Dictionary<string, string> Fields;
     }
 }
