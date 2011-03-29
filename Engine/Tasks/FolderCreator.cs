@@ -10,7 +10,7 @@ namespace MigrationEngine.Tasks
 {
     public class FolderCreator : MigrationTask, IFolderCreator
     {
-        public DataGetter<FolderDescription> DataGetter = new DatabaseDataGetter<FolderDescription>();
+        public DataGetter<FolderDescription> DataGetter = new XmlDataGetter<FolderDescription>();
 
         override public void Doit()
         {

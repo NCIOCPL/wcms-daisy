@@ -57,7 +57,7 @@
     <Compile Include="BusinessObjects\RelationshipDescriptionWithPath.cs" />
     <Compile Include="DataAccess\DatabaseDataGetter.cs" />
     <Compile Include="DataAccess\DataGetter.cs" />
-    <Compile Include="DataAccess\FloozlewarpDataGetter.cs" />
+    <Compile Include="DataAccess\XmlDataGetter.cs" />
     <Compile Include="DataAccess\IDataGetter.cs" />
     <Compile Include="Migrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

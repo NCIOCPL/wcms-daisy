@@ -14,7 +14,8 @@ namespace Prototype
         void Doit()
         {
             Migrator engine = new Migrator();
-            engine.Save(@"C:\WCMTeam\Tools\MigrationTools\Prototype\data.xml");
+            engine.Save(@"data.xml");
+            engine.Load(@"data.xml");
         }
 
         static void Main(string[] args)
