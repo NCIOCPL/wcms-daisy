@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MigrationEngine.BusinessObjects
 {
-    public class RelationshipDescriptionWithMigrationID
+    public class RelationshipDescriptionWithMigrationID : MigrationData
     {
         public String OwnerMigrationID;
     }

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Serialization;
+using System.Text;
 
 namespace MigrationEngine.BusinessObjects
 {
-    public class FolderDescription : MigrationData
+    public class TransitionDescription : MigrationData
     {
-        [XmlIgnore()]
-        public String Path;
     }
 }

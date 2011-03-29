@@ -14,7 +14,7 @@ namespace Prototype
         void Doit()
         {
             Migrator engine = new Migrator();
-            engine.Save(@"data.xml");
+            //engine.Save(@"data.xml");
             engine.Load(@"data.xml");
         }
 

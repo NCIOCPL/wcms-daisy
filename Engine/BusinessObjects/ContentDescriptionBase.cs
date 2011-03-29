@@ -10,7 +10,8 @@ namespace MigrationEngine.BusinessObjects
     {
         public String Community;
         public String ContentType;
-        // Cannot serialize. Probably shouldn't anyhow.
-        //public Dictionary<string, string> Fields;
+
+        [XmlIgnore()]
+        public Dictionary<string, string> Fields;
     }
 }

@@ -55,6 +55,7 @@
     <Compile Include="BusinessObjects\RelationshipDescriptionBase.cs" />
     <Compile Include="BusinessObjects\RelationshipDescriptionWithMigrationID.cs" />
     <Compile Include="BusinessObjects\RelationshipDescriptionWithPath.cs" />
+    <Compile Include="BusinessObjects\TransitionDescription.cs" />
     <Compile Include="DataAccess\DatabaseDataGetter.cs" />
     <Compile Include="DataAccess\DataGetter.cs" />
     <Compile Include="DataAccess\XmlDataGetter.cs" />
