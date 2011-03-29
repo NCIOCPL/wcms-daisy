@@ -8,12 +8,13 @@ using MigrationEngine.DataAccess;
 
 namespace MigrationEngine.Tasks
 {
-    public class FolderCreator : MigrationTask, IFolderCreator
+    public class FolderCreator : FolderCreatorBase
     {
         public DataGetter<FolderDescription> DataGetter = new XmlDataGetter<FolderDescription>();
 
         override public void Doit()
         {
+            List<FolderDescription> folders = DataGetter.LoadData();
         }
     }
 }

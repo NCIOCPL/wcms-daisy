@@ -4,6 +4,7 @@ using System.Linq;
 using System.Xml.Serialization;
 
 using MigrationEngine.BusinessObjects;
+using MigrationEngine.Mappers;
 
 namespace MigrationEngine.DataAccess
 {
@@ -11,9 +12,11 @@ namespace MigrationEngine.DataAccess
         : DataGetter<ReturnType> where ReturnType : MigrationData
     {
         [XmlAttribute("ProcName")]
-        public String ProcName = "usp_StoredProc";
+        public String ProcName;// = "usp_StoredProc";
 
-        public override ReturnType LoadData()
+        public DataMapper<ReturnType> Mapper;
+
+        public override List<ReturnType> LoadData()
         {
             throw new NotImplementedException();
         }

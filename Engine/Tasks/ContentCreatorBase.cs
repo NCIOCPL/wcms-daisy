@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace MigrationEngine.Tasks
 {
-    public abstract class ContentCreatorBase : MigrationTask, IContentCreator
+    public abstract class ContentCreatorBase : MigrationTask
     {
         public abstract override void Doit();
     }

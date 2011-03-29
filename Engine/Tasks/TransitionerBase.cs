@@ -5,7 +5,8 @@ using System.Text;
 
 namespace MigrationEngine.Tasks
 {
-    public interface ITransitioner : IMigrateTask
+    public abstract class TransitionerBase : MigrationTask
     {
+        public abstract override void Doit();
     }
 }

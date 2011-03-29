@@ -8,7 +8,7 @@ using MigrationEngine.DataAccess;
 
 namespace MigrationEngine.Tasks
 {
-    public class Transitioner : MigrationTask
+    public class Transitioner : TransitionerBase
     {
         public DataGetter<TransitionDescription> DataGetter = new XmlDataGetter<TransitionDescription>();
 

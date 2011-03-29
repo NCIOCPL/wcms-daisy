@@ -5,7 +5,8 @@ using System.Text;
 
 namespace MigrationEngine.Tasks
 {
-    public interface IRelationshipCreator : IMigrateTask
+    public abstract class FolderCreatorBase : MigrationTask
     {
+        public abstract override void Doit();
     }
 }
