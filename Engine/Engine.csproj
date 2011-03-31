@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -59,7 +60,11 @@
     <Compile Include="DataAccess\DatabaseDataGetter.cs" />
     <Compile Include="DataAccess\DataGetter.cs" />
     <Compile Include="DataAccess\XmlDataGetter.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Mappers\DatabaseFullItemDescriptionMapper.cs" />
     <Compile Include="Mappers\DatabaseFolderDescriptionMapper.cs" />
+    <Compile Include="Mappers\DatabaseItemWithMigrationIDMapper.cs" />
+    <Compile Include="Mappers\DatabaseRelationshipDescriptionWithMigrationIDMapper.cs" />
     <Compile Include="Mappers\XmlFolderDescriptionMapper.cs" />
     <Compile Include="Mappers\DataMapper.cs" />
     <Compile Include="Migrator.cs" />

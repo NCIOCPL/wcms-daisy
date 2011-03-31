@@ -8,7 +8,6 @@ namespace MigrationEngine.BusinessObjects
 {
     abstract public class ContentDescriptionBase : MigrationData
     {
-        public String Community { get; set; }
         public String ContentType { get; set; }
 
         [XmlIgnore()]

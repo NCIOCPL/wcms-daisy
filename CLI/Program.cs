@@ -20,6 +20,10 @@ namespace Prototype
                 //engine.Save(@"data.xml");
                 engine.Load(scriptName);
             }
+            else
+            {
+                Console.WriteLine("File not found: {0}", scriptName);
+            }
         }
 
         static void Main(string[] args)

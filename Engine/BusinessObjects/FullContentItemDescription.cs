@@ -9,5 +9,6 @@ namespace MigrationEngine.BusinessObjects
     {
         public Guid MigrationID { get; set; }
         public String Path { get; set; }
+        public String Community { get; set; }
     }
 }

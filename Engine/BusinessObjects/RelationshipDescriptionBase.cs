@@ -9,7 +9,7 @@ namespace MigrationEngine.BusinessObjects
     public abstract class RelationshipDescriptionBase : MigrationData
     {
         public String DependentContentType { get; set; }
-        public String DependentMigrationID { get; set; }
+        public Guid DependentMigrationID { get; set; }
         public String OwnerContentType { get; set; }
         public String SlotName { get; set; }
         public String TemplateName { get; set; }

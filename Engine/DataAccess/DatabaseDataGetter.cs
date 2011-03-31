@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Xml.Serialization;
@@ -17,8 +18,8 @@ namespace MigrationEngine.DataAccess
         [XmlAttribute("ProcName")]
         public String ProcName;
 
-        [XmlAttribute("ConnectionString")]
-        public String ConnectionString;
+        [XmlAttribute("ConnectionName")]
+        public String ConnectionName;
 
         public DataMapper<ReturnType> Mapper;
 
@@ -26,7 +27,15 @@ namespace MigrationEngine.DataAccess
         {
             List<ReturnType> returnData = new List<ReturnType>();
 
-            DataTable table = SqlHelper.ExecuteDatatable(ConnectionString, System.Data.CommandType.StoredProcedure, ProcName);
+            if (string.IsNullOrEmpty(ConnectionName))
+                throw new ConfigurationException(string.Format("Connection string name not specified for {0}.", this.GetType().Name));
+
+            if (string.IsNullOrEmpty(ProcName))
+                throw new ConfigurationException(string.Format("Stored procedure name not specified for {0}.", this.GetType().Name));
+
+            string connectionString = ConfigurationManager.ConnectionStrings[ConnectionName].ConnectionString;
+
+            DataTable table = SqlHelper.ExecuteDatatable(connectionString, System.Data.CommandType.StoredProcedure, ProcName);
 
             foreach (DataRow row in table.Rows)
             {

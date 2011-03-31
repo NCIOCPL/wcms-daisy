@@ -10,7 +10,7 @@ namespace MigrationEngine.Tasks
 {
     public class Transitioner : TransitionerBase
     {
-        public DataGetter<TransitionDescription> DataGetter = new XmlDataGetter<TransitionDescription>();
+        public DataGetter<TransitionDescription> DataGetter;
 
         public override void Doit()
         {

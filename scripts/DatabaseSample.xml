@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfMigrationTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MigrationTask xsi:type="FolderCreator">
-    <DataGetter xsi:type="DatabaseDataGetterOfFolderDescription" ProcName="mig_createfolder" ConnectionString="Database=Imaging;Server=IntranetIntegration;User ID=miguser;Password=miguser5656;Connect Timeout=200;">
+    <DataGetter xsi:type="DatabaseDataGetterOfFolderDescription" ProcName="mig_createfolder" ConnectionName="IntranetInt">
 		<Mapper xsi:type="DatabaseFolderDescriptionMapper" />
 	</DataGetter>
   </MigrationTask>
-<!--  <MigrationTask xsi:type="GeneralContentCreator">
-    <DataGetter xsi:type="XmlDataGetterOfFullContentItemDescription" FileName="GeneralContentData.xml" />
+  <MigrationTask xsi:type="GeneralContentCreator">
+    <DataGetter xsi:type="DatabaseDataGetterOfFullContentItemDescription" ProcName="mig_createpage" ConnectionName="IntranetInt">
+		<Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+	</DataGetter>
   </MigrationTask>
-  <MigrationTask xsi:type="UpdaterForMigrationID" />
-  <MigrationTask xsi:type="UpdaterForFolderPath" />
-  <MigrationTask xsi:type="RelaterForMigrationID" />
-  <MigrationTask xsi:type="RelaterForFolderPath" />
+  <MigrationTask xsi:type="UpdaterForMigrationID">
+    <DataGetter xsi:type="DatabaseDataGetterOfItemWithMigrationID" ProcName="mig_updatePageBody" ConnectionName="IntranetInt">
+		<Mapper xsi:type="DatabaseItemWithMigrationIDMapper" />
+	</DataGetter>
+  </MigrationTask>  
+<!--  <MigrationTask xsi:type="UpdaterForFolderPath" />-->
+  <MigrationTask xsi:type="RelaterForMigrationID">
+    <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescriptionWithMigrationID" ProcName="mig_ADDlistItem" ConnectionName="IntranetInt">
+		<Mapper xsi:type="DatabaseRelationshipDescriptionWithMigrationIDMapper" />
+	</DataGetter>
+  </MigrationTask>
+<!--  <MigrationTask xsi:type="RelaterForFolderPath" />
   <MigrationTask xsi:type="Transitioner" />-->
 </ArrayOfMigrationTask>

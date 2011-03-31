@@ -5,8 +5,10 @@ using System.Text;
 
 namespace MigrationEngine.BusinessObjects
 {
-    public class RelationshipDescriptionWithMigrationID : MigrationData
+    public class RelationshipDescriptionWithMigrationID
+        : RelationshipDescriptionBase
+
     {
-        public String OwnerMigrationID { get; set; }
+        public Guid OwnerMigrationID { get; set; }
     }
 }

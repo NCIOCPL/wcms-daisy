@@ -10,7 +10,7 @@ namespace MigrationEngine.Tasks
 {
     public class UpdaterForFolderPath : ContentUpdaterBase
     {
-        public DataGetter<ItemWithPath> DataGetter = new XmlDataGetter<ItemWithPath>();
+        public DataGetter<ItemWithPath> DataGetter;
 
         public override void Doit()
         {

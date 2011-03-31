@@ -10,7 +10,7 @@ namespace MigrationEngine.Tasks
 {
     public class RelaterForFolderPath : RelationshipCreatorBase
     {
-        public DataGetter<RelationshipDescriptionWithPath> DataGetter = new XmlDataGetter<RelationshipDescriptionWithPath>();
+        public DataGetter<RelationshipDescriptionWithPath> DataGetter;
 
         public override void Doit()
         {

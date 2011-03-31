@@ -10,10 +10,15 @@ namespace MigrationEngine.Tasks
 {
     public class GeneralContentCreator : ContentCreatorBase
     {
-        public DataGetter<FullContentItemDescription> DataGetter = new XmlDataGetter<FullContentItemDescription>();
+        public DataGetter<FullContentItemDescription> DataGetter;
 
         override public void Doit()
         {
+            List<FullContentItemDescription> contentItems = DataGetter.LoadData();
+
+            // TODO: Actual task code goes here.
+            Console.WriteLine("Creating {0} content items.", contentItems.Count);
+            contentItems.ForEach(item => Console.WriteLine("Migration ID: {0}", item.MigrationID));
         }
     }
 }
