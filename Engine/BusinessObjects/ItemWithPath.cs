@@ -7,6 +7,6 @@ namespace MigrationEngine.BusinessObjects
 {
     public class ItemWithPath : ContentDescriptionBase
     {
-        public String Path;
+        public String Path { get; set; }
     }
 }

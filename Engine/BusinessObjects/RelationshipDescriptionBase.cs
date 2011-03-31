@@ -8,10 +8,10 @@ namespace MigrationEngine.BusinessObjects
 {
     public abstract class RelationshipDescriptionBase : MigrationData
     {
-        public String DependentContentType;
-        public String DependentMigrationID;
-        public String OwnerContentType;
-        public String SlotName;
-        public String TemplateName;
+        public String DependentContentType { get; set; }
+        public String DependentMigrationID { get; set; }
+        public String OwnerContentType { get; set; }
+        public String SlotName { get; set; }
+        public String TemplateName { get; set; }
     }
 }

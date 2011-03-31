@@ -7,6 +7,6 @@ namespace MigrationEngine.BusinessObjects
 {
     public class RelationshipDescriptionWithMigrationID : MigrationData
     {
-        public String OwnerMigrationID;
+        public String OwnerMigrationID { get; set; }
     }
 }

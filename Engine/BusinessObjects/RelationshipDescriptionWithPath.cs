@@ -7,6 +7,6 @@ namespace MigrationEngine.BusinessObjects
 {
     public class RelationshipDescriptionWithPath : RelationshipDescriptionBase
     {
-        public String OwnerPath;
+        public String OwnerPath { get; set; }
     }
 }

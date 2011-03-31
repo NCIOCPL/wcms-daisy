@@ -7,7 +7,7 @@ namespace MigrationEngine.BusinessObjects
 {
     public class FullContentItemDescription : ContentDescriptionBase
     {
-        public String MigrationID;
-        public String Path;
+        public Guid MigrationID { get; set; }
+        public String Path { get; set; }
     }
 }

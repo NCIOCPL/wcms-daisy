@@ -7,6 +7,6 @@ namespace MigrationEngine.BusinessObjects
 {
     public class ItemWithMigrationID : ContentDescriptionBase
     {
-        public String MigrationID;
+        public Guid MigrationID { get; set; }
     }
 }

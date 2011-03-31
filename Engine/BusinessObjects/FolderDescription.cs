@@ -8,6 +8,6 @@ namespace MigrationEngine.BusinessObjects
     public class FolderDescription : MigrationData
     {
         [XmlIgnore()]
-        public String Path;
+        public String Path { get; set; }
     }
 }
