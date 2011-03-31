@@ -15,6 +15,10 @@ namespace MigrationEngine.Tasks
         override public void Doit()
         {
             List<FolderDescription> folders = DataGetter.LoadData();
+
+            // TODO: Actual task code goes here.
+            Console.WriteLine("Creating {0} folders.", folders.Count);
+            folders.ForEach(folder => Console.WriteLine("Folder: {0}", folder.Path));
         }
     }
 }

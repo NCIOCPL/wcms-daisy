@@ -11,17 +11,28 @@ namespace Prototype
 {
     class Program
     {
-        void Doit()
+        void Doit(string scriptName)
         {
-            Migrator engine = new Migrator();
-            //engine.Save(@"data.xml");
-            engine.Load(@"\WCMTeam\Tools\MigrationTools\Prototype\data.xml");
+            if (File.Exists(scriptName))
+            {
+
+                Migrator engine = new Migrator();
+                //engine.Save(@"data.xml");
+                engine.Load(scriptName);
+            }
         }
 
         static void Main(string[] args)
         {
-            Program migrate = new Program();
-            migrate.Doit();
+            if (args.Length == 1)
+            {
+                Program migrate = new Program();
+                migrate.Doit(args[0]);
+            }
+            else
+            {
+                Console.WriteLine("Syntax: Migrate <scriptname>");
+            }
         }
     }
 }

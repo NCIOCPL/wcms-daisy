@@ -59,6 +59,7 @@
     <Compile Include="DataAccess\DatabaseDataGetter.cs" />
     <Compile Include="DataAccess\DataGetter.cs" />
     <Compile Include="DataAccess\XmlDataGetter.cs" />
+    <Compile Include="Mappers\DatabaseFolderDescriptionMapper.cs" />
     <Compile Include="Mappers\XmlFolderDescriptionMapper.cs" />
     <Compile Include="Mappers\DataMapper.cs" />
     <Compile Include="Migrator.cs" />
@@ -77,6 +78,12 @@
     <Compile Include="Tasks\TransitionerBase.cs" />
     <Compile Include="Tasks\UpdaterForFolderPath.cs" />
     <Compile Include="Tasks\UpdaterForMigrationID.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCILibrary\Code\NCILibrary.Core\NCILibrary.Core.csproj">
+      <Project>{898FF17C-C94A-4D85-8AAD-88764B72CFAE}</Project>
+      <Name>NCILibrary.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
