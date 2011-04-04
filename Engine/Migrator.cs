@@ -13,49 +13,36 @@ namespace MigrationEngine
 {
     public class Migrator
     {
-        private MigrationTask[] MigrationTaskList;
-
         public Migrator()
         {
         }
 
         public void Save(string filePath)
         {
-            MigrationTaskList = new MigrationTask[] 
-            {
-                new FolderCreator(),
-                new GeneralContentCreator(),
-                new UpdaterForMigrationID(),
-                new UpdaterForFolderPath(),
-                new RelaterForMigrationID(),
-                new RelaterForFolderPath(),
-                new Transitioner()
-            };
+            Migration migration = new Migration();
 
             Type[] typeList = GetTypeListForSerialization();
 
-            XmlSerializer serializer = new XmlSerializer(typeof(MigrationTask[]), typeList);
+            XmlSerializer serializer = new XmlSerializer(typeof(Migration), typeList);
             using (TextWriter writer = new StreamWriter(filePath))
             {
-                serializer.Serialize(writer, MigrationTaskList);
+                serializer.Serialize(writer, migration);
             }
-            MigrationTaskList = null;
         }
 
-        public void Load(string filePath)
+        public void Run(string filePath)
         {
             Type[] typeList = GetTypeListForSerialization();
 
-            XmlSerializer serializer = new XmlSerializer(typeof(MigrationTask[]), typeList);
+            Migration migration =null;
+
+            XmlSerializer serializer = new XmlSerializer(typeof(Migration), typeList);
             using (TextReader reader = new StreamReader(filePath))
             {
-                MigrationTaskList = (MigrationTask[])serializer.Deserialize(reader);
+                migration = (Migration)serializer.Deserialize(reader);
             }
 
-            foreach (MigrationTask task in MigrationTaskList)
-            {
-                task.Doit();
-            }
+            migration.Run();
         }
 
         #region Here there be dragons.

@@ -18,7 +18,7 @@ namespace Prototype
 
                 Migrator engine = new Migrator();
                 //engine.Save(@"data.xml");
-                engine.Load(scriptName);
+                engine.Run(scriptName);
             }
             else
             {

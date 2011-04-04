@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfMigrationTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<MigrationTaskList>
   <MigrationTask xsi:type="FolderCreator">
     <DataGetter xsi:type="DatabaseDataGetterOfFolderDescription" ProcName="mig_createfolder" ConnectionName="IntranetInt">
 		<Mapper xsi:type="DatabaseFolderDescriptionMapper" />
@@ -23,4 +24,5 @@
   </MigrationTask>
 <!--  <MigrationTask xsi:type="RelaterForFolderPath" />
   <MigrationTask xsi:type="Transitioner" />-->
-</ArrayOfMigrationTask>
+  </MigrationTaskList>
+</Migration>
