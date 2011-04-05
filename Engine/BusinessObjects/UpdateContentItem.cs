@@ -5,8 +5,8 @@ using System.Text;
 
 namespace MigrationEngine.BusinessObjects
 {
-    public class RelationshipDescriptionWithPath : RelationshipDescriptionBase
+    public class UpdateContentItem : ContentDescriptionBase
     {
-        public String OwnerPath { get; set; }
+        // Concrete class. All properties are inherited.
     }
 }

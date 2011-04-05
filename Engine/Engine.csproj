@@ -48,23 +48,22 @@
   <ItemGroup>
     <Compile Include="BusinessObjects\ContentDescriptionBase.cs" />
     <Compile Include="BusinessObjects\FolderDescription.cs" />
-    <Compile Include="BusinessObjects\FullContentItemDescription.cs" />
+    <Compile Include="BusinessObjects\FullItemDescription.cs" />
     <Compile Include="BusinessObjects\IMigrationData.cs" />
-    <Compile Include="BusinessObjects\ItemWithMigrationID.cs" />
-    <Compile Include="BusinessObjects\ItemWithPath.cs" />
+    <Compile Include="BusinessObjects\UpdateContentItem.cs" />
     <Compile Include="BusinessObjects\MigrationData.cs" />
     <Compile Include="BusinessObjects\RelationshipDescriptionBase.cs" />
-    <Compile Include="BusinessObjects\RelationshipDescriptionWithMigrationID.cs" />
-    <Compile Include="BusinessObjects\RelationshipDescriptionWithPath.cs" />
+    <Compile Include="BusinessObjects\RelationshipDescription.cs" />
     <Compile Include="BusinessObjects\TransitionDescription.cs" />
     <Compile Include="DataAccess\DatabaseDataGetter.cs" />
     <Compile Include="DataAccess\DataGetter.cs" />
     <Compile Include="DataAccess\XmlDataGetter.cs" />
     <Compile Include="Exceptions.cs" />
+    <Compile Include="IMigrationLog.cs" />
     <Compile Include="Mappers\DatabaseFullItemDescriptionMapper.cs" />
     <Compile Include="Mappers\DatabaseFolderDescriptionMapper.cs" />
-    <Compile Include="Mappers\DatabaseItemWithMigrationIDMapper.cs" />
-    <Compile Include="Mappers\DatabaseRelationshipDescriptionWithMigrationIDMapper.cs" />
+    <Compile Include="Mappers\DatabaseUpdateItemMapper.cs" />
+    <Compile Include="Mappers\DatabaseRelationshipDescriptionMapper.cs" />
     <Compile Include="Mappers\XmlFolderDescriptionMapper.cs" />
     <Compile Include="Mappers\DataMapper.cs" />
     <Compile Include="Migration.cs" />
@@ -78,12 +77,10 @@
     <Compile Include="Tasks\GeneralContentCreator.cs" />
     <Compile Include="Tasks\IMigrateTask.cs" />
     <Compile Include="Tasks\MigrationTask.cs" />
-    <Compile Include="Tasks\RelaterForFolderPath.cs" />
-    <Compile Include="Tasks\RelaterForMigrationID.cs" />
+    <Compile Include="Tasks\RelationshipCreator.cs" />
     <Compile Include="Tasks\Transitioner.cs" />
     <Compile Include="Tasks\TransitionerBase.cs" />
-    <Compile Include="Tasks\UpdaterForFolderPath.cs" />
-    <Compile Include="Tasks\UpdaterForMigrationID.cs" />
+    <Compile Include="Tasks\ContentUpdater.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NCILibrary\Code\NCILibrary.Core\NCILibrary.Core.csproj">

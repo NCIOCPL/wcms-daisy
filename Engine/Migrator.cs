@@ -21,6 +21,10 @@ namespace MigrationEngine
         {
             Migration migration = new Migration();
 
+            // By providing the Serializer a list of classes, we're able to allow for the
+            // use of subclasses without having to add a new XmlInclude attribute to the
+            // superclass every time a new subclass is derived.  Determining the list
+            // of classes to allow requires some work in reflection.
             Type[] typeList = GetTypeListForSerialization();
 
             XmlSerializer serializer = new XmlSerializer(typeof(Migration), typeList);
@@ -59,7 +63,7 @@ namespace MigrationEngine
 
             List<Type> serializableTypes = new List<Type>();
 
-            // Collect all the MigrationTask types.
+            // Collect all the concrete types derived from MigrationTask.
             Type taskBase = typeof(MigrationTask);
             Array.ForEach(allTypes, testType =>
             {
@@ -70,7 +74,7 @@ namespace MigrationEngine
                 }
             });
 
-            // Collect all the DataMapper types.
+            // Collect all the concrete DataMapper types.
             Type mapperBase = typeof(DataMapper<>);
             Array.ForEach(allTypes, testType =>
             {
@@ -82,7 +86,9 @@ namespace MigrationEngine
             });
 
 
-            // Get the return data types for the various LoadData signatures.
+            // Collect the list of concrete types derived from MigrationData.
+            // These are the types returned by LoadData when a DataGetter type is
+            // created, e.g. DatabaseDataGetter<FolderDescription>.
             Type migDataBase = typeof(MigrationData);
             Type[] migDataTypes = Array.FindAll(allTypes, testType =>
             {
@@ -90,7 +96,8 @@ namespace MigrationEngine
                     && migDataBase.IsAssignableFrom(testType);
             });
 
-            // Get the list of DataGetters.
+            // Get the list of classes which can be assigned to DataGetter<>.
+            // This is complicated. See comments for IsAssignableToGenericType().
             Type dataGetterBase = typeof(DataGetter<>);
             Type[] dataGetterTypes = Array.FindAll(allTypes, testType =>
             {
@@ -98,6 +105,7 @@ namespace MigrationEngine
                     && IsAssignableToGenericType(dataGetterBase, testType);
             });
 
+            // For every migratation data type
             // Create the cross-product of all the DataGetter generics with
             // all the MigrationData subclasses.
             foreach (Type dataType in migDataTypes)
@@ -105,7 +113,6 @@ namespace MigrationEngine
                 foreach (Type getter in dataGetterTypes)
                 {
                     Type constructedType = getter.MakeGenericType(new Type[] { dataType });
-                    //generics.Add(constructedType);
                     serializableTypes.Add(constructedType);
                 }
             }

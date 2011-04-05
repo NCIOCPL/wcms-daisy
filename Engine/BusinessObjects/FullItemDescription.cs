@@ -5,8 +5,9 @@ using System.Text;
 
 namespace MigrationEngine.BusinessObjects
 {
-    public class ItemWithMigrationID : ContentDescriptionBase
+    public class FullItemDescription : ContentDescriptionBase
     {
-        public Guid MigrationID { get; set; }
+        public String Path { get; set; }
+        public String Community { get; set; }
     }
 }

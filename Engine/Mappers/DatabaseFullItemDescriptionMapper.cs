@@ -11,9 +11,9 @@ using MigrationEngine.BusinessObjects;
 namespace MigrationEngine.Mappers
 {
     public class DatabaseFullItemDescriptionMapper
-        : DataMapper<FullContentItemDescription>
+        : DataMapper<FullItemDescription>
     {
-        public override FullContentItemDescription MapItem(object dataItem)
+        public override FullItemDescription MapItem(object dataItem)
         {
             if (!(dataItem is DataRow))
                 throw new ArgumentException(string.Format("Parameter dataItem is of type {0}, expected DataRow."),
@@ -21,7 +21,7 @@ namespace MigrationEngine.Mappers
 
             DataRow row = (DataRow)dataItem;
 
-            FullContentItemDescription description = new FullContentItemDescription();
+            FullItemDescription description = new FullItemDescription();
 
             description.Path = row.Field<string>("folder");
             description.MigrationID = row.Field<Guid>("migid");

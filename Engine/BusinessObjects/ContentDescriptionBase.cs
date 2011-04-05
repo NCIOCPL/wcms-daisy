@@ -9,6 +9,7 @@ namespace MigrationEngine.BusinessObjects
     abstract public class ContentDescriptionBase : MigrationData
     {
         public String ContentType { get; set; }
+        public Guid MigrationID { get; set; }
 
         [XmlIgnore()]
         public Dictionary<string, string> Fields { get; private set; }

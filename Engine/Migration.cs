@@ -27,7 +27,13 @@ namespace MigrationEngine
             {
                 foreach (MigrationTask task in MigrationTaskList)
                 {
-                    task.Doit();
+                    try
+                    {
+                        task.Doit();
+                    }
+                    catch (Exception ex)
+                    {
+                    }
                 }
             }
         }

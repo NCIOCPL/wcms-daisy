@@ -8,6 +8,9 @@ namespace MigrationEngine.Tasks
 {
     public abstract class MigrationTask : IMigrateTask
     {
+        [XmlAttribute()]
+        public String Name { get; set; }
+
         abstract public void Doit();
     }
 }

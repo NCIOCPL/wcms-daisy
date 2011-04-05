@@ -8,13 +8,13 @@ using MigrationEngine.DataAccess;
 
 namespace MigrationEngine.Tasks
 {
-    public class GeneralContentCreator : ContentCreatorBase
+    public class ContentUpdater : ContentUpdaterBase
     {
-        public DataGetter<FullItemDescription> DataGetter;
+        public DataGetter<UpdateContentItem> DataGetter;
 
-        override public void Doit()
+        public override void Doit()
         {
-            List<FullItemDescription> contentItems = DataGetter.LoadData();
+            List<UpdateContentItem> contentItems = DataGetter.LoadData();
 
             // TODO: Actual task code goes here.
             Console.WriteLine("Creating {0} content items.", contentItems.Count);

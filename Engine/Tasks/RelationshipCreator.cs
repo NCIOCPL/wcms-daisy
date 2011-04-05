@@ -8,13 +8,13 @@ using MigrationEngine.DataAccess;
 
 namespace MigrationEngine.Tasks
 {
-    public class RelaterForMigrationID : RelationshipCreatorBase
+    public class RelationshipCreator : RelationshipCreatorBase
     {
-        public DataGetter<RelationshipDescriptionWithMigrationID> DataGetter;
+        public DataGetter<RelationshipDescription> DataGetter;
 
         public override void Doit()
         {
-            List<RelationshipDescriptionWithMigrationID> relationships = DataGetter.LoadData();
+            List<RelationshipDescription> relationships = DataGetter.LoadData();
 
             // TODO: Actual task code goes here.
             Console.WriteLine("Creating {0} relationships.", relationships.Count);

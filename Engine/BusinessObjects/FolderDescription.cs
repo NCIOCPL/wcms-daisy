@@ -9,5 +9,14 @@ namespace MigrationEngine.BusinessObjects
     {
         [XmlIgnore()]
         public String Path { get; set; }
+        public Guid MigrationdID { get; set; }
+
+        [XmlIgnore()]
+        public Dictionary<string, string> Fields { get; private set; }
+
+        public FolderDescription()
+        {
+            Fields = new Dictionary<string, string>();
+        }
     }
 }

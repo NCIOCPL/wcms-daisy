@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
-using System.Xml;
-
 
 using MigrationEngine.BusinessObjects;
 
 namespace MigrationEngine.Mappers
 {
-    public class DatabaseFolderDescriptionMapper
-        : DataMapper<FolderDescription>
+    public class DatabaseUpdateItemMapper
+        : DataMapper<UpdateContentItem>
     {
-        public override FolderDescription MapItem(object dataItem)
+        public override UpdateContentItem MapItem(object dataItem)
         {
             if (!(dataItem is DataRow))
                 throw new ArgumentException(string.Format("Parameter dataItem is of type {0}, expected DataRow."),
@@ -21,10 +19,16 @@ namespace MigrationEngine.Mappers
 
             DataRow row = (DataRow)dataItem;
 
-            FolderDescription description = new FolderDescription();
+            UpdateContentItem description = new UpdateContentItem();
 
-            description.Path = row.Field<String>("folder");
-            description.MigrationdID = row.Field<Guid>("migid");
+            description.MigrationID = row.Field<Guid>("migid");
+
+            // This desparately wants to be shared code, but inheriting from a
+            // generic breaks the override of MapItem.  Possibly a special
+            // DatabaseContentDescriptionBaseMapper could be added? Its MapItem
+            // method couldn't do anything, but it could take care of common mapping.
+
+            description.ContentType = row.Field<string>("contenttype");
 
             foreach (DataColumn column in row.Table.Columns)
             {
@@ -32,7 +36,6 @@ namespace MigrationEngine.Mappers
                 string value = row[name].ToString();
                 description.Fields.Add(name, value);
             }
-
 
             return description;
         }
