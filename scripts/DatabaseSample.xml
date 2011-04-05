@@ -7,23 +7,23 @@
 	</DataGetter>
   </MigrationTask>
   <MigrationTask xsi:type="GeneralContentCreator" Name="ContentCreator1">
-    <DataGetter xsi:type="DatabaseDataGetterOfFullContentItemDescription" ProcName="mig_createpage" ConnectionName="IntranetInt">
+    <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createpage" ConnectionName="IntranetInt">
 		<Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
 	</DataGetter>
   </MigrationTask>
   <MigrationTask xsi:type="GeneralContentCreator" Name="ContentCreator2">
-    <DataGetter xsi:type="DatabaseDataGetterOfFullContentItemDescription" ProcName="mig_createpage" ConnectionName="IntranetInt">
+    <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createpage" ConnectionName="IntranetInt">
 		<Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
 	</DataGetter>
   </MigrationTask>
-  <MigrationTask xsi:type="UpdaterForMigrationID" Name="Fred">
-    <DataGetter xsi:type="DatabaseDataGetterOfItemWithMigrationID" ProcName="mig_updatePageBody" ConnectionName="IntranetInt">
-		<Mapper xsi:type="DatabaseItemWithMigrationIDMapper" />
+  <MigrationTask xsi:type="ContentUpdater" Name="Fred">
+    <DataGetter xsi:type="DatabaseDataGetterOfUpdateContentItem" ProcName="mig_updatePageBody" ConnectionName="IntranetInt">
+		<Mapper xsi:type="DatabaseUpdateItemMapper" />
 	</DataGetter>
   </MigrationTask>  
-  <MigrationTask xsi:type="RelaterForMigrationID" Name="Pete">
-    <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescriptionWithMigrationID" ProcName="mig_ADDlistItem" ConnectionName="IntranetInt">
-		<Mapper xsi:type="DatabaseRelationshipDescriptionWithMigrationIDMapper" />
+  <MigrationTask xsi:type="RelationshipCreator" Name="Pete">
+    <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDlistItem" ConnectionName="IntranetInt">
+		<Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
 	</DataGetter>
   </MigrationTask>
 <!--<MigrationTask xsi:type="Transitioner" />-->
