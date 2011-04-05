@@ -1,0 +1,1617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cde:MultiPageAssemblyInstruction xsi:schemaLocation="http://www.example.org/CDESchema CDESchema.xsd" xmlns:cde="http://www.example.org/CDESchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageTemplateName>DefaultCancerGovTemplate</PageTemplateName>
+  <SectionPath>/</SectionPath>
+  <PrettyUrl>/multicancertopics</PrettyUrl>
+  <PageMetadata>
+    <LongTitle>Cancer Topics Home Page</LongTitle>
+    <ShortTitle>Cancer Topics Home Page--1</ShortTitle>
+    <ShortDescription>This is short description</ShortDescription>
+    <LongDescription>Information from the National Cancer Institute about cancer treatment, prevention, screening, genetics, causes, and how to cope with cancer.</LongDescription>
+    <MetaDescription></MetaDescription>
+    <MetaKeywords>cancer,information</MetaKeywords>
+  </PageMetadata>
+  <ContentDates>
+    <FirstPublished>2010-10-03T00:00:00</FirstPublished>
+    <LastModified>2010-10-03T00:00:00</LastModified>
+    <LastReviewed>2010-10-03T00:00:00</LastReviewed>
+    <NextReview>2011-10-03T00:00:00</NextReview>
+    <DateDisplayMode>PostedReviewed</DateDisplayMode>
+  </ContentDates>
+  <Language>en</Language>
+  <AlternateContentVersions>
+    <IsPrintAvailable>true</IsPrintAvailable>
+    <IsEmailAvailable>true</IsEmailAvailable>
+    <IsShareBookmarkAvailable>true</IsShareBookmarkAvailable>
+    <Files>
+      <File Url="/changeme.pdf" MimeType="application/pdf" />
+    </Files>
+  </AlternateContentVersions>
+  <BlockedSlots>
+    <Slot Name="cgvContentHeader" />
+  </BlockedSlots>
+  <Snippets>
+    <SnippetInfo>
+      <ContentID>6</ContentID>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>cgvSiteBanner</SlotName>
+      <Data>
+        <![CDATA[
+          <table width="100%" bgcolor="#a90101" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><div class="skip"><a href="#skiptocontent" title="Skip to content">Skip to content</a></div></td></tr></tbody></table><table width="100%" bgcolor="#a90101" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td valign="top" align="center">
+			          <table width="771" border="0" cellpadding="0" cellspacing="0">
+				          <tbody><tr>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+					          <td valign="top" width="500" align="left" nowrap="nowrap">
+					          <table width="433" align="left" border="0" cellpadding="0" cellspacing="0">
+					          <tbody><tr>
+					          <td rowspan="2" valign="top"><a href="/"><img src="/images/banner_nci_logo_1.gif" alt="National Cancer Institute" width="118" border="0" height="81"></a></td>
+					          <td colspan="2" valign="top"><a href="/"><img src="/images/banner_nci_logo_2.gif" alt="National Cancer Institute" width="315" border="0" height="41"></a></td>
+					          </tr>
+					          <tr>
+					          <td valign="top"><a href="http://www.nih.gov"><img src="/images/banner_nci_logo_3.gif" alt="U.S. National Institutes of Health" width="209" border="0" height="40"></a></td>
+					          <td valign="top"><a href="/"><img src="/images/banner_nci_logo_4.gif" alt="National Cancer Institute" width="106" border="0" height="40"></a></td>
+					          </tr>
+					          </tbody></table>
+					          </td>
+					          <td valign="top" width="251" align="left">
+          <!-- BEGIN: NetTracker Pixel -->
+          <noscript>
+          <img src="/images/ntpagetag.gif?js=0" height="1" width="1" border="0" hspace="0" vspace="0" alt="">
+          </noscript>
+          <!-- END: NetTracker Page Tag -->
+					          <form name="siteSearchForm" action="/search/results.aspx" method="post" onsubmit="ntptAddPair('keywordF', this.swKeyword.value ); NCIAnalytics.SiteWideSearch(this); return ntptSubmitTag( this );">
+						          <table width="251" align="right" border="0" cellpadding="0" cellspacing="0">
+						          <tbody><tr>
+						          <td>
+						          <table width="251" border="0" cellpadding="0" cellspacing="0">
+						          <tbody><tr>
+							          <td colspan="2" class="navigation-white" valign="bottom" align="right" height="19">In English | <a href="/espanol" class="navigation-white">En español</a></td>
+						          </tr>
+						          <tr>
+							          <td colspan="2" valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="24"></td>
+						          </tr>
+						          <tr>
+							          <td valign="middle" width="195" align="right" height="24"><label for="swKeyword" class="hidden">Search</label><input maxlength="255" size="10" id="swKeyword" name="swKeyword" style="width: 120px; height: 21px;" class="search_field" value="" onfocus="bSearchBoxBool=true;" onblur="bSearchBoxBool=false;"></td>
+							          <td valign="middle" width="56" align="right"><input id="sitesearch" onclick="return siteSearchSubmit();" src="/images/main-search.gif" alt="Search" type="image" width="48" border="0" height="14"></td>
+						          </tr>
+						          <tr>
+							          <td colspan="2" valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="14"></td>
+						          </tr>
+						          </tbody></table>
+						          </td>
+						          </tr>
+						          </tbody></table>
+					          </form>
+					          </td>					<td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+				          </tr>
+				          <tr>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+					          <td colspan="2" valign="bottom"><table width="751" align="left" bgcolor="#696559" border="0" cellpadding="0" cellspacing="0">
+	          <tbody><tr>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=NCI+Home_NavBar_Section&amp;redirectUrl=%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_home','/images/nav_home_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_home_off.gif" name="nav_home" alt="NCI Home" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Cancer+Topics_NavBar_Section&amp;redirectUrl=%2fcancertopics&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_cancer_topics','/images/nav_cancer_topics_on.gif');window.status=window.location.protocol + '//' + window.location.host + '/cancertopics'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_cancer_topics_on.gif" name="nav_cancer_topics" alt="Cancer Topics" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Clinical+Trials_NavBar_Section&amp;redirectUrl=%2fclinicaltrials&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_clinical_trials','/images/nav_clinical_trials_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/clinicaltrials'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_clinical_trials_off.gif" name="nav_clinical_trials" alt="Clinical Trials" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Cancer+Statistics_NavBar_Section&amp;redirectUrl=%2fstatistics%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_cancer_statistics','/images/nav_cancer_statistics_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/statistics/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_cancer_statistics_off.gif" name="nav_cancer_statistics" alt="Cancer Statistics" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Research+%26+Funding_NavBar_Section&amp;redirectUrl=%2fresearchandfunding&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_research_funding','/images/nav_research_funding_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/researchandfunding'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_research_funding_off.gif" name="nav_research_funding" alt="Research &amp; Funding" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=News_NavBar_Section&amp;redirectUrl=%2fnewscenter%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_news','/images/nav_news_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/newscenter/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_news_off.gif" name="nav_news" alt="News" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=About+NCI_NavBar_Section&amp;redirectUrl=%2faboutnci&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_about','/images/nav_about_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/aboutnci'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_about_off.gif" name="nav_about" alt="About NCI" border="0"></a></td>
+	          </tr>
+          </tbody></table>
+          </td>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+				          </tr>
+			          </tbody></table>
+		          </td>
+            </tr>
+	          <tr>
+		          <td valign="top" bgcolor="#ffffff"><img src="/images/spacer.gif" alt="" width="10" border="0" height="15"></td>
+	          </tr>
+          </tbody></table>
+          <a name="top"></a>
+        
+        ]]>
+      </Data>
+    </SnippetInfo>
+
+
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>cgvLeftNav</SlotName>
+      <Data>
+        <![CDATA[<table width="164" cellspacing="0" cellpadding="1" border="0" class="gray-border">
+   <tr>
+      <td valign="top">
+         <table width="162" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+            <tr>
+               <td valign="top" align="left" class="box-title"><img src="/images/spacer.gif" width="7" height="17" alt="" border="0"></td>
+               <td valign="left" colspan="2" class="box-title">Quick Links</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="3" class="gray-border"><img src="/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left" colspan="3"><img src="/images/spacer.gif"  alt="" width="162" height="8" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left"><img src="/images/spacer.gif" width="7" height="1" alt="" border="0"></td>
+               <td valign="top" class="leftnav" align="left" width="148" >
+<a href="/directorscorner" class="navigation-dark-red">Director's Corner</a><br><span class="navigation-gray">
+Updates from the Director</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/dictionary/" class="navigation-dark-red">Dictionary of Cancer Terms</a><br><span class="navigation-gray">
+Cancer-related terms</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/drugdictionary/" class="navigation-dark-red">NCI Drug Dictionary</a><br><span class="navigation-gray">
+Definitions, names, and links</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/researchandfunding#fundingopportunities" class="navigation-dark-red">Funding Opportunities</a><br><span class="navigation-gray">
+Research and training</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="https://cissecure.nci.nih.gov/ncipubs/" class="navigation-dark-red">NCI Publications</a><br><span class="navigation-gray">
+Order/download free booklets</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/common/clickpassthrough.aspx?clickitem=listId_4aa0de43-bad1-4d81-9a71-1bda2b18db04_Url_http%3a%2f%2fdeainfo.nci.nih.gov%2fadvisory%2fboards.htm&redirectUrl=http%3a%2f%2fdeainfo.nci.nih.gov%2fadvisory%2fboards.htm&fromUrl=%2fcancertopics%3fpath%3d%2fcancertopics" class="navigation-dark-red" onmouseover="window.status='http://deainfo.nci.nih.gov/advisory/boards.htm'; return true;" onmouseout="window.status=''; return true;">Advisory Boards and Groups</a><br><span class="navigation-gray">
+Information, meetings, reports</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/aboutnci/servingpeople" class="navigation-dark-red">Science Serving People</a><br><span class="navigation-gray">
+Learn more about NCI</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/espanol" class="navigation-dark-red">Espa&ntilde;ol</a><br><span class="navigation-gray">
+Informaci&oacute;n en espa&ntilde;ol</span><br>
+               </td>
+               <td valign="top" align="right"><img src="/images/spacer.gif" width="7" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left" colspan="3"><img src="/images/spacer.gif" alt="" width="162" height="8" alt="" border="0"></td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+</table>
+]]>
+      </Data>
+      <ContentID>2</ContentID>
+    </SnippetInfo>
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>cgvLeftNav</SlotName>
+      <Data>
+        <![CDATA[<div style="padding: 6px; border: 1px solid #CCC;">
+<strong><a href="/help">Questions about cancer?</a></strong><br>
+<table cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2"><img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br></td>
+	</tr>
+	<tr>
+		<td valign="middle"><img src="/images/bullet_sm_css.gif" alt="" width="3" height="3"></td>
+		<td><img src="/images/spacer.gif" width="5" height="1" border="0" alt=""><strong class="navigation-gray">1-800-4-CANCER</strong><br></td>
+	</tr>
+<!--
+	<tr>
+		<td colspan="2"><img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br></td>
+	</tr>
+	<tr>
+		<td valign="middle"><img src="/images/bullet_sm_css.gif" alt="" width="3" height="3"></td>
+		<td><img src="/images/spacer.gif" width="5" height="1" border="0" alt=""><a href="https://cissecure.nci.nih.gov/livehelp/welcome.asp" onclick="javascript:window.open('https://cissecure.nci.nih.gov/livehelp/welcome.asp', 'LiveHelp','scrollbars=yes,resizable=yes,menubar=yes,toolbar=yes,location=yes,width=616,height=500'); return false;" class="navigation-gray-link">LiveHelp online chat</a><br></td>
+	</tr>
+
+	<tr>
+		<td colspan="2"><img src="/images/spacer.gif" width="1" height="2" border="0" alt=""><br></td>
+	</tr>
+-->
+</table>
+</div>]]>
+      </Data>
+      <ContentID>3</ContentID>
+    </SnippetInfo>
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>cgvLeftNav</SlotName>
+      <Data><![CDATA[<a href="/cancertopics/smoking"><img id="Quit Smoking Today" src="/images/tiles/quit_smoking_today_164_65.jpg" name="Quit Smoking Today" alt="Quit Smoking Today" width="164" height="65" border="0"></a>]]></Data>
+      <ContentID>5</ContentID>
+    </SnippetInfo>
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>cgvLeftNav</SlotName>
+      <Data>
+        <![CDATA[<table width="164" cellspacing="0" cellpadding="1" border="0" class="gray-border">
+   <tr>
+      <td valign="top">
+         <table width="162" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+            <tr>
+               <td valign="top" align="left" class="box-title"><img src="/images/spacer.gif" width="7" height="17" alt="" border="0"></td>
+               <td valign="left" colspan="2" class="box-title">NCI Highlights</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="3" class="gray-border"><img src="/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left" colspan="3"><img src="/images/spacer.gif"  alt="" width="162" height="8" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left"><img src="/images/spacer.gif" width="7" height="1" alt="" border="0"></td>
+               <td valign="top" class="leftnav" align="left" width="148" >
+<a href="http://biospecimens.cancer.gov/default.asp" class="navigation-gray-link">Office of Biorepositories and Biospecimen Research</a><br><img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/common/clickpassthrough.aspx?clickitem=listId_2fdb0dcd-cc08-4c2e-9456-6fd29c1ff98d_Url_http%3a%2f%2fplan.cancer.gov&redirectUrl=http%3a%2f%2fplan.cancer.gov&fromUrl=%2fcancertopics%3fpath%3d%2fcancertopics" class="navigation-gray-link" onmouseover="window.status='http://plan.cancer.gov'; return true;" onmouseout="window.status=''; return true;">The Nation's Investment in Cancer Research FY 2011</a><br><img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/newscenter/pressreleases/ReportNation2009Release" class="navigation-gray-link">Report to the Nation Finds Continued Declines in Cancer Rates</a><br>               </td>
+               <td valign="top" align="right"><img src="/images/spacer.gif" width="7" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left" colspan="3"><img src="/images/spacer.gif" alt="" width="162" height="8" alt="" border="0"></td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+</table>
+]]>
+      </Data>
+      <ContentID>4</ContentID>
+    </SnippetInfo>
+    <SnippetInfo>
+      <ContentID>5</ContentID>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>cgvFooter</SlotName>
+      <Data>
+        <![CDATA[
+        <table width="753" border="0" cellpadding="0" cellspacing="0">
+	        <tbody><tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="30"></td>
+	        </tr>
+	        <tr>
+		        <td class="gray-border" valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="5"></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="15"></td>
+	        </tr>
+	        <tr>
+		        <td class="footer-text" valign="top"><div align="center">
+		        <a href="/" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'NCIHome');">NCI Home</a> | 
+		        <a href="/help" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'ContactUs');">Contact Us</a> | 
+		        <a href="/policies" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Policies');">Policies</a> | 
+		        <a href="/policies/page3" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Accessibility');">Accessibility</a> | 
+		        <a href="/viewing-files" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'ViewingFiles');">Viewing Files</a> | 
+		        <a href="/policies/page6" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'FOIA');">FOIA</a> | 
+		        <a href="/sitehelp" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'SiteHelp');">Site Help</a> | 
+		        <a href="/sitemap" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'SiteMap');">Site Map</a>
+		        </div></td>
+	        </tr>
+	        <tr>
+	            <td>
+             <!-- Follow Us -->
+                 <div style="margin-top: 10px;" align="center"> 
+                     <strong>Follow us:</strong>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#twitter" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Twitter');"><img src="http://www.cancer.gov/images/social-media-twitter.gif" style="vertical-align: text-top; margin-right: 3px;" alt="Twitter" width="16" height="16">Twitter</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#youtube" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'YouTube');"><img src="http://www.cancer.gov/images/social-media-youtube.gif" style="vertical-align: text-top; margin-right: 3px;" alt="YouTube" width="16" height="16">YouTube</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#facebook" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Facebook');"><img src="http://www.cancer.gov/images/social-media-facebook.gif" style="vertical-align: text-top; margin-right: 3px;" alt="Facebook" width="16" height="16">Facebook</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/rss" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'RSS');"><img src="http://www.cancer.gov/images/social-media-rss.gif" style="vertical-align: text-top; margin-right: 3px;" alt="RSS" width="16" height="16">RSS</a>
+                 </div>
+	            </td>
+	        </tr>
+         <!-- Follow Us -->
+	        <tr>
+		        <td valign="top"><div align="center"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"><br>
+		        A Service of the National Cancer Institute</div></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><div align="center">
+			        <a href="http://www.hhs.gov/"><img src="/images/footer_hhs.gif" alt="Department of Health and Human Services" width="39" border="0" height="31"></a>
+			        <a href="http://www.nih.gov/"><img src="/images/footer_nih.gif" alt="National Institutes of Health" width="46" border="0" height="31"></a>
+			        <a href="http://www.usa.gov/"><img src="/images/footer_usagov.gif" alt="USA.gov" width="91" border="0" height="31"></a></div>
+		        </td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"></td>
+	        </tr>
+        </tbody></table>        
+        ]]>
+      </Data>
+    </SnippetInfo>
+  </Snippets>
+  <Pages>
+    <Page>
+      <PageMetadata>
+        <LongTitle>Cancer Topics Home Page--About This Booklet</LongTitle>
+        <ShortTitle>Cancer Topics Home Page--About This Booklet</ShortTitle>
+        <ShortDescription>This is short description--About This Booklet</ShortDescription>
+        <LongDescription>--1Information from the National Cancer Institute about cancer treatment, prevention, screening, genetics, causes, and how to cope with cancer.</LongDescription>
+        <MetaDescription>sdfds --About This Booklet</MetaDescription>
+        <MetaKeywords>cancer,information,About This Booklet</MetaKeywords>
+      </PageMetadata>
+      <PrettyUrl>/multicancertopics/page1</PrettyUrl>
+      <PageTemplateName>DefaultCancerGovTemplate</PageTemplateName>
+      <BlockedSlots>
+        <Slot Name="cgvContentHeader" />
+      </BlockedSlots>
+      <Snippets>
+        <SnippetInfo>
+          <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+          <SlotName>cgvPageNav</SlotName>
+          <Data>
+            <![CDATA[<table width="159" cellspacing="0" cellpadding="0" border="0">
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/arrow_red.gif" width="5" height="10" alt="" border="0"></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><span class="navigation-selected">About This Booklet</span><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page2" class="navigation-dark-gray-link">The Bladder</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page3" class="navigation-dark-gray-link">Cancer Cells</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page4" class="navigation-dark-gray-link">Risk Factors</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page5" class="navigation-dark-gray-link">Symptoms</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page6" class="navigation-dark-gray-link">Diagnosis</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page7" class="navigation-dark-gray-link">Staging</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page8" class="navigation-dark-gray-link">Treatment</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page9" class="navigation-dark-gray-link">Second Opinion</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page10" class="navigation-dark-gray-link">Rehabilitation</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page11" class="navigation-dark-gray-link">Nutrition</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page12" class="navigation-dark-gray-link">Follow-up Care</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page13" class="navigation-dark-gray-link">Sources of Support</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page14" class="navigation-dark-gray-link">Taking Part in Cancer  Research</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page15" class="navigation-dark-gray-link">National Cancer Institute Publications</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+	</table>  
+
+			]]>
+          </Data>
+          <ContentID>2</ContentID>
+        </SnippetInfo>
+        <SnippetInfo>
+          <ContentID>10</ContentID>
+          <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+          <SlotName>cgvBody</SlotName>
+          <Data>
+            <![CDATA[
+		          <table width="571" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td valign="top">
+<span class="page-title">About This Booklet</span><P>
+<p>This National Cancer Institute (NCI) booklet is about <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045333&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000045333&amp;version=Patient&amp;language=English'); return false;">cancer</a> that starts in the bladder.</p>
+    <p>Each year in the United States, more than 52,000 men and 18,000 women are diagnosed with bladder cancer. Most are over 70 years old.</p>
+    <div class="wyntk-shaded-box">
+      <p>More than 9 of 10 Americans with bladder cancer have a type called <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046629&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046629&amp;version=Patient&amp;language=English'); return false;">transitional cell cancer</a> (TCC). This booklet is about TCC of the bladder.</p>
+      <p>TCC begins in the cells on the surface of the inner lining of the bladder. These <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046476&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046476&amp;version=Patient&amp;language=English'); return false;">cells</a> are called <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046630&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046630&amp;version=Patient&amp;language=English'); return false;">transitional cells</a>. They are able to stretch when the bladder is full and shrink when it&rsquo;s emptied.</p>
+    </div>
+    <p>Learning about medical care for bladder cancer can help you take an active part in making choices about your care. This booklet tells about:</p>
+    <ul class="wyntk">
+      <li>Diagnosis and staging</li>
+      <li>Treatment and rehabilitation</li>
+      <li>Taking part in research studies</li>
+    </ul>
+    <p>This booklet has lists of questions that you may want to ask your doctor. Many people find it helpful to take a list of questions to a doctor visit. To help remember what your doctor says, you can take notes. You may also want to have a family member or friend go with you when you talk with the doctor&mdash;to take notes, ask questions, or just listen.</p>
+    <p>For the latest information about bladder cancer, please visit NCI&rsquo;s Web site at <a href="/cancertopics/types/bladder">http://www.cancer.gov/cancertopics/types/bladder</a>. Also, NCI&rsquo;s Cancer Information Service can answer your questions about cancer. We can also send you NCI booklets and fact sheets. Call <strong>1&ndash;800&ndash;4&ndash;CANCER (1&ndash;800&ndash;422&ndash;6237)</strong> or chat with us online using <strong>LiveHelp</strong>, NCI&rsquo;s instant messaging service at <a href="http://www.cancer.gov/livehelp">http://www.cancer.gov/livehelp</a>.</p>
+    <hr />
+    <p>*Words in <em>italics</em> are in the <a href="/dictionary">Dictionary</a>. The Dictionary explains these terms. It also shows how to pronounce them.</p><P>
+<a href="/cancertopics/page2">Next Section ></a>		</td>
+	</tr>
+</table>
+</td>
+				<!----------------------->
+				
+				<td valign="top"><img src="/images/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			</tr>
+		</table>
+ 
+
+		        
+		        ]]>
+          </Data>
+        </SnippetInfo>
+      </Snippets>
+    </Page>
+    <Page>
+      <PageMetadata>
+        <LongTitle>Cancer Topics Home Page-2</LongTitle>
+        <ShortTitle>Cancer Topics Home Page-2</ShortTitle>
+        <ShortDescription>This is short description-2</ShortDescription>
+        <LongDescription>Information from the National Cancer Institute about cancer treatment, prevention, screening, genetics, causes, and how to cope with cancer.</LongDescription>
+        <MetaDescription></MetaDescription>
+        <MetaKeywords>cancer,information</MetaKeywords>
+      </PageMetadata>
+      <PrettyUrl>/multicancertopics/page2</PrettyUrl>
+      <PageTemplateName>DefaultCancerGovTemplate</PageTemplateName>
+      <BlockedSlots>
+        <Slot Name="cgvContentHeader" />
+      </BlockedSlots>
+      <Snippets>
+        <SnippetInfo>
+          <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+          <SlotName>cgvPageNav</SlotName>
+          <Data>
+            <![CDATA[<table width="159" cellspacing="0" cellpadding="0" border="0">
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/arrow_red.gif" width="5" height="10" alt="" border="0"></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><span class="navigation-selected">About This Booklet</span><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><span class="navigation-selected">The Bladder</span><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page3" class="navigation-dark-gray-link">Cancer Cells</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page4" class="navigation-dark-gray-link">Risk Factors</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page5" class="navigation-dark-gray-link">Symptoms</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page6" class="navigation-dark-gray-link">Diagnosis</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page7" class="navigation-dark-gray-link">Staging</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page8" class="navigation-dark-gray-link">Treatment</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page9" class="navigation-dark-gray-link">Second Opinion</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page10" class="navigation-dark-gray-link">Rehabilitation</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page11" class="navigation-dark-gray-link">Nutrition</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page12" class="navigation-dark-gray-link">Follow-up Care</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page13" class="navigation-dark-gray-link">Sources of Support</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page14" class="navigation-dark-gray-link">Taking Part in Cancer  Research</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page15" class="navigation-dark-gray-link">National Cancer Institute Publications</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+	</table>  
+
+			]]>
+          </Data>
+          <ContentID>2</ContentID>
+        </SnippetInfo>
+        <SnippetInfo>
+          <ContentID>6</ContentID>
+          <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+          <SlotName>cgvBody</SlotName>
+          <Data>
+            <![CDATA[
+			          <td id="contentzone" valign="top" width="100%"><a name="skiptocontent"></a><table width="571" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td valign="top">
+<span class="page-title">The Bladder</span><P>
+<p>Your bladder is a hollow <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000257523&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000257523&amp;version=Patient&amp;language=English'); return false;">organ</a> in the lower <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045070&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000045070&amp;version=Patient&amp;language=English'); return false;">abdomen</a>. It stores <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046642&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046642&amp;version=Patient&amp;language=English'); return false;">urine</a>, the liquid waste made by the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046325&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046325&amp;version=Patient&amp;language=English'); return false;">kidneys</a>.</p>
+	    <p>Your bladder is part of the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046095&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046095&amp;version=Patient&amp;language=English'); return false;">urinary tract</a>. Urine passes from each kidney into the bladder through a long tube called a <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046638&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046638&amp;version=Patient&amp;language=English'); return false;">ureter</a>. Urine leaves the bladder through a shorter tube (the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046640&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046640&amp;version=Patient&amp;language=English'); return false;">urethra</a>).</p>
+	    <p>The wall of the bladder has layers of <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046683&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046683&amp;version=Patient&amp;language=English'); return false;">tissue</a>:</p>
+	    <ul class="wyntk">
+	      <li><strong>Inner layer</strong>: The inner layer of tissue is also called the lining. As your bladder fills up with urine, the transitional cells on the surface stretch. When you empty your bladder, these cells shrink.</li>
+	      <li><strong>Middle layer</strong>: The middle layer is muscle tissue. When you empty your bladder, the muscle layer in the bladder wall squeezes the urine out of your body.</li>
+	      <li><strong>Outer layer</strong>: The outer layer covers the bladder. It has fat, <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000344349&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000344349&amp;version=Patient&amp;language=English'); return false;">fibrous</a> tissue, and blood vessels.</li>
+	    </ul>
+	    <div align="center">
+	      <img src="/images/documents/cddc0d3e-4fdc-4332-8f6b-1d6136ffdd5f/clip_image004.jpg" alt="This picture shows the bladder and nearby organs in a man" width="321" height="271" /> 
+	      <p>This picture shows the bladder and nearby organs in a man.</p>
+	    </div>
+	    <div align="center">
+	      <img src="/images/documents/cddc0d3e-4fdc-4332-8f6b-1d6136ffdd5f/clip_image006.jpg" alt="This picture shows the bladder and nearby organs in a woman." width="324" height="271" /> 
+	      <p>This picture shows the bladder and nearby organs in a woman.</p>
+	    </div><P>
+<a href="/cancertopics/wyntk/bladder/page1">< Previous Section</a> &nbsp;<span class="navigation-gray">|</span>&nbsp; <a href="/cancertopics/wyntk/bladder/page3">Next Section ></a>		</td>
+		</tr>
+</table>
+</td>
+
+
+	 
+
+			        
+			        ]]>
+          </Data>
+        </SnippetInfo>
+      </Snippets>
+    </Page>
+    <Page>
+      <PageMetadata>
+        <LongTitle>Cancer Topics Home Page-Caner Cells</LongTitle>
+        <ShortTitle>Cancer Topics Home Page-Caner Cells</ShortTitle>
+        <ShortDescription>This is short description-Caner Cells</ShortDescription>
+        <LongDescription>Information from the National Cancer Institute about cancer treatment, prevention, screening, genetics, causes, and how to cope with cancer.</LongDescription>
+        <MetaDescription></MetaDescription>
+        <MetaKeywords>cancer,information,Caner Cells</MetaKeywords>
+      </PageMetadata>
+      <PrettyUrl>/multicancertopics/page3</PrettyUrl>
+      <PageTemplateName>DefaultCancerGovTemplate</PageTemplateName>
+      <BlockedSlots>
+        <Slot Name="cgvContentHeader" />
+      </BlockedSlots>
+      <Snippets>
+        <SnippetInfo>
+          <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+          <SlotName>cgvPageNav</SlotName>
+          <Data>
+            <![CDATA[<table width="159" cellspacing="0" cellpadding="0" border="0">
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/arrow_red.gif" width="5" height="10" alt="" border="0"></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><span class="navigation-selected">About This Booklet</span><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page2" class="navigation-dark-gray-link">The Bladder</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page3" class="navigation-dark-gray-link">Cancer Cells</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page4" class="navigation-dark-gray-link">Risk Factors</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page5" class="navigation-dark-gray-link">Symptoms</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page6" class="navigation-dark-gray-link">Diagnosis</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page7" class="navigation-dark-gray-link">Staging</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page8" class="navigation-dark-gray-link">Treatment</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page9" class="navigation-dark-gray-link">Second Opinion</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page10" class="navigation-dark-gray-link">Rehabilitation</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page11" class="navigation-dark-gray-link">Nutrition</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page12" class="navigation-dark-gray-link">Follow-up Care</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page13" class="navigation-dark-gray-link">Sources of Support</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page14" class="navigation-dark-gray-link">Taking Part in Cancer  Research</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+		   <tr bgcolor="#ffffff">
+		      <td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+		      <td valign="top" width="149">
+				<table width="149" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+					<tr>
+					<td valign="top" colspan="3"><a href="/multicancertopics/page15" class="navigation-dark-gray-link">National Cancer Institute Publications</a><br></td>
+					</tr>
+					<tr>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="4" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="5" height="1" alt="" border="0"><br></td>
+						<td valign="top"><img src="/images/spacer.gif" width="139" height="1" alt="" border="0"><br></td>
+					</tr>
+				</table>
+		      </td>
+		      <td valign="middle"><img src="/images/spacer.gif" width="5" height="8" alt="" border="0"></td>
+		   </tr>
+		   <tr>
+		      <td valign="top" bgcolor="#BBBBBB" colspan="3"><img src="/images/spacer.gif" width="164" height="1" alt="" border="0"></td>
+		   </tr>
+	</table>  
+
+			]]>
+          </Data>
+          <ContentID>2</ContentID>
+        </SnippetInfo>
+        <SnippetInfo>
+          <ContentID>6</ContentID>
+          <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+          <SlotName>cgvBody</SlotName>
+          <Data>
+            <![CDATA[
+			          <td id="contentzone" valign="top" width="100%"><a name="skiptocontent"></a><table width="571" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td valign="top">
+<span class="page-title">Cancer Cells</span><P>
+<p>Cancer begins in cells, the building blocks that make up tissues. Tissues make up the bladder and the other organs of the body.</p>
+    <p>Normal cells grow and divide to form new cells as the body needs them. When normal cells grow old or get damaged, they die, and new cells take their place.</p>
+    <p>Sometimes, this process goes wrong. New cells form when the body doesn&rsquo;t need them, and old or damaged cells don&rsquo;t die as they should. The buildup of extra cells often forms a mass of tissue called a growth or tumor.</p>
+    <p>Tumors in the bladder can be <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045614&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000045614&amp;version=Patient&amp;language=English'); return false;">benign</a> (not cancer) or <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045772&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000045772&amp;version=Patient&amp;language=English'); return false;">malignant</a> (cancer). Benign tumors are not as harmful as malignant tumors:</p>
+    <ul class="wyntk">
+      <li>
+        <strong>Benign tumors</strong>: 
+        <ul class="wyntk">
+          <li>are usually not a threat to life</li>
+          <li>can be treated or removed and usually don&rsquo;t grow back</li>
+          <li>don&rsquo;t invade the tissues around them</li>
+          <li>don&rsquo;t spread to other parts of the body</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Malignant growths</strong>: 
+        <ul class="wyntk">
+          <li>may be a threat to life</li>
+          <li>usually can be removed but can grow back</li>
+          <li>can invade and damage nearby tissues and organs (such as the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046539&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046539&amp;version=Patient&amp;language=English'); return false;">prostate</a> in a man, or the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046645&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046645&amp;version=Patient&amp;language=English'); return false;">uterus</a> or <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046646&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000046646&amp;version=Patient&amp;language=English'); return false;">vagina</a> in a woman)</li>
+          <li>can spread to other parts of the body</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Bladder cancer cells can spread by breaking away from the original tumor. They can spread through the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045020&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000045020&amp;version=Patient&amp;language=English'); return false;">blood vessels</a> to the liver, lungs, and bones. In addition, bladder cancer cells can spread through <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000269462&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000269462&amp;version=Patient&amp;language=English'); return false;">lymph vessels</a> to nearby <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045762&amp;version=Patient&amp;language=English" onclick="javascript:popWindow('defbyid','CDR0000045762&amp;version=Patient&amp;language=English'); return false;">lymph nodes</a>. After spreading, the cancer cells may attach to other tissues and grow to form new tumors that may damage those tissues. See the <a href="/cancertopics/wyntk/bladder/page7">Staging section</a> for information about bladder cancer that has spread.</p><P>
+<a href="#top" class="backtotop-link"><img src="/images/backtotop_red.gif" alt="Back to Top" border="0">Back to Top</a><P>
+<a href="/cancertopics/wyntk/bladder/page2">< Previous Section</a> &nbsp;<span class="navigation-gray">|</span>&nbsp; <a href="/cancertopics/wyntk/bladder/page4">Next Section ></a>		</td>
+	</tr>
+</table>
+</td>
+
+
+
+	 
+
+			        
+			        ]]>
+          </Data>
+        </SnippetInfo>
+      </Snippets>
+    </Page>
+
+  </Pages>
+
+</cde:MultiPageAssemblyInstruction>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GenericTest id="ba5f112f-a28a-49fa-8843-b1973ff30e4f" name="WenAnalytics" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+	<SummaryXmlFile path="%TestOutputDirectory%\&lt;Enter summary file name here&gt;"/>
+	<Command filename="&lt;Enter the file name here&gt;" workingDirectory="%TestOutputDirectory%"/>
+</GenericTest>

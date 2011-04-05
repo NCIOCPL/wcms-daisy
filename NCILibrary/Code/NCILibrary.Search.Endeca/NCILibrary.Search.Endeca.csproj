@@ -1,0 +1,136 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A2B4CEC-E86D-4DB2-B3FB-22CFA0DD6F26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NCI.Search.Endeca</RootNamespace>
+    <AssemblyName>NCILibrary.Search.Endeca</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/NCILibrary.Search.Endeca/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Endeca.Logging, Version=4.7.2.23, Culture=neutral, PublicKeyToken=6d02be8724ca751c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyDlls\Endeca\4.7.2\Endeca.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Navigation, Version=4.7.2.23, Culture=neutral, PublicKeyToken=6d02be8724ca751c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyDlls\Endeca\4.7.2\Endeca.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Navigation.AccessControl, Version=4.7.2.23, Culture=neutral, PublicKeyToken=6d02be8724ca751c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyDlls\Endeca\4.7.2\Endeca.Navigation.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\EndecaSection.cs" />
+    <Compile Include="DescStrLengthComparer.cs" />
+    <Compile Include="EndecaBestBetResult.cs" />
+    <Compile Include="EndecaBestBetsSearch.cs" />
+    <Compile Include="EndecaDimensionSearchDefinition.cs" />
+    <Compile Include="EndecaDimensionSearchParameter.cs" />
+    <Compile Include="EndecaNavDimSearchDefinition.cs" />
+    <Compile Include="EndecaNavigationSearchParameter.cs" />
+    <Compile Include="EndecaNormalSearchDefinition.cs" />
+    <Compile Include="EndecaRangeFilter.cs" />
+    <Compile Include="EndecaRecordSearchDefinition.cs" />
+    <Compile Include="EndecaResult.cs" />
+    <Compile Include="EndecaSearch.cs" />
+    <Compile Include="EndecaSearchModeEnums.cs" />
+    <Compile Include="EndecaSortParam.cs" />
+    <Compile Include="GenericEndecaSearch.cs" />
+    <Compile Include="GenericSiteWideSearchManager.cs" />
+    <Compile Include="IEndecaSearchDefinition.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCILibrary.Core\NCILibrary.Core.csproj">
+      <Project>{898FF17C-C94A-4D85-8AAD-88764B72CFAE}</Project>
+      <Name>NCILibrary.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCILibrary.Search\NCILibrary.Search.csproj">
+      <Project>{8962B50C-E3A9-4F0A-9E48-7008C40247CD}</Project>
+      <Name>NCILibrary.Search</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
