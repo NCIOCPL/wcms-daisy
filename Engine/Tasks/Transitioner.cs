@@ -12,8 +12,9 @@ namespace MigrationEngine.Tasks
     {
         public DataGetter<TransitionDescription> DataGetter;
 
-        public override void Doit()
+        public override void Doit(IMigrationLog logger)
         {
+
         }
     }
 }

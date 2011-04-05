@@ -12,7 +12,7 @@ namespace MigrationEngine.Tasks
     {
         public DataGetter<FullItemDescription> DataGetter;
 
-        override public void Doit()
+        override public void Doit(IMigrationLog logger)
         {
             List<FullItemDescription> contentItems = DataGetter.LoadData();
 

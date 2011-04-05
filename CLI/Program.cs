@@ -15,10 +15,10 @@ namespace Prototype
         {
             if (File.Exists(scriptName))
             {
-
+                ConsoleLogger logger = new ConsoleLogger();
                 Migrator engine = new Migrator();
                 //engine.Save(@"data.xml");
-                engine.Run(scriptName);
+                engine.Run(scriptName, logger);
             }
             else
             {

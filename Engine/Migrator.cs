@@ -17,25 +17,25 @@ namespace MigrationEngine
         {
         }
 
-        public void Save(string filePath)
-        {
-            Migration migration = new Migration();
+        //public void Save(string filePath)
+        //{
+        //    Migration migration = new Migration();
 
+        //    Type[] typeList = GetTypeListForSerialization();
+
+        //    XmlSerializer serializer = new XmlSerializer(typeof(Migration), typeList);
+        //    using (TextWriter writer = new StreamWriter(filePath))
+        //    {
+        //        serializer.Serialize(writer, migration);
+        //    }
+        //}
+
+        public void Run(string filePath, IMigrationLog logger)
+        {
             // By providing the Serializer a list of classes, we're able to allow for the
             // use of subclasses without having to add a new XmlInclude attribute to the
             // superclass every time a new subclass is derived.  Determining the list
             // of classes to allow requires some work in reflection.
-            Type[] typeList = GetTypeListForSerialization();
-
-            XmlSerializer serializer = new XmlSerializer(typeof(Migration), typeList);
-            using (TextWriter writer = new StreamWriter(filePath))
-            {
-                serializer.Serialize(writer, migration);
-            }
-        }
-
-        public void Run(string filePath)
-        {
             Type[] typeList = GetTypeListForSerialization();
 
             Migration migration =null;
@@ -46,7 +46,7 @@ namespace MigrationEngine
                 migration = (Migration)serializer.Deserialize(reader);
             }
 
-            migration.Run();
+            migration.Run(logger);
         }
 
         #region Here there be dragons.

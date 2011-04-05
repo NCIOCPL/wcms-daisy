@@ -7,6 +7,6 @@ namespace MigrationEngine.Tasks
 {
     public interface IMigrateTask
     {
-        void Doit();
+        void Doit(IMigrationLog logger);
     }
 }

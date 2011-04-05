@@ -21,18 +21,26 @@ namespace MigrationEngine
         //    new Transitioner()
         //};
 
-        public void Run()
+        public void Run(IMigrationLog migLog)
         {
             if (MigrationTaskList != null)
             {
+                int index = 1;
+                int taskCount = MigrationTaskList.Length;
+
                 foreach (MigrationTask task in MigrationTaskList)
                 {
                     try
                     {
-                        task.Doit();
+                        migLog.BeginTask(task.Name, index++, taskCount);
+                        task.Doit(migLog);
                     }
                     catch (Exception ex)
                     {
+                    }
+                    finally
+                    {
+                        migLog.EndTask();
                     }
                 }
             }

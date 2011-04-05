@@ -12,13 +12,20 @@ namespace MigrationEngine.Tasks
     {
         public DataGetter<FolderDescription> DataGetter;
 
-        override public void Doit()
+        override public void Doit(IMigrationLog logger)
         {
             List<FolderDescription> folders = DataGetter.LoadData();
 
-            // TODO: Actual task code goes here.
-            Console.WriteLine("Creating {0} folders.", folders.Count);
-            folders.ForEach(folder => Console.WriteLine("Folder: {0}", folder.Path));
+            int index = 1;
+            int count = folders.Count;
+
+            foreach (FolderDescription folder in folders)
+            {
+                logger.IncrementTaskProgress(Name, index++, count, folder.MigrationdID, folder.Path);
+
+                // Do some stuff.
+            }
+
         }
     }
 }

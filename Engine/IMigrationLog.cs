@@ -5,11 +5,11 @@ using System.Text;
 
 namespace MigrationEngine
 {
-    interface IMigrationLog
+    public interface IMigrationLog
     {
-        void BeginTask(string taskName);
+        void BeginTask(string taskName, int taskIndex, int taskTotal);
         void EndTask();
-        void IncrementProgress(string taskName, int itemIndex, int total, Guid itemMigrationID);
+        void IncrementTaskProgress(string taskName, int itemIndex, int total, Guid itemMigrationID, string path);
 
         void LogError(String taskName, String message, Guid itemMigrationID, Dictionary<string, string> Fields);
         void LogUnhandledException(String taskName, Exception ex);

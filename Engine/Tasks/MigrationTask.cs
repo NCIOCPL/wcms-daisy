@@ -11,6 +11,6 @@ namespace MigrationEngine.Tasks
         [XmlAttribute()]
         public String Name { get; set; }
 
-        abstract public void Doit();
+        abstract public void Doit(IMigrationLog logger);
     }
 }

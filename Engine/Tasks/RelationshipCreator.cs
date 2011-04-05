@@ -12,7 +12,7 @@ namespace MigrationEngine.Tasks
     {
         public DataGetter<RelationshipDescription> DataGetter;
 
-        public override void Doit()
+        public override void Doit(IMigrationLog logger)
         {
             List<RelationshipDescription> relationships = DataGetter.LoadData();
 

@@ -8,6 +8,6 @@ namespace MigrationEngine.Tasks
 {
     public abstract class ContentUpdaterBase : MigrationTask
     {
-        public abstract override void Doit();
+        public abstract override void Doit(IMigrationLog logger);
     }
 }
