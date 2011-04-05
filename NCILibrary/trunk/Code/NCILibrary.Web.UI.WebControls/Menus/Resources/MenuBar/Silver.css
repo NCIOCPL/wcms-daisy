@@ -1,0 +1,28 @@
+.MBMenu.MBMenu-Silver ul 
+{
+	background:#fff;
+	background: #fff url('<%=WebResource("NCI.Web.UI.WebControls.Menus.Resources.MenuBar.Silver-bkg-bar.gif")%>') repeat-x;
+	border: 1px solid #666;
+}
+
+.MBMenu.MBMenu-Silver a,
+.MBMenu.MBMenu-Silver a:link,
+.MBMenu.MBMenu-Silver a:visited
+{
+	text-decoration:none;
+	color: #000;
+	background:url('<%=WebResource("NCI.Web.UI.WebControls.Menus.Resources.MenuBar.Silver-btn-left.gif")%>') no-repeat left top;
+}
+
+.MBMenu.MBMenu-Silver a span 
+{
+	color:#000;
+	background:url('<%=WebResource("NCI.Web.UI.WebControls.Menus.Resources.MenuBar.Silver-btn-right.gif")%>') no-repeat right top;
+	font-family: arial, verdana, Sans-Serif; 
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.MBMenu.MBMenu-Silver a:hover span {
+	 color: #c60202; 
+}

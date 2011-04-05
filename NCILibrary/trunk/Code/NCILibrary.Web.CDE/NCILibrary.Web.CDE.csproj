@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEE51BA0-18AE-4CF2-876F-7E75B5A2D1FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NCI.Web.CDE</RootNamespace>
+    <AssemblyName>NCILibrary.Web.ContentDeliveryEngine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="NVelocity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyDlls\nVelocity\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\canonicalHostNameElement.cs" />
+    <Compile Include="Configuration\CanonicalHostNameInformationElement.cs" />
+    <Compile Include="Configuration\ContentDeliveryEngineConfig.cs" />
+    <Compile Include="Configuration\DefaultHomePageElement.cs" />
+    <Compile Include="Configuration\DeliverySection.cs" />
+    <Compile Include="Configuration\FileInstructionElement.cs" />
+    <Compile Include="Configuration\FileInstructionTypeElement.cs" />
+    <Compile Include="Configuration\FileInstructionTypeElementCollection.cs" />
+    <Compile Include="Configuration\PageAssemblyInfoTypeElement.cs" />
+    <Compile Include="Configuration\PageAssemblyInfoTypeElementCollection.cs" />
+    <Compile Include="Configuration\PageTitleInformationElement.cs" />
+    <Compile Include="Configuration\PathElement.cs" />
+    <Compile Include="Configuration\PathInformationElement.cs" />
+    <Compile Include="Configuration\TitleElement.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="HttpHandlers\FlashGetCookieHandler.cs" />
+    <Compile Include="HttpHandlers\FlashSetCookieHandler.cs" />
+    <Compile Include="HttpHandlers\FormEmailerHandler.cs" />
+    <Compile Include="HttpHandlers\ListservSubscriptionHandler.cs" />
+    <Compile Include="HttpModules\FileInstructionLoader.cs" />
+    <Compile Include="HttpModules\PageAssemblyInstructionLoader.cs" />
+    <Compile Include="Configuration\PageAssemblyElement.cs" />
+    <Compile Include="HttpModules\PromoUrlMappingLoader.cs" />
+    <Compile Include="HttpModules\Utility.cs" />
+    <Compile Include="Modules\ContentSearchList.cs" />
+    <Compile Include="Modules\DictionaryURL.cs" />
+    <Compile Include="Modules\DynamicList.cs" />
+    <Compile Include="Modules\DynamicSearchResult.cs" />
+    <Compile Include="Modules\ModuleObjectFactory.cs" />
+    <Compile Include="Modules\SearchList.cs" />
+    <Compile Include="Modules\SearchResultPageInfo.cs" />
+    <Compile Include="Modules\VelocityTemplate.cs" />
+    <Compile Include="PageAssembly\AlternateContentVersions.cs" />
+    <Compile Include="PageAssembly\BlockedSlot.cs" />
+    <Compile Include="PageAssembly\CDRDefinition.cs" />
+    <Compile Include="PageAssembly\ContentDates.cs" />
+    <Compile Include="PageAssembly\ContentItemInfo.cs" />
+    <Compile Include="PageAssembly\DisplayDateModes.cs" />
+    <Compile Include="PageAssembly\DisplayVersions.cs" />
+    <Compile Include="PageAssembly\GenericFileInstruction.cs" />
+    <Compile Include="PageAssembly\FileInstructionException.cs" />
+    <Compile Include="PageAssembly\FileInstructionFactory.cs" />
+    <Compile Include="PageAssembly\IFileInstruction.cs" />
+    <Compile Include="PageAssembly\IMultiPageAssemblyInstruction.cs" />
+    <Compile Include="PageAssembly\LocalField.cs" />
+    <Compile Include="PageAssembly\LocalFieldCollection.cs" />
+    <Compile Include="PageAssembly\Module_PageOptionsBox.cs" />
+    <Compile Include="PageAssembly\MultiPageAssemblyInstruction.cs" />
+    <Compile Include="PageAssembly\MultiPage.cs" />
+    <Compile Include="PageAssembly\PageAssemblyContext.cs" />
+    <Compile Include="PageAssembly\PageAssemblyException.cs" />
+    <Compile Include="PageAssembly\FieldFilterData.cs" />
+    <Compile Include="PageAssembly\FieldFilterDelegate.cs" />
+    <Compile Include="PageAssembly\IPageAssemblyInstruction.cs" />
+    <Compile Include="PageAssembly\BasePageAssemblyInstruction.cs" />
+    <Compile Include="PageAssembly\PageAssemblyInstructionFactory.cs" />
+    <Compile Include="PageAssembly\MultiPageCollection.cs" />
+    <Compile Include="PageAssembly\PageMetadata.cs" />
+    <Compile Include="PageAssembly\PageTemplateResolution\PageTemplateCollection.cs" />
+    <Compile Include="PageAssembly\PageTemplateResolution\PageTemplateConfiguration.cs" />
+    <Compile Include="PageAssembly\PageTemplateResolution\PageTemplateInfo.cs" />
+    <Compile Include="PageAssembly\PageTemplateResolution\PageTemplateResolver.cs" />
+    <Compile Include="PageAssembly\PageTemplateResolution\StyleSheetInfo.cs" />
+    <Compile Include="PageAssembly\PromoUrlMapping.cs" />
+    <Compile Include="PageAssembly\PromoUrlMappingInfoFactory.cs" />
+    <Compile Include="PageAssembly\SectionDetail.cs" />
+    <Compile Include="PageAssembly\SectionDetailFactory.cs" />
+    <Compile Include="PageAssembly\SinglePageAssemblyInstruction.cs" />
+    <Compile Include="PageAssembly\PageAssemblyInstructionFields.cs" />
+    <Compile Include="PageAssembly\PageAssemblyInstructionUrls.cs" />
+    <Compile Include="PageAssembly\SnippetInfo.cs" />
+    <Compile Include="PageAssembly\SnippetInfoCollection.cs" />
+    <Compile Include="PageAssembly\UrlFilterDelegate.cs" />
+    <Compile Include="PageAssembly\WebAnalyticsDataPointDelegate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebAnalytics\Configuration\ChannelElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAnalytics\Configuration\ChannelElementCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAnalytics\Configuration\ReportingSuiteElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAnalytics\Configuration\ReportingSuitesElementCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAnalytics\Configuration\UrlPathChannelElement.cs" />
+    <Compile Include="WebAnalytics\Configuration\UrlPathChannelElementCollection.cs" />
+    <Compile Include="WebAnalytics\Configuration\WebAnalyticsSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAnalytics\WebAnalyticsOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAnalytics\WebAnalyticsPageLoad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAnalytics\WebAnalyticsSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCILibrary.Core\NCILibrary.Core.csproj">
+      <Project>{898FF17C-C94A-4D85-8AAD-88764B72CFAE}</Project>
+      <Name>NCILibrary.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCILibrary.DataManager\NCILibrary.DataManager.csproj">
+      <Project>{F4C37116-861A-4FD6-B45D-578B258FEFC7}</Project>
+      <Name>NCILibrary.DataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCILibrary.Web.UI.WebControls\NCILibrary.Web.UI.WebControls.csproj">
+      <Project>{5ADEF930-6ED8-485E-83DB-A9E14A4182F6}</Project>
+      <Name>NCILibrary.Web.UI.WebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

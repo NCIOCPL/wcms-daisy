@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cde:SinglePageAssemblyInstruction xsi:schemaLocation="http://www.example.org/CDESchema CDESchema.xsd" xmlns:cde="http://www.example.org/CDESchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageTemplateName>DefaultCancerGovTemplate</PageTemplateName>
+  <SectionPath>/i131testingmockup1</SectionPath>
+  <SectionPath>/i131testingmockup1</SectionPath>
+  <SectionPath>/i131testingmockup1</SectionPath>
+  <PrettyUrl>/i131testingmockup1</PrettyUrl>
+  <PrettyUrl>/i131testingmockup1</PrettyUrl>
+  <PrettyUrl>/i131testingmockup1</PrettyUrl>
+  <PageMetadata>
+    <LongTitle>Radioactive I-131 from Fallout</LongTitle> 
+    <ShortTitle>Radioactive I-131 from Fallout</ShortTitle> 
+    <LongDescription>"Radioactive I-131 from Fallout"</LongDescription>
+    <MetaDescription>"Radioactive I-131 from Fallout"</MetaDescription>
+    <MetaKeywords>cancer,information, radioactive</MetaKeywords>
+  </PageMetadata>
+  <BlockedSlots>
+  	<Slot Name="ContentHeaderSlot" />
+  </BlockedSlots>
+  <Language>en</Language>
+  <Snippets>
+   <SnippetInfo>
+      <ContentID>1</ContentID>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>BannerSlot</SlotName>
+      <Data>
+        <![CDATA[
+          <table width="100%" bgcolor="#a90101" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><div class="skip"><a href="#skiptocontent" title="Skip to content">Skip to content</a></div></td></tr></tbody></table><table width="100%" bgcolor="#a90101" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td valign="top" align="center">
+			          <table width="771" border="0" cellpadding="0" cellspacing="0">
+				          <tbody><tr>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+					          <td valign="top" width="500" align="left" nowrap="nowrap">
+					          <table width="433" align="left" border="0" cellpadding="0" cellspacing="0">
+					          <tbody><tr>
+					          <td rowspan="2" valign="top"><a href="/"><img src="/images/banner_nci_logo_1.gif" alt="National Cancer Institute" width="118" border="0" height="81"></a></td>
+					          <td colspan="2" valign="top"><a href="/"><img src="/images/banner_nci_logo_2.gif" alt="National Cancer Institute" width="315" border="0" height="41"></a></td>
+					          </tr>
+					          <tr>
+					          <td valign="top"><a href="http://www.nih.gov"><img src="/images/banner_nci_logo_3.gif" alt="U.S. National Institutes of Health" width="209" border="0" height="40"></a></td>
+					          <td valign="top"><a href="/"><img src="/images/banner_nci_logo_4.gif" alt="National Cancer Institute" width="106" border="0" height="40"></a></td>
+					          </tr>
+					          </tbody></table>
+					          </td>
+					          <td valign="top" width="251" align="left">
+          <!-- BEGIN: NetTracker Pixel -->
+          <noscript>
+          <img src="/images/ntpagetag.gif?js=0" height="1" width="1" border="0" hspace="0" vspace="0" alt="">
+          </noscript>
+          <!-- END: NetTracker Page Tag -->
+					          <form name="siteSearchForm" action="/search/results.aspx" method="post" onsubmit="ntptAddPair('keywordF', this.swKeyword.value ); NCIAnalytics.SiteWideSearch(this); return ntptSubmitTag( this );">
+						          <table width="251" align="right" border="0" cellpadding="0" cellspacing="0">
+						          <tbody><tr>
+						          <td>
+						          <table width="251" border="0" cellpadding="0" cellspacing="0">
+						          <tbody><tr>
+							          <td colspan="2" class="navigation-white" valign="bottom" align="right" height="19">In English | <a href="/espanol" class="navigation-white">En español</a></td>
+						          </tr>
+						          <tr>
+							          <td colspan="2" valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="24"></td>
+						          </tr>
+						          <tr>
+							          <td valign="middle" width="195" align="right" height="24"><label for="swKeyword" class="hidden">Search</label><input maxlength="255" size="10" id="swKeyword" name="swKeyword" style="width: 120px; height: 21px;" class="search_field" value="" onfocus="bSearchBoxBool=true;" onblur="bSearchBoxBool=false;"></td>
+							          <td valign="middle" width="56" align="right"><input id="sitesearch" onclick="return siteSearchSubmit();" src="/images/main-search.gif" alt="Search" type="image" width="48" border="0" height="14"></td>
+						          </tr>
+						          <tr>
+							          <td colspan="2" valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="14"></td>
+						          </tr>
+						          </tbody></table>
+						          </td>
+						          </tr>
+						          </tbody></table>
+					          </form>
+					          </td>					<td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+				          </tr>
+				          <tr>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+					          <td colspan="2" valign="bottom"><table width="751" align="left" bgcolor="#696559" border="0" cellpadding="0" cellspacing="0">
+	          <tbody><tr>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=NCI+Home_NavBar_Section&amp;redirectUrl=%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_home','/images/nav_home_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_home_off.gif" name="nav_home" alt="NCI Home" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Cancer+Topics_NavBar_Section&amp;redirectUrl=%2fcancertopics&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_cancer_topics','/images/nav_cancer_topics_on.gif');window.status=window.location.protocol + '//' + window.location.host + '/cancertopics'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_cancer_topics_on.gif" name="nav_cancer_topics" alt="Cancer Topics" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Clinical+Trials_NavBar_Section&amp;redirectUrl=%2fclinicaltrials&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_clinical_trials','/images/nav_clinical_trials_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/clinicaltrials'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_clinical_trials_off.gif" name="nav_clinical_trials" alt="Clinical Trials" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Cancer+Statistics_NavBar_Section&amp;redirectUrl=%2fstatistics%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_cancer_statistics','/images/nav_cancer_statistics_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/statistics/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_cancer_statistics_off.gif" name="nav_cancer_statistics" alt="Cancer Statistics" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Research+%26+Funding_NavBar_Section&amp;redirectUrl=%2fresearchandfunding&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_research_funding','/images/nav_research_funding_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/researchandfunding'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_research_funding_off.gif" name="nav_research_funding" alt="Research &amp; Funding" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=News_NavBar_Section&amp;redirectUrl=%2fnewscenter%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_news','/images/nav_news_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/newscenter/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_news_off.gif" name="nav_news" alt="News" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=About+NCI_NavBar_Section&amp;redirectUrl=%2faboutnci&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_about','/images/nav_about_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/aboutnci'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_about_off.gif" name="nav_about" alt="About NCI" border="0"></a></td>
+	          </tr>
+          </tbody></table>
+          </td>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+				          </tr>
+			          </tbody></table>
+		          </td>
+            </tr>
+	          <tr>
+		          <td valign="top" bgcolor="#ffffff"><img src="/images/spacer.gif" alt="" width="10" border="0" height="15"></td>
+	          </tr>
+          </tbody></table>
+          <a name="top"></a>
+        
+        ]]>
+      </Data>
+    </SnippetInfo>
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>MainContentSlot</SlotName>
+      <Data>
+        <![CDATA[
+					<td id="contentzone" valign="top" width="100%"><a name="skiptocontent"></a><!--
+                                <TR>
+                                    <td colSpan="4">
+                                -->
+    <table cellspacing="0" cellpadding="0" width="100%" border="0" id="Table2">
+      <tr>
+        <td align="left" height="35"><img alt="" src="/images/i131frontbannerlefttop.jpg" height="35" width="492" border="0" /></td>
+        <td width="100%" height="35"><img alt="" src="/images/spacer.gif" height="1" width="1" /></td>
+        <td height="35" align="right"><img alt="" src="/images/i131frontbannerrighttop.jpg" height="35" width="82" border="0" /></td>
+      </tr>
+    </table>
+
+    <table cellspacing="0" cellpadding="0" width="100%" border="0" id="Table23">
+      <tr>
+        <td bgcolor="#f0f0f0" valign="top">
+          <table cellpadding="0" cellspacing="0" id="Table24">
+            <tr>
+              <td><img alt="" src="/images/i131frontbannerleftbottom.jpg" height="129" width="174" /></td>
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td bgcolor="#f0f0f0">Information and resources for Americans exposed to I-131 (a form of radioactive iodine) through fallout from above-ground nuclear testing in the 1950s and early 60s.</td>
+
+            </tr>
+          </table>
+        </td>
+        <td align="right" bgcolor="#f0f0f0" height="129"><img alt="" height="129" src="/images/i131frontbannerrightbottom.jpg" border="0" /></td>
+      </tr>
+    </table>
+    <table id="Table3" cellspacing="0" cellpadding="0" width="100%" border="0">
+      <tr>
+        <td width="2%">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+        <td valign="top" width="47%">
+          <br /> 
+          <table id="Table4" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+                <table id="Table15" cellspacing="0" cellpadding="0" width="100%" border="0">
+                  <tr>
+                    <td align="left" width="101" height="18"><a style="TEXT-DECORATION: none" href="/cancertopics/i131/aboutI131">&nbsp;&nbsp;&nbsp;&nbsp;<strong>About&nbsp;I-131</strong></a></td>
+
+                    <td align="right" height="16"><a style="TEXT-DECORATION: none" href="/cancertopics/i131/aboutI131"><img alt="" src="/images/i131homebgright2.jpg" border="0" height="19" /></a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table id="Table5" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+
+                <ul>
+                  <li class="portal">How Americans Were Exposed</li>
+                  <li class="portal">The Milk Connection</li>
+                  <li class="portal">The Government's Response</li>
+                  <li class="portal">Get the Facts About Exposure to<br /> I-131 Radiation</li>
+                </ul>
+
+              </td>
+            </tr>
+          </table>
+          <table id="Table6" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+                <table id="Table18" cellspacing="0" cellpadding="0" width="100%" border="0">
+                  <tr>
+                    <td align="left" width="101" height="18"><a style="TEXT-DECORATION: none" href="/cancertopics/i131/about-thryoid-disease">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Thyroid&nbsp;Cancer&nbsp;Resources</strong></a></td>
+
+                    <td align="right" height="16"><a style="TEXT-DECORATION: none" href="/cancertopics/i131/about-thryoid-disease"><img alt="" src="/images/i131homebgright2.jpg" border="0" height="19" /></a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table id="Table7" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+
+                <ul>
+                  <li class="portal">Diagnosing and Screening for<br /> Thyroid Disease</li>
+                  <li class="portal">Clinical Trials</li>
+                  <li class="portal">Thyroid Cancer Links</li>
+                </ul>
+              </td>
+
+            </tr>
+          </table>
+          <table id="Table8" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+                <table id="Table9" cellspacing="0" cellpadding="0" width="100%" border="0">
+                  <tr>
+                    <td align="left" width="101" height="18"><a style="TEXT-DECORATION: none" href="/cancertopics/i-131/nci-reports">&nbsp;&nbsp;&nbsp;&nbsp;<strong>NCI Reports</strong></a></td>
+
+                    <td align="right" height="16"><a style="TEXT-DECORATION: none" href="/cancertopics/i-131/nci-reports"><img alt="" src="/images/i131homebgright2.jpg" border="0" height="19" /></a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table id="Table12" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+
+                <ul>
+                  <li class="portal">Fallout From Nuclear Tests and Cancer Risks</li>
+                  <li class="portal">NCI Report on I-131 Fallout</li>
+                  <li class="portal">Methods and Data for<br /> Calculating Doses</li>
+                  <li class="portal">IOM Report</li>
+                </ul>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td width="2%">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td valign="top" width="47%">
+          <br /> 
+          <table id="Table10" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+
+              <td>
+                <table id="Table11" cellspacing="0" cellpadding="0" width="100%" border="0">
+                  <tr>
+                    <td align="left" width="101" height="18"><a style="TEXT-DECORATION: none" href="/cancertopics/i-131/estimating-your-exposure">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Estimating&nbsp;Your&nbsp;Exposure</strong></a></td>
+                    <td align="right" height="16"><a style="TEXT-DECORATION: none" href="/cancertopics/i-131/estimating-your-exposure"><img alt="" src="/images/i131homebgright2.jpg" border="0" height="19" /></a></td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table>
+          <table id="Table13" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+                <ul>
+                  <li class="portal">I-131 Dose/Risk Calculator</li>
+
+                  <li class="portal">State and County Exposure<br /> Levels</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <table id="Table14" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+
+              <td>
+                <table id="Table16" cellspacing="0" cellpadding="0" width="100%" border="0">
+                  <tr>
+                    <td align="left" width="101" height="18"><a style="TEXT-DECORATION: none" href="/cancertopics/i131/Resources-for-Program-Partners">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Resources&nbsp;for&nbsp;Program&nbsp;Partners</strong></a></td>
+                    <td align="right" height="16"><a style="TEXT-DECORATION: none" href="/cancertopics/i131/Resources-for-Program-Partners"><img alt="" src="/images/i131homebgright2.jpg" border="0" height="19" /></a></td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table>
+          <table id="Table17" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+                <ul>
+                  <li class="portal">Press Release</li>
+
+                  <li class="portal">Promotional Brochure</li>
+                  <li class="portal">PSA Sticks</li>
+                  <li class="portal">I-131 Teleconference</li>
+                  <li class="portal">New Case Studies in Environmental Medicine: I-131 (CME credits)</li>
+                </ul>
+              </td>
+            </tr>
+
+          </table>
+          <table id="Table19" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+                <table id="Table20" cellspacing="0" cellpadding="0" width="100%" border="0">
+                  <tr>
+                    <td align="left" width="101" height="18"><a style="TEXT-DECORATION: none" href="/cancertopics/I131/otheragencies">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Other&nbsp;Agencies&nbsp;&amp;&nbsp;Research</strong></a></td>
+
+                    <td align="right" height="16"><a style="TEXT-DECORATION: none" href="/cancertopics/I131/otheragencies"><img alt="" src="/images/i131homebgright2.jpg" border="0" height="19" /></a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table id="Table21" cellspacing="0" cellpadding="1" width="100%" border="0">
+            <tr>
+              <td>
+
+                <ul>
+                  <li class="portal">Centers for Disease Control and Prevention (CDC)</li>
+                  <li class="portal">Agency for Toxic Substances<br /> and Disease Registry</li>
+                  <li class="portal">Hanford Health Information<br /> Network</li>
+                </ul>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+        <!--<td width="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>-->
+      </tr>
+    </table></td>
+				<!----------------------->
+				
+				<td valign="top"><img src="/images/spacer.gif" width="10" height="1" alt="" border="0"></td>
+
+			</tr>
+		</table>
+]]>
+      </Data>
+      <ContentID>1</ContentID>
+    </SnippetInfo>
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>LeftNavSlot</SlotName>
+      <Data><![CDATA[<table width="164" cellspacing="0" cellpadding="1" border="0" class="gray-border">
+   <tr>
+      <td valign="top">
+         <table width="162" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+            <tr>
+               <td valign="top" align="left" class="box-title"><img src="/images/spacer.gif" width="7" height="17" alt="" border="0"></td>
+               <td valign="left" colspan="2" class="box-title">Quick Links</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="3" class="gray-border"><img src="/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left" colspan="3"><img src="/images/spacer.gif"  alt="" width="162" height="8" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left"><img src="/images/spacer.gif" width="7" height="1" alt="" border="0"></td>
+               <td valign="top" class="leftnav" align="left" width="148" >
+<a href="/directorscorner" class="navigation-dark-red">Director's Corner</a><br><span class="navigation-gray">
+Updates from the Director</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/dictionary/" class="navigation-dark-red">Dictionary of Cancer Terms</a><br><span class="navigation-gray">
+Cancer-related terms</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/drugdictionary/" class="navigation-dark-red">NCI Drug Dictionary</a><br><span class="navigation-gray">
+Definitions, names, and links</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/researchandfunding#fundingopportunities" class="navigation-dark-red">Funding Opportunities</a><br><span class="navigation-gray">
+Research and training</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="https://cissecure.nci.nih.gov/ncipubs/" class="navigation-dark-red">NCI Publications</a><br><span class="navigation-gray">
+Order/download free booklets</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/common/clickpassthrough.aspx?clickitem=listId_4aa0de43-bad1-4d81-9a71-1bda2b18db04_Url_http%3a%2f%2fdeainfo.nci.nih.gov%2fadvisory%2fboards.htm&redirectUrl=http%3a%2f%2fdeainfo.nci.nih.gov%2fadvisory%2fboards.htm&fromUrl=%2fcancertopics%3fpath%3d%2fcancertopics" class="navigation-dark-red" onmouseover="window.status='http://deainfo.nci.nih.gov/advisory/boards.htm'; return true;" onmouseout="window.status=''; return true;">Advisory Boards and Groups</a><br><span class="navigation-gray">
+Information, meetings, reports</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/aboutnci/servingpeople" class="navigation-dark-red">Science Serving People</a><br><span class="navigation-gray">
+Learn more about NCI</span><br>
+<img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/espanol" class="navigation-dark-red">Espa&ntilde;ol</a><br><span class="navigation-gray">
+Informaci&oacute;n en espa&ntilde;ol</span><br>
+               </td>
+               <td valign="top" align="right"><img src="/images/spacer.gif" width="7" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left" colspan="3"><img src="/images/spacer.gif" alt="" width="162" height="8" alt="" border="0"></td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+</table>
+]]></Data>
+<ContentID>1002</ContentID>
+    </SnippetInfo>
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>LeftNavSlot</SlotName>
+      <Data><![CDATA[<div style="padding: 6px; border: 1px solid #CCC;">
+<strong><a href="/help">Questions about cancer?</a></strong><br>
+<table cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2"><img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br></td>
+	</tr>
+	<tr>
+		<td valign="middle"><img src="/images/bullet_sm_css.gif" alt="" width="3" height="3"></td>
+		<td><img src="/images/spacer.gif" width="5" height="1" border="0" alt=""><strong class="navigation-gray">1-800-4-CANCER</strong><br></td>
+	</tr>
+<!--
+	<tr>
+		<td colspan="2"><img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br></td>
+	</tr>
+	<tr>
+		<td valign="middle"><img src="/images/bullet_sm_css.gif" alt="" width="3" height="3"></td>
+		<td><img src="/images/spacer.gif" width="5" height="1" border="0" alt=""><a href="https://cissecure.nci.nih.gov/livehelp/welcome.asp" onclick="javascript:window.open('https://cissecure.nci.nih.gov/livehelp/welcome.asp', 'LiveHelp','scrollbars=yes,resizable=yes,menubar=yes,toolbar=yes,location=yes,width=616,height=500'); return false;" class="navigation-gray-link">LiveHelp online chat</a><br></td>
+	</tr>
+
+	<tr>
+		<td colspan="2"><img src="/images/spacer.gif" width="1" height="2" border="0" alt=""><br></td>
+	</tr>
+-->
+</table>
+</div>]]></Data>
+<ContentID>1003</ContentID>
+    </SnippetInfo>
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>LeftNavSlot</SlotName>
+      <Data><![CDATA[<a href="/cancertopics/smoking"><img id="Quit Smoking Today" src="/images/tiles/quit_smoking_today_164_65.jpg" name="Quit Smoking Today" alt="Quit Smoking Today" width="164" height="65" border="0"></a>]]></Data>
+	  <ContentID>1005</ContentID>
+    </SnippetInfo>
+    <SnippetInfo>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>LeftNavSlot</SlotName>
+      <Data><![CDATA[<table width="164" cellspacing="0" cellpadding="1" border="0" class="gray-border">
+   <tr>
+      <td valign="top">
+         <table width="162" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+            <tr>
+               <td valign="top" align="left" class="box-title"><img src="/images/spacer.gif" width="7" height="17" alt="" border="0"></td>
+               <td valign="left" colspan="2" class="box-title">NCI Highlights</td>
+            </tr>
+            <tr>
+               <td valign="top" colspan="3" class="gray-border"><img src="/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left" colspan="3"><img src="/images/spacer.gif"  alt="" width="162" height="8" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left"><img src="/images/spacer.gif" width="7" height="1" alt="" border="0"></td>
+               <td valign="top" class="leftnav" align="left" width="148" >
+<a href="http://biospecimens.cancer.gov/default.asp" class="navigation-gray-link">Office of Biorepositories and Biospecimen Research</a><br><img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/common/clickpassthrough.aspx?clickitem=listId_2fdb0dcd-cc08-4c2e-9456-6fd29c1ff98d_Url_http%3a%2f%2fplan.cancer.gov&redirectUrl=http%3a%2f%2fplan.cancer.gov&fromUrl=%2fcancertopics%3fpath%3d%2fcancertopics" class="navigation-gray-link" onmouseover="window.status='http://plan.cancer.gov'; return true;" onmouseout="window.status=''; return true;">The Nation's Investment in Cancer Research FY 2011</a><br><img src="/images/spacer.gif" width="1" height="4" border="0" alt=""><br>
+<a href="/newscenter/pressreleases/ReportNation2009Release" class="navigation-gray-link">Report to the Nation Finds Continued Declines in Cancer Rates</a><br>               </td>
+               <td valign="top" align="right"><img src="/images/spacer.gif" width="7" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+               <td valign="top" align="left" colspan="3"><img src="/images/spacer.gif" alt="" width="162" height="8" alt="" border="0"></td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+</table>
+]]></Data>
+<ContentID>1004</ContentID>
+    </SnippetInfo>
+	<SnippetInfo>
+      <ContentID>5</ContentID>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>FooterSlot</SlotName>
+      <Data>
+        <![CDATA[
+        <table width="753" border="0" cellpadding="0" cellspacing="0">
+	        <tbody><tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="30"></td>
+	        </tr>
+	        <tr>
+		        <td class="gray-border" valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="5"></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="15"></td>
+	        </tr>
+	        <tr>
+		        <td class="footer-text" valign="top"><div align="center">
+		        <a href="/" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'NCIHome');">NCI Home</a> | 
+		        <a href="/help" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'ContactUs');">Contact Us</a> | 
+		        <a href="/policies" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Policies');">Policies</a> | 
+		        <a href="/policies/page3" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Accessibility');">Accessibility</a> | 
+		        <a href="/viewing-files" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'ViewingFiles');">Viewing Files</a> | 
+		        <a href="/policies/page6" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'FOIA');">FOIA</a> | 
+		        <a href="/sitehelp" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'SiteHelp');">Site Help</a> | 
+		        <a href="/sitemap" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'SiteMap');">Site Map</a>
+		        </div></td>
+	        </tr>
+	        <tr>
+	            <td>
+             <!-- Follow Us -->
+                 <div style="margin-top: 10px;" align="center"> 
+                     <strong>Follow us:</strong>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#twitter" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Twitter');"><img src="http://www.cancer.gov/images/social-media-twitter.gif" style="vertical-align: text-top; margin-right: 3px;" alt="Twitter" width="16" height="16">Twitter</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#youtube" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'YouTube');"><img src="http://www.cancer.gov/images/social-media-youtube.gif" style="vertical-align: text-top; margin-right: 3px;" alt="YouTube" width="16" height="16">YouTube</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#facebook" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Facebook');"><img src="http://www.cancer.gov/images/social-media-facebook.gif" style="vertical-align: text-top; margin-right: 3px;" alt="Facebook" width="16" height="16">Facebook</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/rss" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'RSS');"><img src="http://www.cancer.gov/images/social-media-rss.gif" style="vertical-align: text-top; margin-right: 3px;" alt="RSS" width="16" height="16">RSS</a>
+                 </div>
+	            </td>
+	        </tr>
+         <!-- Follow Us -->
+	        <tr>
+		        <td valign="top"><div align="center"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"><br>
+		        A Service of the National Cancer Institute</div></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><div align="center">
+			        <a href="http://www.hhs.gov/"><img src="/images/footer_hhs.gif" alt="Department of Health and Human Services" width="39" border="0" height="31"></a>
+			        <a href="http://www.nih.gov/"><img src="/images/footer_nih.gif" alt="National Institutes of Health" width="46" border="0" height="31"></a>
+			        <a href="http://www.usa.gov/"><img src="/images/footer_usagov.gif" alt="USA.gov" width="91" border="0" height="31"></a></div>
+		        </td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"></td>
+	        </tr>
+        </tbody></table>        
+        ]]>
+      </Data>
+    </SnippetInfo>
+  </Snippets>
+</cde:SinglePageAssemblyInstruction>

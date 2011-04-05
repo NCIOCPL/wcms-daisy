@@ -1,0 +1,108 @@
+body
+{
+    margin: 0px;
+}
+
+.modalBackground
+{
+    filter: Alpha(Opacity=40); -moz-opacity:0.4; opacity: 0.4;
+    width: 100%; height: 100%; background-color: #999999;
+    position: absolute;
+    z-index: 500;
+    top: 0px; left: 0px;
+}
+.modalContainer
+{
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    z-index: 750;
+}
+.modal
+{
+    background-color: white;
+    border: solid 2px black; 
+    position: relative;
+    top: -150px;
+    left: -150px;
+    z-index: 1000;
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+}
+.modalTop
+{
+    width: 292px;
+    background-color: #000099;
+    padding: 4px;
+    color: #ffffff;
+    text-align: right;
+}
+.modalTop a, .modalTop a:visited
+{
+    color: #ffffff;
+}
+.modalBody
+{
+    padding: 10px; 
+}
+
+
+.modaltabs {
+	float:left;
+	background:#fff;
+	line-height:normal;
+	font-weight: bold;
+	background: #fff url('<%=WebResource("NCI.Web.UI.WebControls.Resources.ModalControl.bkg-menu-bar.gif")%>')  repeat-x; 
+	border: 1px solid #666;
+	padding: 0; 
+	margin: 0;
+	}
+	
+.modaltabs ul 
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}
+.modaltabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+	line-height: 23px;
+	}
+	
+.modaltabs span a { float:none; }
+/* End IE5-Mac hack */
+.modaltabs span a:hover  {
+	 color: #c60202; 
+}
+
+.modalBody .modaltabs span {
+	float:left;
+	background:url('<%=WebResource("NCI.Web.UI.WebControls.Resources.ModalControl.menu-btn-left.gif")%>')  no-repeat left top;
+	margin:0;
+	padding-left: 4px;
+	text-decoration:none;
+	color:#000; 
+	}
+	
+.modalBody .modaltabs span a {
+	float:left;
+	display:block;
+	background:url('<%=WebResource("NCI.Web.UI.WebControls.Resources.ModalControl.menu-btn-right.gif")%>') no-repeat right  top;
+	margin: 0;
+	padding: 0 10px 0 6px;
+	text-decoration:none;
+	color: #000;
+}
+	
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+	
+.modalBody .modaltabs span a  { float:none; }
+/* End IE5-Mac hack */
+	
+.modalBody .modaltabs span a:hover  {
+	color:#c60202;
+}
