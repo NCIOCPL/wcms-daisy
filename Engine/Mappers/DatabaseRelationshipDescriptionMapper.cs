@@ -23,6 +23,7 @@ namespace MigrationEngine.Mappers
 
             description.OwnerMigrationID = row.Field<Guid>("ownerid");
             description.OwnerContentType = row.Field<String>("ownercontenttype");
+
             description.DependentMigrationID = row.Field<Guid>("dependentid");
             description.DependentContentType = row.Field<String>("dependentcontenttype");
 

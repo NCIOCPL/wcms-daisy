@@ -46,15 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessObjects\ContentDescriptionBase.cs" />
-    <Compile Include="BusinessObjects\FolderDescription.cs" />
-    <Compile Include="BusinessObjects\FullItemDescription.cs" />
-    <Compile Include="BusinessObjects\IMigrationData.cs" />
-    <Compile Include="BusinessObjects\UpdateContentItem.cs" />
-    <Compile Include="BusinessObjects\MigrationData.cs" />
-    <Compile Include="BusinessObjects\RelationshipDescriptionBase.cs" />
-    <Compile Include="BusinessObjects\RelationshipDescription.cs" />
-    <Compile Include="BusinessObjects\TransitionDescription.cs" />
+    <Compile Include="Descriptors\ContentDescriptionBase.cs" />
+    <Compile Include="Descriptors\FolderDescription.cs" />
+    <Compile Include="Descriptors\FullItemDescription.cs" />
+    <Compile Include="Descriptors\IMigrationData.cs" />
+    <Compile Include="Descriptors\UpdateContentItem.cs" />
+    <Compile Include="Descriptors\MigrationData.cs" />
+    <Compile Include="Descriptors\RelationshipDescription.cs" />
+    <Compile Include="Descriptors\ContentTypeTransitionDescription.cs" />
     <Compile Include="DataAccess\DatabaseDataGetter.cs" />
     <Compile Include="DataAccess\DataGetter.cs" />
     <Compile Include="DataAccess\XmlDataGetter.cs" />
@@ -64,8 +63,8 @@
     <Compile Include="Mappers\DatabaseFolderDescriptionMapper.cs" />
     <Compile Include="Mappers\DatabaseUpdateItemMapper.cs" />
     <Compile Include="Mappers\DatabaseRelationshipDescriptionMapper.cs" />
-    <Compile Include="Mappers\XmlFolderDescriptionMapper.cs" />
     <Compile Include="Mappers\DataMapper.cs" />
+    <Compile Include="Mappers\XmlContentTypeTransitionDescriptionMapper.cs" />
     <Compile Include="Migration.cs" />
     <Compile Include="Migrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

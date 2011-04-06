@@ -1,0 +1,11 @@
+<list>
+  <item>
+    <contentType>rffNavon</contentType><trigger>DirectToPublic</trigger>
+  </item>
+  <item>
+    <contentType>nciFile</contentType><trigger>DirectToPublic</trigger>
+  </item>
+  <item>
+    <contentType>nciGeneral</contentType><trigger>DirectToPublic</trigger>
+  </item>
+</list>
