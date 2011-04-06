@@ -6,7 +6,7 @@ using System.Configuration;
 using System.Xml;
 using System.Collections;
 
-namespace GKManagers.CMSManager.Configuration
+namespace NCI.CMS.Percussion.Manager.Configuration
 {
     public class PDQDrugInfoSummaryElement : ConfigurationElement
     {

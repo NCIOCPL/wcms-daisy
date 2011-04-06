@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 
-namespace GKManagers.CMSManager.Configuration
+namespace NCI.CMS.Percussion.Manager.Configuration
 {
     public class RepublishEditionListElement : ConfigurationElement
     {
