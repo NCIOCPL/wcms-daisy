@@ -68,15 +68,7 @@
     <Compile Include="Manager\SlotManager.cs" />
     <Compile Include="Manager\TemplateNameManager.cs" />
     <Compile Include="Configuration\ConnectionInfo.cs" />
-    <Compile Include="Configuration\ContentType.cs" />
     <Compile Include="Configuration\NavonPublicTransitionElement.cs" />
-    <Compile Include="Configuration\pdqCancerInfoSummaryElement.cs" />
-    <Compile Include="Configuration\PDQCancerInfoSummaryLinkElement.cs" />
-    <Compile Include="Configuration\PDQCancerInfoSummaryPage.cs" />
-    <Compile Include="Configuration\PDQDrugInfoSummaryElement.cs" />
-    <Compile Include="Configuration\PDQMediaLinkElement.cs" />
-    <Compile Include="Configuration\PDQTableSectionElement.cs" />
-    <Compile Include="Configuration\RepublishEditions.cs" />
     <Compile Include="Manager\SectionToCmsIDMap.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Configuration\PercussionConfig.cs" />

@@ -4,10 +4,10 @@ using System.Net;
 using System.Linq;
 using System.Web.Services.Protocols;
 
-using GKManagers.CMSManager.Configuration;
-using NCI.WCM.CMSManager.PercussionWebSvc;
+using NCI.CMS.Percussion.Manager.Configuration;
+using NCI.CMS.Percussion.Manager.PercussionWebSvc;
 
-namespace NCI.WCM.CMSManager.CMS
+namespace NCI.CMS.Percussion.Manager.CMS
 {
     /// <summary>
     /// Delegate definition for determining an element's workflow state based on the list
@@ -957,50 +957,35 @@ namespace NCI.WCM.CMSManager.CMS
         }
 
 
-        public void StartPublishing(CMSPublishingTarget target)
-        {
-            // Preview and Live are the only CMS publishing editions we would run.
-            if (target == CMSPublishingTarget.CDRPreview || target == CMSPublishingTarget.CDRLive)
-            {
-                // Server communication information.
-                PercussionConfig percussionConfig = (PercussionConfig)System.Configuration.ConfigurationManager.GetSection("PercussionConfig");
-                string protocol = percussionConfig.ConnectionInfo.Protocol.Value;
-                string host = percussionConfig.ConnectionInfo.Host.Value;
-                string port = percussionConfig.ConnectionInfo.Port.Value;
-                string publishingUrlFormat =
-                    "{0}://{1}:{2}/Rhythmyx/sys_pubHandler/publisher.htm?editionid={3}&PUBAction=publish";
+        /*
+         * A variant on StartPublishing should probably go here, but the edition numbers
+         * should be a parameter rather than something built-into the configuration.
+         */
 
-                string[] editionList = GetPublishingEditionList(target);
+        //public void StartPublishing(CMSPublishingTarget target)
+        //{
+        //    // Preview and Live are the only CMS publishing editions we would run.
+        //    if (target == CMSPublishingTarget.CDRPreview || target == CMSPublishingTarget.CDRLive)
+        //    {
+        //        // Server communication information.
+        //        PercussionConfig percussionConfig = (PercussionConfig)System.Configuration.ConfigurationManager.GetSection("PercussionConfig");
+        //        string protocol = percussionConfig.ConnectionInfo.Protocol.Value;
+        //        string host = percussionConfig.ConnectionInfo.Host.Value;
+        //        string port = percussionConfig.ConnectionInfo.Port.Value;
+        //        string publishingUrlFormat =
+        //            "{0}://{1}:{2}/Rhythmyx/sys_pubHandler/publisher.htm?editionid={3}&PUBAction=publish";
 
-                Array.ForEach(editionList, edition =>
-                {
-                    string activationUrl = string.Format(publishingUrlFormat, protocol, host, port, edition);
-                    WebRequest request = WebRequest.Create(activationUrl);
-                    WebResponse response = request.GetResponse();
-                });
+        //        string[] editionList = GetPublishingEditionList(target);
 
-            }
-        }
+        //        Array.ForEach(editionList, edition =>
+        //        {
+        //            string activationUrl = string.Format(publishingUrlFormat, protocol, host, port, edition);
+        //            WebRequest request = WebRequest.Create(activationUrl);
+        //            WebResponse response = request.GetResponse();
+        //        });
 
-        private string[] GetPublishingEditionList(CMSPublishingTarget target)
-        {
-            PercussionConfig percussionConfig = (PercussionConfig)System.Configuration.ConfigurationManager.GetSection("PercussionConfig");
-            string[] editionList;
-            string textValue;
-
-            if (target == CMSPublishingTarget.CDRPreview)
-                textValue = percussionConfig.PreviewRepublishEditionList.Value.Trim();
-            else
-                textValue = percussionConfig.LiveRepublishEditionList.Value.Trim();
-
-            if (!string.IsNullOrEmpty(textValue))
-                editionList = textValue.Split(new char[] { ',' });
-            else
-                editionList = new string[] { };
-
-            return editionList;
-        }
-
+        //    }
+        //}
 
         /// <summary>
         /// Peforms a search of the CMS repository for content items via a the CMS database search
