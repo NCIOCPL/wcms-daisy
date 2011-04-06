@@ -5,10 +5,10 @@ using System.Text;
 using System.Web.Services.Protocols;
 using System.Xml;
 
-namespace NCI.WCM.CMSManager
+namespace NCI.CMS.Percussion.Manager
 {
     /// <summary>
-    /// Absract base class for all exceptions thrown by objects in the NCI.WCM.CMSManager namespace.
+    /// Absract base class for all exceptions thrown by objects in the NCI.CMS.Percussion.Manager namespace.
     /// </summary>
     [global::System.Serializable]
     public abstract class CMSException : Exception
@@ -23,7 +23,7 @@ namespace NCI.WCM.CMSManager
     }
 
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when an unexpected document type
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when an unexpected document type
     /// is encountered during processing.
     /// </summary>
     [global::System.Serializable]
@@ -39,7 +39,7 @@ namespace NCI.WCM.CMSManager
     }
 
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when an error occurs
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when an error occurs
     /// in workflow processing.
     /// </summary>
     [global::System.Serializable]
@@ -55,7 +55,7 @@ namespace NCI.WCM.CMSManager
     }
 
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when an error occurs
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when an error occurs
     /// in determining an item's workflow state.
     /// </summary>
     [global::System.Serializable]
@@ -71,7 +71,7 @@ namespace NCI.WCM.CMSManager
     }
 
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when an Soap error occurs.
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when an Soap error occurs.
     /// </summary>
     [global::System.Serializable]
     public class CMSSoapException : CMSException
@@ -85,7 +85,7 @@ namespace NCI.WCM.CMSManager
     }
     
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when an attempt is made
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when an attempt is made
     /// to delete content items which are the target of relationships owned by other
     /// content items.
     /// </summary>
@@ -102,7 +102,7 @@ namespace NCI.WCM.CMSManager
     }
     
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when the CMS returns an
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when the CMS returns an
     /// unexpected result when performing an operation.
     /// </summary>
     [global::System.Serializable]
@@ -118,7 +118,7 @@ namespace NCI.WCM.CMSManager
     }
 
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when the TemplateNameManager
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when the TemplateNameManager
     /// is unable to locate an expected template.
     /// </summary>
     [global::System.Serializable]
@@ -134,7 +134,7 @@ namespace NCI.WCM.CMSManager
     }
 
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when the ContentTypeManager
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when the ContentTypeManager
     /// is unable to locate an expected content type.
     /// </summary>
     [global::System.Serializable]
@@ -150,7 +150,7 @@ namespace NCI.WCM.CMSManager
     }
 
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when the SlotManager
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when the SlotManager
     /// is unable to locate an expected slot.
     /// </summary>
     [global::System.Serializable]
@@ -166,7 +166,7 @@ namespace NCI.WCM.CMSManager
     }
 
     /// <summary>
-    /// Thrown by methods in the NCI.WCM.CMSManager namespace when an attempt is made to
+    /// Thrown by methods in the NCI.CMS.Percussion.Manager namespace when an attempt is made to
     /// set a content item field which does not exist.
     /// </summary>
     [global::System.Serializable]

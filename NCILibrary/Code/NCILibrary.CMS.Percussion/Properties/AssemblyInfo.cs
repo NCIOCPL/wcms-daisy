@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GKManagers.CMS")]
+[assembly: AssemblyTitle("NCI.CMS.Percussion")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NCI")]
-[assembly: AssemblyProduct("GKManagers.CMS")]
+[assembly: AssemblyProduct("NCI.CMS.Percussion")]
 [assembly: AssemblyCopyright("Copyright © NCI 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

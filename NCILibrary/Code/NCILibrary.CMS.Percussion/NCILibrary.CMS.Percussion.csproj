@@ -8,7 +8,7 @@
     <ProjectGuid>{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NCI.WCM.CMSManager</RootNamespace>
+    <RootNamespace>NCI.CMS.Percussion.Manager</RootNamespace>
     <AssemblyName>CMSManager</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -54,19 +54,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CMS\ChildFieldSet.cs" />
-    <Compile Include="CMS\CMSController.cs" />
-    <Compile Include="CMS\ContentTypeManager.cs" />
-    <Compile Include="CMS\ContentTypeToTemplateInfo.cs" />
-    <Compile Include="CMS\FieldSet.cs" />
-    <Compile Include="CMS\FolderManager.cs" />
-    <Compile Include="CMS\PercussionGuid.cs" />
-    <Compile Include="CMS\PSItemUtils.cs" />
-    <Compile Include="CMS\ContentItemForUpdating.cs" />
-    <Compile Include="CMS\ContentItemForCreating.cs" />
-    <Compile Include="CMS\SlotInfo.cs" />
-    <Compile Include="CMS\SlotManager.cs" />
-    <Compile Include="CMS\TemplateNameManager.cs" />
+    <Compile Include="Manager\ChildFieldSet.cs" />
+    <Compile Include="Manager\CMSController.cs" />
+    <Compile Include="Manager\ContentTypeManager.cs" />
+    <Compile Include="Manager\ContentTypeToTemplateInfo.cs" />
+    <Compile Include="Manager\FieldSet.cs" />
+    <Compile Include="Manager\FolderManager.cs" />
+    <Compile Include="Manager\PercussionGuid.cs" />
+    <Compile Include="Manager\PSItemUtils.cs" />
+    <Compile Include="Manager\ContentItemForUpdating.cs" />
+    <Compile Include="Manager\ContentItemForCreating.cs" />
+    <Compile Include="Manager\SlotInfo.cs" />
+    <Compile Include="Manager\SlotManager.cs" />
+    <Compile Include="Manager\TemplateNameManager.cs" />
     <Compile Include="Configuration\ConnectionInfo.cs" />
     <Compile Include="Configuration\ContentType.cs" />
     <Compile Include="Configuration\NavonPublicTransitionElement.cs" />
@@ -77,7 +77,7 @@
     <Compile Include="Configuration\PDQMediaLinkElement.cs" />
     <Compile Include="Configuration\PDQTableSectionElement.cs" />
     <Compile Include="Configuration\RepublishEditions.cs" />
-    <Compile Include="CMS\SectionToCmsIDMap.cs" />
+    <Compile Include="Manager\SectionToCmsIDMap.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Configuration\PercussionConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,7 +86,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="CMS\PSWSUtils.cs" />
+    <Compile Include="Manager\PSWSUtils.cs" />
     <Compile Include="Web References\PercussionWebSvc\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
