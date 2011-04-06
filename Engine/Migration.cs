@@ -37,6 +37,7 @@ namespace MigrationEngine
                     }
                     catch (Exception ex)
                     {
+                        migLog.LogUnhandledException(task.Name, ex);
                     }
                     finally
                     {
