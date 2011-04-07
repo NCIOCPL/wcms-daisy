@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace NCI.WCM.CMSManager.CMS
+namespace NCI.CMS.Percussion.Manager.CMS
 {
     // TODO: Merge ContentItemForCreating and ContentItemForUpdating into a single type.
     // See notes in ContentItemForCreating.

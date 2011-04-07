@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NCI.WCM.CMSManager.CMS
+namespace NCI.CMS.Percussion.Manager.CMS
 {
     public class ChildFieldSet
     {

@@ -6,10 +6,10 @@ using System.Net;
 using System.Web.Services.Protocols;
 using System.Xml;
 
-using NCI.WCM.CMSManager.PercussionWebSvc;
-using NCI.WCM.CMSManager;
+using NCI.CMS.Percussion.Manager.PercussionWebSvc;
+using NCI.CMS.Percussion.Manager;
 
-namespace NCI.WCM.CMSManager.CMS
+namespace NCI.CMS.Percussion.Manager.CMS
 {
     /// <summary>
     /// Utility methods for communicating with the Percussion CMS.

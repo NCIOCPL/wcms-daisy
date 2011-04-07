@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NCI.WCM.CMSManager.CMS
+namespace NCI.CMS.Percussion.Manager.CMS
 {
     public class SlotInfo
     {

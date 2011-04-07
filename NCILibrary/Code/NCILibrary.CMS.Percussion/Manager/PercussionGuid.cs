@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NCI.WCM.CMSManager.CMS
+namespace NCI.CMS.Percussion.Manager.CMS
 {
     /// <summary>
     /// Wrapper class for manipulating the bit-mapped long values Percussion uses

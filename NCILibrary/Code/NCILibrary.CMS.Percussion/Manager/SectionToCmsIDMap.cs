@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace NCI.WCM.CMSManager.CMS
+namespace NCI.CMS.Percussion.Manager.CMS
 {
     /// <summary>
     /// Map for section placeholder values to their CMS IDs.

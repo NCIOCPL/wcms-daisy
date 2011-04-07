@@ -1,11 +1,11 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using NCI.WCM.CMSManager.PercussionWebSvc;
+using NCI.CMS.Percussion.Manager.PercussionWebSvc;
 
-namespace NCI.WCM.CMSManager.CMS
+namespace NCI.CMS.Percussion.Manager.CMS
 {
 
     public class SlotManager
