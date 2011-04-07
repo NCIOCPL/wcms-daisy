@@ -4,7 +4,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
 
-using MigrationEngine.BusinessObjects;
+using MigrationEngine.Descriptors;
 using MigrationEngine.Mappers;
 
 namespace MigrationEngine.DataAccess

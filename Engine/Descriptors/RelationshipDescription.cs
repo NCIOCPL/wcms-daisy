@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MigrationEngine.BusinessObjects
+namespace MigrationEngine.Descriptors
 {
     public class RelationshipDescription : MigrationData
     {

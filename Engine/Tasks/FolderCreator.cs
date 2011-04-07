@@ -5,7 +5,7 @@ using System.Text;
 
 using NCI.CMS.Percussion.Manager.CMS;
 
-using MigrationEngine.BusinessObjects;
+using MigrationEngine.Descriptors;
 using MigrationEngine.DataAccess;
 
 namespace MigrationEngine.Tasks

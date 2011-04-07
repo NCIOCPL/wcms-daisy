@@ -4,7 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Xml.Serialization;
 
-using MigrationEngine.BusinessObjects;
+using MigrationEngine.Descriptors;
 using MigrationEngine.DataAccess;
 using MigrationEngine.Mappers;
 using MigrationEngine.Tasks;

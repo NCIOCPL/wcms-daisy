@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 using NCI.Data;
 
-using MigrationEngine.BusinessObjects;
+using MigrationEngine.Descriptors;
 using MigrationEngine.Mappers;
 
 namespace MigrationEngine.DataAccess

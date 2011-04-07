@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 
-using MigrationEngine.BusinessObjects;
+using MigrationEngine.Descriptors;
 
 namespace MigrationEngine.Mappers
 {

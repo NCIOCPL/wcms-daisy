@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace MigrationEngine.BusinessObjects
+namespace MigrationEngine.Descriptors
 {
     abstract public class ContentDescriptionBase : MigrationData
     {

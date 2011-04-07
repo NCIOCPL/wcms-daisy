@@ -6,7 +6,7 @@ using System.Text;
 using System.Xml;
 
 
-using MigrationEngine.BusinessObjects;
+using MigrationEngine.Descriptors;
 
 namespace MigrationEngine.Mappers
 {
