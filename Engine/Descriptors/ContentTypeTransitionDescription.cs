@@ -5,7 +5,9 @@ using System.Text;
 
 namespace MigrationEngine.BusinessObjects
 {
-    public class TransitionDescription : MigrationData
+    public class ContentTypeTransitionDescription : MigrationData
     {
+        public string ContentType { get; set; }
+        public string TriggerName { get; set; }
     }
 }
