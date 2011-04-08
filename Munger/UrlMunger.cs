@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 
-using NCI.WCM.CMSManager.CMS;
+using NCI.CMS.Percussion.Manager.CMS;
 
 namespace Munger
 {

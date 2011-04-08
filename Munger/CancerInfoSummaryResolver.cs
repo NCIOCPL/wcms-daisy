@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-using NCI.WCM.CMSManager.PercussionWebSvc;
-using NCI.WCM.CMSManager.CMS;
+using NCI.CMS.Percussion.Manager.PercussionWebSvc;
+using NCI.CMS.Percussion.Manager.CMS;
 
 namespace Munger
 {

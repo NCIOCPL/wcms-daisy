@@ -1,5 +1,5 @@
 ﻿
-using NCI.WCM.CMSManager.CMS;
+using NCI.CMS.Percussion.Manager.CMS;
 
 namespace Munger
 {

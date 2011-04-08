@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Xml;
 
-using NCI.WCM.CMSManager.CMS;
+using NCI.CMS.Percussion.Manager.CMS;
 
 namespace Munger
 {
@@ -272,11 +272,6 @@ namespace Munger
             // The link target
             attrib = linkNode.OwnerDocument.CreateAttribute("sys_dependentid");
             attrib.Value = linkTarget.ID.ToString();
-            atributes.Append(attrib);
-
-            // Don't allow the image to be edited.
-            attrib = linkNode.OwnerDocument.CreateAttribute("contenteditable");
-            attrib.Value = "false";
             atributes.Append(attrib);
 
             // Inline link slot.

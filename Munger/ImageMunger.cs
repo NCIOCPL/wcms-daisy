@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 
-using NCI.WCM.CMSManager.CMS;
+using NCI.CMS.Percussion.Manager.CMS;
 
 namespace Munger
 {
@@ -145,11 +145,6 @@ namespace Munger
             // The image to use.
             attrib = imageNode.OwnerDocument.CreateAttribute("sys_dependentid");
             attrib.Value = imageContentID.ID.ToString();
-            atributes.Append(attrib);
-
-            // Don't allow the image to be edited.
-            attrib = imageNode.OwnerDocument.CreateAttribute("contenteditable");
-            attrib.Value = "false";
             atributes.Append(attrib);
 
             // Set up the snippet template.
