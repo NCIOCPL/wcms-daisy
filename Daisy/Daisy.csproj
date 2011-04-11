@@ -8,8 +8,8 @@
     <ProjectGuid>{6F8570BF-A688-4DB7-9EB6-D66D77044F5E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Prototype</RootNamespace>
-    <AssemblyName>Migrate</AssemblyName>
+    <RootNamespace>Daisy</RootNamespace>
+    <AssemblyName>Daisy</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 using MigrationEngine;
 
-namespace Prototype
+namespace Daisy
 {
     class Program
     {
