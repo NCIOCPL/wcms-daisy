@@ -45,7 +45,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         public int Revision
         {
             get { return (int)(Guid >> 40); }
-            private set
+            set
             {
                 long mask = 0x000000FFFFFFFFFFL;
                 Guid = (mask & Guid) | (uint)value;
@@ -57,7 +57,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         public int Type
         {
             get { return (int)(Guid >> 32) & 0xFF; }
-            private set
+            set
             {
                 unchecked
                 {

@@ -14,5 +14,10 @@ namespace NCI.CMS.Percussion.Manager.CMS
             base()
         {
         }
+
+        public FieldSet(IDictionary<string, string> fields) :
+            base(fields)
+        {
+        }
     }
 }
