@@ -6,7 +6,7 @@
 			<Mapper xsi:type="DatabaseFolderDescriptionMapper" />
 		</DataGetter>
 	  </MigrationTask>
-	  <MigrationTask xsi:type="GeneralContentCreator" Name="ContentCreator1">
+	  <!--<MigrationTask xsi:type="GeneralContentCreator" Name="ContentCreator1">
 		<DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createpage" ConnectionName="IntranetInt">
 			<Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
 		</DataGetter>
@@ -30,6 +30,6 @@
 		<DataGetter xsi:type="XmlDataGetterOfContentTypeTransitionDescription" FileName="C:\WCMTeam\Tools\MigrationTools\Prototype\scripts\transitions.xml">
 			<Mapper xsi:type="XmlContentTypeTransitionDescriptionMapper" />
 		</DataGetter>
-	  </MigrationTask>
+	  </MigrationTask>-->
   </MigrationTaskList>
 </Migration>
