@@ -80,6 +80,7 @@
     <Compile Include="Tasks\Transitioner.cs" />
     <Compile Include="Tasks\TransitionerBase.cs" />
     <Compile Include="Tasks\ContentUpdater.cs" />
+    <Compile Include="Utilities\PercWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Munger\Munger.csproj">
