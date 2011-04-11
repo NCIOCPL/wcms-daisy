@@ -15,10 +15,12 @@ namespace Daisy
         {
             if (File.Exists(scriptName))
             {
-                ConsoleLogger logger = new ConsoleLogger();
+                XmlLogger logger = new XmlLogger("");
+                logger.StartLog();
                 Migrator engine = new Migrator();
                 //engine.Save(@"data.xml");
                 engine.Run(scriptName, logger);
+                logger.EndLog();
             }
             else
             {
