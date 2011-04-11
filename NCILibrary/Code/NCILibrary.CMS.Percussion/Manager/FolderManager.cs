@@ -194,7 +194,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
                 else
                 {
                     // OK, that wasn't the error we expected.
-                    throw;
+                    throw new CMSSoapException("Percussion error in GetExistingFolder().", ex);
                 }
             }
 
