@@ -27,7 +27,10 @@ namespace MigrationEngine.Tasks
                 {
                     logger.IncrementTaskProgress(Name, index++, count, folder.MigrationdID, folder.Path);
 
-                    // Do some stuff.
+                    controller.GuaranteeFolder(folder.Path);
+
+
+                    break;
                 }
             }
         }
