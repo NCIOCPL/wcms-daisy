@@ -26,7 +26,7 @@ namespace MigrationEngine.Tasks
 
                 foreach (FolderDescription folder in folders)
                 {
-                    logger.BeginTaskItem(Name, index++, count, folder.MigrationdID, folder.Path);
+                    logger.BeginTaskItem(Name, index++, count, folder.MigrationID, folder.Path);
 
                     try
                     {
