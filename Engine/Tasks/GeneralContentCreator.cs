@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using NCI.CMS.Percussion.Manager.CMS;
+
 using MigrationEngine.Descriptors;
 using MigrationEngine.DataAccess;
+using MigrationEngine.Utilities;
 
 namespace MigrationEngine.Tasks
 {
@@ -14,11 +17,48 @@ namespace MigrationEngine.Tasks
 
         override public void Doit(IMigrationLog logger)
         {
-            List<FullItemDescription> contentItems = DataGetter.LoadData();
+            using (CMSController controller = new CMSController())
+            {
 
-            // TODO: Actual task code goes here.
-            Console.WriteLine("Creating {0} content items.", contentItems.Count);
-            contentItems.ForEach(item => Console.WriteLine("Migration ID: {0}", item.MigrationID));
+                List<FullItemDescription> contentItems = DataGetter.LoadData();
+
+                // TODO: Actual task code goes here.
+                //Console.WriteLine("Creating {0} content items.", contentItems.Count);
+                //contentItems.ForEach(item => Console.WriteLine("Migration ID: {0}", item.MigrationID));
+
+
+                int index = 1;
+                int count = contentItems.Count;
+
+                foreach (FullItemDescription item in contentItems)
+                {
+                    logger.BeginTaskItem(Name, index++, count, item.MigrationID, item.Path);
+
+                    try
+                    {
+                        //Console.WriteLine("Migration ID: {0}", item.MigrationID); 
+
+                        string message;
+                        long contentID = PercWrapper.CreateItemWrapper(controller,item.ContentType,item.Fields,item.Path,out message);
+                        if (!string.IsNullOrEmpty(message))
+                        {
+                            logger.LogTaskItemWarning(message, item.Fields);
+                        }
+                        if (index > 1)
+                            break;
+
+                    }
+                    catch (Exception ex)
+                    {
+                        string message = ex.ToString();
+                        logger.LogTaskItemError(message, item.Fields);
+                    }
+                    finally
+                    {
+                        logger.EndTaskItem();
+                    }
+                }
+            }
         }
     }
 }

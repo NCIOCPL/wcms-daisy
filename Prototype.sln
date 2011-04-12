@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCILibrary.CMS.Percussion",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Munger", "Munger\Munger.csproj", "{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack VS2008", "HtmlAgilityPack\HtmlAgilityPack VS2008.csproj", "{193BB801-054F-4729-9D5D-FCE1E32594BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
