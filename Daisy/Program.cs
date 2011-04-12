@@ -15,7 +15,7 @@ namespace Daisy
         {
             if (File.Exists(scriptName))
             {
-                XmlLogger logger = new XmlLogger("");
+                XmlLogger logger = new XmlLogger("LOG-");
                 logger.StartLog();
                 Migrator engine = new Migrator();
                 //engine.Save(@"data.xml");
