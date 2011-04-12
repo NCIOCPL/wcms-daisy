@@ -9,7 +9,7 @@ using MigrationEngine.Descriptors;
 namespace MigrationEngine.Mappers
 {
     public class DatabaseRelationshipDescriptionMapper
-        : DataMapper<RelationshipDescription>
+        : DatabaseDataMapper<RelationshipDescription>
     {
         public override RelationshipDescription MapItem(object dataItem)
         {

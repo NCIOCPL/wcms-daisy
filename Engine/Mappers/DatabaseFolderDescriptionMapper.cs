@@ -11,7 +11,7 @@ using MigrationEngine.Descriptors;
 namespace MigrationEngine.Mappers
 {
     public class DatabaseFolderDescriptionMapper
-        : DataMapper<FolderDescription>
+        : DatabaseDataMapper<FolderDescription>
     {
         public override FolderDescription MapItem(object dataItem)
         {
@@ -23,16 +23,10 @@ namespace MigrationEngine.Mappers
 
             FolderDescription description = new FolderDescription();
 
-            description.Path = row.Field<String>("folder");
-            description.MigrationdID = row.Field<Guid>("migid");
+            description.Path = row.Field<String>(PathNameField);
+            description.MigrationID = row.Field<Guid>(MigIDField);
 
-            foreach (DataColumn column in row.Table.Columns)
-            {
-                string name = column.ColumnName;
-                string value = row[name].ToString();
-                description.Fields.Add(name, value);
-            }
-
+            CopyFields(row, description.Fields);
 
             return description;
         }

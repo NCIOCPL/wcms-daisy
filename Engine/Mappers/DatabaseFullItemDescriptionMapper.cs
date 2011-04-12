@@ -11,7 +11,7 @@ using MigrationEngine.Descriptors;
 namespace MigrationEngine.Mappers
 {
     public class DatabaseFullItemDescriptionMapper
-        : DataMapper<FullItemDescription>
+        : DatabaseDataMapper<FullItemDescription>
     {
         public override FullItemDescription MapItem(object dataItem)
         {
@@ -23,23 +23,12 @@ namespace MigrationEngine.Mappers
 
             FullItemDescription description = new FullItemDescription();
 
-            description.Path = row.Field<string>("folder");
-            description.MigrationID = row.Field<Guid>("migid");
-            description.Community = row.Field<string>("community");
+            description.Path = row.Field<string>(PathNameField);
+            description.MigrationID = row.Field<Guid>(MigIDField);
+            description.Community = row.Field<string>(CommunityNameField);
+            description.ContentType = row.Field<string>(ContentTypeField);
 
-            // This desparately wants to be shared code, but inheriting from a
-            // generic breaks the override of MapItem.  Possibly a special
-            // DatabaseContentDescriptionBaseMapper could be added? Its MapItem
-            // method couldn't do anything, but it could take care of common mapping.
-
-            description.ContentType = row.Field<string>("contenttype");
-
-            foreach (DataColumn column in row.Table.Columns)
-            {
-                string name = column.ColumnName;
-                string value = row[name].ToString();
-                description.Fields.Add(name, value);
-            }
+            CopyFields(row, description.Fields);
 
             return description;
         }

@@ -9,7 +9,7 @@ using MigrationEngine.Descriptors;
 namespace MigrationEngine.Mappers
 {
     public class DatabaseUpdateItemMapper
-        : DataMapper<UpdateContentItem>
+        : DatabaseDataMapper<UpdateContentItem>
     {
         public override UpdateContentItem MapItem(object dataItem)
         {
@@ -21,21 +21,10 @@ namespace MigrationEngine.Mappers
 
             UpdateContentItem description = new UpdateContentItem();
 
-            description.MigrationID = row.Field<Guid>("migid");
+            description.MigrationID = row.Field<Guid>(MigIDField);
+            description.ContentType = row.Field<string>(ContentTypeField);
 
-            // This desparately wants to be shared code, but inheriting from a
-            // generic breaks the override of MapItem.  Possibly a special
-            // DatabaseContentDescriptionBaseMapper could be added? Its MapItem
-            // method couldn't do anything, but it could take care of common mapping.
-
-            description.ContentType = row.Field<string>("contenttype");
-
-            foreach (DataColumn column in row.Table.Columns)
-            {
-                string name = column.ColumnName;
-                string value = row[name].ToString();
-                description.Fields.Add(name, value);
-            }
+            CopyFields(row, description.Fields);
 
             return description;
         }
