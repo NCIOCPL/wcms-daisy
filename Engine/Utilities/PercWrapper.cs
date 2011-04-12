@@ -31,12 +31,11 @@ namespace MigrationEngine.Utilities
             if (invalidFields.Count > 0)
             {
                 warningMessage = "Fields not found: ";
-                foreach (string s in invalidFields)
+                for (int i = 0; i < invalidFields.Count; i++)
                 {
-                    if (warningMessage.Substring(warningMessage.Length - 1, 1) != ",")
-                        warningMessage += ("," + s);
-                    else
-                        warningMessage += s;
+                    if (i > 0)
+                        warningMessage += (", ");
+                    warningMessage += invalidFields[i];
                 }
             }
             return id;
@@ -52,12 +51,11 @@ namespace MigrationEngine.Utilities
             if (invalidFields.Count > 0)
             {
                 warningMessage = "Fields not found: ";
-                foreach (string s in invalidFields)
+                for (int i = 0; i < invalidFields.Count; i++)
                 {
-                    if (warningMessage.Substring(warningMessage.Length - 1, 1) != ",")
-                        warningMessage += ("," + s);
-                    else
-                        warningMessage += s;
+                    if (i > 0)
+                        warningMessage += (", ");
+                    warningMessage += invalidFields[i];
                 }
             }
             return id;
