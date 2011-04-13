@@ -8,5 +8,12 @@ namespace MigrationEngine.Descriptors
 {
     public abstract class MigrationData : IMigrationData
     {
+        [XmlIgnore()]
+        public Dictionary<string, string> Fields { get; private set; }
+
+        public MigrationData()
+        {
+            Fields = new Dictionary<string, string>();
+        }
     }
 }

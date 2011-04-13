@@ -10,13 +10,5 @@ namespace MigrationEngine.Descriptors
     {
         public String ContentType { get; set; }
         public Guid MigrationID { get; set; }
-
-        [XmlIgnore()]
-        public Dictionary<string, string> Fields { get; private set; }
-
-        public ContentDescriptionBase()
-        {
-            Fields = new Dictionary<string, string>();
-        }
     }
 }

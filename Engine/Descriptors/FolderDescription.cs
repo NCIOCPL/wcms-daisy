@@ -10,13 +10,5 @@ namespace MigrationEngine.Descriptors
         [XmlIgnore()]
         public String Path { get; set; }
         public Guid MigrationID { get; set; }
-
-        [XmlIgnore()]
-        public Dictionary<string, string> Fields { get; private set; }
-
-        public FolderDescription()
-        {
-            Fields = new Dictionary<string, string>();
-        }
     }
 }
