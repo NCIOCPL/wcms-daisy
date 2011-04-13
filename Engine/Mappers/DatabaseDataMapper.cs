@@ -16,13 +16,16 @@ namespace MigrationEngine.Mappers
         protected const string PathNameField = "folder";
 
         // List of fields which shouldn't be copied into a descriptor's field set.
-        private string[] ommittedFields = { MigIDField, ContentTypeField, CommunityNameField, PathNameField };
+        private string[] ommittedFields = { ContentTypeField, CommunityNameField, PathNameField };
 
         protected void CopyFields(DataRow row, Dictionary<String, String> fieldset)
         {
 
             foreach (DataColumn column in row.Table.Columns)
             {
+                // It is assumed that fields in Percussion will always be
+                // lowercase, otherwise it becomes more difficult to map
+                // them from database column names.
                 string name = column.ColumnName.ToLower();
 
                 // Skip copying certain fields.
