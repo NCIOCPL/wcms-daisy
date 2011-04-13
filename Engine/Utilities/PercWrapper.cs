@@ -84,6 +84,26 @@ namespace MigrationEngine.Utilities
             return id;
         }
 
+        public static PercussionGuid GetPercussionIDFromMigID(CMSController controller, Guid migrationID, string contentType)
+        {
+            PercussionGuid itemID;
+
+            Dictionary<string, string> criteria = new Dictionary<string, string>();
+            criteria.Add("migid", migrationID.ToString());
+
+            PercussionGuid[] searchResult = controller.SearchForContentItems(contentType, criteria);
+
+            if (searchResult.Length == 1)
+                itemID = searchResult[0];
+            else if (searchResult.Length == 0)
+                itemID = ContentItemNotFound;
+            else // More than one item
+                itemID = TooManyContentItemsFound;
+
+            return itemID;
+        }
+
+
         #region Disabled Code Block 1
 
         //public static Dictionary<string, string> BuildFieldsDictionary(DataRow dr, string[] exclude)

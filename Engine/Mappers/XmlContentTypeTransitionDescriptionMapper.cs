@@ -24,6 +24,8 @@ namespace MigrationEngine.Mappers
             description.ContentType = item.SelectSingleNode("contentType").InnerText;
             description.TriggerName = item.SelectSingleNode("trigger").InnerText;
 
+            // Non-data fields not copied into the description's Fields collection.
+
             return description;
         }
     }
