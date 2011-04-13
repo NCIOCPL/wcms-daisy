@@ -29,11 +29,13 @@ namespace Daisy
             _migrationOutput = new StreamWriter(_baseName + "Migration-" + timestamp + ".xml");
             _migrationOutput.WriteLine("<log>");
 
-            _errorOutput = new StreamWriter(_baseName + "Error-" + timestamp + ".log");
+            _errorOutput = new StreamWriter(_baseName + "Error-" + timestamp + ".xml");
+            _errorOutput.WriteLine("<log>");
         }
 
         public void EndLog()
         {
+            _errorOutput.WriteLine("</log>");
             _errorOutput.Close();
             _errorOutput = null;
 
@@ -69,26 +71,27 @@ namespace Daisy
             _migrationOutput.WriteLine("<path>{0}</path>", path);
         }
 
-        public void LogTaskItemWarning(string message, Dictionary<string, string> Fields)
+        public void LogTaskItemWarning(Guid migId, string message, Dictionary<string, string> Fields)
         {
             StringBuilder sb = new StringBuilder();
             foreach (KeyValuePair<string, string> kvp in Fields)
             {
-                sb.AppendFormat("{0}={{{1}}}\n", kvp.Key, kvp.Value);
+                sb.AppendFormat("{0}={{<![CDATA[{1}]]>}}\n", kvp.Key, kvp.Value);
             }
             Console.WriteLine("WARNING: {0}, Fields: {1}", message, sb.ToString());
 
             _migrationOutput.WriteLine("<warning>");
-            _migrationOutput.WriteLine("<message>{0}</message>", message);
+            _migrationOutput.WriteLine("<message><![CDATA[{0}]]></message>", message);
             foreach (KeyValuePair<string, string> kvp in Fields)
             {
-                _migrationOutput.WriteLine("<field name=\"{0}\" value=\"{1}\" />", kvp.Key, kvp.Value);
+                _migrationOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
             }
             _migrationOutput.WriteLine("</warning>");
         }
 
-        public void LogTaskItemError(string message, Dictionary<string, string> Fields)
+        public void LogTaskItemError(Guid migId, string message, Dictionary<string, string> Fields)
         {
+            // Write log to console.
             StringBuilder sb = new StringBuilder();
             foreach (KeyValuePair<string, string> kvp in Fields)
             {
@@ -96,13 +99,17 @@ namespace Daisy
             }
             Console.WriteLine("ERROR: {0}, Fields: {1}", message, sb.ToString());
 
+            // Write to Log File.
             _migrationOutput.WriteLine("<error>");
-            _migrationOutput.WriteLine("<message>{0}</message>", message);
+            _migrationOutput.WriteLine("<message><![CDATA[{0}]]></message>", message);
             foreach (KeyValuePair<string, string> kvp in Fields)
             {
-                _migrationOutput.WriteLine("<field name=\"{0}\" value=\"{1}\" />", kvp.Key, kvp.Value);
+                _migrationOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
             }
             _migrationOutput.WriteLine("</error>");
+
+            // Write to error log
+            LogError(_taskStack.Peek(), message, migId, Fields);
         }
 
         public void EndTaskItem()
@@ -112,30 +119,27 @@ namespace Daisy
 
         public void LogError(string taskName, string message, Guid itemMigrationID, Dictionary<string, string> Fields)
         {
+            // Write to console
             StringBuilder sb = new StringBuilder();
             foreach (KeyValuePair<string, string> kvp in Fields)
             {
                 sb.AppendFormat("Field: {0}, Value {1}\n", kvp.Key, kvp.Value);
             }
-
             Console.WriteLine("ERROR in task {0}, item {1}, \"{2}\", {3}", taskName, itemMigrationID, message, sb.ToString());
-        }
 
-        public void LogWarning(String taskName, String message, Guid itemMigrationID, Dictionary<string, string> Fields)
-        {
-            StringBuilder sb = new StringBuilder();
+            // Write to error log.
+            _errorOutput.WriteLine("<error task=\"{0}\" itemid=\"{1}\">", taskName, itemMigrationID);
+            _errorOutput.WriteLine("<message><![CDATA[{0}]]></message>", message);
             foreach (KeyValuePair<string, string> kvp in Fields)
             {
-                sb.AppendFormat("Field: {0}, Value {1}\n", kvp.Key, kvp.Value);
+                _errorOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
             }
-
-            Console.WriteLine("WARNING in task {0}, item {1}, \"{2}\", {3}", taskName, itemMigrationID, message, sb.ToString());
+            _errorOutput.WriteLine("</error>");
         }
-
 
         public void LogUnhandledException(string taskName, Exception ex)
         {
-            throw new NotImplementedException();
+            _errorOutput.WriteLine("<error task=\"{0}\"><![CDATA[{1}]]></error>", taskName, ex.ToString());
         }
 
         #endregion

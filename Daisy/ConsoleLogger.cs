@@ -37,7 +37,7 @@ namespace Daisy
                 timestamp, itemIndex, itemCount, itemMigrationID, path);
         }
 
-        public void LogTaskItemWarning(string message, Dictionary<string, string> Fields)
+        public void LogTaskItemWarning(Guid migId, string message, Dictionary<string, string> Fields)
         {
             StringBuilder sb = new StringBuilder();
             foreach (KeyValuePair<string, string> kvp in Fields)
@@ -48,7 +48,7 @@ namespace Daisy
             Console.WriteLine("WARNING: {0}, Fields: {1}", message, sb.ToString());
         }
 
-        public void LogTaskItemError(string message, Dictionary<string, string> Fields)
+        public void LogTaskItemError(Guid migId, string message, Dictionary<string, string> Fields)
         {
             StringBuilder sb = new StringBuilder();
             foreach (KeyValuePair<string, string> kvp in Fields)

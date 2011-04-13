@@ -25,7 +25,7 @@ namespace MigrationEngine.Utilities
                 {
                     doc.LoadHtml(HtmlEntity.DeEntitize(field.Value));
                     outgoing.Add(field.Key, doc.DocumentNode.InnerHtml);
-                    logger.LogTaskItemWarning("Rectify: " + field.Key, null);
+                    logger.LogTaskItemWarning(migrationID, "Rectify: " + field.Key, null);
                 }
                 else
                 {

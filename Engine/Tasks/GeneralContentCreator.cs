@@ -57,7 +57,7 @@ namespace MigrationEngine.Tasks
                     catch (Exception ex)
                     {
                         string message = ex.ToString();
-                        logger.LogTaskItemError(message, item.Fields);
+                        logger.LogTaskItemError(item.MigrationID, message, item.Fields);
                     }
                     finally
                     {

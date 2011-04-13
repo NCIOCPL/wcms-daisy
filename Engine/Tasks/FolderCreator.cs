@@ -46,7 +46,7 @@ namespace MigrationEngine.Tasks
                         if (navonID == PercWrapper.ContentItemNotFound ||
                             navonID == PercWrapper.TooManyContentItemsFound)
                         {
-                            logger.LogWarning(Name, message, Guid.Empty, folder.Fields);
+                            logger.LogTaskItemWarning(Guid.Empty, message, folder.Fields);
                             continue;
                         }
                         else if (navonID == PercWrapper.CmsErrorOccured)
@@ -59,13 +59,13 @@ namespace MigrationEngine.Tasks
 
                         if (!string.IsNullOrEmpty(message))
                         {
-                            logger.LogTaskItemWarning(message, folder.Fields);
+                            logger.LogTaskItemWarning(Guid.Empty, message, folder.Fields);
                         }
                     }
                     catch (Exception ex)
                     {
                         string message = ex.ToString();
-                        logger.LogTaskItemError(message, folder.Fields);
+                        logger.LogTaskItemError(folder.MigrationID, message, folder.Fields);
                     }
                     finally
                     {
