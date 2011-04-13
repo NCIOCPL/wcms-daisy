@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C01C110E-236D-486A-86D6-BBB668997BC2}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -36,6 +36,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -81,9 +82,14 @@
     <Compile Include="Tasks\Transitioner.cs" />
     <Compile Include="Tasks\TransitionerBase.cs" />
     <Compile Include="Tasks\ContentUpdater.cs" />
+    <Compile Include="Utilities\HtmlRectifier.cs" />
     <Compile Include="Utilities\PercWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HtmlAgilityPack\HtmlAgilityPack VS2008.csproj">
+      <Project>{193BB801-054F-4729-9D5D-FCE1E32594BF}</Project>
+      <Name>HtmlAgilityPack VS2008</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Munger\Munger.csproj">
       <Project>{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}</Project>
       <Name>Munger</Name>

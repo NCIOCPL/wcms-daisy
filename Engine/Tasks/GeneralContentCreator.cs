@@ -38,12 +38,18 @@ namespace MigrationEngine.Tasks
                     {
                         //Console.WriteLine("Migration ID: {0}", item.MigrationID); 
 
-                        string message;
-                        long contentID = PercWrapper.CreateItemWrapper(controller,item.ContentType,item.Fields,item.Path,out message);
-                        if (!string.IsNullOrEmpty(message))
-                        {
-                            logger.LogTaskItemWarning(message, item.Fields);
-                        }
+                        //convert HTML to XML
+                        Dictionary<string, string> rectifiedFields = 
+                            FieldHtmlRectifier.Doit(item.MigrationID, item.Fields, logger);
+
+
+
+                        //string message;
+                        //long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, item.Fields, item.Path, out message);
+                        //if (!string.IsNullOrEmpty(message))
+                        //{
+                        //    logger.LogTaskItemWarning(message, item.Fields);
+                        //}
                         if (index > 1)
                             break;
 
