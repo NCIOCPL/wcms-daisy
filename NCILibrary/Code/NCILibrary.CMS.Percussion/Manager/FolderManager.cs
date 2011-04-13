@@ -107,6 +107,9 @@ namespace NCI.CMS.Percussion.Manager.CMS
             if (folderPath == null)
                 throw new ArgumentNullException("folderPath");
 
+            if (folderPath.EndsWith("/") && folderPath != "/")
+                folderPath = folderPath.Substring(0, folderPath.Length - 1);
+
             // Does the path already exist in the collection?
             if (!_folderCollection.ContainsKey(folderPath))
             {
@@ -194,7 +197,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
                 else
                 {
                     // OK, that wasn't the error we expected.
-                    throw new CMSSoapException("Percussion error in GetExistingFolder().", ex);
+                    throw new CMSSoapException(string.Format("Unhandled Percussion error in GetExistingFolder(), attempting to get folder data for {0}.", folderPath), ex);
                 }
             }
 
