@@ -26,7 +26,7 @@ namespace MigrationEngine.Tasks
 
                 foreach (FolderDescription folder in folders)
                 {
-                    logger.BeginTaskItem(Name, index++, count, folder.MigrationID, folder.Path);
+                    logger.BeginTaskItem(Name, index++, count, folder, folder.Path);
 
                     try
                     {
@@ -46,12 +46,12 @@ namespace MigrationEngine.Tasks
                         if (navonID == PercWrapper.ContentItemNotFound ||
                             navonID == PercWrapper.TooManyContentItemsFound)
                         {
-                            logger.LogTaskItemWarning(Guid.Empty, message, folder.Fields);
+                            logger.LogTaskItemWarning(folder, message, folder.Fields);
                             continue;
                         }
                         else if (navonID == PercWrapper.CmsErrorOccured)
                         {
-                            logger.LogError(Name, message, Guid.Empty, folder.Fields);
+                            logger.LogError(Name, message, folder, folder.Fields);
                             continue;
                         }
 
@@ -59,13 +59,13 @@ namespace MigrationEngine.Tasks
 
                         if (!string.IsNullOrEmpty(message))
                         {
-                            logger.LogTaskItemWarning(Guid.Empty, message, folder.Fields);
+                            logger.LogTaskItemWarning(folder, message, folder.Fields);
                         }
                     }
                     catch (Exception ex)
                     {
                         string message = ex.ToString();
-                        logger.LogTaskItemError(folder.MigrationID, message, folder.Fields);
+                        logger.LogTaskItemError(folder, message, folder.Fields);
                     }
                     finally
                     {

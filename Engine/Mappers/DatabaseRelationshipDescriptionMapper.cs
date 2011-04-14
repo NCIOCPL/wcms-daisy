@@ -30,8 +30,6 @@ namespace MigrationEngine.Mappers
             description.SlotName = row.Field<String>("slot");
             description.TemplateName= row.Field<String>("template");
 
-            CopyFields(row, description.Fields);
-
             return description;
         }
     }

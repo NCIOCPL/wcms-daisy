@@ -10,5 +10,12 @@ namespace MigrationEngine.Descriptors
         [XmlIgnore()]
         public String Path { get; set; }
         public Guid MigrationID { get; set; }
+
+        public override string ToString()
+        {
+            string fmt = @"MigrationID: {{{0}}}; Path: {{{1}}};";
+
+            return string.Format(fmt, MigrationID, Path);
+        }
     }
 }

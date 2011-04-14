@@ -15,5 +15,7 @@ namespace MigrationEngine.Descriptors
         {
             Fields = new Dictionary<string, string>();
         }
+
+        public override abstract string ToString();
     }
 }

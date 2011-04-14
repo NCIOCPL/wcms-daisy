@@ -9,5 +9,12 @@ namespace MigrationEngine.Descriptors
     {
         public String Path { get; set; }
         public String Community { get; set; }
+
+        public override string ToString()
+        {
+            string fmt = @" {0} Path: {{{1}}}; Community: {{{2}}}";
+
+            return string.Format(fmt, base.ToString(), Path, Community);
+        }
     }
 }

@@ -26,7 +26,7 @@ namespace MigrationEngine.Tasks
 
                 foreach (RelationshipDescription relation in relationships)
                 {
-                    logger.BeginTaskItem(Name, index++, count, relation.OwnerMigrationID, null);
+                    logger.BeginTaskItem(Name, index++, count, relation, null);
 
                     try
                     {
@@ -62,7 +62,7 @@ namespace MigrationEngine.Tasks
 
                         if (error)
                         {
-                            logger.LogTaskItemError(relation.OwnerMigrationID, message, relation.Fields);
+                            logger.LogTaskItemError(relation, message, relation.Fields);
                         }
 
 
@@ -72,7 +72,7 @@ namespace MigrationEngine.Tasks
                     catch (Exception ex)
                     {
                         string message = ex.ToString();
-                        logger.LogTaskItemError(relation.OwnerMigrationID, message, null);
+                        logger.LogTaskItemError(relation, message, null);
                     }
                     finally
                     {

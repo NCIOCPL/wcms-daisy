@@ -10,5 +10,12 @@ namespace MigrationEngine.Descriptors
     {
         public String ContentType { get; set; }
         public Guid MigrationID { get; set; }
+
+        public override string ToString()
+        {
+            string fmt = @"MigrationID: {{{0}}}; ContentType: {{{1}}};";
+
+            return string.Format(fmt, MigrationID, ContentType);
+        }
     }
 }
