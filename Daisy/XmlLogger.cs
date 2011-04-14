@@ -83,7 +83,7 @@ namespace Daisy
             _migrationOutput.WriteLine("<path>{0}</path>", path ?? string.Empty);
         }
 
-        void LogTaskItemInfo(string message)
+        public void LogTaskItemInfo(string message)
         {
             Console.WriteLine("INFO: {0}", message);
 
