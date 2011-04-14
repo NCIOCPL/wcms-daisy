@@ -308,8 +308,8 @@ namespace Munger
 
             ILinkResolver[] linkResolvers = { new DatabaseResolver(),
                                                 new FileResolver(),
-                                                new DrugInfoSummaryResolver(),
-                                                new CancerInfoSummaryResolver(),
+                                                //new DrugInfoSummaryResolver(),
+                                                //new CancerInfoSummaryResolver(),
                                                 new ImageResolver()};
 
             foreach (ILinkResolver resolver in linkResolvers)
