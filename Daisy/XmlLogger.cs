@@ -83,6 +83,14 @@ namespace Daisy
             _migrationOutput.WriteLine("<path>{0}</path>", path ?? string.Empty);
         }
 
+        void LogTaskItemInfo(string message)
+        {
+            Console.WriteLine("INFO: {0}", message);
+
+            _migrationOutput.WriteLine("<information>{0}</information>", message);
+        }
+        
+
         public void LogTaskItemWarning(Guid migId, string message, Dictionary<string, string> Fields)
         {
             StringBuilder sb = new StringBuilder();

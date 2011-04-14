@@ -39,9 +39,12 @@ namespace MigrationEngine.Tasks
                         int remainder = itemCount % MAX_REQUEST_SIZE;
 
                         int subsetSize = 0;
+                        int first;
 
                         for (int i = 0; i <= loopCount; i++)
                         {
+                            first = i * MAX_REQUEST_SIZE;
+
                             try
                             {
                                 if (i < loopCount)
@@ -50,7 +53,11 @@ namespace MigrationEngine.Tasks
                                     subsetSize = remainder; // Get the remainder.
 
                                 PercussionGuid[] listSubset = new PercussionGuid[subsetSize];
-                                Array.ConstrainedCopy(itemList, (i * MAX_REQUEST_SIZE), listSubset, 0, subsetSize);
+                                Array.ConstrainedCopy(itemList, first, listSubset, 0, subsetSize);
+
+                                string fmt = "Transitioning items {0} to {1}";
+                                string message = string.Format(fmt, first, first + subsetSize);
+                                logger.LogTaskItemInfo(message);
 
                                 if (subsetSize > 0)
                                 {
@@ -61,7 +68,7 @@ namespace MigrationEngine.Tasks
                             catch (Exception ex)
                             {
                                 string fmt = "Error while transitioning items {0} to {1}. Error: {{{2}}}";
-                                string message = string.Format(fmt, i, (i + subsetSize), ex.ToString());
+                                string message = string.Format(fmt, first, first + subsetSize, ex.ToString());
 
                                 logger.LogTaskItemError(description, message, description.Fields);
                             }

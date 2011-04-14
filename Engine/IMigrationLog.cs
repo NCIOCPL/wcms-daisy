@@ -40,6 +40,12 @@ namespace MigrationEngine
         void BeginTaskItem(string taskName, int itemIndex, int itemCount, MigrationData migItem, string path);
 
         /// <summary>
+        /// Records informational (non-warning/error) items in the migration log.
+        /// </summary>
+        /// <param name="message"></param>
+        void LogTaskItemInfo(string message);
+
+        /// <summary>
         /// Call to record a warning associated with a task item
         /// </summary>
         /// <param name="migItem">The business object representing the</param>
