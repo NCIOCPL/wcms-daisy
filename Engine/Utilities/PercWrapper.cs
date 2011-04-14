@@ -84,6 +84,15 @@ namespace MigrationEngine.Utilities
             return id;
         }
 
+        public static void CreateSingleRelationshipWrapper(CMSController controller, PercussionGuid ownerID, PercussionGuid dependentID, string slotName, string templateName)
+        {
+            PSAaRelationship[] relations = controller.CreateActiveAssemblyRelationships(ownerID, new PercussionGuid[] { dependentID }, slotName, templateName);
+            if (relations.Length != 0)
+            {
+                throw new RelationshipException(string.Format("Relationship creation failed; expected 1, created {0}", relations.Length));
+            }
+        }
+
         public static PercussionGuid GetPercussionIDFromMigID(CMSController controller, Guid migrationID, string contentType)
         {
             PercussionGuid itemID;

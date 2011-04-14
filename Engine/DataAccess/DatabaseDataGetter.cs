@@ -28,10 +28,10 @@ namespace MigrationEngine.DataAccess
             List<ReturnType> returnData = new List<ReturnType>();
 
             if (string.IsNullOrEmpty(ConnectionName))
-                throw new ConfigurationException(string.Format("Connection string name not specified for {0}.", this.GetType().Name));
+                throw new MigrationScriptException(string.Format("Connection string name not specified for {0}.", this.GetType().Name));
 
             if (string.IsNullOrEmpty(ProcName))
-                throw new ConfigurationException(string.Format("Stored procedure name not specified for {0}.", this.GetType().Name));
+                throw new MigrationScriptException(string.Format("Stored procedure name not specified for {0}.", this.GetType().Name));
 
             string connectionString = ConfigurationManager.ConnectionStrings[ConnectionName].ConnectionString;
 

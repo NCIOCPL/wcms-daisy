@@ -67,6 +67,7 @@ namespace MigrationEngine.Tasks
 
 
                         // Create Relationship.
+                        PercWrapper.CreateSingleRelationshipWrapper(controller, ownerItem, dependentItem, relation.SlotName, relation.TemplateName);
 
                     }
                     catch (Exception ex)
