@@ -47,8 +47,9 @@ namespace NCI.CMS.Percussion.Manager.CMS
             get { return (int)(Guid >> 40); }
             set
             {
-                long mask = 0x000000FFFFFFFFFFL;
-                Guid = (mask & Guid) | (uint)value;
+                ulong mask = 0x000000FFFFFFFFFFL;
+                ulong temp = (mask & (ulong)Guid) | (((ulong)value) << 40);
+                Guid = (long)temp;
             }
         }
 
@@ -61,8 +62,9 @@ namespace NCI.CMS.Percussion.Manager.CMS
             {
                 unchecked
                 {
-                    long mask = (long)0xFFFFFF00FFFFFFFFL;
-                    Guid = (mask & Guid) | (uint)value << 32;
+                    ulong mask = 0xFFFFFF00FFFFFFFFL;
+                    ulong temp = (mask & (ulong)Guid) | (((ulong)value) << 32);
+                    Guid = (long)temp;
                 }
             }
         }
