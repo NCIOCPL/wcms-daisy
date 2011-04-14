@@ -74,17 +74,23 @@ namespace Daisy
         public void LogTaskItemWarning(Guid migId, string message, Dictionary<string, string> Fields)
         {
             StringBuilder sb = new StringBuilder();
-            foreach (KeyValuePair<string, string> kvp in Fields)
+            if (Fields != null)
             {
-                sb.AppendFormat("{0}={{<![CDATA[{1}]]>}}\n", kvp.Key, kvp.Value);
+                foreach (KeyValuePair<string, string> kvp in Fields)
+                {
+                    sb.AppendFormat("{0}={{<![CDATA[{1}]]>}}\n", kvp.Key, kvp.Value);
+                }
+                Console.WriteLine("WARNING: {0}, Fields: {1}", message, sb.ToString());
             }
-            Console.WriteLine("WARNING: {0}, Fields: {1}", message, sb.ToString());
 
             _migrationOutput.WriteLine("<warning>");
             _migrationOutput.WriteLine("<message><![CDATA[{0}]]></message>", message);
-            foreach (KeyValuePair<string, string> kvp in Fields)
+            if (Fields != null)
             {
-                _migrationOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
+                foreach (KeyValuePair<string, string> kvp in Fields)
+                {
+                    _migrationOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
+                }
             }
             _migrationOutput.WriteLine("</warning>");
         }
@@ -93,18 +99,24 @@ namespace Daisy
         {
             // Write log to console.
             StringBuilder sb = new StringBuilder();
-            foreach (KeyValuePair<string, string> kvp in Fields)
+            if (Fields != null)
             {
-                sb.AppendFormat("{0}={{{1}}}\n", kvp.Key, kvp.Value);
+                foreach (KeyValuePair<string, string> kvp in Fields)
+                {
+                    sb.AppendFormat("{0}={{{1}}}\n", kvp.Key, kvp.Value);
+                }
             }
             Console.WriteLine("ERROR: {0}, Fields: {1}", message, sb.ToString());
 
             // Write to Log File.
             _migrationOutput.WriteLine("<error>");
             _migrationOutput.WriteLine("<message><![CDATA[{0}]]></message>", message);
-            foreach (KeyValuePair<string, string> kvp in Fields)
+            if (Fields != null)
             {
-                _migrationOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
+                foreach (KeyValuePair<string, string> kvp in Fields)
+                {
+                    _migrationOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
+                }
             }
             _migrationOutput.WriteLine("</error>");
 
@@ -121,18 +133,24 @@ namespace Daisy
         {
             // Write to console
             StringBuilder sb = new StringBuilder();
-            foreach (KeyValuePair<string, string> kvp in Fields)
+            if (Fields != null)
             {
-                sb.AppendFormat("Field: {0}, Value {1}\n", kvp.Key, kvp.Value);
+                foreach (KeyValuePair<string, string> kvp in Fields)
+                {
+                    sb.AppendFormat("Field: {0}, Value {1}\n", kvp.Key, kvp.Value);
+                }
             }
             Console.WriteLine("ERROR in task {0}, item {1}, \"{2}\", {3}", taskName, itemMigrationID, message, sb.ToString());
 
             // Write to error log.
             _errorOutput.WriteLine("<error task=\"{0}\" itemid=\"{1}\">", taskName, itemMigrationID);
             _errorOutput.WriteLine("<message><![CDATA[{0}]]></message>", message);
-            foreach (KeyValuePair<string, string> kvp in Fields)
+            if (Fields != null)
             {
-                _errorOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
+                foreach (KeyValuePair<string, string> kvp in Fields)
+                {
+                    _errorOutput.WriteLine("<field name=\"{0}\"><![CDATA[{1}]]></field>", kvp.Key, kvp.Value);
+                }
             }
             _errorOutput.WriteLine("</error>");
         }
