@@ -56,7 +56,7 @@ namespace MigrationEngine.Tasks
                                 Array.ConstrainedCopy(itemList, first, listSubset, 0, subsetSize);
 
                                 string fmt = "Transitioning items {0} to {1}";
-                                string message = string.Format(fmt, first, first + subsetSize);
+                                string message = string.Format(fmt, first, first + subsetSize - 1);
                                 logger.LogTaskItemInfo(message);
 
                                 if (subsetSize > 0)
@@ -68,7 +68,7 @@ namespace MigrationEngine.Tasks
                             catch (Exception ex)
                             {
                                 string fmt = "Error while transitioning items {0} to {1}. Error: {{{2}}}";
-                                string message = string.Format(fmt, first, first + subsetSize, ex.ToString());
+                                string message = string.Format(fmt, first, first + subsetSize - 1, ex.ToString());
 
                                 logger.LogTaskItemError(description, message, description.Fields);
                             }
