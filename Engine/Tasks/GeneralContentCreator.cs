@@ -22,11 +22,6 @@ namespace MigrationEngine.Tasks
 
                 List<FullItemDescription> contentItems = DataGetter.LoadData();
 
-                // TODO: Actual task code goes here.
-                //Console.WriteLine("Creating {0} content items.", contentItems.Count);
-                //contentItems.ForEach(item => Console.WriteLine("Migration ID: {0}", item.MigrationID));
-
-
                 int index = 1;
                 int count = contentItems.Count;
 
@@ -36,22 +31,20 @@ namespace MigrationEngine.Tasks
 
                     try
                     {
-                        //Console.WriteLine("Migration ID: {0}", item.MigrationID); 
+                        //convert HTML to XML and do Link Munging on fields
+                        Dictionary<string, string> rectifiedFields =
+                            FieldHtmlRectifier.Doit(item.MigrationID, item.Fields, logger, controller);
 
-                        //convert HTML to XML
-                        Dictionary<string, string> rectifiedFields = 
-                            FieldHtmlRectifier.Doit(item.MigrationID, item.Fields, logger);
+                        string message;
+                        long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, rectifiedFields, item.Path, out message);
+                        if (!string.IsNullOrEmpty(message))
+                        {
+                            logger.LogTaskItemWarning(item.MigrationID, message, item.Fields);
+                        }
 
-
-
-                        //string message;
-                        //long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, item.Fields, item.Path, out message);
-                        //if (!string.IsNullOrEmpty(message))
-                        //{
-                        //    logger.LogTaskItemWarning(message, item.Fields);
-                        //}
-                        if (index > 1)
-                            break;
+                        //For Testing 
+                        //if (index > 1)
+                        //    break;
 
                     }
                     catch (Exception ex)

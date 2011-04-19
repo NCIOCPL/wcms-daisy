@@ -24,7 +24,7 @@ namespace Munger
         // Deliberately static so it won't go away between calls.
         // Loaded via constructor.
         // This object is not thread-safe.
-        private static HashSet<string> _clinicalTrialUrlSet = null;
+        //private static HashSet<string> _clinicalTrialUrlSet = null;
 
         // Map of content content types to allowed templates for the inline link slot.
         private List<KeyValuePair<string, PercussionGuid>> _slotContentTypeToTemplateIDMap
@@ -47,24 +47,24 @@ namespace Munger
                 _slotContentTypeToTemplateIDMap.Add(new KeyValuePair<string, PercussionGuid>(info.ContentTypeName, info.TemplateID));
             }
 
-            LoadClinicalTrialUrls();
+            //LoadClinicalTrialUrls();
         }
 
         // This method should only be called from the LinkMunger constructor.
         private void LoadClinicalTrialUrls()
         {
-            if (_clinicalTrialUrlSet == null)
-            {
-                _clinicalTrialUrlSet = new HashSet<string>();
-                List<string> idStrings = DataAccess.GetProtocolPrettyUrlIDs();
-                idStrings.ForEach(idvalue =>
-                {
-                    // Primary pretty URLs are returned first and receive priority.
-                    string urlString = "/clinicaltrials/" + idvalue;
-                    if (!_clinicalTrialUrlSet.Contains(urlString))
-                        _clinicalTrialUrlSet.Add(urlString);
-                });
-            }
+            //if (_clinicalTrialUrlSet == null)
+            //{
+            //    _clinicalTrialUrlSet = new HashSet<string>();
+            //    List<string> idStrings = DataAccess.GetProtocolPrettyUrlIDs();
+            //    idStrings.ForEach(idvalue =>
+            //    {
+            //        // Primary pretty URLs are returned first and receive priority.
+            //        string urlString = "/clinicaltrials/" + idvalue;
+            //        if (!_clinicalTrialUrlSet.Contains(urlString))
+            //            _clinicalTrialUrlSet.Add(urlString);
+            //    });
+            //}
         }
 
         /// <summary>
@@ -623,9 +623,10 @@ namespace Munger
             string[] ignoreList = { "/diccionario", "/dictionary", "/drugdictionary", "/search/clinicaltrials" };
             bool safelyIgnored = Array.Exists(ignoreList, item => item == testUrl || (item + "/") == testUrl);
 
-            bool clinicalTrial = _clinicalTrialUrlSet.Contains(linkUrl);
+            //bool clinicalTrial = _clinicalTrialUrlSet.Contains(linkUrl);
 
-            return !(externalApplication || hasBookmark || safelyIgnored || clinicalTrial);
+            //return !(externalApplication || hasBookmark || safelyIgnored || clinicalTrial);
+            return !(externalApplication || hasBookmark || safelyIgnored );
         }
 
         private bool LinkIsProgrammatic(string linkUrl)
