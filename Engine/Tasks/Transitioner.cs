@@ -10,11 +10,21 @@ using MigrationEngine.DataAccess;
 
 namespace MigrationEngine.Tasks
 {
+    /// <summary>
+    /// Migration task for transitioning content items between workflow states.
+    /// This class is not intended to be instantiated directly. It is created
+    /// by the deserialization process in Migrator.Run().
+    /// </summary>
     public class Transitioner : TransitionerBase
     {
         // Maximum number of items to put in a request so we don't kill the server.
         const int MAX_REQUEST_SIZE = 50;
 
+        /// <summary>
+        /// Contains the task-specific data access object.  This property is not
+        /// intended to be instantiated directly. It is created by the deserialization
+        /// process in Migrator.Run().
+        /// </summary>
         public DataGetter<ContentTypeTransitionDescription> DataGetter;
 
         public override void Doit(IMigrationLog logger)

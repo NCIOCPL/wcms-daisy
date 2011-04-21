@@ -7,6 +7,9 @@ using MigrationEngine.Descriptors;
 
 namespace MigrationEngine
 {
+    /// <summary>
+    /// Defines the standard methods for logging migration progress, warnings, and errors.
+    /// </summary>
     public interface IMigrationLog
     {
         /// <summary>

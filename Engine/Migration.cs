@@ -8,8 +8,17 @@ using MigrationEngine.Tasks;
 
 namespace MigrationEngine
 {
+    /// <summary>
+    /// Encapsulates a migration run.  This class is not intended to be
+    /// instantiated directly. Instead, it is created by the deserialization
+    /// process in Migrator.Run().
+    /// </summary>
     public class Migration
     {
+        /// <summary>
+        /// List of migration tasks to be performed.  The list is populated
+        /// with concrete objects at runtime via deserialization.
+        /// </summary>
         public MigrationTask[] MigrationTaskList;// = new MigrationTask[]
         //{
         //    new FolderCreator(),
@@ -21,6 +30,11 @@ namespace MigrationEngine
         //    new Transitioner()
         //};
 
+        /// <summary>
+        /// Performs the Migration.
+        /// </summary>
+        /// <param name="migLog">IMigrationLog object for recording progress through
+        /// the list of tasks.</param>
         public void Run(IMigrationLog migLog)
         {
             if (MigrationTaskList != null)

@@ -11,13 +11,31 @@ using MigrationEngine.Utilities;
 
 namespace MigrationEngine.Tasks
 {
+    /// <summary>
+    /// Migration task for purging content from the CMS.  This class is not intended to be
+    /// instantiated directly. It is created by the deserialization
+    /// process in Migrator.Run().
+    /// </summary>
     public class PurgeContent : MigrationTask
     {
         // Maximum number of items to put in a request so we don't kill the server.
         const int MAX_REQUEST_SIZE = 100;
 
+
+        /// <summary>
+        /// Contains the task-specific data access object.  This property is not
+        /// intended to be instantiated directly. It is created by the deserialization
+        /// process in Migrator.Run().
+        /// </summary>
         public DataGetter<ContentTypeDescription> DataGetter;
 
+
+        /// <summary>
+        /// This is the main method for implementing a migration task.
+        /// An instance of IMigrationLog is provided for logging the
+        /// progress through the list of task items.
+        /// </summary>
+        /// <param name="logger">IMigrationLog object for recording task progress.</param>
         public override void Doit(IMigrationLog logger)
         {
             using (CMSController controller = new CMSController())

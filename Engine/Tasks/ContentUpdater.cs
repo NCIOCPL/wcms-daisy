@@ -11,18 +11,23 @@ using MigrationEngine.Utilities;
 
 namespace MigrationEngine.Tasks
 {
+    /// <summary>
+    /// Migration task for updating CMS content.  This class is not intended to be
+    /// instantiated directly. It is created by the deserialization
+    /// process in Migrator.Run().
+    /// </summary>
     public class ContentUpdater : ContentUpdaterBase
     {
+
+        /// <summary>
+        /// Contains the task-specific data access object.  This property is not
+        /// intended to be instantiated directly. It is created by the deserialization
+        /// process in Migrator.Run().
+        /// </summary>
         public DataGetter<UpdateContentItem> DataGetter;
 
         public override void Doit(IMigrationLog logger)
         {
-            //List<UpdateContentItem> contentItems = DataGetter.LoadData();
-
-            //// TODO: Actual task code goes here.
-            //Console.WriteLine("Creating {0} content items.", contentItems.Count);
-            //contentItems.ForEach(item => Console.WriteLine("Migration ID: {0}", item.MigrationID));
-            
             using (CMSController controller = new CMSController())
             {
 

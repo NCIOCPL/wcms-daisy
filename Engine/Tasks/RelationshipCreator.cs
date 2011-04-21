@@ -11,8 +11,18 @@ using MigrationEngine.Utilities;
 
 namespace MigrationEngine.Tasks
 {
+    /// <summary>
+    /// Migration task for creating relationships between content items.
+    /// This class is not intended to be instantiated directly. It is
+    /// created by the deserialization process in Migrator.Run().
+    /// </summary>
     public class RelationshipCreator : RelationshipCreatorBase
     {
+        /// <summary>
+        /// Contains the task-specific data access object.  This property is not
+        /// intended to be instantiated directly. It is created by the deserialization
+        /// process in Migrator.Run().
+        /// </summary>
         public DataGetter<RelationshipDescription> DataGetter;
 
         public override void Doit(IMigrationLog logger)

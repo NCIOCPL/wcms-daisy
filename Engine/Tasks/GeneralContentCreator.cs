@@ -11,8 +11,18 @@ using MigrationEngine.Utilities;
 
 namespace MigrationEngine.Tasks
 {
+    /// <summary>
+    /// Migration task for adding content to the CMS.  This class is not intended to be
+    /// instantiated directly. It is created by the deserialization
+    /// process in Migrator.Run().
+    /// </summary>
     public class GeneralContentCreator : ContentCreatorBase
     {
+        /// <summary>
+        /// Contains the task-specific data access object.  This property is not
+        /// intended to be instantiated directly. It is created by the deserialization
+        /// process in Migrator.Run().
+        /// </summary>
         public DataGetter<FullItemDescription> DataGetter;
 
         override public void Doit(IMigrationLog logger)

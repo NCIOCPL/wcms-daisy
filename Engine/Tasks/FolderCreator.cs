@@ -11,8 +11,19 @@ using MigrationEngine.Utilities;
 
 namespace MigrationEngine.Tasks
 {
+    /// <summary>
+    /// Migration task for creating folders and setting Navon fields.
+    /// This class is not intended to be instantiated directly. It is
+    /// created by the deserialization process in Migrator.Run().
+    /// </summary>
     public class FolderCreator : FolderCreatorBase
     {
+
+        /// <summary>
+        /// Contains the task-specific data access object.  This property is not
+        /// intended to be instantiated directly. It is created by the deserialization
+        /// process in Migrator.Run().
+        /// </summary>
         public DataGetter<FolderDescription> DataGetter;
 
         override public void Doit(IMigrationLog logger)
