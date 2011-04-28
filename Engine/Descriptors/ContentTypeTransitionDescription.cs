@@ -5,6 +5,10 @@ using System.Text;
 
 namespace MigrationEngine.Descriptors
 {
+    /// <summary>
+    /// Business object destailing a workflow transition for
+    /// a specific content type.
+    /// </summary>
     public class ContentTypeTransitionDescription : MigrationData
     {
         public string ContentType { get; set; }

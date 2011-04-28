@@ -5,6 +5,9 @@ using System.Xml.Serialization;
 
 namespace MigrationEngine.Descriptors
 {
+    /// <summary>
+    /// Business object representing a Percusison folder and its Navon.
+    /// </summary>
     public class FolderDescription : MigrationData
     {
         [XmlIgnore()]

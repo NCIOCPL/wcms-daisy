@@ -6,6 +6,12 @@ using System.Text;
 
 namespace MigrationEngine.Mappers
 {
+    /// <summary>
+    /// Base class for mapping database rows to business objects.
+    /// </summary>
+    /// <typeparam name="ReturnType">The type of the returned business object.</typeparam>
+    /// <remarks>This class provides common functionality and constants.
+    /// User objects should not be referenced as type DatabaseDataMapper.</remarks>
     public abstract class DatabaseDataMapper<ReturnType>
         : DataMapper<ReturnType>
     {

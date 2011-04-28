@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MigrationEngine.Descriptors
 {
+    /// <summary>
+    /// Business object fully describing a content item.
+    /// </summary>
     public class FullItemDescription : ContentDescriptionBase
     {
         public String Path { get; set; }

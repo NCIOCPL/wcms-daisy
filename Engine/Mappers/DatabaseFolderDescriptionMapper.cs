@@ -10,9 +10,17 @@ using MigrationEngine.Descriptors;
 
 namespace MigrationEngine.Mappers
 {
+    /// <summary>
+    /// Maps data rows to FolderDescription objects.
+    /// </summary>
     public class DatabaseFolderDescriptionMapper
         : DatabaseDataMapper<FolderDescription>
     {
+        /// <summary>
+        /// Maps one DataRow into a single FolderDescription.
+        /// </summary>
+        /// <param name="dataItem">The data row.</param>
+        /// <returns>A single FolderDescription.</returns>
         public override FolderDescription MapItem(object dataItem)
         {
             if (!(dataItem is DataRow))

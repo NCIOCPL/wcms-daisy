@@ -5,6 +5,9 @@ using System.Xml.Serialization;
 
 namespace MigrationEngine.Descriptors
 {
+    /// <summary>
+    /// Business object describing a Percussion content type.
+    /// </summary>
     public class ContentTypeDescription : MigrationData
     {
         [XmlIgnore()]
