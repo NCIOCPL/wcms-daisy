@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C01C110E-236D-486A-86D6-BBB668997BC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MigrationEngine</RootNamespace>
+    <AssemblyName>MigrationEngine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Descriptors\ContentDescriptionBase.cs" />
+    <Compile Include="Descriptors\ContentTypeDescription.cs" />
+    <Compile Include="Descriptors\FolderDescription.cs" />
+    <Compile Include="Descriptors\FullItemDescription.cs" />
+    <Compile Include="Descriptors\IMigrationData.cs" />
+    <Compile Include="Descriptors\UpdateContentItem.cs" />
+    <Compile Include="Descriptors\MigrationData.cs" />
+    <Compile Include="Descriptors\RelationshipDescription.cs" />
+    <Compile Include="Descriptors\ContentTypeTransitionDescription.cs" />
+    <Compile Include="DataAccess\DatabaseDataGetter.cs" />
+    <Compile Include="DataAccess\DataGetter.cs" />
+    <Compile Include="DataAccess\XmlDataGetter.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="IMigrationLog.cs" />
+    <Compile Include="Mappers\DatabaseDataMapper.cs" />
+    <Compile Include="Mappers\DatabaseFullItemDescriptionMapper.cs" />
+    <Compile Include="Mappers\DatabaseFolderDescriptionMapper.cs" />
+    <Compile Include="Mappers\DatabaseUpdateItemMapper.cs" />
+    <Compile Include="Mappers\DatabaseRelationshipDescriptionMapper.cs" />
+    <Compile Include="Mappers\DataMapper.cs" />
+    <Compile Include="Mappers\XmlContentTypeDescriptionMapper.cs" />
+    <Compile Include="Mappers\XmlContentTypeTransitionDescriptionMapper.cs" />
+    <Compile Include="Migration.cs" />
+    <Compile Include="Migrator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\ContentCreatorBase.cs" />
+    <Compile Include="Tasks\FolderCreatorBase.cs" />
+    <Compile Include="Tasks\PurgeContent.cs" />
+    <Compile Include="Tasks\RelationshipCreatorBase.cs" />
+    <Compile Include="Tasks\ContentUpdaterBase.cs" />
+    <Compile Include="Tasks\FolderCreator.cs" />
+    <Compile Include="Tasks\GeneralContentCreator.cs" />
+    <Compile Include="Tasks\IMigrateTask.cs" />
+    <Compile Include="Tasks\MigrationTask.cs" />
+    <Compile Include="Tasks\RelationshipCreator.cs" />
+    <Compile Include="Tasks\Transitioner.cs" />
+    <Compile Include="Tasks\TransitionerBase.cs" />
+    <Compile Include="Tasks\ContentUpdater.cs" />
+    <Compile Include="Utilities\HtmlRectifier.cs" />
+    <Compile Include="Utilities\PercWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HtmlAgilityPack\HtmlAgilityPack VS2008.csproj">
+      <Project>{193BB801-054F-4729-9D5D-FCE1E32594BF}</Project>
+      <Name>HtmlAgilityPack VS2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Munger\Munger.csproj">
+      <Project>{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}</Project>
+      <Name>Munger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCILibrary\Code\NCILibrary.CMS.Percussion\NCILibrary.CMS.Percussion.csproj">
+      <Project>{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}</Project>
+      <Name>NCILibrary.CMS.Percussion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCILibrary\Code\NCILibrary.Core\NCILibrary.Core.csproj">
+      <Project>{898FF17C-C94A-4D85-8AAD-88764B72CFAE}</Project>
+      <Name>NCILibrary.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

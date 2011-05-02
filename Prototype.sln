@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daisy", "Daisy\Daisy.csproj", "{6F8570BF-A688-4DB7-9EB6-D66D77044F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{C01C110E-236D-486A-86D6-BBB668997BC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCILibrary.Core", "NCILibrary\Code\NCILibrary.Core\NCILibrary.Core.csproj", "{898FF17C-C94A-4D85-8AAD-88764B72CFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCILibrary.CMS.Percussion", "NCILibrary\Code\NCILibrary.CMS.Percussion\NCILibrary.CMS.Percussion.csproj", "{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Munger", "Munger\Munger.csproj", "{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack VS2008", "HtmlAgilityPack\HtmlAgilityPack VS2008.csproj", "{193BB801-054F-4729-9D5D-FCE1E32594BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F8570BF-A688-4DB7-9EB6-D66D77044F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8570BF-A688-4DB7-9EB6-D66D77044F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8570BF-A688-4DB7-9EB6-D66D77044F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8570BF-A688-4DB7-9EB6-D66D77044F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C01C110E-236D-486A-86D6-BBB668997BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01C110E-236D-486A-86D6-BBB668997BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01C110E-236D-486A-86D6-BBB668997BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01C110E-236D-486A-86D6-BBB668997BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898FF17C-C94A-4D85-8AAD-88764B72CFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898FF17C-C94A-4D85-8AAD-88764B72CFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898FF17C-C94A-4D85-8AAD-88764B72CFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898FF17C-C94A-4D85-8AAD-88764B72CFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

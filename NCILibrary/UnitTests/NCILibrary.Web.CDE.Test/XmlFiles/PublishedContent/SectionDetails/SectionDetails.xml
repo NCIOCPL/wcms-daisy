@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cde:SectionDetail xmlns:cde="http://www.example.org/CDESchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/CDESchema CDESchema.xsd ">
+  <SectionName>/</SectionName>
+  <Snippets>
+    <SnippetInfo>
+      <ContentID>1</ContentID>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>BannerSlot</SlotName>
+      <Data>
+        <![CDATA[
+          <table width="100%" bgcolor="#a90101" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><div class="skip"><a href="#skiptocontent" title="Skip to content">Skip to content</a></div></td></tr></tbody></table><table width="100%" bgcolor="#a90101" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td valign="top" align="center">
+			          <table width="771" border="0" cellpadding="0" cellspacing="0">
+				          <tbody><tr>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+					          <td valign="top" width="500" align="left" nowrap="nowrap">
+					          <table width="433" align="left" border="0" cellpadding="0" cellspacing="0">
+					          <tbody><tr>
+					          <td rowspan="2" valign="top"><a href="/"><img src="/images/banner_nci_logo_1.gif" alt="National Cancer Institute" width="118" border="0" height="81"></a></td>
+					          <td colspan="2" valign="top"><a href="/"><img src="/images/banner_nci_logo_2.gif" alt="National Cancer Institute" width="315" border="0" height="41"></a></td>
+					          </tr>
+					          <tr>
+					          <td valign="top"><a href="http://www.nih.gov"><img src="/images/banner_nci_logo_3.gif" alt="U.S. National Institutes of Health" width="209" border="0" height="40"></a></td>
+					          <td valign="top"><a href="/"><img src="/images/banner_nci_logo_4.gif" alt="National Cancer Institute" width="106" border="0" height="40"></a></td>
+					          </tr>
+					          </tbody></table>
+					          </td>
+					          <td valign="top" width="251" align="left">
+          <!-- BEGIN: NetTracker Pixel -->
+          <noscript>
+          <img src="/images/ntpagetag.gif?js=0" height="1" width="1" border="0" hspace="0" vspace="0" alt="">
+          </noscript>
+          <!-- END: NetTracker Page Tag -->
+					          <form name="siteSearchForm" action="/search/results.aspx" method="post" onsubmit="ntptAddPair('keywordF', this.swKeyword.value ); NCIAnalytics.SiteWideSearch(this); return ntptSubmitTag( this );">
+						          <table width="251" align="right" border="0" cellpadding="0" cellspacing="0">
+						          <tbody><tr>
+						          <td>
+						          <table width="251" border="0" cellpadding="0" cellspacing="0">
+						          <tbody><tr>
+							          <td colspan="2" class="navigation-white" valign="bottom" align="right" height="19">In English | <a href="/espanol" class="navigation-white">En español</a></td>
+						          </tr>
+						          <tr>
+							          <td colspan="2" valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="24"></td>
+						          </tr>
+						          <tr>
+							          <td valign="middle" width="195" align="right" height="24"><label for="swKeyword" class="hidden">Search</label><input maxlength="255" size="10" id="swKeyword" name="swKeyword" style="width: 120px; height: 21px;" class="search_field" value="" onfocus="bSearchBoxBool=true;" onblur="bSearchBoxBool=false;"></td>
+							          <td valign="middle" width="56" align="right"><input id="sitesearch" onclick="return siteSearchSubmit();" src="/images/main-search.gif" alt="Search" type="image" width="48" border="0" height="14"></td>
+						          </tr>
+						          <tr>
+							          <td colspan="2" valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="14"></td>
+						          </tr>
+						          </tbody></table>
+						          </td>
+						          </tr>
+						          </tbody></table>
+					          </form>
+					          </td>					<td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+				          </tr>
+				          <tr>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+					          <td colspan="2" valign="bottom"><table width="751" align="left" bgcolor="#696559" border="0" cellpadding="0" cellspacing="0">
+	          <tbody><tr>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=NCI+Home_NavBar_Section&amp;redirectUrl=%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_home','/images/nav_home_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_home_off.gif" name="nav_home" alt="NCI Home" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Cancer+Topics_NavBar_Section&amp;redirectUrl=%2fcancertopics&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_cancer_topics','/images/nav_cancer_topics_on.gif');window.status=window.location.protocol + '//' + window.location.host + '/cancertopics'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_cancer_topics_on.gif" name="nav_cancer_topics" alt="Cancer Topics" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Clinical+Trials_NavBar_Section&amp;redirectUrl=%2fclinicaltrials&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_clinical_trials','/images/nav_clinical_trials_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/clinicaltrials'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_clinical_trials_off.gif" name="nav_clinical_trials" alt="Clinical Trials" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Cancer+Statistics_NavBar_Section&amp;redirectUrl=%2fstatistics%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_cancer_statistics','/images/nav_cancer_statistics_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/statistics/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="http://www.cancer.gov/images/nav_cancer_statistics_off.gif" name="nav_cancer_statistics" alt="Cancer Statistics" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=Research+%26+Funding_NavBar_Section&amp;redirectUrl=%2fresearchandfunding&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_research_funding','/images/nav_research_funding_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/researchandfunding'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_research_funding_off.gif" name="nav_research_funding" alt="Research &amp; Funding" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=News_NavBar_Section&amp;redirectUrl=%2fnewscenter%2f&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_news','/images/nav_news_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/newscenter/'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_news_off.gif" name="nav_news" alt="News" border="0"></a></td>
+		          <td valign="top"><a href="/common/clickpassthrough.aspx?clickitem=About+NCI_NavBar_Section&amp;redirectUrl=%2faboutnci&amp;fromUrl=%2fcancertopics" onmouseover="MM_swapImage('nav_about','/images/nav_about_over.gif');window.status=window.location.protocol + '//' + window.location.host + '/aboutnci'; return true;" onmouseout="MM_swapImgRestore();window.status=''; return true;"><img src="/images/nav_about_off.gif" name="nav_about" alt="About NCI" border="0"></a></td>
+	          </tr>
+          </tbody></table>
+          </td>
+					          <td valign="top"><img src="/images/spacer.gif" alt="" width="10" border="0" height="1"></td>
+				          </tr>
+			          </tbody></table>
+		          </td>
+            </tr>
+	          <tr>
+		          <td valign="top" bgcolor="#ffffff"><img src="/images/spacer.gif" alt="" width="10" border="0" height="15"></td>
+	          </tr>
+          </tbody></table>
+          <a name="top"></a>
+        
+        ]]>
+      </Data>
+    </SnippetInfo>
+    <SnippetInfo>
+      <ContentID>5</ContentID>
+      <SnippetTemplatePath>~/SnippetTemplates/GenericHtmlContentSnippet.ascx</SnippetTemplatePath>
+      <SlotName>FooterSlot</SlotName>
+      <Data>
+        <![CDATA[
+        <table width="753" border="0" cellpadding="0" cellspacing="0">
+	        <tbody><tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="30"></td>
+	        </tr>
+	        <tr>
+		        <td class="gray-border" valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="5"></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="15"></td>
+	        </tr>
+	        <tr>
+		        <td class="footer-text" valign="top"><div align="center">
+		        <a href="/" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'NCIHome');">NCI Home</a> | 
+		        <a href="/help" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'ContactUs');">Contact Us</a> | 
+		        <a href="/policies" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Policies');">Policies</a> | 
+		        <a href="/policies/page3" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Accessibility');">Accessibility</a> | 
+		        <a href="/viewing-files" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'ViewingFiles');">Viewing Files</a> | 
+		        <a href="/policies/page6" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'FOIA');">FOIA</a> | 
+		        <a href="/sitehelp" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'SiteHelp');">Site Help</a> | 
+		        <a href="/sitemap" class="footer-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'SiteMap');">Site Map</a>
+		        </div></td>
+	        </tr>
+	        <tr>
+	            <td>
+             <!-- Follow Us -->
+                 <div style="margin-top: 10px;" align="center"> 
+                     <strong>Follow us:</strong>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#twitter" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Twitter');"><img src="http://www.cancer.gov/images/social-media-twitter.gif" style="vertical-align: text-top; margin-right: 3px;" alt="Twitter" width="16" height="16">Twitter</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#youtube" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'YouTube');"><img src="http://www.cancer.gov/images/social-media-youtube.gif" style="vertical-align: text-top; margin-right: 3px;" alt="YouTube" width="16" height="16">YouTube</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/newmedia#facebook" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'Facebook');"><img src="http://www.cancer.gov/images/social-media-facebook.gif" style="vertical-align: text-top; margin-right: 3px;" alt="Facebook" width="16" height="16">Facebook</a>
+                     &nbsp;&nbsp;&nbsp;<a href="/rss" class="navigation-gray-link" onclick="if(typeof s != 'undefined') NCIAnalytics.FooterLink(this, 'RSS');"><img src="http://www.cancer.gov/images/social-media-rss.gif" style="vertical-align: text-top; margin-right: 3px;" alt="RSS" width="16" height="16">RSS</a>
+                 </div>
+	            </td>
+	        </tr>
+         <!-- Follow Us -->
+	        <tr>
+		        <td valign="top"><div align="center"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"><br>
+		        A Service of the National Cancer Institute</div></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"></td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><div align="center">
+			        <a href="http://www.hhs.gov/"><img src="/images/footer_hhs.gif" alt="Department of Health and Human Services" width="39" border="0" height="31"></a>
+			        <a href="http://www.nih.gov/"><img src="/images/footer_nih.gif" alt="National Institutes of Health" width="46" border="0" height="31"></a>
+			        <a href="http://www.usa.gov/"><img src="/images/footer_usagov.gif" alt="USA.gov" width="91" border="0" height="31"></a></div>
+		        </td>
+	        </tr>
+	        <tr>
+		        <td valign="top"><img src="/images/spacer.gif" alt="" width="1" border="0" height="10"></td>
+	        </tr>
+        </tbody></table>        
+        ]]>
+      </Data>
+    </SnippetInfo>
+  </Snippets>
+</cde:SectionDetail>
