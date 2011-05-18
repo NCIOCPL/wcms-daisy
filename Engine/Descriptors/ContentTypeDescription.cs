@@ -13,11 +13,13 @@ namespace MigrationEngine.Descriptors
         [XmlIgnore()]
         public string ContentType { get; set; }
 
-        public override string ToString()
+        protected override string PropertyString
         {
-            string fmt = @"ContentType: {{{0}}};";
-
-            return string.Format(fmt, ContentType);
+            get
+            {
+                string fmt = @"<ContentType value=""{0}""/>";
+                return string.Format(fmt, ContentType);
+            }
         }
     }
 }

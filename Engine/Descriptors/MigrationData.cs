@@ -34,6 +34,20 @@ namespace MigrationEngine.Descriptors
         /// <returns>
         /// A <see cref="System.String"/> that represents this instance.
         /// </returns>
-        public override abstract string ToString();
+        public string ToXmlString()
+        {
+            string xml;
+            string fieldString = string.Empty;
+
+            foreach (string key in Fields.Keys)
+            {
+                fieldString += string.Format("\t\t<{0}>{1}</{0}>\n", key, Fields[key]);
+            }
+            xml = string.Format("<{0}>\n\t<properties>\n{1}\t</properties>\n\t<fields>\n{2}\t</fields>\n</{0}>\n", this.GetType().Name, PropertyString, fieldString);
+
+            return xml;
+        }
+
+        protected abstract string PropertyString { get; }
     }
 }

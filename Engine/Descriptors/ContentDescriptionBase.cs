@@ -11,11 +11,14 @@ namespace MigrationEngine.Descriptors
         public String ContentType { get; set; }
         public Guid MigrationID { get; set; }
 
-        public override string ToString()
+        protected override string PropertyString
         {
-            string fmt = @"MigrationID: {{{0}}}; ContentType: {{{1}}};";
+            get
+            {
+                string fmt = @"<MigrationID value=""{0}""/><ContentType value=""{1}""/>";
 
-            return string.Format(fmt, MigrationID, ContentType);
+                return string.Format(fmt, MigrationID, ContentType);
+            }
         }
     }
 }

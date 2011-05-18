@@ -79,7 +79,7 @@ namespace Daisy
                 timestamp, itemIndex, itemCount, migItem, path ?? string.Empty);
 
             _migrationOutput.WriteLine("<item time=\"{0}\" item_pos=\"{1}\" item_count=\"{2}\">", timestamp, itemIndex, itemCount);
-            _migrationOutput.WriteLine("<mig_item>{0}</mig_item>", migItem);
+            _migrationOutput.WriteLine("<mig_item>{0}</mig_item>", migItem.ToXmlString());
             _migrationOutput.WriteLine("<path>{0}</path>", path ?? string.Empty);
         }
 

@@ -13,11 +13,15 @@ namespace MigrationEngine.Descriptors
         public String Path { get; set; }
         public String Community { get; set; }
 
-        public override string ToString()
+        protected override string PropertyString
         {
-            string fmt = @" {0} Path: {{{1}}}; Community: {{{2}}}";
+            get
+            {
+                string fmt = @"{0}<Path value=""{1}""/><Community value=""{2}""/>";
 
-            return string.Format(fmt, base.ToString(), Path, Community);
+                return string.Format(fmt, base.PropertyString, Path, Community);
+            }
+
         }
     }
 }

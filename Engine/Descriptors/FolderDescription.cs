@@ -14,11 +14,13 @@ namespace MigrationEngine.Descriptors
         public String Path { get; set; }
         public Guid MigrationID { get; set; }
 
-        public override string ToString()
+        protected override string PropertyString
         {
-            string fmt = @"MigrationID: {{{0}}}; Path: {{{1}}};";
-
-            return string.Format(fmt, MigrationID, Path);
+            get
+            {
+                string fmt = @"<migrationId value=""{0}""/><path value=""{1}""/>";
+                return string.Format(fmt, MigrationID, Path);
+            }
         }
-    }
+   }
 }

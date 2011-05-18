@@ -18,23 +18,21 @@ namespace MigrationEngine.Descriptors
         public String SlotName { get; set; }
         public String TemplateName { get; set; }
 
-        /// <summary>
-        /// Returns a <see cref="System.String"/> that represents this instance.
-        /// </summary>
-        /// <returns>
-        /// A <see cref="System.String"/> that represents this instance.
-        /// </returns>
-        public override string ToString()
-        {
-            string fmt = @"OwnerContentType: {{{0}}}; OwnerMigrationID: {{{1}}}; DependentContentType: {{{2}}}; DependentMigrationID: {{{3}}}; SlotName: {{{4}}}; TemplateName: {{{5}}}";
 
-            return string.Format(fmt,
-                OwnerContentType,
-                OwnerMigrationID,
-                DependentContentType,
-                DependentMigrationID,
-                SlotName,
-                TemplateName);
+        protected override string PropertyString
+        {
+            get
+            {
+                string fmt = @"<OwnerContentType value=""{0}""/><OwnerMigrationID value=""{1}""/><DependentContentType value=""{2}""/><DependentMigrationID value=""{3}""/><SlotName value=""{4}""/><TemplateName value=""{5}""/>";
+
+                return string.Format(fmt,
+                    OwnerContentType,
+                    OwnerMigrationID,
+                    DependentContentType,
+                    DependentMigrationID,
+                    SlotName,
+                    TemplateName);
+            }
         }
     }
 }
