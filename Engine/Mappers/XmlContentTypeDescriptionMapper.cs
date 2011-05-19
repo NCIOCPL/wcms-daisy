@@ -22,6 +22,7 @@ namespace MigrationEngine.Mappers
             ContentTypeDescription description = new ContentTypeDescription();
 
             description.ContentType = item.SelectSingleNode("contentType").InnerText;
+            description.Community = item.SelectSingleNode("community").InnerText;
 
             // Non-data fields not copied into the description's Fields collection.
 

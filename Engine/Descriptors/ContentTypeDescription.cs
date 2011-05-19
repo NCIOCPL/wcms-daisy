@@ -12,13 +12,14 @@ namespace MigrationEngine.Descriptors
     {
         [XmlIgnore()]
         public string ContentType { get; set; }
+        public string Community { get; set; }
 
         protected override string PropertyString
         {
             get
             {
-                string fmt = @"<ContentType value=""{0}""/>";
-                return string.Format(fmt, ContentType);
+                string fmt = @"<ContentType value=""{0}""/><Community value=""{1}""/>";
+                return string.Format(fmt, ContentType, Community);
             }
         }
     }

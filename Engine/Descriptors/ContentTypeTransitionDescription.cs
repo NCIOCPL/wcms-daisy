@@ -18,8 +18,8 @@ namespace MigrationEngine.Descriptors
         {
             get
             {
-                string fmt = @"<ContentType value=""{0}""/><TriggerName value=""{1}""/><Community value=""{2}""/>";
-                return string.Format(fmt, ContentType, TriggerName, Community);
+                string fmt = @"<ContentType value=""{0}""/><TriggerName value=""{1}""/>";
+                return string.Format(fmt, ContentType, TriggerName);
             }
         }
     }

@@ -43,19 +43,18 @@ namespace MigrationEngine.Tasks
             int index = 1;
             int count = typeList.Count;
 
-            // TODO: This will need to be revisited to purge on a per-community basis.
-            string community = LookupCommunityName("site");
 
-            using (CMSController controller = new CMSController())
+            foreach (ContentTypeDescription contentType in typeList)
             {
-                foreach (ContentTypeDescription contentType in typeList)
-                {
-                    logger.BeginTaskItem(Name, index++, count, contentType, null);
+                logger.BeginTaskItem(Name, index++, count, contentType, null);
 
+                string communityName = LookupCommunityName(contentType.Community);
+
+                using (CMSController controller = new CMSController(communityName))
+                {
                     try
                     {
-                        PercussionGuid[] itemList = controller.SearchForContentItems(contentType.ContentType, null);
-
+                        PercussionGuid[] itemList = controller.SearchForContentItems(contentType.ContentType, "/", null);
 
                         int itemCount = itemList.Length;
                         int loopCount = (itemCount / MAX_REQUEST_SIZE);
