@@ -27,10 +27,10 @@ namespace Daisy
         {
             string timestamp = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
 
-            _migrationOutput = new StreamWriter(_baseName + "Migration-" + timestamp + ".xml");
+            _migrationOutput = new StreamWriter(_baseName + timestamp + "-Migration.xml");
             _migrationOutput.WriteLine("<log>");
 
-            _errorOutput = new StreamWriter(_baseName + "Error-" + timestamp + ".xml");
+            _errorOutput = new StreamWriter(_baseName + timestamp + "-Error.xml");
             _errorOutput.WriteLine("<log>");
         }
 
