@@ -13,13 +13,14 @@ namespace MigrationEngine.Descriptors
     {
         public string ContentType { get; set; }
         public string TriggerName { get; set; }
+        public string Community { get; set; }
 
         protected override string PropertyString
         {
             get
             {
-                string fmt = @"<ContentType value=""{0}""/><TriggerName value=""{1}""/>";
-                return string.Format(fmt, ContentType, TriggerName);
+                string fmt = @"<ContentType value=""{0}""/><TriggerName value=""{1}""/><Community value=""{2}""/>";
+                return string.Format(fmt, ContentType, TriggerName, Community);
             }
         }
     }
