@@ -13,7 +13,6 @@ namespace MigrationEngine.Descriptors
     {
         public string ContentType { get; set; }
         public string TriggerName { get; set; }
-        public string Community { get; set; }
 
         protected override string PropertyString
         {
