@@ -28,13 +28,15 @@ namespace MigrationEngine.Tasks
 
         override public void Doit(IMigrationLog logger)
         {
-            using (CMSController controller = new CMSController())
+            List<FolderDescription> folders = DataGetter.LoadData();
+
+            int index = 1;
+            int count = folders.Count;
+
+            string community = LookupCommunityName("site");
+
+            using (CMSController controller = new CMSController(community))
             {
-                List<FolderDescription> folders = DataGetter.LoadData();
-
-                int index = 1;
-                int count = folders.Count;
-
                 foreach (FolderDescription folder in folders)
                 {
                     logger.BeginTaskItem(Name, index++, count, folder, folder.Path);

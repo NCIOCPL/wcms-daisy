@@ -29,13 +29,15 @@ namespace MigrationEngine.Tasks
 
         public override void Doit(IMigrationLog logger)
         {
+            List<ContentTypeTransitionDescription> transitionTypes = DataGetter.LoadData();
+
+            int index = 1;
+            int count = transitionTypes.Count;
+
+            string community = LookupCommunityName("site");
+
             using (CMSController controller = new CMSController())
             {
-                List<ContentTypeTransitionDescription> transitionTypes = DataGetter.LoadData();
-
-                int index = 1;
-                int count = transitionTypes.Count;
-
                 foreach (ContentTypeTransitionDescription description in transitionTypes)
                 {
                     logger.BeginTaskItem(Name, index++, count, description, null);

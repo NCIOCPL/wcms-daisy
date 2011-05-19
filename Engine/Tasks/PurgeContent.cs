@@ -38,13 +38,16 @@ namespace MigrationEngine.Tasks
         /// <param name="logger">IMigrationLog object for recording task progress.</param>
         public override void Doit(IMigrationLog logger)
         {
+            List<ContentTypeDescription> typeList = DataGetter.LoadData();
+
+            int index = 1;
+            int count = typeList.Count;
+
+            // TODO: This will need to be revisited to purge on a per-community basis.
+            string community = LookupCommunityName("site");
+
             using (CMSController controller = new CMSController())
             {
-                List<ContentTypeDescription> typeList = DataGetter.LoadData();
-
-                int index = 1;
-                int count = typeList.Count;
-
                 foreach (ContentTypeDescription contentType in typeList)
                 {
                     logger.BeginTaskItem(Name, index++, count, contentType, null);

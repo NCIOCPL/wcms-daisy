@@ -27,14 +27,19 @@ namespace MigrationEngine.Tasks
 
         override public void Doit(IMigrationLog logger)
         {
-            using (CMSController controller = new CMSController())
+            List<FullItemDescription> contentItems = DataGetter.LoadData();
+
+            int index = 1;
+            int count = contentItems.Count;
+
+            string community = string.Empty;
+            if (count > 0)
             {
+                community = LookupCommunityName(contentItems[0].Community);
+            }
 
-                List<FullItemDescription> contentItems = DataGetter.LoadData();
-
-                int index = 1;
-                int count = contentItems.Count;
-
+            using (CMSController controller = new CMSController(community))
+            {
                 foreach (FullItemDescription item in contentItems)
                 {
                     logger.BeginTaskItem(Name, index++, count, item.MigrationID, item.Path);

@@ -47,4 +47,19 @@ namespace MigrationEngine
           System.Runtime.Serialization.StreamingContext context)
             : base(info, context) { }
     }
+
+    /// <summary>
+    /// Exception thrown when an invalid community name is specified.
+    /// </summary>
+    [global::System.Serializable]
+    public class InvalidCommunityNameException : MigrationException
+    {
+        public InvalidCommunityNameException() { }
+        public InvalidCommunityNameException(string message) : base(message) { }
+        public InvalidCommunityNameException(string message, Exception inner) : base(message, inner) { }
+        protected InvalidCommunityNameException(
+          System.Runtime.Serialization.SerializationInfo info,
+          System.Runtime.Serialization.StreamingContext context)
+            : base(info, context) { }
+    }
 }

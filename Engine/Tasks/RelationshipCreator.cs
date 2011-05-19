@@ -27,13 +27,15 @@ namespace MigrationEngine.Tasks
 
         public override void Doit(IMigrationLog logger)
         {
+            List<RelationshipDescription> relationships = DataGetter.LoadData();
+
+            int index = 1;
+            int count = relationships.Count;
+
+            string community = LookupCommunityName("site");
+
             using (CMSController controller = new CMSController())
             {
-                List<RelationshipDescription> relationships = DataGetter.LoadData();
-
-                int index = 1;
-                int count = relationships.Count;
-
                 foreach (RelationshipDescription relation in relationships)
                 {
                     logger.BeginTaskItem(Name, index++, count, relation, null);

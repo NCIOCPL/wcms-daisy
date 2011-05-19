@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\CommunityListElement.cs" />
+    <Compile Include="Configuration\CommunityElement.cs" />
+    <Compile Include="Configuration\CommunityLookupSection.cs" />
     <Compile Include="Descriptors\ContentDescriptionBase.cs" />
     <Compile Include="Descriptors\ContentTypeDescription.cs" />
     <Compile Include="Descriptors\FolderDescription.cs" />
