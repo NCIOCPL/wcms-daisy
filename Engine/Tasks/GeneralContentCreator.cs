@@ -32,6 +32,8 @@ namespace MigrationEngine.Tasks
             int index = 1;
             int count = contentItems.Count;
 
+            // Assumes that all items in a given task instance will use the same community.
+            // (All records in a single datagetter call return the same community.)
             string community = string.Empty;
             if (count > 0)
             {
@@ -42,7 +44,7 @@ namespace MigrationEngine.Tasks
             {
                 foreach (FullItemDescription item in contentItems)
                 {
-                    logger.BeginTaskItem(Name, index++, count, item.MigrationID, item.Path);
+                    logger.BeginTaskItem(Name, index++, count, item, item.Path);
 
                     try
                     {
