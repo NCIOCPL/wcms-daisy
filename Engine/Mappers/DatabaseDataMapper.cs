@@ -16,7 +16,7 @@ namespace MigrationEngine.Mappers
         : DataMapper<ReturnType>
     {
         // Common field names.
-        protected const string MigIDField = "migid";
+        protected const string MigIDField = "mig_id";
         protected const string ContentTypeField = "contenttype";
         protected const string CommunityNameField = "community";
         protected const string PathNameField = "folder";
