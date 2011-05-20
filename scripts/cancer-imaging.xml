@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MigrationTaskList>
-    <MigrationTask xsi:type="FolderCreator" Name="FolderCreator">
+    <!-- Folder Creation -->
+    <MigrationTask xsi:type="FolderCreator" Name="mig_createfolder">
       <DataGetter xsi:type="DatabaseDataGetterOfFolderDescription" ProcName="mig_createfolder" ConnectionName="IntranetInt">
         <Mapper xsi:type="DatabaseFolderDescriptionMapper" />
       </DataGetter>
     </MigrationTask>
-    <MigrationTask xsi:type="GeneralContentCreator" Name="ContentCreator1">
+
+    <!-- Content Creation -->
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_createpage">
       <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createpage" ConnectionName="IntranetInt">
         <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
       </DataGetter>
     </MigrationTask>
+    <!--<MigrationTask xsi:type="GeneralContentCreator" Name="mig_createlist">
+      <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createlist" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_createexternalLink">
+      <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createexternalLink" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_createsecondaryURL">
+      <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createsecondaryURL" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_createContentBlock">
+      <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createContentBlock" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_createSectionNav">
+      <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createSectionNav" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_createMainNav">
+      <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createMainNav" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>-->
   </MigrationTaskList>
 </Migration>

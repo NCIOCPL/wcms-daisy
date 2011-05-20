@@ -1,0 +1,10 @@
+<list>
+  <item>
+    <contentType>nciLink</contentType>
+    <community>site</community>
+  </item>
+  <item>
+    <contentType>nciList</contentType>
+    <community>siteAdmin</community>
+  </item>
+</list>
