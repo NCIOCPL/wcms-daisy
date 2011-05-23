@@ -65,7 +65,7 @@ namespace Daisy
         {
             string timestamp = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
             Console.WriteLine("{0}\tItem {1} of {2}. MigID: {3}, path: {4}",
-                timestamp, itemIndex, itemCount, itemMigrationID, path ?? string.Empty);
+                taskName, itemIndex, itemCount, itemMigrationID, path ?? string.Empty);
 
             _migrationOutput.WriteLine("<item time=\"{0}\" item_pos=\"{1}\" item_count=\"{2}\">", timestamp, itemIndex, itemCount);
             _migrationOutput.WriteLine("<mig_id>{0}</mig_id>", itemMigrationID);
@@ -76,7 +76,7 @@ namespace Daisy
         {
             string timestamp = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
             Console.WriteLine("{0}\tItem {1} of {2}. Mig item: {3}, path: {4}",
-                timestamp, itemIndex, itemCount, migItem, path ?? string.Empty);
+                taskName, itemIndex, itemCount, migItem, path ?? string.Empty);
 
             _migrationOutput.WriteLine("<item time=\"{0}\" item_pos=\"{1}\" item_count=\"{2}\">", timestamp, itemIndex, itemCount);
             _migrationOutput.WriteLine("<mig_item>{0}</mig_item>", migItem.ToXmlString());
