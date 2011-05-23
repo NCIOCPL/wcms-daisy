@@ -54,7 +54,12 @@ namespace MigrationEngine.Tasks
                 {
                     try
                     {
-                        PercussionGuid[] itemList = controller.SearchForContentItems(contentType.ContentType, "/", null);
+                        // Search for (and delete) only the content items belonging to the current community.
+                        PercussionGuid communityID = controller.Community[communityName];
+                        Dictionary<string, string> criteria = new Dictionary<string, string>();
+                        criteria.Add("sys_communityid", communityID.ID.ToString());
+
+                        PercussionGuid[] itemList = controller.SearchForContentItems(contentType.ContentType, criteria);
 
                         int itemCount = itemList.Length;
                         int loopCount = (itemCount / MAX_REQUEST_SIZE);
