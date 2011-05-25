@@ -16,7 +16,7 @@ namespace MigrationEngine.Utilities
 
         static string[] fieldToBeRectified = { "bodyfield", "long_description" };
 
-        public static Dictionary<string, string> Doit(Guid migrationID, Dictionary<string, string> fields, IMigrationLog logger, CMSController controller)
+        public static Dictionary<string, string> ConvertToXHtml(Guid migrationID, Dictionary<string, string> fields, IMigrationLog logger, CMSController controller)
         {
             Dictionary<string, string> outgoing = new Dictionary<string, string>();
             HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
@@ -49,8 +49,8 @@ namespace MigrationEngine.Utilities
                     //Munge
                     if (HtmlOut.Trim().Length > 0)
                     {
-                        string mungeMessage = "";
-                        HtmlOut = munger.RewriteSingleUrl(HtmlOut, out mungeMessage);
+                        string mungeMessage = string.Empty;
+                        HtmlOut = munger.RewriteUrls(HtmlOut, null, out mungeMessage);
                         if (mungeMessage != "")
                         {
                             StringBuilder sb = new StringBuilder();

@@ -19,16 +19,7 @@ namespace MigrationEngine
         /// List of migration tasks to be performed.  The list is populated
         /// with concrete objects at runtime via deserialization.
         /// </summary>
-        public MigrationTask[] MigrationTaskList;// = new MigrationTask[]
-        //{
-        //    new FolderCreator(),
-        //    new GeneralContentCreator(),
-        //    new UpdaterForMigrationID(),
-        //    new UpdaterForFolderPath(),
-        //    new RelaterForMigrationID(),
-        //    new RelaterForFolderPath(),
-        //    new Transitioner()
-        //};
+        public MigrationTask[] MigrationTaskList;
 
         /// <summary>
         /// Performs the Migration.

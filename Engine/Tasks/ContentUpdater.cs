@@ -45,10 +45,6 @@ namespace MigrationEngine.Tasks
 
                     try
                     {
-                        //For Testing 
-                        //if (index > 2)
-                        //    break;                       // Get Percussion ID
-
                         string message = "";
                         PercussionGuid precID = PercWrapper.GetPercussionIDFromMigID(controller, item.MigrationID, item.ContentType);
                         if (precID == PercWrapper.ContentItemNotFound)
@@ -70,7 +66,7 @@ namespace MigrationEngine.Tasks
 
                         //convert HTML to XML and do Link Munging on fields 
                         Dictionary<string, string> rectifiedFields =
-                            FieldHtmlRectifier.Doit(item.MigrationID, item.Fields, logger, controller);
+                            FieldHtmlRectifier.ConvertToXHtml(item.MigrationID, item.Fields, logger, controller);
 
                         PercWrapper.UpdateItemWrapper(controller, precID, new FieldSet(rectifiedFields), out message);
                         if (!string.IsNullOrEmpty(message))

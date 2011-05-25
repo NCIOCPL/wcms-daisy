@@ -50,7 +50,7 @@ namespace MigrationEngine.Tasks
                     {
                         //convert HTML to XML and do Link Munging on fields
                         Dictionary<string, string> rectifiedFields =
-                            FieldHtmlRectifier.Doit(item.MigrationID, item.Fields, logger, controller);
+                            FieldHtmlRectifier.ConvertToXHtml(item.MigrationID, item.Fields, logger, controller);
 
                         string message;
                         long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, rectifiedFields, item.Path, out message);
@@ -58,11 +58,6 @@ namespace MigrationEngine.Tasks
                         {
                             logger.LogTaskItemWarning(item.MigrationID, message, item.Fields);
                         }
-
-                        //For Testing 
-                        //if (index > 1)
-                        //    break;
-
                     }
                     catch (Exception ex)
                     {
