@@ -18,7 +18,6 @@ namespace Daisy
                 XmlLogger logger = new XmlLogger("LOG-");
                 logger.StartLog();
                 Migrator engine = new Migrator();
-                //engine.Save(@"data.xml");
                 engine.Run(scriptName, logger);
                 logger.EndLog();
             }
