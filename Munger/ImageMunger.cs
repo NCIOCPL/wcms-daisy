@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -7,13 +8,12 @@ using System.Xml;
 
 using NCI.CMS.Percussion.Manager.CMS;
 
+using Munger.Configuration;
+
 namespace Munger
 {
-    class ImageMunger
+    class ImageMunger : MungerBase
     {
-        CMSController CMSController;
-        Logger MessageLog;
-
         // For talking to Percussion.
         // Map of Image URLs to Percussion content IDs.
         // Deliberately static so it won't go away between calls.
@@ -21,9 +21,8 @@ namespace Munger
         private static Dictionary<string, PercussionGuid> _imageUrlMap = new Dictionary<string, PercussionGuid>();
 
         public ImageMunger(CMSController controller, Logger messageLog)
+            : base (controller, messageLog)
         {
-            CMSController = controller;
-            MessageLog = messageLog;
         }
 
         /// <summary>
@@ -46,8 +45,16 @@ namespace Munger
                 {
                     try
                     {
+                        // Flag missing alt= attribute.
+                        if (link.Attributes["alt"] == null)
+                        {
+                            string message = string.Format("Missing alt= attribute in tag '{0}'.", link.OuterXml);
+                            errors.Add(message);
+                        }
+
+                        // Process the link.
                         string img = link.Attributes["src"].Value;
-                        if (IsACancerGovImage(img))
+                        if (IsALocalImage(img))
                         {
                             RewriteImageTag(link, pageUrl);
                         }
@@ -100,7 +107,7 @@ namespace Munger
                 altText = imageNode.Attributes["alt"].Value;
 
             // Turn the URL into Percussion server-relative and cancer.gov absolute links.
-            string relativePath = MakeRelativePath(img, pageUrl);
+            string relativePath = MakeRelativePath(img);
 
             // Is the URL already in the map?
             PercussionGuid imageContentID;
@@ -113,7 +120,7 @@ namespace Munger
                 imageContentID = MigrateImage(relativePath, altText);
                 _imageUrlMap.Add(relativePath, imageContentID);
             }
-            
+
             // Rewrite tag as an inline image.
             XmlAttribute attrib;
 
@@ -155,7 +162,7 @@ namespace Munger
 
         private PercussionGuid MigrateImage(string imagePath, string altText)
         {
-            ImageInfo imgInfo = ImageInfo.DownloadImage("http://www.cancer.gov", imagePath);
+            ImageInfo imgInfo = ImageInfo.DownloadImage(CanonicalHostName, imagePath);
             NciImage nciImage = new NciImage(imgInfo, altText);
 
             long rawID =
@@ -164,21 +171,25 @@ namespace Munger
             return new PercussionGuid(rawID);
         }
 
-        private string MakeRelativePath(string path, string pageUrl)
+        private string MakeRelativePath(string path)
         {
-            // Path will always be lower-case.  This is deliberate and important.
+            // Path will always be lower-case.
+            // This is deliberate and important for making sure we don't
+            // rewrite the same URL differently based on case.
             string imgpath = path.ToLowerInvariant();
+            Uri uriPath = new Uri(path.ToLowerInvariant(), UriKind.RelativeOrAbsolute);
+
             string percussionPath = string.Empty;
 
-            if (imgpath.StartsWith("/"))
+            if (!uriPath.IsAbsoluteUri
+                && uriPath.OriginalString.StartsWith("/"))
             {
-                percussionPath = imgpath;
+                percussionPath = uriPath.OriginalString;
             }
-            else if (imgpath.StartsWith("http://cancer.gov/")
-                || imgpath.StartsWith("http://www.cancer.gov/"))
+            else if(uriPath.IsAbsoluteUri
+                && HostAliases.Contains(uriPath.Host))
             {
-                int endServerIndex = imgpath.IndexOf(".gov/") + 4;
-                percussionPath = imgpath.Substring(endServerIndex);
+                percussionPath = uriPath.PathAndQuery;
             }
             else if (imgpath.StartsWith("../"))
             {
@@ -195,13 +206,19 @@ namespace Munger
             return percussionPath;
         }
 
-        private bool IsACancerGovImage(string imageUrl)
+        /// <summary>
+        /// Determines whether the image URL is hosted on the site being migrated.
+        /// </summary>
+        /// <param name="imageUrl"></param>
+        /// <returns></returns>
+        private bool IsALocalImage(string imageUrl)
         {
-            return (imageUrl.StartsWith("/")
-                || imageUrl.StartsWith("../")
-                || imageUrl.StartsWith("~/")
-                || imageUrl.StartsWith("http://cancer.gov", true, CultureInfo.InvariantCulture)
-                || imageUrl.StartsWith("http://www.cancer.gov", true, CultureInfo.InvariantCulture));
+            Uri uriPath = new Uri(imageUrl, UriKind.RelativeOrAbsolute);
+
+            // Check Is it a relative path?
+            //    if not, is the host one of the local aliases?
+            return (!uriPath.IsAbsoluteUri
+                || HostAliases.Contains(uriPath.Host));
         }
     }
 }

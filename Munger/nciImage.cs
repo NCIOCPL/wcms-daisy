@@ -12,7 +12,7 @@ namespace Munger
 
         public static string[] KnownExtensions = { gif, jpg, png, bmp };
 
-        public string ContentType { get { return "nciImage"; } }
+        public string ContentType { get { return "genImage"; } }
 
         private FieldSet _fieldSet = new FieldSet();
         public FieldSet FieldSet { get { return _fieldSet; } }
@@ -27,7 +27,24 @@ namespace Munger
             _fieldSet.Add("img1_height", info.Height.ToString());
             _fieldSet.Add("img1_width", info.Width.ToString());
             _fieldSet.Add("img1_type", info.MimeType);
-            _fieldSet.Add("img_alt", altText);
+
+            _fieldSet.Add("img2", info.Data);
+            _fieldSet.Add("img2_ext", info.Extension);
+            _fieldSet.Add("img2_filename", info.FileName);
+            _fieldSet.Add("img2_size", info.FileSize.ToString());
+            _fieldSet.Add("img2_height", info.Height.ToString());
+            _fieldSet.Add("img2_width", info.Width.ToString());
+            _fieldSet.Add("img2_type", info.MimeType);
+
+            _fieldSet.Add("img3", info.Data);
+            _fieldSet.Add("img3_ext", info.Extension);
+            _fieldSet.Add("img3_filename", info.FileName);
+            _fieldSet.Add("img3_size", info.FileSize.ToString());
+            _fieldSet.Add("img3_height", info.Height.ToString());
+            _fieldSet.Add("img3_width", info.Width.ToString());
+            _fieldSet.Add("img3_type", info.MimeType);
+
+            _fieldSet.Add("img_alt_txt", altText);
         }
     }
 }

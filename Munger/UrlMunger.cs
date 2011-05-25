@@ -18,7 +18,7 @@ namespace Munger
         public UrlMunger(CMSController controller)
         {
             if (_logger == null)
-                _logger = new Logger("URL_Munging_");
+                _logger = new Logger();
             _imageMunger = new ImageMunger(controller, _logger);
             _linkMunger = new LinkMunger(controller, _logger);
         }
@@ -75,9 +75,12 @@ namespace Munger
 
         private XmlDocument CreateXmlDocument(string docBody)
         {
-            string xml_string = "<!DOCTYPE html SYSTEM \""
-                + Environment.CurrentDirectory + "\\DTD\\xhtml1-transitional.dtd"
-                + "\"> <html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>simple document</title></head> <body>"
+            //string xml_string = "<!DOCTYPE html SYSTEM \""
+            //    + Environment.CurrentDirectory + "\\DTD\\xhtml1-transitional.dtd"
+            //    + "\"> <html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>simple document</title></head> <body>"
+            //    + docBody
+            //    + "</body></html>";
+            string xml_string = "<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>simple document</title></head> <body>"
                 + docBody
                 + "</body></html>";
 

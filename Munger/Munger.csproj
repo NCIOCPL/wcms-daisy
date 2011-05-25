@@ -49,11 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppResolver.cs" />
-    <Compile Include="CancerInfoSummaryResolver.cs" />
+    <Compile Include="Configuration\HostElement.cs" />
+    <Compile Include="Configuration\HostListElement.cs" />
+    <Compile Include="Configuration\MungerConfigurationSection.cs" />
+    <Compile Include="HostSet.cs" />
     <Compile Include="ImageResolver.cs" />
     <Compile Include="DataAccess.cs" />
     <Compile Include="DatabaseResolver.cs" />
-    <Compile Include="DrugInfoSummaryResolver.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="FileResolver.cs" />
     <Compile Include="ILinkResolver.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="LinkLegacyDetails.cs" />
     <Compile Include="LinkMunger.cs" />
     <Compile Include="LinkSubstituter.cs" />
+    <Compile Include="MungerBase.cs" />
     <Compile Include="nciFile.cs" />
     <Compile Include="NciFileInfo.cs" />
     <Compile Include="Logger.cs" />

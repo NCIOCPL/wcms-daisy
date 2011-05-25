@@ -9,9 +9,9 @@ namespace Munger
 {
     public class Logger
     {
-        public Logger(string baseName)
+        public Logger()
         {
-            fileOutput = new StreamWriter(baseName + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".log"); ;
+            fileOutput = new StreamWriter("LOG-" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + "-URL-Munging.log"); ;
         }
 
         StreamWriter fileOutput = null;

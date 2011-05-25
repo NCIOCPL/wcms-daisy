@@ -72,7 +72,7 @@ namespace Munger
 
             string extension = getFileExtension(filePath);
             string tempFile = "temp_migrate" + extension;
-            string url = host + filePath;
+            string url = "http://" + host + filePath;
 
 
             WebClient wc = new WebClient();

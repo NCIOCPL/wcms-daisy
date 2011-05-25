@@ -9,13 +9,20 @@ namespace Munger
 {
     class ImageResolver : ILinkResolver
     {
+        private string _hostname;
+
+        public ImageResolver(string hostname)
+        {
+            _hostname = hostname;
+        }
+
         public LinkCmsDetails ResolveLink(CMSController controller, string prettyUrl)
         {
             LinkCmsDetails details = null;
 
             if (NciImage.KnownExtensions.Any(extension => prettyUrl.EndsWith(extension, StringComparison.OrdinalIgnoreCase)))
             {
-                ImageInfo imageInfo = ImageInfo.DownloadImage("http://www.cancer.gov", prettyUrl);
+                ImageInfo imageInfo = ImageInfo.DownloadImage(_hostname, prettyUrl);
                 NciImage nciImage = new NciImage(imageInfo, "");
 
                 long rawID =

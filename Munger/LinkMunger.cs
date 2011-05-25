@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -8,13 +9,12 @@ using System.Xml;
 
 using NCI.CMS.Percussion.Manager.CMS;
 
+using Munger.Configuration;
+
 namespace Munger
 {
-    class LinkMunger
+    class LinkMunger : MungerBase
     {
-        CMSController CMSController;
-        Logger MessageLog;
-
         // Map of link URLs to Percussion content IDs.
         // Deliberately static so it won't go away between calls.
         // This object is not thread-safe.
@@ -36,10 +36,8 @@ namespace Munger
         private PercussionGuid _inlineLinkSlotID;
 
         public LinkMunger(CMSController controller, Logger messageLog)
+            : base(controller, messageLog)
         {
-            CMSController = controller;
-            MessageLog = messageLog;
-
             SlotInfo inlineLinkSlot = CMSController.SlotManager["sys_inline_link"];
             _inlineLinkSlotID = inlineLinkSlot.CmsGuid;
             foreach (ContentTypeToTemplateInfo info in inlineLinkSlot.AllowedContentTemplatePairs)
@@ -308,9 +306,7 @@ namespace Munger
 
             ILinkResolver[] linkResolvers = { new DatabaseResolver(),
                                                 new FileResolver(),
-                                                //new DrugInfoSummaryResolver(),
-                                                //new CancerInfoSummaryResolver(),
-                                                new ImageResolver()};
+                                                new ImageResolver(CanonicalHostName)};
 
             foreach (ILinkResolver resolver in linkResolvers)
             {
