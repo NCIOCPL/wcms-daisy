@@ -12,6 +12,13 @@ namespace Munger
 {
     class FileResolver : ILinkResolver
     {
+        private string _hostname;
+
+        public FileResolver(string hostname)
+        {
+            _hostname = hostname;
+        }
+
         public LinkCmsDetails ResolveLink(CMSController controller, string prettyUrl)
         {
             LinkCmsDetails details = null;
@@ -20,7 +27,7 @@ namespace Munger
 
             if (NciFileInfo.KnownExtensions.Any(extension => decodedUrl.EndsWith(extension)))
             {
-                NciFileInfo fileInfo = NciFileInfo.DownloadImage("http://www.cancer.gov", decodedUrl);
+                NciFileInfo fileInfo = NciFileInfo.DownloadImage(_hostname, decodedUrl);
                 NciFile nciFile = new NciFile(fileInfo);
 
                 long rawID =

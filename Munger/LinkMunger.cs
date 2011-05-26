@@ -305,7 +305,7 @@ namespace Munger
             LinkCmsDetails details = null;
 
             ILinkResolver[] linkResolvers = { new DatabaseResolver(),
-                                                new FileResolver(),
+                                                new FileResolver(CanonicalHostName),
                                                 new ImageResolver(CanonicalHostName)};
 
             foreach (ILinkResolver resolver in linkResolvers)
