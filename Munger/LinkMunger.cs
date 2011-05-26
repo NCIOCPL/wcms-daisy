@@ -516,7 +516,7 @@ namespace Munger
             }
             else
             {
-                relativePath = RemoveCancerGovHost(linkpath);
+                relativePath = RemoveServerHostName(linkpath);
             }
 
             // Clean up old-style clicklog handler.
@@ -543,7 +543,7 @@ namespace Munger
                 }
 
                 // In case the wrapped URL was to cancer.gov
-                relativePath = RemoveCancerGovHost(relativePath);
+                relativePath = RemoveServerHostName(relativePath);
             }
             else if (path.StartsWith("#"))
             {// No rewrite for bookmarks.
@@ -559,16 +559,14 @@ namespace Munger
             return relativePath;
         }
 
-        private string RemoveCancerGovHost(string linkpath)
+        private string RemoveServerHostName(string linkpath)
         {
             string cleanUrl = linkpath;
+            Uri linkUri = new Uri(linkpath, UriKind.RelativeOrAbsolute);
 
-            if (linkpath.StartsWith("http://cancer.gov", StringComparison.InvariantCultureIgnoreCase)
-                || linkpath.StartsWith("http://www.cancer.gov", StringComparison.InvariantCultureIgnoreCase)
-                || linkpath.StartsWith("http://preview.cancer.gov", StringComparison.InvariantCultureIgnoreCase))
+            if(linkUri.IsAbsoluteUri && HostAliases.Contains(linkUri.Host))
             {
-                int endServerIndex = linkpath.IndexOf(".gov", StringComparison.InvariantCultureIgnoreCase) + 4;
-                cleanUrl = linkpath.Substring(endServerIndex);
+                cleanUrl = linkUri.PathAndQuery;
 
                 // Did we take out everything?
                 if (string.IsNullOrEmpty(cleanUrl))
@@ -619,9 +617,6 @@ namespace Munger
             string[] ignoreList = { "/diccionario", "/dictionary", "/drugdictionary", "/search/clinicaltrials" };
             bool safelyIgnored = Array.Exists(ignoreList, item => item == testUrl || (item + "/") == testUrl);
 
-            //bool clinicalTrial = _clinicalTrialUrlSet.Contains(linkUrl);
-
-            //return !(externalApplication || hasBookmark || safelyIgnored || clinicalTrial);
             return !(externalApplication || hasBookmark || safelyIgnored );
         }
 
@@ -634,15 +629,13 @@ namespace Munger
         private bool LinkIsCancerGovInternal(string linkUrl)
         {
             string testUrl = linkUrl.Trim().ToLower();
+                Uri uri = new Uri(testUrl, UriKind.RelativeOrAbsolute);
 
             // External web sites.
             bool externalSite = false;
-            if (testUrl.StartsWith("http:")) // Covers http and https.
+            if (uri.Scheme.StartsWith("http")) // Covers http and https.
             {
-                Uri uri = new Uri(testUrl);
-                if (uri.Host != "www.cancer.gov"
-                   && uri.Host != "cancer.gov"
-                    && uri.Host != "preview.cancer.gov")
+                if (!HostAliases.Contains(uri.Host))
                 {
                     externalSite = true;
                 }
@@ -651,7 +644,8 @@ namespace Munger
             // Non-http protocols
             bool unmanagedProtocol;
             string[] protocolList = { "javascript:", "mailto:" };
-            unmanagedProtocol = Array.Exists(protocolList, protocol => testUrl.StartsWith(protocol));
+            unmanagedProtocol = Array.Exists(protocolList,
+                protocol => uri.Scheme.Equals(protocol,StringComparison.InvariantCultureIgnoreCase));
 
             return !(externalSite || unmanagedProtocol);
         }

@@ -79,20 +79,6 @@
       <Name>NCILibrary.CMS.Percussion</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="DTD\xhtml-lat1.ent">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="DTD\xhtml-special.ent">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="DTD\xhtml-symbol.ent">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="DTD\xhtml1-transitional.dtd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
