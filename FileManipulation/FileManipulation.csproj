@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="ImageInfo.cs" />
     <Compile Include="nciFile.cs" />
     <Compile Include="NciFileInfo.cs" />

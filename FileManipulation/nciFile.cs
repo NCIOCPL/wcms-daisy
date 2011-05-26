@@ -24,8 +24,6 @@ namespace FileManipulation
             _fieldSet.Add("item_file_attachment_size", info.FileSize.ToString());
             _fieldSet.Add("item_file_attachment_type", info.MimeType);
             _fieldSet.Add("pretty_url_name", info.Title.Substring(0, Math.Min(100, info.Title.Length)));
-            _fieldSet.Add("filename", info.FileName);
-            _fieldSet.Add("sys_suffix", info.Extension);
         }
     }
 }
