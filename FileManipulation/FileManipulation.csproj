@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}</ProjectGuid>
+    <ProjectGuid>{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Munger</RootNamespace>
-    <AssemblyName>Munger</AssemblyName>
+    <RootNamespace>FileManipulation</RootNamespace>
+    <AssemblyName>FileManipulation</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,11 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Web" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -47,32 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppResolver.cs" />
-    <Compile Include="Configuration\HostElement.cs" />
-    <Compile Include="Configuration\HostListElement.cs" />
-    <Compile Include="Configuration\MungerConfigurationSection.cs" />
-    <Compile Include="HostSet.cs" />
-    <Compile Include="ImageResolver.cs" />
-    <Compile Include="DataAccess.cs" />
-    <Compile Include="DatabaseResolver.cs" />
-    <Compile Include="Exceptions.cs" />
-    <Compile Include="FileResolver.cs" />
-    <Compile Include="ILinkResolver.cs" />
-    <Compile Include="ImageMunger.cs" />
-    <Compile Include="LinkCmsDetails.cs" />
-    <Compile Include="LinkLegacyDetails.cs" />
-    <Compile Include="LinkMunger.cs" />
-    <Compile Include="LinkSubstituter.cs" />
-    <Compile Include="MungerBase.cs" />
-    <Compile Include="Logger.cs" />
-    <Compile Include="UrlMunger.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="ImageInfo.cs" />
+    <Compile Include="nciFile.cs" />
+    <Compile Include="NciFileInfo.cs" />
+    <Compile Include="nciImage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FileManipulation\FileManipulation.csproj">
-      <Project>{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}</Project>
-      <Name>FileManipulation</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NCILibrary\Code\NCILibrary.CMS.Percussion\NCILibrary.CMS.Percussion.csproj">
       <Project>{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}</Project>
       <Name>NCILibrary.CMS.Percussion</Name>

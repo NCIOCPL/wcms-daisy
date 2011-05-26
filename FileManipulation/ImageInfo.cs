@@ -3,24 +3,19 @@ using System.IO;
 using System.Net;
 using System.Drawing;
 
-namespace Munger
+namespace FileManipulation
 {
-    class NciFileInfo
+    public class ImageInfo
     {
-        const string pdf = ".pdf";
-        const string doc = ".doc";
-        const string docx = ".docx";
-        const string xls = ".xls";
-        const string xlsx = ".xlsx";
-        const string ppt = ".ppt";
-        const string pptx = ".pptx";
-        const string mp3 = ".mp3";
-        const string mov = ".mov";
-        const string exe = ".exe";
-        const string ics = ".ics";
+        /// <summary>
+        /// Gets the height of the image
+        /// </summary>
+        public int Height { get; private set; }
 
-
-        public static string[] KnownExtensions = { pdf, doc, docx, xls, xlsx, ppt, pptx, mp3, mov, exe, ics };
+        /// <summary>
+        /// Gets the width of the image
+        /// </summary>
+        public int Width { get; private set; }
 
         /// <summary>
         /// Gets a Base-64 Encoded string representing the data of the image
@@ -67,58 +62,52 @@ namespace Munger
         /// </summary>
         public long FileSize { get; private set; }
 
-        private NciFileInfo()
+        private ImageInfo()
         {
         }
 
-        public static NciFileInfo DownloadImage(string host, string filePath)
+        public static ImageInfo DownloadImage(string host, string filePath)
         {
-            NciFileInfo rtnFile = new NciFileInfo();
+            ImageInfo rtnImage = new ImageInfo();
 
             string extension = getFileExtension(filePath);
             string tempFile = "temp_migrate" + extension;
-            string url = host + filePath;
+            string url = "http://" + host + filePath;
 
 
             WebClient wc = new WebClient();
             wc.DownloadFile(url, tempFile);            
 
             FileInfo file = new FileInfo(tempFile);
-            rtnFile.Extension = extension;
-            rtnFile.FileName = getFilename(filePath);
-            rtnFile.MimeType = GetMimeType(extension);
-            rtnFile.FileSize = file.Length;
-            rtnFile.Data = Convert.ToBase64String(ReadBinaryFile(file));
+            rtnImage.Extension = extension;
+            rtnImage.FileName = getFilename(filePath);
+            rtnImage.MimeType = GetMimeType(extension);
+            rtnImage.FileSize = file.Length;
+            rtnImage.Data = Convert.ToBase64String(ReadBinaryFile(file));
 
-            int pathEnd = filePath.LastIndexOf(rtnFile.FileName);
-            if (pathEnd > 0)
-                rtnFile.Path = filePath.Substring(0, pathEnd - 1);
+            int pathEnd = filePath.LastIndexOf('/');
+            if (pathEnd != -1)
+                rtnImage.Path = filePath.Substring(0, pathEnd);
             else
-                rtnFile.Path = string.Empty;
+                rtnImage.Path = string.Empty;
+
+
+            using (Bitmap image = new Bitmap(tempFile, false))
+            {
+                rtnImage.Height = image.Height;
+                rtnImage.Width = image.Width;
+            }            
                         
-            return rtnFile;
+            return rtnImage;
         }
 
 
         private static string GetMimeType(string ext)
         {
             string mimeType = "application/unknown";
-
-            switch (ext)
-            {
-                case pdf: mimeType = "application/pdf"; break;
-                case doc: mimeType = "application/msword"; break;
-                case docx: mimeType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"; break;
-                case xls: mimeType = "application/vnd.ms-excel"; break;
-                case xlsx: mimeType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"; break;
-                case ppt: mimeType = "application/vnd.ms-powerpoint"; break;
-                case pptx: mimeType = "application/vnd.openxmlformats-officedocument.presentationml.presentation"; break;
-                case mp3: mimeType = "audio/mpeg"; break;
-                case mov: mimeType = "video/quicktime"; break;
-                case exe: mimeType = "application/octet-stream"; break;
-                case ics: mimeType = "application/octet-stream"; break;
-            }
-
+            Microsoft.Win32.RegistryKey regKey = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey(ext);
+            if (regKey != null && regKey.GetValue("Content Type") != null)
+                mimeType = regKey.GetValue("Content Type").ToString();
             return mimeType;
         }
 

@@ -8,6 +8,7 @@ using System.Xml;
 
 using NCI.CMS.Percussion.Manager.CMS;
 
+using FileManipulation;
 using Munger.Configuration;
 
 namespace Munger

@@ -6,6 +6,8 @@ using System.Web;
 
 using NCI.CMS.Percussion.Manager.CMS;
 
+using FileManipulation;
+
 namespace Munger
 {
     class FileResolver : ILinkResolver

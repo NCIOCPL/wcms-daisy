@@ -5,11 +5,11 @@ using System.Text;
 
 using NCI.CMS.Percussion.Manager.CMS;
 
-namespace Munger
+namespace FileManipulation
 {
-    class NciFile
+    public class NciFile
     {
-        public string ContentType { get { return "nciFile"; } }
+        public string ContentType { get { return "genFile"; } }
 
         private FieldSet _fieldSet = new FieldSet();
         public FieldSet FieldSet { get { return _fieldSet; } }

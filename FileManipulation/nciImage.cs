@@ -1,9 +1,9 @@
 ﻿
 using NCI.CMS.Percussion.Manager.CMS;
 
-namespace Munger
+namespace FileManipulation
 {
-    class NciImage
+    public class NciImage
     {
         const string gif = ".gif";
         const string jpg = ".jpg";
