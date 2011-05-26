@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MigrationTaskList>
     <!-- Folder Creation -->
@@ -14,7 +14,7 @@
         <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
       </DataGetter>
     </MigrationTask>
-    <!--<MigrationTask xsi:type="GeneralContentCreator" Name="mig_createlist">
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_createlist">
       <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createlist" ConnectionName="IntranetInt">
         <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
       </DataGetter>
@@ -43,6 +43,63 @@
       <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_createMainNav" ConnectionName="IntranetInt">
         <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
       </DataGetter>
-    </MigrationTask>-->
+    </MigrationTask>
+
+    <!-- Content Updates -->
+    <MigrationTask xsi:type="ContentUpdater" Name="mig_updatefile">
+      <DataGetter xsi:type="DatabaseDataGetterOfUpdateContentItem" ProcName="mig_updatefile" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseUpdateItemMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="ContentUpdater" Name="mig_updatePageBody">
+      <DataGetter xsi:type="DatabaseDataGetterOfUpdateContentItem" ProcName="mig_updatePageBody" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseUpdateItemMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <!-- Create Relationships -->
+    <MigrationTask xsi:type="RelationshipCreator" Name="mig_ADDlistItem">
+      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDlistItem" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="RelationshipCreator" Name="mig_addPageobj">
+      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_addPageobj" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="RelationshipCreator" Name="mig_ADDSecondaryURL">
+      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDSecondaryURL" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="RelationshipCreator" Name="mig_ADDNavObj">
+      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDNavObj" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="RelationshipCreator" Name="mig_ADDLandingPage">
+      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDLandingPage" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="RelationshipCreator" Name="mig_ADDSectionNav">
+      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDSectionNav" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="RelationshipCreator" Name="mig_ADDMainNav">
+      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDMainNav" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
   </MigrationTaskList>
 </Migration>
