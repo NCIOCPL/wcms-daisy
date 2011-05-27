@@ -30,7 +30,7 @@ namespace Munger
             // Load alias list only once.
             if (HostAliases == null)
             {
-                MungerConfigurationSection config = (MungerConfigurationSection)ConfigurationManager.GetSection("MungerConfig");
+                MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
 
                 HostAliases = new HostSet();
                 foreach (HostElement item in config.HostList)

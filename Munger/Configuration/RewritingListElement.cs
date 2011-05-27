@@ -2,27 +2,27 @@
 
 namespace Munger.Configuration
 {
+
     /// <summary>
-    /// Provides a list of host name aliases for a single web site.
-    /// e.g. www.cancer.gov, cancer.gov, www.nci.nih.gov
+    /// Provides a list of old/new path value pairs.
     /// </summary>
-    public class HostListElement : ConfigurationElementCollection
+    public class RewritingListElement : ConfigurationElementCollection
     {
         protected override ConfigurationElement CreateNewElement()
         {
-            return new HostElement();
+            return new RewritingElement();
         }
 
         protected override object GetElementKey(ConfigurationElement element)
         {
-            return ((HostElement)element).Name;
+            return ((RewritingElement)element).OldPath;
         }
 
-        public HostElement this[int index]
+        public RewritingElement this[int index]
         {
             get
             {
-                return (HostElement)BaseGet(index);
+                return (RewritingElement)BaseGet(index);
             }
         }
     }

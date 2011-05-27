@@ -50,7 +50,9 @@
     <Compile Include="AppResolver.cs" />
     <Compile Include="Configuration\HostElement.cs" />
     <Compile Include="Configuration\HostListElement.cs" />
-    <Compile Include="Configuration\MungerConfigurationSection.cs" />
+    <Compile Include="Configuration\MungerConfiguration.cs" />
+    <Compile Include="Configuration\RewritingElement.cs" />
+    <Compile Include="Configuration\RewritingListElement.cs" />
     <Compile Include="HostSet.cs" />
     <Compile Include="ImageResolver.cs" />
     <Compile Include="DataAccess.cs" />
