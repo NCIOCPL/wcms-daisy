@@ -17,19 +17,6 @@ namespace MigrationEngine
         {
         }
 
-        //public void Save(string filePath)
-        //{
-        //    Migration migration = new Migration();
-
-        //    Type[] typeList = GetTypeListForSerialization();
-
-        //    XmlSerializer serializer = new XmlSerializer(typeof(Migration), typeList);
-        //    using (TextWriter writer = new StreamWriter(filePath))
-        //    {
-        //        serializer.Serialize(writer, migration);
-        //    }
-        //}
-
         public void Run(string filePath, IMigrationLog logger)
         {
             // By providing the Serializer a list of classes, we're able to allow for the
