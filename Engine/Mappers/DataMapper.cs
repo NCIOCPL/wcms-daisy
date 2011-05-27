@@ -22,6 +22,12 @@ namespace MigrationEngine.Mappers
     /// </remarks>
     public abstract class DataMapper<ReturnType>
     {
+        // Common field names.
+        protected const string MigIDField = "mig_id";
+        protected const string ContentTypeField = "contenttype";
+        protected const string CommunityNameField = "community";
+        protected const string PathNameField = "folder";
+
         /// <summary>
         /// Maps one item of a data storage type into a single business object.
         /// </summary>

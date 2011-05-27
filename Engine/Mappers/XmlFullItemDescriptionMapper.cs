@@ -8,10 +8,10 @@ using MigrationEngine.Descriptors;
 
 namespace MigrationEngine.Mappers
 {
-    public class XmlContentTypeDescriptionMapper
-         : DataMapper<ContentTypeDescription>
+    public class XmlFullItemDescriptionMapper
+        : XmlDataMapper<FullItemDescription>
     {
-        public override ContentTypeDescription MapItem(object dataItem)
+        public override FullItemDescription MapItem(object dataItem)
         {
             if (!(dataItem is XmlNode))
                 throw new ArgumentException(string.Format("Parameter dataItem is of type {0}, expected XmlNode."),
@@ -19,12 +19,14 @@ namespace MigrationEngine.Mappers
 
             XmlNode item = (XmlNode)dataItem;
 
-            ContentTypeDescription description = new ContentTypeDescription();
+            FullItemDescription description = new FullItemDescription();
 
-            description.ContentType = item.SelectSingleNode(ContentTypeField).InnerText;
+            description.Path = item.SelectSingleNode(PathNameField).InnerText;
+            description.MigrationID = new Guid(item.SelectSingleNode(MigIDField).InnerText);
             description.Community = item.SelectSingleNode(CommunityNameField).InnerText;
+            description.ContentType = item.SelectSingleNode(ContentTypeField).InnerText;
 
-            // Non-data fields not copied into the description's Fields collection.
+            CopyFields(item, description.Fields);
 
             return description;
         }

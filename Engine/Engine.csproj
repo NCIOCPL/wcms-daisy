@@ -66,6 +66,9 @@
     <Compile Include="DataAccess\XmlDataGetter.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="IMigrationLog.cs" />
+    <Compile Include="Mappers\XmlUpdateFileMapper.cs" />
+    <Compile Include="Mappers\XmlDataMapper.cs" />
+    <Compile Include="Mappers\XmlFullItemDescriptionMapper.cs" />
     <Compile Include="Mappers\DatabaseUpdateFileMapper.cs" />
     <Compile Include="Mappers\DatabaseDataMapper.cs" />
     <Compile Include="Mappers\DatabaseFullItemDescriptionMapper.cs" />
