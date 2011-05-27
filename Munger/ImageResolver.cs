@@ -28,9 +28,9 @@ namespace Munger
                 NciImage nciImage = new NciImage(imageInfo, "");
 
                 long rawID =
-                    controller.CreateItem(nciImage.ContentType, nciImage.FieldSet, null, imageInfo.Path, null);
+                    controller.CreateItem(NciImage.ContentType, nciImage.FieldSet, null, imageInfo.Path, null);
 
-                details = new LinkCmsDetails(new PercussionGuid(rawID), nciImage.ContentType);
+                details = new LinkCmsDetails(new PercussionGuid(rawID), NciImage.ContentType);
             }
 
             return details;

@@ -12,7 +12,8 @@ namespace FileManipulation
 
         public static string[] KnownExtensions = { gif, jpg, png, bmp };
 
-        public string ContentType { get { return "genImage"; } }
+        public static string ContentType { get { return "gloImage"; } }
+        public static string PageTemplateName { get { return "gloBnImage"; } }
 
         private FieldSet _fieldSet = new FieldSet();
         public FieldSet FieldSet { get { return _fieldSet; } }

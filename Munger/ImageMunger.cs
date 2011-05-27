@@ -15,7 +15,8 @@ namespace Munger
 {
     class ImageMunger : MungerBase
     {
-        // For talking to Percussion.
+        const string ImagePageTemplate = "gloBnImage";
+
         // Map of Image URLs to Percussion content IDs.
         // Deliberately static so it won't go away between calls.
         // This object is not thread-safe.
@@ -125,7 +126,7 @@ namespace Munger
             // Rewrite tag as an inline image.
             XmlAttribute attrib;
 
-            PercussionGuid snippetTemplate = CMSController.TemplateNameManager["nciBnImage"];
+            PercussionGuid snippetTemplate = CMSController.TemplateNameManager[NciImage.PageTemplateName];
 
 
             // Replace the src attribute.
@@ -167,7 +168,7 @@ namespace Munger
             NciImage nciImage = new NciImage(imgInfo, altText);
 
             long rawID =
-                CMSController.CreateItem(nciImage.ContentType, nciImage.FieldSet, null, imgInfo.Path, null);
+                CMSController.CreateItem(NciImage.ContentType, nciImage.FieldSet, null, imgInfo.Path, null);
 
             return new PercussionGuid(rawID);
         }
