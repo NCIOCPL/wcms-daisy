@@ -44,25 +44,6 @@ namespace Munger
             {
                 _slotContentTypeToTemplateIDMap.Add(new KeyValuePair<string, PercussionGuid>(info.ContentTypeName, info.TemplateID));
             }
-
-            //LoadClinicalTrialUrls();
-        }
-
-        // This method should only be called from the LinkMunger constructor.
-        private void LoadClinicalTrialUrls()
-        {
-            //if (_clinicalTrialUrlSet == null)
-            //{
-            //    _clinicalTrialUrlSet = new HashSet<string>();
-            //    List<string> idStrings = DataAccess.GetProtocolPrettyUrlIDs();
-            //    idStrings.ForEach(idvalue =>
-            //    {
-            //        // Primary pretty URLs are returned first and receive priority.
-            //        string urlString = "/clinicaltrials/" + idvalue;
-            //        if (!_clinicalTrialUrlSet.Contains(urlString))
-            //            _clinicalTrialUrlSet.Add(urlString);
-            //    });
-            //}
         }
 
         /// <summary>
@@ -485,7 +466,6 @@ namespace Munger
                         default:
                             string message = string.Format("Programmatic Link: Unexpected cancer topics search: {0}", arguments);
                             throw new ProgrammaticLinkException(message);
-                            break;
                     }
                 }
 
