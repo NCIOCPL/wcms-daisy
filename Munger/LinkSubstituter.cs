@@ -46,12 +46,6 @@ namespace Munger
             {
                 replacement = _replacementMap[key];
             }
-            else if (originalUrl.StartsWith("/directorscorner/")
-                || originalUrl.StartsWith("/aboutnci/directorscorner"))
-            {
-                replacement="/aboutnci/director";
-            }
-
             return replacement;
         }
     }
