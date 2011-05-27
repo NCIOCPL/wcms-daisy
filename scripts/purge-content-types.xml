@@ -7,8 +7,6 @@
   <item><contentType>genFile</contentType><community>site</community></item>
   <item><contentType>genFundingOpp</contentType><community>site</community></item>
   <item><contentType>genGeneral</contentType><community>site</community></item>
-  <item><contentType>genHome</contentType><community>site</community></item>
-  <item><contentType>genImage</contentType><community>site</community></item>
   <item><contentType>genLanding</contentType><community>site</community></item>
   <item><contentType>genList</contentType><community>site</community></item>
   <item><contentType>genNews</contentType><community>site</community></item>
@@ -17,12 +15,14 @@
   <item><contentType>genSectionBanner</contentType><community>site</community></item>
   <item><contentType>genTCCarousel</contentType><community>site</community></item>
   <item><contentType>genTCItem</contentType><community>site</community></item>
-  <item><contentType>genVideo</contentType><community>site</community></item>
+  <item><contentType>gloImage</contentType><community>site</community></item>
+  <item><contentType>gloVideoPlayer</contentType><community>site</community></item>
   <item><contentType>rffNavon</contentType><community>site</community></item>
 
   <item><contentType>genAppModPage</contentType><community>siteAdmin</community></item>
   <item><contentType>genBrandingBar</contentType><community>siteAdmin</community></item>
   <item><contentType>genConfigurationFile</contentType><community>siteAdmin</community></item>
+  <item><contentType>genHome</contentType><community>siteAdmin</community></item>
   <item><contentType>genSiteBanner</contentType><community>siteAdmin</community></item>
   <item><contentType>genSiteFooter</contentType><community>siteAdmin</community></item>
   <item><contentType>genStyleSheetInfo</contentType><community>siteAdmin</community></item>
@@ -31,6 +31,7 @@
   <item><contentType>genAppModule</contentType><community>ctbAdmin</community></item>
   <item><contentType>genBrandingBar</contentType><community>ctbAdmin</community></item>
   <item><contentType>genConfigurationFile</contentType><community>ctbAdmin</community></item>
+  <item><contentType>genHome</contentType><community>site</community></item>
   <item><contentType>genJavaScriptExternalInfo</contentType><community>ctbAdmin</community></item>
   <item><contentType>genJavaScriptInternalInfo</contentType><community>ctbAdmin</community></item>
   <item><contentType>genMainNav</contentType><community>ctbAdmin</community></item>
