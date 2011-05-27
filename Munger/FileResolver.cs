@@ -31,9 +31,9 @@ namespace Munger
                 NciFile nciFile = new NciFile(fileInfo);
 
                 long rawID =
-                    controller.CreateItem(nciFile.ContentType, nciFile.FieldSet, null, fileInfo.Path, null);
+                    controller.CreateItem(NciFile.ContentType, nciFile.FieldSet, null, fileInfo.Path, null);
 
-                details = new LinkCmsDetails(new PercussionGuid(rawID), nciFile.ContentType);
+                details = new LinkCmsDetails(new PercussionGuid(rawID), NciFile.ContentType);
             }
 
             return details;

@@ -54,7 +54,7 @@ namespace MigrationEngine.Tasks
                         NciFile nciFile = new NciFile(fileInfo);
 
                         long rawID =
-                            controller.CreateItem(nciFile.ContentType, nciFile.FieldSet, null, fileInfo.Path, null);
+                            controller.CreateItem(NciFile.ContentType, nciFile.FieldSet, null, fileInfo.Path, null);
                     }
                     catch (Exception ex)
                     {

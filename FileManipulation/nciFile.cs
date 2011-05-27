@@ -9,7 +9,7 @@ namespace FileManipulation
 {
     public class NciFile
     {
-        public string ContentType { get { return "genFile"; } }
+        public static string ContentType { get { return "genFile"; } }
 
         private FieldSet _fieldSet = new FieldSet();
         public FieldSet FieldSet { get { return _fieldSet; } }
