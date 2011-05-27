@@ -14,7 +14,7 @@ namespace MigrationEngine.Utilities
     static class FieldHtmlRectifier
     {
 
-        static string[] fieldToBeRectified = { "bodyfield", "long_description" };
+        static string[] fieldToBeRectified = { "bodyfield", "contact_text", "contact", "additional_information" };
 
         public static Dictionary<string, string> ConvertToXHtml(Guid migrationID, Dictionary<string, string> fields, IMigrationLog logger, CMSController controller)
         {

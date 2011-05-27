@@ -49,9 +49,11 @@
   <ItemGroup>
     <Compile Include="Configuration\CommunityListElement.cs" />
     <Compile Include="Configuration\CommunityElement.cs" />
-    <Compile Include="Configuration\CommunityLookupSection.cs" />
+    <Compile Include="Configuration\MigrationEngineSection.cs" />
+    <Compile Include="Configuration\SiteHostNameElement.cs" />
     <Compile Include="Descriptors\ContentDescriptionBase.cs" />
     <Compile Include="Descriptors\ContentTypeDescription.cs" />
+    <Compile Include="Descriptors\UpdateFileItem.cs" />
     <Compile Include="Descriptors\FolderDescription.cs" />
     <Compile Include="Descriptors\FullItemDescription.cs" />
     <Compile Include="Descriptors\IMigrationData.cs" />
@@ -64,6 +66,7 @@
     <Compile Include="DataAccess\XmlDataGetter.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="IMigrationLog.cs" />
+    <Compile Include="Mappers\DatabaseUpdateFileMapper.cs" />
     <Compile Include="Mappers\DatabaseDataMapper.cs" />
     <Compile Include="Mappers\DatabaseFullItemDescriptionMapper.cs" />
     <Compile Include="Mappers\DatabaseFolderDescriptionMapper.cs" />
@@ -76,6 +79,7 @@
     <Compile Include="Migrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tasks\ContentCreatorBase.cs" />
+    <Compile Include="Tasks\FileContentUpdater.cs" />
     <Compile Include="Tasks\FolderCreatorBase.cs" />
     <Compile Include="Tasks\PurgeContent.cs" />
     <Compile Include="Tasks\RelationshipCreatorBase.cs" />
@@ -92,6 +96,10 @@
     <Compile Include="Utilities\PercWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FileManipulation\FileManipulation.csproj">
+      <Project>{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}</Project>
+      <Name>FileManipulation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HtmlAgilityPack\HtmlAgilityPack VS2008.csproj">
       <Project>{193BB801-054F-4729-9D5D-FCE1E32594BF}</Project>
       <Name>HtmlAgilityPack VS2008</Name>

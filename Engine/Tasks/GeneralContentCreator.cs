@@ -56,13 +56,13 @@ namespace MigrationEngine.Tasks
                         long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, rectifiedFields, item.Path, out message);
                         if (!string.IsNullOrEmpty(message))
                         {
-                            logger.LogTaskItemWarning(item.MigrationID, message, item.Fields);
+                            logger.LogTaskItemWarning(item, message, item.Fields);
                         }
                     }
                     catch (Exception ex)
                     {
                         string message = ex.ToString();
-                        logger.LogTaskItemError(item.MigrationID, message, item.Fields);
+                        logger.LogTaskItemError(item, message, item.Fields);
                     }
                     finally
                     {

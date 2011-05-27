@@ -49,7 +49,7 @@ namespace MigrationEngine.Configuration
         /// Looks up a CommunityElement object based on its unique key. 
         /// </summary>
         /// <value></value>
-        public CommunityElement this[string key]
+        public new CommunityElement this[string key]
         {
             get
             {

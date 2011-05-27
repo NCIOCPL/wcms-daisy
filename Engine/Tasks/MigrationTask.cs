@@ -31,15 +31,20 @@ namespace MigrationEngine.Tasks
 
         protected string LookupCommunityName(string key)
         {
+            string community = null;
+
             if (string.IsNullOrEmpty(key))
                 throw new InvalidCommunityNameException("Community lookup key must not be null or empty.");
 
-            CommunityLookupSection lookup = (CommunityLookupSection)ConfigurationManager.GetSection("CommunityLookup");
+            MigrationEngineSection lookup = (MigrationEngineSection)ConfigurationManager.GetSection("MigrationEngine");
+            if (lookup == null)
+                throw new ConfigurationException("Unable to load MigrationEngine settings section.");
 
+            community = lookup.Community[key].Name;
             if (lookup == null)
                 throw new InvalidCommunityNameException(string.Format("No community found for key '{0}'.", key));
 
-            return lookup.Community[key].Name;
+            return community;
         }
     }
 }

@@ -41,7 +41,7 @@ namespace MigrationEngine.Tasks
                 foreach (UpdateContentItem item in contentItems)
                 {
 
-                    logger.BeginTaskItem(Name, index++, count, item.MigrationID, "");
+                    logger.BeginTaskItem(Name, index++, count, item, "");
 
                     try
                     {
@@ -49,18 +49,18 @@ namespace MigrationEngine.Tasks
                         PercussionGuid precID = PercWrapper.GetPercussionIDFromMigID(controller, item.MigrationID, item.ContentType);
                         if (precID == PercWrapper.ContentItemNotFound)
                         {
-                            logger.LogTaskItemWarning(Guid.Empty, "Content Item Not Found", item.Fields);
+                            logger.LogTaskItemWarning(item, "Content Item Not Found", item.Fields);
                             continue;
                         }
                         else if (precID == PercWrapper.TooManyContentItemsFound)
                         {
-                            logger.LogTaskItemWarning(Guid.Empty, "Too Many Content Items Found", item.Fields);
+                            logger.LogTaskItemWarning(item, "Too Many Content Items Found", item.Fields);
                             continue;
 
                         }
                         else if (precID == PercWrapper.CmsErrorOccured)
                         {
-                            logger.LogError(Name, message, Guid.Empty, item.Fields);
+                            logger.LogError(Name, message, item, item.Fields);
                             continue;
                         }
 
@@ -71,16 +71,13 @@ namespace MigrationEngine.Tasks
                         PercWrapper.UpdateItemWrapper(controller, precID, new FieldSet(rectifiedFields), out message);
                         if (!string.IsNullOrEmpty(message))
                         {
-                            logger.LogTaskItemWarning(item.MigrationID, message, item.Fields);
+                            logger.LogTaskItemWarning(item, message, item.Fields);
                         }
-
-
-
                     }
                     catch (Exception ex)
                     {
                         string message = ex.ToString();
-                        logger.LogTaskItemError(item.MigrationID, message, item.Fields);
+                        logger.LogTaskItemError(item, message, item.Fields);
                     }
                     finally
                     {

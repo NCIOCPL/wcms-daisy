@@ -62,4 +62,19 @@ namespace MigrationEngine
           System.Runtime.Serialization.StreamingContext context)
             : base(info, context) { }
     }
+
+    /// <summary>
+    /// Exception thrown when a configuration error is encountered.
+    /// </summary>
+    [global::System.Serializable]
+    public class ConfigurationException : MigrationException
+    {
+        public ConfigurationException() { }
+        public ConfigurationException(string message) : base(message) { }
+        public ConfigurationException(string message, Exception inner) : base(message, inner) { }
+        protected ConfigurationException(
+          System.Runtime.Serialization.SerializationInfo info,
+          System.Runtime.Serialization.StreamingContext context)
+            : base(info, context) { }
+    }
 }

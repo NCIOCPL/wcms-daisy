@@ -9,14 +9,14 @@ namespace MigrationEngine.Configuration
     /// <summary>
     /// Configuration element to specify a community in a community list.
     /// This corresponds to the innermost node in the list
-    ///   <CommunityLookup>
+    ///   <MigrationEngine>
     ///     <Community>
     ///       <add key="site" name="CancerGov_Members" />
     ///       <add key="siteAdmin" name="CancGovConfig_Members" />
     ///       <add key="ctbAdmin" name="ctbAdmin_Members" />
     ///     </Community>
     ///   </CommunityLookup>
-    /// </summary>
+    /// </MigrationEngine>
     public class CommunityElement : ConfigurationElement
     {
         /// <summary>
