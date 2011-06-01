@@ -7,6 +7,10 @@ using NCI.CMS.Percussion.Manager.CMS;
 
 namespace Munger
 {
+    /// <summary>
+    /// Business object to represent the content id and content type
+    /// of a single business object.
+    /// </summary>
     class LinkCmsDetails
     {
         public PercussionGuid PercussionGuid { get; private set; }

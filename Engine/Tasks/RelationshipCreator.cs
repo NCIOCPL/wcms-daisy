@@ -32,7 +32,7 @@ namespace MigrationEngine.Tasks
             int index = 1;
             int count = relationships.Count;
 
-            string community = LookupCommunityName("site");
+            string community = LookupCommunityName(Constants.Aliases.SITE);
 
             using (CMSController controller = new CMSController())
             {
@@ -64,17 +64,20 @@ namespace MigrationEngine.Tasks
                         if (dependentItem == PercWrapper.ContentItemNotFound)
                         {
                             message = string.Format("No content item found for relationship dependent with migid = {{{0}}}.", relation.DependentMigrationID);
+                            logger.LogTaskItemError(relation, message, relation.Fields);
                             error = true;
                         }
                         else if (dependentItem == PercWrapper.TooManyContentItemsFound)
                         {
-                            message = string.Format("Multiple content items found for dependent owner with migid = {{{0}}}.", relation.DependentMigrationID);
+                            message = string.Format("Multiple content items found for relationship dependent with migid = {{{0}}}.", relation.DependentMigrationID);
+                            logger.LogTaskItemError(relation, message, relation.Fields);
                             error = true;
                         }
 
+                        // Don't bother trying to create a relationship if there's already an error.
                         if (error)
                         {
-                            logger.LogTaskItemError(relation, message, relation.Fields);
+                            continue;
                         }
 
 

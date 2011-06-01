@@ -4,74 +4,46 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
+using NCI.Data;
+
 namespace Munger
 {
     static class DataAccess
     {
-        static string dbConnectionString =
-           ConfigurationManager.ConnectionStrings["MigrationConnectionString"].ConnectionString;
-        static string cdrDbConnectionString =
-            ConfigurationManager.ConnectionStrings["CdrDbConnectionString"].ConnectionString;
+        static string _dbConnectionString;
 
-        public static LinkLegacyDetails GetUrlDetails(string prettyUrl)
+        static DataAccess()
         {
-            LinkLegacyDetails details = null;
-
-            using (DataSet data = LoadUrlDetails(prettyUrl))
+            ConnectionStringSettings connection = ConfigurationManager.ConnectionStrings["IntranetInt"];
+            if (connection == null)
             {
-
-                if (data.Tables[0].Rows.Count > 0)
-                {
-                    string viewid = data.Tables[0].Rows[0].Field<Guid>("viewid").ToString();
-                    string contentType = data.Tables[0].Rows[0].Field<string>("contentType");
-                    details = new LinkLegacyDetails(viewid, contentType);
-                }
+                throw new DataAcessLayerException("Unable to load connection string for IntranetInt.");
             }
 
-            return details;
+            _dbConnectionString = connection.ConnectionString;
         }
 
-        private static DataSet LoadUrlDetails(string prettyUrl)
+        public static string GetMigrationID(string prettyUrl)
         {
-            string sql = string.Format("select viewid, [content type] contentType from dbo.mig_urlviewidlookup('{0}')", prettyUrl);
+            string migrationID;
 
-            DataSet ds = GetSQLQuery(sql, dbConnectionString);
-            if (ds != null)
-                ds.Tables[0].TableName = "UrlDetails";
-
-            return ds;
-        }
-
-        public static List<string> GetProtocolPrettyUrlIDs()
-        {
-            List<string> theList = new List<string>();
-
-            using (DataSet data = LoadProtocolPrettyUrlIDs())
+            using (DataTable data = LoadMigrationID(prettyUrl))
             {
-                if (data.Tables[0].Rows.Count > 0)
-                {
-                    foreach (DataRow row in data.Tables[0].Rows)
-                    {
-                        string idstring = row.Field<string>("urlID").Trim().ToLower();
-                        theList.Add(idstring);
-                    }
-                }
-                else
-                    throw new DataAcessLayerException("Unable to retrieve Protocol pretty URLs.");
+                migrationID = data.Rows[0].Field<Guid>("mig_id").ToString();
             }
 
-            return theList;
+            return migrationID;
         }
 
-        private static DataSet LoadProtocolPrettyUrlIDs()
+        private static DataTable LoadMigrationID(string prettyUrl)
         {
-            string sql =
-@"select PrimaryPrettyUrlID urlID from protocoldetail
-  union
-select IDstring urlID from ProtocolSecondaryUrl";
-            DataSet ds = GetSQLQuery(sql, cdrDbConnectionString);
+            SqlParameter[] param = {
+                                       new SqlParameter("@url", SqlDbType.VarChar){Value=prettyUrl}
+                                   };
 
-            return ds;
+            DataTable dt = SqlHelper.ExecuteDatatable(_dbConnectionString, CommandType.StoredProcedure, "mig_URLmigIDlookup", param);
+
+            return dt;
         }
 
         private static DataSet GetSQLQuery(string SQL, string connectionString)

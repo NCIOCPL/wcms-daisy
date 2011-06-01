@@ -83,7 +83,7 @@ namespace Munger
 
                         string linkTarget = hrefAttrib.Value;
 
-                        if (LinkIsCancerGovInternal(linkTarget))
+                        if (LinkIsSiteInternal(linkTarget))
                         {
                             RewriteAnchorTag(link, pageUrl);
                         }
@@ -130,7 +130,7 @@ namespace Munger
             relativePath = ReplaceWithSubstituteLink(relativePath);
 
             // Clean up or substitution may have revealed an external link in a logging url.
-            if (LinkIsCancerGovInternal(relativePath))
+            if (LinkIsSiteInternal(relativePath))
             {
                 // Once we know it's definitely an internal link, now it's OK to lowercase it.
                 relativePath = relativePath.ToLower();
@@ -180,7 +180,7 @@ namespace Munger
             relativePath = ReplaceWithSubstituteLink(relativePath);
 
             // Clean up or substitution may have revealed an external link in a logging url.
-            if (LinkIsCancerGovInternal(relativePath))
+            if (LinkIsSiteInternal(relativePath))
             {
                 ValidatePath(relativePath, linkNode.OuterXml);
 
@@ -195,6 +195,11 @@ namespace Munger
                     }
                     else
                     {
+                        // At this point we know the link is to a resource which
+                        // should be in the CMS.  First we look for it in the in-memory
+                        // map of urls to CMS items.  If it isn't there, we go to
+                        // look it up.
+
                         // Is the URL already in the map?
                         LinkCmsDetails linkDetails;
                         if (_linkUrlMap.ContainsKey(relativePath))
@@ -281,14 +286,21 @@ namespace Munger
             return _slotContentTypeToTemplateIDMap[i].Value;
         }
 
+        /// <summary>
+        /// Attempts to look up the content ID and type associated with a given
+        /// pretty URL.
+        /// </summary>
+        /// <param name="prettyUrl">The pretty URL.</param>
+        /// <returns></returns>
         private LinkCmsDetails GetLinkDetails(string prettyUrl)
         {
             LinkCmsDetails details = null;
 
-            ILinkResolver[] linkResolvers = { new DatabaseResolver(),
+            ILinkResolver[] linkResolvers = { new MigrationIDResolver(),
                                                 new FileResolver(CanonicalHostName),
                                                 new ImageResolver(CanonicalHostName)};
 
+            // Attempt to resolve the pretty URL through a series of resolvers.
             foreach (ILinkResolver resolver in linkResolvers)
             {
                 details = resolver.ResolveLink(CMSController, prettyUrl);
@@ -606,27 +618,31 @@ namespace Munger
                || linkUrl.Contains(".aspx");
         }
 
-        private bool LinkIsCancerGovInternal(string linkUrl)
+        private bool LinkIsSiteInternal(string linkUrl)
         {
             string testUrl = linkUrl.Trim().ToLower();
-                Uri uri = new Uri(testUrl, UriKind.RelativeOrAbsolute);
+            Uri uri = new Uri(testUrl, UriKind.RelativeOrAbsolute);
 
-            // External web sites.
+            // Conditions underwhich the link is not internal.
             bool externalSite = false;
-            if (uri.Scheme.StartsWith("http")) // Covers http and https.
+            bool unmanagedProtocol = false;
+
+            // Both tests only apply if 
+            if (uri.IsAbsoluteUri)
             {
+                // External web sites.
                 if (!HostAliases.Contains(uri.Host))
                 {
                     externalSite = true;
                 }
+
+                // Check that it's neither HTTP nor HTTPS.
+                unmanagedProtocol =
+                    !uri.Scheme.StartsWith("http", StringComparison.InvariantCultureIgnoreCase);
             }
 
-            // Non-http protocols
-            bool unmanagedProtocol;
-            string[] protocolList = { "javascript:", "mailto:" };
-            unmanagedProtocol = Array.Exists(protocolList,
-                protocol => uri.Scheme.Equals(protocol,StringComparison.InvariantCultureIgnoreCase));
-
+            // If it's neither an external site, nor an unmanaged protocol,
+            // then it's an internal link.
             return !(externalSite || unmanagedProtocol);
         }
 

@@ -87,7 +87,7 @@ namespace MigrationEngine.Utilities
         public static void CreateSingleRelationshipWrapper(CMSController controller, PercussionGuid ownerID, PercussionGuid dependentID, string slotName, string templateName)
         {
             PSAaRelationship[] relations = controller.CreateActiveAssemblyRelationships(ownerID, new PercussionGuid[] { dependentID }, slotName, templateName);
-            if (relations.Length != 0)
+            if (relations.Length != 1)
             {
                 throw new RelationshipException(string.Format("Relationship creation failed; expected 1, created {0}", relations.Length));
             }
@@ -98,7 +98,7 @@ namespace MigrationEngine.Utilities
             PercussionGuid itemID;
 
             Dictionary<string, string> criteria = new Dictionary<string, string>();
-            criteria.Add("migid", migrationID.ToString());
+            criteria.Add(Constants.Fields.MIGRATION_ID, migrationID.ToString());
 
             PercussionGuid[] searchResult = controller.SearchForContentItems(contentType, criteria);
 

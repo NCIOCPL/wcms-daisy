@@ -56,13 +56,12 @@
     <Compile Include="HostSet.cs" />
     <Compile Include="ImageResolver.cs" />
     <Compile Include="DataAccess.cs" />
-    <Compile Include="DatabaseResolver.cs" />
+    <Compile Include="MigrationIDResolver.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="FileResolver.cs" />
     <Compile Include="ILinkResolver.cs" />
     <Compile Include="ImageMunger.cs" />
     <Compile Include="LinkCmsDetails.cs" />
-    <Compile Include="LinkLegacyDetails.cs" />
     <Compile Include="LinkMunger.cs" />
     <Compile Include="LinkSubstituter.cs" />
     <Compile Include="MungerBase.cs" />
@@ -78,6 +77,10 @@
     <ProjectReference Include="..\NCILibrary\Code\NCILibrary.CMS.Percussion\NCILibrary.CMS.Percussion.csproj">
       <Project>{7D2F8F1C-75AF-4D6F-975D-CBCD8DE16D09}</Project>
       <Name>NCILibrary.CMS.Percussion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCILibrary\Code\NCILibrary.Core\NCILibrary.Core.csproj">
+      <Project>{898FF17C-C94A-4D85-8AAD-88764B72CFAE}</Project>
+      <Name>NCILibrary.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

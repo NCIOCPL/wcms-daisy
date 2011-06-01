@@ -33,7 +33,7 @@ namespace MigrationEngine.Tasks
             int index = 1;
             int count = folders.Count;
 
-            string community = LookupCommunityName("site");
+            string community = LookupCommunityName(Constants.Aliases.SITE);
 
             using (CMSController controller = new CMSController(community))
             {

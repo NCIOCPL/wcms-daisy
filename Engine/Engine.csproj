@@ -51,6 +51,7 @@
     <Compile Include="Configuration\CommunityElement.cs" />
     <Compile Include="Configuration\MigrationEngineSection.cs" />
     <Compile Include="Configuration\SiteHostNameElement.cs" />
+    <Compile Include="constants.cs" />
     <Compile Include="Descriptors\ContentDescriptionBase.cs" />
     <Compile Include="Descriptors\ContentTypeDescription.cs" />
     <Compile Include="Descriptors\UpdateFileItem.cs" />
