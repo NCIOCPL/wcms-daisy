@@ -31,5 +31,17 @@ namespace Munger.Configuration
         {
             get { return (RewritingListElement)base["Substitute"]; }
         }
+
+        /// <summary>
+        /// Exposes a list of programmatic links which are to be subsituted for older,
+        /// no-longer-used paths.  Exact matches only.
+        /// </summary>
+        /// <value>The rewrite list.</value>
+        [ConfigurationProperty("Programmatic", IsRequired = true)]
+        [ConfigurationCollection(typeof(HostElement), AddItemName = "add", ClearItemsName = "clear", RemoveItemName = "remove")]
+        public RewritingListElement ProgrammaticLinkList
+        {
+            get { return (RewritingListElement)base["Programmatic"]; }
+        }
     }
 }

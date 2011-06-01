@@ -33,6 +33,9 @@ namespace Munger
         // Map of URL substitutions
         LinkSubstituter _linkSubstituter = new LinkSubstituter();
 
+        // Map of programmatic link substitutions
+        private static Dictionary<string, string> _programmaticLinks;
+
         private PercussionGuid _inlineLinkSlotID;
 
         public LinkMunger(CMSController controller, Logger messageLog)
@@ -43,6 +46,16 @@ namespace Munger
             foreach (ContentTypeToTemplateInfo info in inlineLinkSlot.AllowedContentTemplatePairs)
             {
                 _slotContentTypeToTemplateIDMap.Add(new KeyValuePair<string, PercussionGuid>(info.ContentTypeName, info.TemplateID));
+            }
+
+            if (_programmaticLinks == null)
+            {
+                _programmaticLinks = new Dictionary<string, string>();
+                MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
+                foreach (RewritingElement item in config.ProgrammaticLinkList)
+                {
+                    _programmaticLinks.Add(item.OldPath.ToLowerInvariant(), item.NewPath);
+                }
             }
         }
 
@@ -319,12 +332,20 @@ namespace Munger
             return details;
         }
 
+        /// <summary>
+        /// Rewrites programmatic links with values from the application config file.
+        /// Old and New value pairs appear in the MungerConfig section in the list of
+        /// Programmatic values.
+        /// </summary>
+        /// <param name="linkPath">The link path.</param>
+        /// <returns></returns>
         private string RewriteProgrammaticLink(string linkPath)
         {
             string newlink;
             string path;
             string arguments;
 
+            // Separate the old link path and its arguments.
             int index = linkPath.IndexOf('?');
 
             if (index != -1)
@@ -342,145 +363,14 @@ namespace Munger
             if (path.EndsWith("/") && path.Length > 1)
                 path = path.Substring(0, path.Length - 1);
 
-            if (path == "/dictionary/db_alpha.aspx" ||
-                path == "/templates/db_alpha.aspx" ||
-                path == "/dictionary")
+            // Attempt to substitute a link path from MungerConfig/Programmatic
+            // in the application config file.
+            if (_programmaticLinks.ContainsKey(path.ToLower()))
             {
-                newlink = string.Format("/dictionary?{0}", arguments);
-            }
-            else if (path == "/diccionario/db_alpha.aspx" ||
-                path == "/diccionario")
-            {
-                newlink = string.Format("/diccionario?{0}", arguments);
-            }
-            else if (path == "/drugdictionary/drugdictionary.aspx" ||
-                path == "/drugdictionary" ||
-                path == "/templates/drugdictionary.aspx")
-            {
-                newlink = string.Format("/drugdictionary?{0}", arguments);
-            }
-            else if (path == "/search/clinicaltrialslink.aspx")
-            {
-                newlink = string.Format("/search/clinicaltrialslink?{0}", arguments);
-            }
-            else if (path == "/common/popups/popdefinition.aspx")
-            {
-                newlink = linkPath;
-            }
-            else if (path == "/newscenter/search")
-            {
-                newlink = linkPath;
-            }
-            else if (path == "/search/viewclinicaltrials.aspx" ||
-                path == "/search/view_clinicaltrials.aspx" ||
-                path == "/clinicaltrials/view_clinicaltrials.aspx")
-            {
-                newlink = string.Format("/clinicaltrials/search/view?{0}", arguments);
-            }
-            else if (path == "/search/psrv.aspx")
-            {
-                newlink = string.Format("/clinicaltrials/search/printresults?{0}", arguments);
-            }
-            
-            else if (path == "/search/resultsclinicaltrials.aspx"
-                || path == "/search/resultsclinicaltrialsadvanced.aspx"
-                || path == "/search/clinical_trials/resultsclinicaltrialsadvanced.aspx"
-                || path == "/search/clinical_trials/results_clinicaltrialsadvanced.aspx")
-            {
-                newlink = string.Format("/clinicaltrials/search/results?{0}", arguments);
-            }
-            else if (path == "/search/searchclinicaltrialsadvanced.aspx")
-            {
-                newlink = string.Format("/clinicaltrials/search/?{0}", arguments);
-            }
-            else if (path == "/search/geneticsservices/")
-            {
-                newlink = string.Format("/cancertopics/genetics/directory?{0}", arguments);
-            }
-            else if (path == "/search/results_geneticsservices.aspx")
-            {
-                newlink = string.Format("/cancertopics/genetics/directory/results?{0}", arguments);
-            }
-            else if (path == "/search/view_geneticspro.aspx")
-            {
-                newlink = string.Format("/cancertopics/genetics/directory/view?{0}", arguments);
-            }
-            else if (path == "/search/results.aspx")
-            {
-                newlink = string.Format("/search/results?{0}", arguments);
-            }
-            else if (path == "/search/clinicaltrialslink.aspx")
-            {
-                newlink = linkPath;
-            }
-            else if (path == "/cbsubscribe.aspx" && string.IsNullOrEmpty(arguments))
-            {
-                newlink = "/ncicancerbulletin/subscribe";
-            }
-            else if (path == "/search/searchcancertopics.aspx")
-            {
-                newlink = "/cancertopics/litsearch";
                 if (!string.IsNullOrEmpty(arguments))
-                {
-                    switch (arguments)
-                    {
-                        case "listid=0d014096-c42e-427f-9ef7-edd09b95df3b":
-                            newlink = "/cancertopics/litsearch/aids-related";
-                            break;
-                        case "listid=4963a5be-238c-4d3c-905d-b6b70f6a86fe":
-                            newlink = "/cancertopics/litsearch/breast";
-                            break;
-                        case "listid=0a86d345-b2c4-4eac-b459-28ee9f5a7ee1":
-                            newlink = "/cancertopics/litsearch/genetics";
-                            break;
-                        case "listid=d4a04f37-500f-4e41-8580-38a97825eedc":
-                            newlink = "/cancertopics/litsearch/cardiovascular";
-                            break;
-                        case "listid=434c580a-29c7-44ee-94ce-50be5de67c56":
-                            newlink = "/cancertopics/litsearch/endocrine";
-                            break;
-                        case "listid=8551ce76-59c9-43f1-8f31-7a2e6e880fce":
-                            newlink = "/cancertopics/litsearch/gastrointestinal";
-                            break;
-                        case "listid=acd05787-6535-46a6-acaf-5b368c7d5555":
-                            newlink = "/cancertopics/litsearch/gynecologic";
-                            break;
-                        case "listid=ca7b46be-75a0-4434-a52a-949d46153dc6":
-                            newlink = "/cancertopics/litsearch/head-and-neck";
-                            break;
-                        case "listid=e7134b11-f556-4012-bf5a-1553d54b3c0d":
-                            newlink = "/cancertopics/litsearch/hematologic";
-                            break;
-                        case "listid=758fbfe3-dd2c-40b9-b9fb-3adce34e3ae4":
-                            newlink = "/cancertopics/litsearch/male-reproductive";
-                            break;
-                        case "listid=e8ecbca0-c98f-4dc7-a621-32e2406b4f35":
-                            newlink = "/cancertopics/litsearch/metastatic";
-                            break;
-                        case "listid=1eb188f0-6a9e-4bbd-a573-eb12561afb07":
-                            newlink = "/cancertopics/litsearch/neurologic";
-                            break;
-                        case "listid=ba08634f-1650-4998-8334-7980974cd21e":
-                            newlink = "/cancertopics/litsearch/sarcoma";
-                            break;
-                        case "listid=abf17978-bd75-4b50-962d-a43965c62cf0":
-                            newlink = "/cancertopics/litsearch/skin-and-melanoma";
-                            break;
-                        case "listid=d488e7dc-9f11-4a2e-baca-2b539787a1aa":
-                            newlink = "/cancertopics/litsearch/thoracic";
-                            break;
-                        case "listid=dd7e90a6-77d5-4a95-b110-c7e56a511e22":
-                            newlink = "/cancertopics/litsearch/tobacco";
-                            break;
-                        case "listid=6784d169-d486-4a5d-817d-2e0533a62410":
-                            newlink = "/cancertopics/litsearch/urinary-tract";
-                            break;
-                        default:
-                            string message = string.Format("Programmatic Link: Unexpected cancer topics search: {0}", arguments);
-                            throw new ProgrammaticLinkException(message);
-                    }
-                }
-
+                    newlink = string.Format("{0}?{1}", _programmaticLinks[path], arguments);
+                else
+                    newlink = _programmaticLinks[path];
             }
             else
             {
