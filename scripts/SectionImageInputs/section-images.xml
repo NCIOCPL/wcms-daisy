@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageInputs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Files>
+	  <InputInfo mig_id="0DF94D6D-2F51-4104-992A-600BCD5D55E4" community="siteAdmin" folder="/SharedItems/SiteBanner" title="About CIP" file="..\..\..\scripts\SectionImageInputs\CIPAboutCIP_header.jpg" />
+	  <InputInfo mig_id="3F01A2FF-EEF7-48B5-A79D-8E558667F9AE" community="siteAdmin" folder="/SharedItems/SiteBanner" title="Research Funding" file="..\..\..\scripts\SectionImageInputs\CIPResearchFunding_header.jpg" />
+	  <InputInfo mig_id="D601A191-B57C-4E27-BB76-454A2444A470" community="siteAdmin" folder="/SharedItems/SiteBanner" title="Programs and Resources" file="..\..\..\scripts\SectionImageInputs\CipProgramsAndResources_header.jpg" />
+	  <InputInfo mig_id="78D65B10-561B-4379-AD0A-C822243B1013" community="siteAdmin" folder="/SharedItems/SiteBanner" title="Clinical Trials" file="..\..\..\scripts\SectionImageInputs\CIPClinicalTrials_header.jpg" />
+	  <InputInfo mig_id="7D9EF252-F659-48F2-A612-CA8D6F447459" community="siteAdmin" folder="/SharedItems/SiteBanner" title="Reports and Publications" file="..\..\..\scripts\SectionImageInputs\CIPReportsAndPublications_header.jpg" />
+	  <InputInfo mig_id="4073FD3A-D281-4E3A-869A-DE00980CC33D" community="siteAdmin" folder="/SharedItems/SiteBanner" title="News &amp; Meetings" file="..\..\..\scripts\SectionImageInputs\CipNewsAndMeetings_header.jpg" />
+	  <InputInfo mig_id="C9B874CF-9FF2-4CF0-AE51-FC9E7B5EF09D" community="siteAdmin" folder="/SharedItems/SiteBanner" title="Patients and Providers" file="..\..\..\scripts\SectionImageInputs\CipImagingInformation_header.jpg" />
+	</Files>
+</ImageInputs>
