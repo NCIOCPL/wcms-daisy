@@ -68,6 +68,8 @@ namespace MigrationEngine.Tasks
                         int subsetSize = 0;
                         int first;
 
+                        logger.LogTaskItemInfo(string.Format("Deleting type {0} in community {1}.", contentType.ContentType, communityName));
+
                         for (int i = 0; i <= loopCount; i++)
                         {
                             first = i * MAX_REQUEST_SIZE;
