@@ -68,22 +68,19 @@ namespace FileManipulation
 
         public static ImageInfo DownloadImage(string host, string filePath)
         {
-            ImageInfo rtnImage = new ImageInfo();
-
             string extension = getFileExtension(filePath);
             string tempFile = "temp_migrate" + extension;
             string url = "http://" + host + filePath;
 
 
             WebClient wc = new WebClient();
-            wc.DownloadFile(url, tempFile);            
+            wc.DownloadFile(url, tempFile);
 
-            FileInfo file = new FileInfo(tempFile);
-            rtnImage.Extension = extension;
+            // Override values from LoadImage so it doesn't
+            // reflect the name "temp_migrate."
+            ImageInfo rtnImage = LoadImage(tempFile);
             rtnImage.FileName = getFilename(filePath);
-            rtnImage.MimeType = GetMimeType(extension);
-            rtnImage.FileSize = file.Length;
-            rtnImage.Data = Convert.ToBase64String(ReadBinaryFile(file));
+            rtnImage.Extension = extension;
 
             int pathEnd = filePath.LastIndexOf('/');
             if (pathEnd != -1)
@@ -91,13 +88,27 @@ namespace FileManipulation
             else
                 rtnImage.Path = string.Empty;
 
+            return rtnImage;
+        }
 
-            using (Bitmap image = new Bitmap(tempFile, false))
+        public static ImageInfo LoadImage(string fileSource)
+        {
+            ImageInfo rtnImage = new ImageInfo();
+
+            FileInfo file = new FileInfo(fileSource);
+            rtnImage.Extension = file.Extension;
+            rtnImage.FileName = file.Name;
+            rtnImage.MimeType = GetMimeType(file.Extension);
+            rtnImage.FileSize = file.Length;
+            rtnImage.Data = Convert.ToBase64String(ReadBinaryFile(file));
+
+
+            using (Bitmap image = new Bitmap(file.FullName, false))
             {
                 rtnImage.Height = image.Height;
                 rtnImage.Width = image.Width;
-            }            
-                        
+            }
+
             return rtnImage;
         }
 

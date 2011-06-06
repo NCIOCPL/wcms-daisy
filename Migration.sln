@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeTypes", "Serialize
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManipulation", "FileManipulation\FileManipulation.csproj", "{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeImageUploads", "SerializeImageUploads\SerializeImageUploads.csproj", "{7ACDFC3A-4456-4996-B434-D1DCD97FE948}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ACDFC3A-4456-4996-B434-D1DCD97FE948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ACDFC3A-4456-4996-B434-D1DCD97FE948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ACDFC3A-4456-4996-B434-D1DCD97FE948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ACDFC3A-4456-4996-B434-D1DCD97FE948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
