@@ -31,7 +31,7 @@ namespace SerializeImageUploads
             ImageInfo file = ImageInfo.LoadImage(imageEntry.file);
 
             itemNode.AppendChild(CreateField(itemNode, "mig_id", imageEntry.mig_id.ToString()));
-            itemNode.AppendChild(CreateField(itemNode, "contenttype", imageEntry.mig_id.ToString()));
+            itemNode.AppendChild(CreateField(itemNode, "contenttype", "gloImage"));
             itemNode.AppendChild(CreateField(itemNode, "folder", imageEntry.folder));
             itemNode.AppendChild(CreateField(itemNode, "community", imageEntry.community));
 
