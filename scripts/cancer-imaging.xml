@@ -102,12 +102,6 @@
       </DataGetter>
     </MigrationTask>
 
-    <MigrationTask xsi:type="RelationshipCreator" Name="mig_ADDMainNav">
-      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDMainNav" ConnectionName="IntranetInt">
-        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
-      </DataGetter>
-    </MigrationTask>
-
     <!-- Transition to public -->
     <MigrationTask xsi:type="Transitioner" Name="Transitioner">
       <DataGetter xsi:type="XmlDataGetterOfContentTypeTransitionDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\transitions.xml">
