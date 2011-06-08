@@ -21,7 +21,8 @@ namespace MigrationEngine.Mappers
 
             ContentTypeTransitionDescription description = new ContentTypeTransitionDescription();
 
-            description.ContentType = item.SelectSingleNode("contentType").InnerText;
+            description.ContentType = item.SelectSingleNode(Constants.Fields.CONTENT_TYPE).InnerText;
+            description.Community = item.SelectSingleNode(Constants.Fields.COMMUNITY_NAME).InnerText;
             description.TriggerName = item.SelectSingleNode("trigger").InnerText;
 
             // Non-data fields not copied into the description's Fields collection.

@@ -12,6 +12,7 @@ namespace MigrationEngine.Descriptors
     public class ContentTypeTransitionDescription : MigrationData
     {
         public string ContentType { get; set; }
+        public string Community { get; set; }
         public string TriggerName { get; set; }
 
         protected override string PropertyString
