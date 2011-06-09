@@ -58,8 +58,8 @@ namespace MigrationEngine.Tasks
                         {
                             try
                             {
-                                string fmt = "Transitioning item {0} of {1}";
-                                string message = string.Format(fmt, i + 1, itemCount);
+                                string fmt = "Transitioning {0} item {1} of {2}";
+                                string message = string.Format(description.ContentType, fmt, i + 1, itemCount);
                                 logger.LogTaskItemInfo(message);
 
                                 PercussionGuid[] itemAsArray = new PercussionGuid[] { itemList[i] };
