@@ -21,12 +21,14 @@ namespace MigrationEngine.Mappers
 
             FullItemDescription description = new FullItemDescription();
 
-            description.Path = item.SelectSingleNode(PathNameField).InnerText;
-            description.MigrationID = new Guid(item.SelectSingleNode(MigIDField).InnerText);
-            description.Community = item.SelectSingleNode(CommunityNameField).InnerText;
-            description.ContentType = item.SelectSingleNode(ContentTypeField).InnerText;
+            description.Path = GetNamedFieldValue(item, PathNameField, FieldMappingErrorHandler);
+            description.MigrationID = new Guid(GetNamedFieldValue(item, MigIDField, FieldMappingErrorHandler));
+            description.Community = GetNamedFieldValue(item, CommunityNameField, FieldMappingErrorHandler);
+            description.ContentType = GetNamedFieldValue(item, ContentTypeField, FieldMappingErrorHandler);
 
             CopyFields(item, description.Fields);
+
+            CheckForRecordedErrors();
 
             return description;
         }

@@ -77,4 +77,19 @@ namespace MigrationEngine
           System.Runtime.Serialization.StreamingContext context)
             : base(info, context) { }
     }
+
+    /// <summary>
+    /// Exception thrown by Datamapper classes when errors occur in a data field.
+    /// </summary>
+    [global::System.Serializable]
+    public class DataFieldException : MigrationException
+    {
+        public DataFieldException() { }
+        public DataFieldException(string message) : base(message) { }
+        public DataFieldException(string message, Exception inner) : base(message, inner) { }
+        protected DataFieldException(
+          System.Runtime.Serialization.SerializationInfo info,
+          System.Runtime.Serialization.StreamingContext context)
+            : base(info, context) { }
+    }
 }

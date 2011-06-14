@@ -28,11 +28,35 @@ namespace MigrationEngine.Mappers
         protected const string CommunityNameField = Constants.Fields.COMMUNITY_NAME;
         protected const string PathNameField = Constants.Fields.PATH;
 
+        // Collection of errors encountered while mapping data fields.
+        private List<KeyValuePair<string, string>> ErrorList = new List<KeyValuePair<string, string>>();
+
         /// <summary>
         /// Maps one item of a data storage type into a single business object.
         /// </summary>
         /// <param name="dataItem">The data item.</param>
         /// <returns>The business object.</returns>
         public abstract ReturnType MapItem(object dataItem);
+
+        protected void FieldMappingErrorHandler(string fieldName, string message)
+        {
+            ErrorList.Add(new KeyValuePair<string, string>(fieldName, message));
+        }
+
+        protected void CheckForRecordedErrors()
+        {
+            if (ErrorList.Count > 0)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Errors encountered loading field values.");
+                ErrorList.ForEach(pair =>
+                {
+                    sb.Append("\n  ");
+                    sb.Append(pair.Value);
+                });
+
+                throw new DataFieldException(sb.ToString());
+            }
+        }
     }
 }
