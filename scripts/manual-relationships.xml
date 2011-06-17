@@ -7,4 +7,5 @@
     <slot>genSlotBody</slot>
     <template>genSnForm</template>
 	</item>
+  
 </list>

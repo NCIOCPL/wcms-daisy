@@ -1,0 +1,115 @@
+<list>
+  <!-- Section Banners -->
+  <item>
+    <mig_id>89D99B8E-E179-420b-8E57-12F4F8E611FE</mig_id>
+    <contenttype>genSectionBanner</contenttype>
+    <community>site</community>
+    <folder>/SharedItems/ContentHeaders</folder>
+    <long_title>About CIP</long_title>
+    <bodyfield>
+      <![CDATA[<!-- Section Banner Slot -->
+        <div id="genSlotSectionBanner">
+                        <!-- Section Banner Content // From Content Type in Slot -->
+                        <div class="slot-item only-SI">
+                                        <h1 class="cip-aboutCIP">About CIP</h1>
+                        </div><!-- END Section Banner Content -->
+        </div><!-- END Section Banner Slot (#genSlotContentHeader) -->]]>
+    </bodyfield>
+  </item>
+  <item>
+    <mig_id>FF416E42-7AB3-47c1-AE31-08FB3F94418C</mig_id>
+    <contenttype>genSectionBanner</contenttype>
+    <community>site</community>
+    <folder>/SharedItems/ContentHeaders</folder>
+    <long_title><![CDATA[Research & Funding]]></long_title>
+    <bodyfield>
+      <![CDATA[<!-- Section Banner Slot -->
+        <div id="genSlotSectionBanner">
+                        <!-- Section Banner Content // From Content Type in Slot -->
+                        <div class="slot-item only-SI">
+                                        <h1 class="cip-researchFund">Research & Funding</h1>
+                        </div><!-- END Section Banner Content -->
+        </div><!-- END Section Banner Slot (#genSlotContentHeader) -->]]>
+    </bodyfield>
+  </item>
+  <item>
+    <mig_id>8D628314-0A8D-4e6a-B4D8-484D29443FA6</mig_id>
+    <contenttype>genSectionBanner</contenttype>
+    <community>site</community>
+    <folder>/SharedItems/ContentHeaders</folder>
+    <long_title><![CDATA[Programs & Resources]]></long_title>
+    <bodyfield>
+      <![CDATA[<!-- Section Banner Slot -->
+        <div id="genSlotSectionBanner">
+                        <!-- Section Banner Content // From Content Type in Slot -->
+                        <div class="slot-item only-SI">
+                                        <h1 class="cip-proRes">Programs & Resources</h1>
+                        </div><!-- END Section Banner Content -->
+        </div><!-- END Section Banner Slot (#genSlotContentHeader) -->]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>20A49979-A628-4390-BDB5-065078160DA0</mig_id>
+    <contenttype>genSectionBanner</contenttype>
+    <community>site</community>
+    <folder>/SharedItems/ContentHeaders</folder>
+    <long_title>Clinical Trials</long_title>
+    <bodyfield>
+      <![CDATA[<!-- Section Banner Slot -->
+        <div id="genSlotSectionBanner">
+                        <!-- Section Banner Content // From Content Type in Slot -->
+                        <div class="slot-item only-SI">
+                                        <h1 class="cip-clinicalTrials">Clinical Trials</h1>
+                        </div><!-- END Section Banner Content -->
+        </div><!-- END Section Banner Slot (#genSlotContentHeader) -->]]>
+    </bodyfield>
+  </item>
+  <item>
+    <mig_id>F2AEAA7E-7D91-4163-A731-19B38D24D7E7</mig_id>
+    <contenttype>genSectionBanner</contenttype>
+    <community>site</community>
+    <folder>/SharedItems/ContentHeaders</folder>
+    <long_title><![CDATA[Reports & Publications]]></long_title>
+    <bodyfield>
+      <![CDATA[<!-- Section Banner Slot -->
+        <div id="genSlotSectionBanner">
+                        <!-- Section Banner Content // From Content Type in Slot -->
+                        <div class="slot-item only-SI">
+                                        <h1 class="cip- repPublications">Reports & Publications</h1>
+                        </div><!-- END Section Banner Content -->
+        </div><!-- END Section Banner Slot (#genSlotContentHeader) -->]]>
+    </bodyfield>
+  </item>
+  <item>
+    <mig_id>E240BECD-C741-4094-BE14-CF010D7F90CD</mig_id>
+    <contenttype>genSectionBanner</contenttype>
+    <community>site</community>
+    <folder>/SharedItems/ContentHeaders</folder>
+    <long_title><![CDATA[News & Meetings]]></long_title>
+    <bodyfield>
+      <![CDATA[<!-- Section Banner Slot -->
+        <div id="genSlotSectionBanner">
+                        <!-- Section Banner Content // From Content Type in Slot -->
+                        <div class="slot-item only-SI">
+                                        <h1 class="cip- newsMeetings">News & Meetings</h1>
+                        </div><!-- END Section Banner Content -->
+        </div><!-- END Section Banner Slot (#genSlotContentHeader) -->]]>
+    </bodyfield>
+  </item>
+  <item>
+    <mig_id>7CDFB210-C595-4d76-8CDD-D87EB79291D2</mig_id>
+    <contenttype>genSectionBanner</contenttype>
+    <community>site</community>
+    <folder>/SharedItems/ContentHeaders</folder>
+    <long_title><![CDATA[Patients & Providers]]></long_title>
+    <bodyfield>
+      <![CDATA[<!-- Section Banner Slot -->
+        <div id="genSlotSectionBanner">
+                        <!-- Section Banner Content // From Content Type in Slot -->
+                        <div class="slot-item only-SI">
+                                        <h1 class="cip- patientsProviders"> Patients & Providers</h1>
+                        </div><!-- END Section Banner Content -->
+        </div><!-- END Section Banner Slot (#genSlotContentHeader) -->]]>
+    </bodyfield>
+  </item>
+
+</list>

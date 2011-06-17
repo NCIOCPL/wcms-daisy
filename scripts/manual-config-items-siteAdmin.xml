@@ -1,0 +1,74 @@
+<list>
+
+  <!-- Branding Banner -->
+  <item>
+    <mig_id>BCE172CF-3528-4428-9421-036EA9B55A9D</mig_id>
+    <contenttype>genBrandingBar</contenttype>
+    <community>siteAdmin</community>
+    <folder>/SharedItems/SiteBanner</folder>
+    <long_title>Branding Banner</long_title>
+    <bodyfield>
+      <![CDATA[<!-- Branding Bar Slot (#genSlotBrandingBar) // Color class on slot determined by Content Type field value  -->
+                <div id="genSlotBrandingBar" class="clearFix">
+                                <div class="slot-item only-SI">
+                                                <!-- Branding Bar Content // From Content Type in Slot -->
+                                                <div class="genSiteBrandingBarContainer clearFix red">
+                                                                <ul>
+                                                                                <li class="nciLogo"><a href="http://www.cancer.gov" title="The National Cancer Institute">The National Cancer Institute</a></li>
+                                                                                <li class="nciURL"><a href="http://www.cancer.gov" title="www.cancer.gov">www.cancer.gov</a></li>
+                                                                                <li class="nihText"><a href="http://www.nih.gov" title="The U.S. National Institutes of Health">The National Institutes of Health</a></li>
+                                                                </ul>
+                                                </div>
+                                                <!-- END Branding Bar Content -->]]>
+    </bodyfield>
+  </item>
+
+  <!-- Site Banner -->
+  <item>
+    <mig_id>6212F6A1-7FCD-4c78-BD3D-F2701846EE8F</mig_id>
+    <contenttype>genSiteBanner</contenttype>
+    <community>siteAdmin</community>
+    <folder>/SharedItems/SiteBanner</folder>
+    <long_title>Site Banner</long_title>
+    <bodyfield>
+      <![CDATA[<div class="genSiteContainer">
+                                <!-- Site Banner Slot (#genSlotSiteBanner) -->
+                                <div id="genSlotSiteBanner" class="clearFix">
+                                                <!-- Site Banner Content // From Content Type in Slot -->
+                                                <h1 class="genSiteLogo">Cancer Imaging Program</h1>
+
+                                                <div class="genSiteUtilityContainer">
+                                                                <ol class="genSiteUtilityLinks">
+                                                                                <li><a href="#">Text Only</a> |</li>
+                                                                                <li><a href="#">Contact Us</a></li>
+                                                                </ol>
+
+                                                </div>
+                                                <!-- Site Banner Content -->
+                                </div>
+      <!-- END Site Banner Slot (#genSlotSiteBanner) -->]]>
+    </bodyfield>
+  </item>
+
+  <!-- Site Footer -->
+  <item>
+    <mig_id>A6A97480-17D4-4fa9-8031-561CAF10D859</mig_id>
+    <contenttype>genSiteFooter</contenttype>
+    <community>siteAdmin</community>
+    <folder>/SharedItems/SiteFooter</folder>
+    <long_title>Site Footer</long_title>
+    <bodyfield>
+      <![CDATA[<!-- Site Footer Slot (#genSlotSiteFooter) -->
+                                <div id="genSlotSiteFooter">
+                                                <!-- Site Footer Content // From Content Type in Slot -->
+                                                <div class="slot-item only-SI">
+                                                                <a class="footer" href="#">Home</a> | <a class="footer" href="#">About CIP</a> | <a class="footer" href="#">Research Funding</a> | <a class="footer" href="#">Programs &amp; Resources</a> | <a class="footer" href="#">Clinical Trials</a> | <a class="footer" href="#">Reports &amp; Publications</a> | <a class="footer" href="/newsandmeetings/">News &amp; Meetings</a> | <a class="footer" href="#">Patients and Providers</a><br>
+                <a href="#" class="footer">Contact CIP</a> | <a href="#" class="footer">Text-Only Version</a> | <a href="#" class="footer">NCI Web Policies</a> | <a href="#" class="footer">NCI Web Accessibility</a><br>
+                <a href="http://www.cancer.gov"><img width="65" height="32" border="0" alt="National Cancer Institute" src="images/global/footer/nci-logo.gif"></a><a href="http://www.hhs.gov/"><img width="47" height="32" border="0" alt="Department of Health &amp; Human Services" src="images/global/footer/hhs-logo.gif"></a><a href="http://www.nih.gov"><img width="47" height="32" border="0" alt="National Institutes of Health" src="images/global/footer/nih-logo.gif"></a><a href="http://www.firstgov.gov/"><img width="96" height="32" border="0" alt="FirstGov.gov" src="images/global/footer/firstgov-logo.gif"></a>
+
+                                                </div><!-- END Site Footer Content // From Content Type in Slot -->
+                                </div><!-- END Site Footer Slot (#genSlotSiteFooter) -->]]>
+    </bodyfield>
+  </item>
+
+</list>

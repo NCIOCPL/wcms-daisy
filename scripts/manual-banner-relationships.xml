@@ -1,0 +1,104 @@
+<list>
+
+  <!-- Section Banners -->
+  <!--About CIP-->
+  <item>
+    <ownerid>278e820a-e2ee-4a77-9078-6f284c9b39ae</ownerid>
+    <ownercontenttype>rffNavon</ownercontenttype>
+    <dependentid>89D99B8E-E179-420b-8E57-12F4F8E611FE</dependentid>
+    <dependentcontenttype>genSectionBanner</dependentcontenttype>
+    <slot>genSlotSectionBanner</slot>
+    <template>genSnSectionBanner</template>
+  </item>
+
+  <!--Research & Funding-->
+  <item>
+    <ownerid>4fe76c09-ffcc-47d7-ab36-f4d9fe45d53c</ownerid>
+    <ownercontenttype>rffNavon</ownercontenttype>
+    <dependentid>FF416E42-7AB3-47c1-AE31-08FB3F94418C</dependentid>
+    <dependentcontenttype>genSectionBanner</dependentcontenttype>
+    <slot>genSlotSectionBanner</slot>
+    <template>genSnSectionBanner</template>
+  </item>
+
+  <!--Programs & Resources-->
+  <item>
+    <ownerid>23bdea94-8211-49c4-b874-207909feacc8</ownerid>
+    <ownercontenttype>rffNavon</ownercontenttype>
+    <dependentid>8D628314-0A8D-4e6a-B4D8-484D29443FA6</dependentid>
+    <dependentcontenttype>genSectionBanner</dependentcontenttype>
+    <slot>genSlotSectionBanner</slot>
+    <template>genSnSectionBanner</template>
+  </item>
+
+  <!--Clinical Trials-->
+  <item>
+    <ownerid>a88c499d-db80-45ae-a6ed-c20f2f7d6f93</ownerid>
+    <ownercontenttype>rffNavon</ownercontenttype>
+    <dependentid>20A49979-A628-4390-BDB5-065078160DA0</dependentid>
+    <dependentcontenttype>genSectionBanner</dependentcontenttype>
+    <slot>genSlotSectionBanner</slot>
+    <template>genSnSectionBanner</template>
+  </item>
+
+  <!--Reports & Publications-->
+  <item>
+    <ownerid>e2db78ce-59d8-4342-a87a-286f9eaf736a</ownerid>
+    <ownercontenttype>rffNavon</ownercontenttype>
+    <dependentid>F2AEAA7E-7D91-4163-A731-19B38D24D7E7</dependentid>
+    <dependentcontenttype>genSectionBanner</dependentcontenttype>
+    <slot>genSlotSectionBanner</slot>
+    <template>genSnSectionBanner</template>
+  </item>
+
+  <!--News & Meetings-->
+  <item>
+    <ownerid>3d3580d3-a1b9-40a1-a3ab-9bb99b91b1b5</ownerid>
+    <ownercontenttype>rffNavon</ownercontenttype>
+    <dependentid>E240BECD-C741-4094-BE14-CF010D7F90CD</dependentid>
+    <dependentcontenttype>genSectionBanner</dependentcontenttype>
+    <slot>genSlotSectionBanner</slot>
+    <template>genSnSectionBanner</template>
+  </item>
+
+  <!--Patients & Providers-->
+  <item>
+    <ownerid>1512276d-bee5-44d8-a528-10d7ed0d8c3d</ownerid>
+    <ownercontenttype>rffNavon</ownercontenttype>
+    <dependentid>7CDFB210-C595-4d76-8CDD-D87EB79291D2</dependentid>
+    <dependentcontenttype>genSectionBanner</dependentcontenttype>
+    <slot>genSlotSectionBanner</slot>
+    <template>genSnSectionBanner</template>
+  </item>
+
+  <!-- Branding Banner -->
+  <item>
+    <ownerid>cfe8ae87-8088-4733-9375-1df6c9f86ecc</ownerid>
+    <ownercontenttype>rffNavTree</ownercontenttype>
+    <dependentid>BCE172CF-3528-4428-9421-036EA9B55A9D</dependentid>
+    <dependentcontenttype>genBrandingBar</dependentcontenttype>
+    <slot>genSlotBrandingBar</slot>
+    <template>genSnBrandingBar</template>
+  </item>
+
+  <!-- Site Banner -->
+  <item>
+    <ownerid>cfe8ae87-8088-4733-9375-1df6c9f86ecc</ownerid>
+    <ownercontenttype>rffNavTree</ownercontenttype>
+    <dependentid>6212F6A1-7FCD-4c78-BD3D-F2701846EE8F</dependentid>
+    <dependentcontenttype>genSiteBanner</dependentcontenttype>
+    <slot>genSlotSiteBanner</slot>
+    <template>genSnSiteBanner</template>
+  </item>
+
+  <!-- Site Footer -->
+  <item>
+    <ownerid>cfe8ae87-8088-4733-9375-1df6c9f86ecc</ownerid>
+    <ownercontenttype>rffNavTree</ownercontenttype>
+    <dependentid>A6A97480-17D4-4fa9-8031-561CAF10D859</dependentid>
+    <dependentcontenttype>genSiteFooter</dependentcontenttype>
+    <slot>genSlotSiteFooter</slot>
+    <template>genSnSiteFooter</template>
+  </item>
+
+</list>
