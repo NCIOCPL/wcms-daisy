@@ -16,9 +16,7 @@ namespace Munger
         protected Logger MessageLog;
 
         // List of hosts which are considered aliases for the site being migrated;
-        // Deliberately static so it won't go away between calls.
-        // This object is not thread-safe.
-        protected static HostSet HostAliases { get; private set; }
+        protected HostSet HostAliases { get; private set; }
 
         protected string CanonicalHostName { get; private set; }
 
@@ -27,19 +25,15 @@ namespace Munger
             CMSController = controller;
             MessageLog = messageLog;
 
-            // Load alias list only once.
-            if (HostAliases == null)
-            {
-                MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
+            MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
 
-                HostAliases = new HostSet();
-                foreach (HostElement item in config.HostList)
+            HostAliases = new HostSet();
+            foreach (HostElement item in config.HostList)
+            {
+                HostAliases.Add(item.Name);
+                if (item.IsCanonical || string.IsNullOrEmpty(CanonicalHostName))
                 {
-                    HostAliases.Add(item.Name);
-                    if (item.IsCanonical || string.IsNullOrEmpty(CanonicalHostName))
-                    {
-                        CanonicalHostName = item.Name;
-                    }
+                    CanonicalHostName = item.Name;
                 }
             }
         }
