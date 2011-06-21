@@ -25,11 +25,14 @@ namespace Munger
 
         public static string GetMigrationID(string prettyUrl)
         {
-            string migrationID;
+            string migrationID = string.Empty;
 
             using (DataTable data = LoadMigrationID(prettyUrl))
             {
-                migrationID = data.Rows[0].Field<Guid>("mig_id").ToString();
+                if (data.Rows.Count > 0)
+                {
+                    migrationID = data.Rows[0].Field<Guid>("mig_id").ToString();
+                }
             }
 
             return migrationID;
