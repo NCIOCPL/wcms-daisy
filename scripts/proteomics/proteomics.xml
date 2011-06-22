@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MigrationTaskList>
+    <!-- Folder Creation -->
+    <MigrationTask xsi:type="FolderCreator" Name="Create folder">
+      <DataGetter xsi:type="XmlDataGetterOfFolderDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\proteomics\folder-list.xml">
+        <Mapper xsi:type="XmlFolderDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <!-- Manual content creation -->
+    <!--<MigrationTask xsi:type="GeneralContentCreator" Name="Manual content creation">
+      <DataGetter xsi:type="XmlDataGetterOfFullItemDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\proteomics\manual-content-creation.xml">
+        <Mapper xsi:type="XmlFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>-->
+
+    <!-- Manual relationships -->
+    <!--<MigrationTask xsi:type="RelationshipCreator" Name="Manual content relationships">
+      <DataGetter xsi:type="XmlDataGetterOfRelationshipDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\proteomics\manual-relationships.xml">
+        <Mapper xsi:type="XmlRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>-->
+
+    <!-- Transition to public -->
+
+    <!--<MigrationTask xsi:type="Transitioner" Name="Transitioner">
+      <DataGetter xsi:type="XmlDataGetterOfContentTypeTransitionDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\transitions.xml">
+        <Mapper xsi:type="XmlContentTypeTransitionDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>-->
+
+  </MigrationTaskList>
+</Migration>

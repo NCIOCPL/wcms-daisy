@@ -1,0 +1,11 @@
+<list>
+	<item>
+		<!-- mig_id for the folder, this is actually stored in the Navon -->
+		<mig_id>{E6EBA23D-179B-4dc2-BD6C-9B1C37D9B4C0}</mig_id>
+		<folder>/mypath</folder>
+		
+		<!-- Optional, but noteworthy as the migration script does use this. -->
+		<show_in_nav>0</show_in_nav>
+	</item>
+  
+</list>
