@@ -18,6 +18,7 @@
   <item><contenttype>gloImage</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>gloVideo</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>rffNavon</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>site</community></item>
+  <item><contenttype>rffNavTree</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>site</community></item>
 
   <item><contenttype>genAppModPage</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
   <item><contenttype>genBrandingBar</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
