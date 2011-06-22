@@ -21,11 +21,18 @@ namespace MigrationEngine.Mappers
 
             UpdateFileItem description = new UpdateFileItem();
 
-            description.MigrationID = new Guid(item.SelectSingleNode(MigIDField).InnerText);
-            description.ContentType = item.SelectSingleNode(ContentTypeField).InnerText;
-            description.OriginalUrl = item.SelectSingleNode("url").InnerText;
+            try
+            {
+                description.MigrationID = new Guid(GetNamedFieldValue(item, MigIDField));
+                description.ContentType = GetNamedFieldValue(item, ContentTypeField);
+                description.OriginalUrl = GetNamedFieldValue(item, "url");
 
-            CopyFields(item, description.Fields);
+                CopyFields(item, description.Fields);
+            }
+            finally
+            {
+                CheckForRecordedErrors();
+            }
 
             return description;
         }

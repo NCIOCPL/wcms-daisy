@@ -23,6 +23,11 @@ namespace MigrationEngine.Mappers
 
             foreach (XmlNode field in dataNode.ChildNodes)
             {
+                // All we really care about is the data, which is stored
+                // in XmlElement nodes (versus XmlComment, etc.)
+                if (!(field is XmlElement))
+                    continue;
+
                 // It is assumed that fields in Percussion will always be
                 // lowercase, otherwise it becomes more difficult to map
                 // them from database column names.
@@ -39,33 +44,24 @@ namespace MigrationEngine.Mappers
         }
 
 
-        protected string GetNamedFieldValue(XmlNode dataNode, string fieldName, Action<string,string> errorRecorder)
+        protected string GetNamedFieldValue(XmlNode dataNode, string fieldName)
         {
             string fieldValue = string.Empty;
 
             try
             {
-                fieldValue = GetNamedFieldValue(dataNode, fieldName);
+                XmlNode namedNode = dataNode.SelectSingleNode(fieldName);
+                if (namedNode == null)
+                {
+                    throw new DataFieldException(string.Format("No value found for field {0}.", fieldName));
+                }
+
+                fieldValue = namedNode.InnerText;
             }
             catch (MigrationException ex)
             {
-                errorRecorder(fieldName, ex.Message);
+                FieldMappingErrorHandler(fieldName, ex.Message);
             }
-
-            return fieldValue;
-        }
-
-        protected string GetNamedFieldValue(XmlNode dataNode, string fieldName)
-        {
-            string fieldValue = string.Empty;
-
-            XmlNode namedNode = dataNode.SelectSingleNode(fieldName);
-            if (namedNode==null)
-            {
-                throw new DataFieldException(string.Format("No value found for field {0}.", fieldName));
-            }
-
-            fieldValue = namedNode.InnerText;
 
             return fieldValue;
         }

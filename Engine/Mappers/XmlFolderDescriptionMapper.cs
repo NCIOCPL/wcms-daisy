@@ -8,10 +8,10 @@ using MigrationEngine.Descriptors;
 
 namespace MigrationEngine.Mappers
 {
-    public class XmlContentTypeDescriptionMapper
-         : XmlDataMapper<ContentTypeDescription>
+    public class XmlFolderDescriptionMapper
+        : XmlDataMapper<FolderDescription>
     {
-        public override ContentTypeDescription MapItem(object dataItem)
+        public override FolderDescription MapItem(object dataItem)
         {
             if (!(dataItem is XmlNode))
                 throw new ArgumentException(string.Format("Parameter dataItem is of type {0}, expected XmlNode."),
@@ -19,14 +19,14 @@ namespace MigrationEngine.Mappers
 
             XmlNode item = (XmlNode)dataItem;
 
-            ContentTypeDescription description = new ContentTypeDescription();
+            FolderDescription description = new FolderDescription();
 
             try
             {
-                description.ContentType = GetNamedFieldValue(item, ContentTypeField);
-                description.Community = GetNamedFieldValue(item, CommunityNameField);
+                description.Path = GetNamedFieldValue(item, PathNameField);
+                description.MigrationID = new Guid(GetNamedFieldValue(item, MigIDField));
 
-                // Non-data fields not copied into the description's Fields collection.
+                CopyFields(item, description.Fields);
             }
             finally
             {

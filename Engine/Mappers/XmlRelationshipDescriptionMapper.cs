@@ -21,16 +21,21 @@ namespace MigrationEngine.Mappers
 
             RelationshipDescription description = new RelationshipDescription();
 
-            description.OwnerMigrationID = new Guid(GetNamedFieldValue(item, "ownerid", FieldMappingErrorHandler));
-            description.OwnerContentType = GetNamedFieldValue(item, "ownercontenttype", FieldMappingErrorHandler);
+            try
+            {
+                description.OwnerMigrationID = new Guid(GetNamedFieldValue(item, "ownerid"));
+                description.OwnerContentType = GetNamedFieldValue(item, "ownercontenttype");
 
-            description.DependentMigrationID = new Guid(GetNamedFieldValue(item, "dependentid", FieldMappingErrorHandler));
-            description.DependentContentType = GetNamedFieldValue(item, "dependentcontenttype", FieldMappingErrorHandler);
+                description.DependentMigrationID = new Guid(GetNamedFieldValue(item, "dependentid"));
+                description.DependentContentType = GetNamedFieldValue(item, "dependentcontenttype");
 
-            description.SlotName = GetNamedFieldValue(item, "slot", FieldMappingErrorHandler);
-            description.TemplateName = GetNamedFieldValue(item, "template", FieldMappingErrorHandler);
-
-            CheckForRecordedErrors();
+                description.SlotName = GetNamedFieldValue(item, "slot");
+                description.TemplateName = GetNamedFieldValue(item, "template");
+            }
+            finally
+            {
+                CheckForRecordedErrors();
+            }
 
             return description;
         }

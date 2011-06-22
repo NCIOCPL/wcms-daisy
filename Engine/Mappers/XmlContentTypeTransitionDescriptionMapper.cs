@@ -9,7 +9,7 @@ using MigrationEngine.Descriptors;
 namespace MigrationEngine.Mappers
 {
     public class XmlContentTypeTransitionDescriptionMapper
-        : DataMapper<ContentTypeTransitionDescription>
+        : XmlDataMapper<ContentTypeTransitionDescription>
     {
         public override ContentTypeTransitionDescription MapItem(object dataItem)
         {
@@ -21,11 +21,18 @@ namespace MigrationEngine.Mappers
 
             ContentTypeTransitionDescription description = new ContentTypeTransitionDescription();
 
-            description.ContentType = item.SelectSingleNode(Constants.Fields.CONTENT_TYPE).InnerText;
-            description.Community = item.SelectSingleNode(Constants.Fields.COMMUNITY_NAME).InnerText;
-            description.TriggerName = item.SelectSingleNode("trigger").InnerText;
+            try
+            {
+                description.ContentType = GetNamedFieldValue(item, Constants.Fields.CONTENT_TYPE);
+                description.Community = GetNamedFieldValue(item, Constants.Fields.COMMUNITY_NAME);
+                description.TriggerName = GetNamedFieldValue(item, "trigger");
 
-            // Non-data fields not copied into the description's Fields collection.
+                // Non-data fields not copied into the description's Fields collection.
+            }
+            finally
+            {
+                CheckForRecordedErrors();
+            }
 
             return description;
         }
