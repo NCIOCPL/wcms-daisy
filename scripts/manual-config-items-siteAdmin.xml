@@ -31,22 +31,17 @@
     <folder>/SharedItems/SiteBanner</folder>
     <long_title>Site Banner</long_title>
     <bodyfield>
-      <![CDATA[<div class="genSiteContainer">
-                                <!-- Site Banner Slot (#genSlotSiteBanner) -->
-                                <div id="genSlotSiteBanner" class="clearFix">
+      <![CDATA[
                                                 <!-- Site Banner Content // From Content Type in Slot -->
-                                                <h1 class="genSiteLogo">Cancer Imaging Program</h1>
+                                                <h1 class="genSiteLogo"><a href="/">Cancer Imaging Program</a></h1>
 
                                                 <div class="genSiteUtilityContainer">
                                                                 <ol class="genSiteUtilityLinks">
-                                                                                <li><a href="#">Text Only</a> |</li>
                                                                                 <li><a href="#">Contact Us</a></li>
                                                                 </ol>
 
                                                 </div>
-                                                <!-- Site Banner Content -->
-                                </div>
-      <!-- END Site Banner Slot (#genSlotSiteBanner) -->]]>
+                                                <!-- Site Banner Content -->]]>
     </bodyfield>
   </item>
 
@@ -58,16 +53,10 @@
     <folder>/SharedItems/SiteFooter</folder>
     <long_title>Site Footer</long_title>
     <bodyfield>
-      <![CDATA[<!-- Site Footer Slot (#genSlotSiteFooter) -->
-                                <div id="genSlotSiteFooter">
-                                                <!-- Site Footer Content // From Content Type in Slot -->
-                                                <div class="slot-item only-SI">
-                                                                <a class="footer" href="#">Home</a> | <a class="footer" href="#">About CIP</a> | <a class="footer" href="#">Research Funding</a> | <a class="footer" href="#">Programs &amp; Resources</a> | <a class="footer" href="#">Clinical Trials</a> | <a class="footer" href="#">Reports &amp; Publications</a> | <a class="footer" href="/newsandmeetings/">News &amp; Meetings</a> | <a class="footer" href="#">Patients and Providers</a><br>
-                <a href="#" class="footer">Contact CIP</a> | <a href="#" class="footer">Text-Only Version</a> | <a href="#" class="footer">NCI Web Policies</a> | <a href="#" class="footer">NCI Web Accessibility</a><br>
-                <a href="http://www.cancer.gov"><img width="65" height="32" border="0" alt="National Cancer Institute" src="images/global/footer/nci-logo.gif"></a><a href="http://www.hhs.gov/"><img width="47" height="32" border="0" alt="Department of Health &amp; Human Services" src="images/global/footer/hhs-logo.gif"></a><a href="http://www.nih.gov"><img width="47" height="32" border="0" alt="National Institutes of Health" src="images/global/footer/nih-logo.gif"></a><a href="http://www.firstgov.gov/"><img width="96" height="32" border="0" alt="FirstGov.gov" src="images/global/footer/firstgov-logo.gif"></a>
-
-                                                </div><!-- END Site Footer Content // From Content Type in Slot -->
-                                </div><!-- END Site Footer Slot (#genSlotSiteFooter) -->]]>
+      <![CDATA[<!-- Site Footer Content -->
+                                                                <p><a class="footer" href="#">Home</a> | <a class="footer" href="#">About CIP</a> | <a class="footer" href="#">Research Funding</a> | <a class="footer" href="#">Programs &amp; Resources</a> | <a class="footer" href="#">Clinical Trials</a> | <a class="footer" href="#">Reports &amp; Publications</a> | <a class="footer" href="/newsandmeetings/">News &amp; Meetings</a> | <a class="footer" href="#">Patients and Providers</a><br>
+                <a href="#" class="footer">Contact CIP</a> | <a href="#" class="footer">NCI Web Policies</a> | <a href="#" class="footer">NCI Web Accessibility</a></p>
+                <p><a href="http://www.cancer.gov"><img width="65" height="32" border="0" alt="National Cancer Institute" src="images/global/footer/nci-logo.gif"></a><a href="http://www.hhs.gov/"><img width="47" height="32" border="0" alt="Department of Health &amp; Human Services" src="images/global/footer/hhs-logo.gif"></a><a href="http://www.nih.gov"><img width="47" height="32" border="0" alt="National Institutes of Health" src="images/global/footer/nih-logo.gif"></a><a href="http://www.firstgov.gov/"><img width="96" height="32" border="0" alt="FirstGov.gov" src="images/global/footer/firstgov-logo.gif"></a></p><!-- END Site Footer Slot (#genSlotSiteFooter) -->]]>
     </bodyfield>
   </item>
 
