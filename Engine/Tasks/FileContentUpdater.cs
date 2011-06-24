@@ -50,11 +50,33 @@ namespace MigrationEngine.Tasks
 
                     try
                     {
+                        // Download the file for transfer.
                         NciFileInfo fileInfo = NciFileInfo.DownloadImage(hostSetting, item.OriginalUrl);
                         NciFile nciFile = new NciFile(fileInfo);
 
-                        long rawID =
-                            controller.CreateItem(NciFile.ContentType, nciFile.FieldSet, null, fileInfo.Path, null);
+                        // Look up the content item.
+                        PercussionGuid precID = PercWrapper.GetPercussionIDFromMigID(controller, item.MigrationID, item.ContentType);
+                        string message = "";
+                        if (precID == PercWrapper.ContentItemNotFound)
+                        {
+                            logger.LogTaskItemWarning(item, "Content item not found", item.Fields);
+                            continue;
+                        }
+                        else if (precID == PercWrapper.TooManyContentItemsFound)
+                        {
+                            logger.LogTaskItemWarning(item, "Too many matching content items found", item.Fields);
+                            continue;
+                        }
+                        else
+                        {
+                            // Must the right number of items.
+                            // Update the copy in the CMS.
+                            PercWrapper.UpdateItemWrapper(controller, precID, nciFile.FieldSet, out message);
+                            if (!string.IsNullOrEmpty(message))
+                            {
+                                logger.LogTaskItemWarning(item, message, item.Fields);
+                            }
+                        }
                     }
                     catch (Exception ex)
                     {
