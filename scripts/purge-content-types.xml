@@ -1,16 +1,19 @@
 <list>
+  <item><contenttype>genAggroWidget</contenttype><community>site</community></item>
   <item><contenttype>genAudio</contenttype><community>site</community></item>
   <item><contenttype>genCitation</contenttype><community>site</community></item>
   <item><contenttype>genContentBlock</contenttype><community>site</community></item>
   <item><contenttype>genEvent</contenttype><community>site</community></item>
   <item><contenttype>genExternalLink</contenttype><community>site</community></item>
+  <item><contenttype>genFacet</contenttype><community>site</community></item>
   <item><contenttype>genFile</contenttype><community>site</community></item>
   <item><contenttype>genFundingOpp</contenttype><community>site</community></item>
   <item><contenttype>genGeneral</contenttype><community>site</community></item>
   <item><contenttype>genLanding</contenttype><community>site</community></item>
   <item><contenttype>genList</contenttype><community>site</community></item>
   <item><contenttype>genNews</contenttype><community>site</community></item>
-  <item><contenttype>genNewsletter</contenttype><community>site</community></item>
+  <item><contenttype>genNews</contenttype><community>site</community></item>
+  <item><contenttype>genNewsletterDetails</contenttype><community>site</community></item>
   <item><contenttype>genSecondaryURL</contenttype><community>site</community></item>
   <item><contenttype>genSectionBanner</contenttype><community>site</community></item>
   <item><contenttype>genTCCarousel</contenttype><community>site</community></item>
@@ -27,7 +30,6 @@
   <item><contenttype>genSiteFooter</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genStyleSheetInfo</contenttype><community>siteAdmin</community></item>
 
-  <item><contenttype>genAggroWidget</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genAppModule</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genBrandingBar</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genConfigurationFile</contenttype><community>ctbAdmin</community></item>
