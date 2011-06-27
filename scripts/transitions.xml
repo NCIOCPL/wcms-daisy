@@ -1,16 +1,18 @@
 <list>
+  <item><contenttype>genAggroWidget</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genAudio</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genCitation</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genContentBlock</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genEvent</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genExternalLink</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genFile</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
+  <item><contenttype>genFacet</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genFundingOpp</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genGeneral</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genLanding</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genList</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genNews</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
-  <item><contenttype>genNewsletter</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
+  <item><contenttype>genNewsletterDetails</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genSecondaryURL</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genSectionBanner</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genTCCarousel</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
@@ -28,7 +30,6 @@
   <item><contenttype>genSiteFooter</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
   <item><contenttype>genStyleSheetInfo</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
 
-  <item><contenttype>genAggroWidget</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genAppModule</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genBrandingBar</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genConfigurationFile</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
