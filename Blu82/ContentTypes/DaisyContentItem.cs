@@ -9,7 +9,7 @@ namespace Blu82
     [XmlRootAttribute("item")]
     public class DaisyContentItem : IXmlSerializable
     {
-        public String mig_id { get; set; }
+        public Guid mig_id { get; set; }
         public String community { get; set; }
         public String contenttype { get; set; }
         public String folder { get; set; }
@@ -30,7 +30,7 @@ namespace Blu82
 
         public void WriteXml(System.Xml.XmlWriter writer)
         {
-            writer.WriteElementString("mig_id", this.mig_id);
+            writer.WriteElementString("mig_id", this.mig_id.ToString());
             writer.WriteElementString("community", this.community);
             writer.WriteElementString("contenttype", this.contenttype);
             writer.WriteElementString("folder", this.folder);

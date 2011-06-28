@@ -12,8 +12,15 @@ namespace Blu82
     {
         static void Main(string[] args)
         {
-            String pathToFile = @"c:\Development\WCMS\Blu82\proteomics_daisy_inputs.xls";
+            String pathToFile = @"C:\WCMTeam\Tools\MigrationTools\Blu82\proteomics_daisy_inputs.xls";
             var excel = new ExcelQueryFactory(pathToFile);
+            excel.AddTransformation<DaisyFolder>(x => x.mig_id, cellValue => new Guid(cellValue));
+            // Technically, this line should probably be required, but LinqToExcel throws an exctption
+            // about a duplicate key.  The tranformation for DaisyFolder seems to carry over though,
+            // so this works because of magic.
+            //excel.AddTransformation<DaisyContentItem>(x => x.mig_id, cellValue => new Guid(cellValue));
+            excel.AddTransformation<DaisyRelationships>(x => x.ownerid, cellValue => new Guid(cellValue));
+            excel.AddTransformation<DaisyRelationships>(x => x.dependentid, cellValue => new Guid(cellValue));
             
             //Get folders
             var folders = from folder in excel.Worksheet<DaisyFolder>("1 Folders")
@@ -51,6 +58,7 @@ namespace Blu82
             XmlSerializer relsSer = new XmlSerializer(typeof(List<DaisyRelationships>), new XmlRootAttribute("list"));
             SerializeCollection<DaisyRelationships>(relationships, @".\relationships.xml");
 
+            Console.WriteLine("Press Enter");
             Console.Read();
         }
 
@@ -85,7 +93,7 @@ namespace Blu82
                     DaisyContentItem item = new DaisyContentItem()
                     {
                         community = community,
-                        mig_id = row["mig_id"],
+                        mig_id = new Guid( row["mig_id"].ToString()),
                         contenttype = row["contenttype"],
                         folder = row["folder"]
                     };

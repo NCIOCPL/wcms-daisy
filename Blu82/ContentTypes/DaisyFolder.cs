@@ -9,7 +9,7 @@ namespace Blu82
     [XmlRootAttribute("item")]
     public class DaisyFolder
     {
-        public String mig_id { get; set; }
+        public Guid mig_id { get; set; }
         public string folder { get; set; }
         public int show_in_nav { get; set; }
     }
