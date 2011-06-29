@@ -43,7 +43,7 @@ namespace MigrationEngine.Tasks
 
                     try
                     {
-                        controller.GuaranteeFolder(folder.Path);
+                        controller.GuaranteeFolder(folder.Path.ToLower());
 
                         // Find the Navon
                         string message;

@@ -14,6 +14,7 @@ namespace MigrationEngine
             public const string CONTENT_TYPE = "contenttype";
             public const string COMMUNITY_NAME = "community";
             public const string PATH = "folder";
+            public const string PRETTY_URL = "pretty_url_name";
         }
 
         // Community Aliases

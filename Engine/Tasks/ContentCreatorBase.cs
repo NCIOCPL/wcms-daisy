@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace MigrationEngine.Tasks
 {
-    public abstract class ContentCreatorBase : MigrationTask
+    public abstract class ContentCreatorBase : ContentFieldTask
     {
         /// <summary>
         /// This is the main method for implementing a migration task.

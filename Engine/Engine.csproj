@@ -85,6 +85,7 @@
     <Compile Include="Migrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tasks\ContentCreatorBase.cs" />
+    <Compile Include="Tasks\ContentFieldTask.cs" />
     <Compile Include="Tasks\FileContentUpdater.cs" />
     <Compile Include="Tasks\FolderCreatorBase.cs" />
     <Compile Include="Tasks\PurgeContent.cs" />

@@ -65,10 +65,9 @@ namespace MigrationEngine.Tasks
                         }
 
                         //convert HTML to XML and do Link Munging on fields 
-                        Dictionary<string, string> rectifiedFields =
-                            FieldHtmlRectifier.ConvertToXHtml(item.MigrationID, item.Fields, logger, controller);
+                        Dictionary<string, string> fields = PreProcessFields(item, controller, logger);
 
-                        PercWrapper.UpdateItemWrapper(controller, precID, new FieldSet(rectifiedFields), out message);
+                        PercWrapper.UpdateItemWrapper(controller, precID, new FieldSet(fields), out message);
                         if (!string.IsNullOrEmpty(message))
                         {
                             logger.LogTaskItemWarning(item, message, item.Fields);

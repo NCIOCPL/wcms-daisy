@@ -48,12 +48,10 @@ namespace MigrationEngine.Tasks
 
                     try
                     {
-                        //convert HTML to XML and do Link Munging on fields
-                        Dictionary<string, string> rectifiedFields =
-                            FieldHtmlRectifier.ConvertToXHtml(item.MigrationID, item.Fields, logger, controller);
+                        Dictionary<string, string> fields = PreProcessFields(item, controller, logger);
 
                         string message;
-                        long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, rectifiedFields, item.Path, out message);
+                        long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, fields, item.Path, out message);
                         if (!string.IsNullOrEmpty(message))
                         {
                             logger.LogTaskItemWarning(item, message, item.Fields);
