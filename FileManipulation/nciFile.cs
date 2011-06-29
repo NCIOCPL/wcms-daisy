@@ -16,14 +16,17 @@ namespace FileManipulation
 
         public NciFile(NciFileInfo info)
         {
+            string shortTitle = info.Title.Substring(0, Math.Min(100, info.Title.Length));
+            string prettyUrlName = shortTitle.Replace(' ', '-');
+
             _fieldSet.Add("long_title", info.Title);
-            _fieldSet.Add("short_title", info.Title.Substring(0, Math.Min(100, info.Title.Length)));
+            _fieldSet.Add("short_title", shortTitle);
             _fieldSet.Add("item_file_attachment", info.Data);
             _fieldSet.Add("item_file_attachment_ext", info.Extension);
             _fieldSet.Add("item_file_attachment_filename", info.FileName);
             _fieldSet.Add("item_file_attachment_size", info.FileSize.ToString());
             _fieldSet.Add("item_file_attachment_type", info.MimeType);
-            _fieldSet.Add("pretty_url_name", info.Title.Substring(0, Math.Min(100, info.Title.Length)));
+            _fieldSet.Add("pretty_url_name", prettyUrlName);
         }
     }
 }
