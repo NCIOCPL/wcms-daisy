@@ -9,6 +9,7 @@
   <item><contenttype>genFile</contenttype><community>site</community></item>
   <item><contenttype>genFundingOpp</contenttype><community>site</community></item>
   <item><contenttype>genGeneral</contenttype><community>site</community></item>
+  <item><contenttype>genHome</contenttype><community>site</community></item>
   <item><contenttype>genLanding</contenttype><community>site</community></item>
   <item><contenttype>genList</contenttype><community>site</community></item>
   <item><contenttype>genNews</contenttype><community>site</community></item>
