@@ -43,7 +43,6 @@ namespace MigrationEngine.Tasks
 
                     try
                     {
-
                         controller.GuaranteeFolder(folder.Path);
 
                         // Find the Navon
