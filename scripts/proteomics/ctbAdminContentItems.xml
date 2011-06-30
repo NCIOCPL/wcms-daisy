@@ -4,25 +4,16 @@
     <mig_id>aaaaaaaa-0000-0000-0000-200000000201</mig_id>
     <community>ctbAdmin</community>
     <contenttype>genSectionNav</contenttype>
-    <folder>/</folder>
+    <folder>/SharedItems/Navigation</folder>
     <long_title><![CDATA[Proteomics Section Navigation]]></long_title>
     <short_title><![CDATA[Proteomics Section Navigation]]></short_title>
     <navigation_levels><![CDATA[4]]></navigation_levels>
   </item>
   <item>
-    <mig_id>aaaaaaaa-0000-0000-0000-200000000202</mig_id>
-    <community>ctbAdmin</community>
-    <contenttype>genBrandingBar</contenttype>
-    <folder>/</folder>
-    <long_title><![CDATA[Proteomics Branding Bar]]></long_title>
-    <short_title><![CDATA[Proteomics Branding Bar]]></short_title>
-    <color><![CDATA[red]]></color>
-  </item>
-  <item>
     <mig_id>aaaaaaaa-0000-0000-0000-200000000203</mig_id>
     <community>ctbAdmin</community>
     <contenttype>genSiteBanner</contenttype>
-    <folder>/</folder>
+    <folder>/SharedItems/SiteBanner</folder>
     <long_title><![CDATA[Proteomics Site Banner]]></long_title>
     <short_title><![CDATA[Proteomics Site Banner]]></short_title>
     <bodyfield><![CDATA[Site Banner goes here.]]></bodyfield>
@@ -31,7 +22,7 @@
     <mig_id>aaaaaaaa-0000-0000-0000-200000000204</mig_id>
     <community>ctbAdmin</community>
     <contenttype>genMainNav</contenttype>
-    <folder>/</folder>
+    <folder>/SharedItems/Navigation</folder>
     <long_title><![CDATA[Proteomics Main Nav]]></long_title>
     <short_title><![CDATA[Proteomics Main Nav]]></short_title>
     <navigation_levels><![CDATA[2]]></navigation_levels>
@@ -40,7 +31,7 @@
     <mig_id>aaaaaaaa-0000-0000-0000-200000000205</mig_id>
     <community>ctbAdmin</community>
     <contenttype>genSiteFooter</contenttype>
-    <folder>/</folder>
+    <folder>/SharedItems/SiteFooter</folder>
     <long_title><![CDATA[Proteomics Site Footer]]></long_title>
     <short_title><![CDATA[Proteomics Site Footer]]></short_title>
     <bodyfield><![CDATA[Site Footer goes here.]]></bodyfield>

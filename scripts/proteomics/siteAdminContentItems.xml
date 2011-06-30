@@ -1,2 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<list />
+<list>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-200000000001</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genHome</contenttype>
+    <folder>/homepage</folder>
+    <nav_label><![CDATA[Home]]></nav_label>
+    <long_title><![CDATA[Home - Clinical Proteomics Technologies for Cancer]]></long_title>
+    <short_title><![CDATA[Home]]></short_title>
+    <bodyfield><![CDATA[Content goes here.]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-200000000202</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genBrandingBar</contenttype>
+    <folder>/SharedItems/SiteBanner</folder>
+    <long_title><![CDATA[Proteomics Branding Bar]]></long_title>
+    <short_title><![CDATA[Proteomics Branding Bar]]></short_title>
+    <color><![CDATA[white]]></color>
+  </item>
+</list>

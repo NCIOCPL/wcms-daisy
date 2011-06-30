@@ -2,7 +2,7 @@
 <list>
   <item>
     <mig_id>aaaaaaaa-0000-0000-0000-100000000001</mig_id>
-    <folder>/</folder>
+    <folder>/homepage</folder>
     <show_in_nav>1</show_in_nav>
   </item>
   <item>
@@ -68,11 +68,6 @@
   <item>
     <mig_id>aaaaaaaa-0000-0000-0000-100000000014</mig_id>
     <folder>/programs/cptacnetwork</folder>
-    <show_in_nav>1</show_in_nav>
-  </item>
-  <item>
-    <mig_id>aaaaaaaa-0000-0000-0000-100000000015</mig_id>
-    <folder>/programs/cptacnetwork/currentprograms</folder>
     <show_in_nav>1</show_in_nav>
   </item>
   <item>
@@ -203,6 +198,11 @@
   <item>
     <mig_id>aaaaaaaa-0000-0000-0000-100000000054</mig_id>
     <folder>/search</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000055</mig_id>
+    <folder>/SharedItems</folder>
     <show_in_nav>0</show_in_nav>
   </item>
 </list>
