@@ -18,9 +18,10 @@ namespace FileManipulation
         const string mov = ".mov";
         const string exe = ".exe";
         const string ics = ".ics";
+        const string zip = ".zip";
 
 
-        public static string[] KnownExtensions = { pdf, doc, docx, xls, xlsx, ppt, pptx, mp3, mov, exe, ics };
+        public static string[] KnownExtensions = { pdf, doc, docx, xls, xlsx, ppt, pptx, mp3, mov, exe, ics, zip };
 
         /// <summary>
         /// Gets a Base-64 Encoded string representing the data of the image
@@ -117,6 +118,7 @@ namespace FileManipulation
                 case mov: mimeType = "video/quicktime"; break;
                 case exe: mimeType = "application/octet-stream"; break;
                 case ics: mimeType = "application/octet-stream"; break;
+                case zip: mimeType = "application/zip"; break;
             }
 
             return mimeType;
