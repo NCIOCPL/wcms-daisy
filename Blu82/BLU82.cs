@@ -10,10 +10,9 @@ namespace Blu82
 {
     class BLU82
     {
-        static void Main(string[] args)
+        private static void GenerateDaisyInput(string inputFile)
         {
-            String pathToFile = @"C:\WCMTeam\Tools\MigrationTools\Blu82\proteomics_daisy_inputs.xls";
-            var excel = new ExcelQueryFactory(pathToFile);
+            var excel = new ExcelQueryFactory(inputFile);
             excel.AddTransformation<DaisyFolder>(x => x.mig_id, cellValue => new Guid(cellValue));
             // Technically, this line should probably be required, but LinqToExcel throws an exctption
             // about a duplicate key.  The tranformation for DaisyFolder seems to carry over though,
@@ -21,19 +20,19 @@ namespace Blu82
             //excel.AddTransformation<DaisyContentItem>(x => x.mig_id, cellValue => new Guid(cellValue));
             excel.AddTransformation<DaisyRelationships>(x => x.ownerid, cellValue => new Guid(cellValue));
             excel.AddTransformation<DaisyRelationships>(x => x.dependentid, cellValue => new Guid(cellValue));
-            
+
             //Get folders
             var folders = from folder in excel.Worksheet<DaisyFolder>("1 Folders")
                           select folder;
-            
+
             SerializeCollection<DaisyFolder>(folders, @".\folder.xml");
 
             var siteColumnNames = excel.GetColumnNames("2 Content Items");
 
             //Get Site content items            
             var siteContentitems = from contentitem in excel.Worksheet("2 Content Items")
-                               where contentitem["community"] == "site"
-                               select contentitem;
+                                   where contentitem["community"] == "site"
+                                   select contentitem;
             List<DaisyContentItem> siteCommunity = ExtractItems(siteColumnNames, siteContentitems, "site");
             SerializeCollection<DaisyContentItem>(siteCommunity, @".\siteContentItems.xml");
 
@@ -46,8 +45,8 @@ namespace Blu82
 
             //Get CTB Admin content items
             var ctbAdminContentitems = from contentitem in excel.Worksheet("2 Content Items")
-                                        where contentitem["community"] == "ctbAdmin"
-                                        select contentitem;
+                                       where contentitem["community"] == "ctbAdmin"
+                                       select contentitem;
             List<DaisyContentItem> ctbAdminCommunity = ExtractItems(siteColumnNames, ctbAdminContentitems, "ctbAdmin");
             SerializeCollection<DaisyContentItem>(ctbAdminCommunity, @".\ctbAdminContentItems.xml");
 
@@ -93,7 +92,7 @@ namespace Blu82
                     DaisyContentItem item = new DaisyContentItem()
                     {
                         community = community,
-                        mig_id = new Guid( row["mig_id"].ToString()),
+                        mig_id = new Guid(row["mig_id"].ToString()),
                         contenttype = row["contenttype"],
                         folder = row["folder"]
                     };
@@ -151,10 +150,22 @@ namespace Blu82
                     }
 
                     rtnItems.Add(item);
-                }                
+                }
             }
 
             return rtnItems;
+        }
+
+        static void Main(string[] args)
+        {
+            if (args.Length == 1)
+            {
+                GenerateDaisyInput(args[0]);
+            }
+            else
+            {
+                Console.WriteLine("Syntax: BLU82 <scriptname>");
+            }
         }
     }
 }
