@@ -7,6 +7,7 @@
   <item><contenttype>genExternalLink</contenttype><community>site</community></item>
   <item><contenttype>genFacet</contenttype><community>site</community></item>
   <item><contenttype>genFile</contenttype><community>site</community></item>
+  <item><contenttype>genForm</contenttype><community>site</community></item>
   <item><contenttype>genFundingOpp</contenttype><community>site</community></item>
   <item><contenttype>genGeneral</contenttype><community>site</community></item>
   <item><contenttype>genHome</contenttype><community>site</community></item>
