@@ -11,6 +11,15 @@
     <bodyfield><![CDATA[Content goes here.]]></bodyfield>
   </item>
   <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-200000000201</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genSectionNav</contenttype>
+    <folder>/SharedItems/Navigation</folder>
+    <long_title><![CDATA[Proteomics Section Navigation]]></long_title>
+    <short_title><![CDATA[Proteomics Section Navigation]]></short_title>
+    <navigation_levels><![CDATA[4]]></navigation_levels>
+  </item>
+  <item>
     <mig_id>aaaaaaaa-0000-0000-0000-200000000202</mig_id>
     <community>siteAdmin</community>
     <contenttype>genBrandingBar</contenttype>
@@ -18,5 +27,32 @@
     <long_title><![CDATA[Proteomics Branding Bar]]></long_title>
     <short_title><![CDATA[Proteomics Branding Bar]]></short_title>
     <color><![CDATA[white]]></color>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-200000000203</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genSiteBanner</contenttype>
+    <folder>/SharedItems/SiteBanner</folder>
+    <long_title><![CDATA[Proteomics Site Banner]]></long_title>
+    <short_title><![CDATA[Proteomics Site Banner]]></short_title>
+    <bodyfield><![CDATA[<h1 class="genSiteLogo"><a href="/" title="Clinical Proteomics Technologies for Cancer">Clinical Proteomics Technologies for Cancer</a></h1><div class="genSiteUtilityContainer"><ol class="genSiteUtilityLinks"><li><a href="/contact">Contact Us</a></li><li>]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-200000000204</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genMainNav</contenttype>
+    <folder>/SharedItems/Navigation</folder>
+    <long_title><![CDATA[Proteomics Main Nav]]></long_title>
+    <short_title><![CDATA[Proteomics Main Nav]]></short_title>
+    <navigation_levels><![CDATA[2]]></navigation_levels>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-200000000205</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genSiteFooter</contenttype>
+    <folder>/SharedItems/SiteFooter</folder>
+    <long_title><![CDATA[Proteomics Site Footer]]></long_title>
+    <short_title><![CDATA[Proteomics Site Footer]]></short_title>
+    <bodyfield><![CDATA[<ul class="genSiteFooterLinks"><li><a href="#">NCI Home</a></li><li><a href="/global/sitemap">Site Map</a></li><li><a href="/global/policies">Policies</a></li><li><a href="/global/accessibility">Accessibility</a></li><li><a href="/global/foia">FOIA</a></l]]></bodyfield>
   </item>
 </list>

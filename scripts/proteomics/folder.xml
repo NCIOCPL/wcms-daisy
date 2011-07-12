@@ -36,6 +36,11 @@
     <show_in_nav>1</show_in_nav>
   </item>
   <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000330</mig_id>
+    <folder>/about/cptcleadership/nci/images</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
     <mig_id>aaaaaaaa-0000-0000-0000-100000000008</mig_id>
     <folder>/about/cptcleadership/cptac</folder>
     <show_in_nav>1</show_in_nav>
@@ -121,6 +126,41 @@
     <show_in_nav>1</show_in_nav>
   </item>
   <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000331</mig_id>
+    <folder>/publications/archive/2010</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000332</mig_id>
+    <folder>/publications/archive/2009</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000333</mig_id>
+    <folder>/publications/archive/2008</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000334</mig_id>
+    <folder>/publications/archive/2007</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000335</mig_id>
+    <folder>/publications/archive/2006</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000336</mig_id>
+    <folder>/publications/archive/2005</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000337</mig_id>
+    <folder>/publications/archive/2003</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
     <mig_id>aaaaaaaa-0000-0000-0000-100000000026</mig_id>
     <folder>/newsevents</folder>
     <show_in_nav>1</show_in_nav>
@@ -147,8 +187,33 @@
   </item>
   <item>
     <mig_id>aaaaaaaa-0000-0000-0000-100000000031</mig_id>
-    <folder>/newsevents/events/archive/byyear</folder>
-    <show_in_nav>1</show_in_nav>
+    <folder>/newsevents/events/archive/2010</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000338</mig_id>
+    <folder>/newsevents/events/archive/2009</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000339</mig_id>
+    <folder>/newsevents/events/archive/2008</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000350</mig_id>
+    <folder>/newsevents/events/archive/2007</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000351</mig_id>
+    <folder>/newsevents/events/archive/2005</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000352</mig_id>
+    <folder>/newsevents/events/archive/2004</folder>
+    <show_in_nav>0</show_in_nav>
   </item>
   <item>
     <mig_id>aaaaaaaa-0000-0000-0000-100000000032</mig_id>
@@ -203,6 +268,36 @@
   <item>
     <mig_id>aaaaaaaa-0000-0000-0000-100000000055</mig_id>
     <folder>/SharedItems</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000353</mig_id>
+    <folder>/SharedItems/Navigation</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000354</mig_id>
+    <folder>/SharedItems/ContentBlocks</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000355</mig_id>
+    <folder>/SharedItems/SiteBanner</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000356</mig_id>
+    <folder>/SharedItems/SiteFooter</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000357</mig_id>
+    <folder>/SharedItems/ErrorPages</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000358</mig_id>
+    <folder>/SharedItems/TimelyContentZone</folder>
     <show_in_nav>0</show_in_nav>
   </item>
 </list>
