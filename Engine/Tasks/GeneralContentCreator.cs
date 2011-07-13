@@ -29,44 +29,64 @@ namespace MigrationEngine.Tasks
         {
             List<FullItemDescription> contentItems = DataGetter.LoadData();
 
+            // Get the list of communities.
+            string[] communities =
+                (from comm in contentItems select comm.Community).Distinct().ToArray();
+
+            // Sort the content items according to their communities.
+            Dictionary<string, List<FullItemDescription>> itemsByCommunity = new Dictionary<string, List<FullItemDescription>>();
+            foreach (string comm in communities)
+            {
+                itemsByCommunity.Add(comm, new List<FullItemDescription>());
+                itemsByCommunity[comm].AddRange(
+                        from item in contentItems
+                        where item.Community== comm
+                        select item
+                    );
+            }
+
             int index = 1;
             int count = contentItems.Count;
 
-            // Assumes that all items in a given task instance will use the same community.
-            // (All records in a single datagetter call return the same community.)
-            string community = string.Empty;
-            if (count > 0)
+            // Loop through the sets of communities.
+            foreach (KeyValuePair<string, List<FullItemDescription>> itemGroup in itemsByCommunity)
             {
-                community = LookupCommunityName(contentItems[0].Community);
-            }
-
-            using (CMSController controller = new CMSController(community))
-            {
-                foreach (FullItemDescription item in contentItems)
+                // Log in to the community for each group of content items.
+                string community = string.Empty;
+                if (count > 0)
                 {
-                    logger.BeginTaskItem(Name, index++, count, item, item.Path);
+                    community = LookupCommunityName(itemGroup.Key);
+                }
 
-                    try
+                using (CMSController controller = new CMSController(community))
+                {
+                    foreach (FullItemDescription item in itemGroup.Value)
                     {
-                        Dictionary<string, string> fields = PreProcessFields(item, controller, logger);
+                        logger.BeginTaskItem(Name, index++, count, item, item.Path);
 
-                        string message;
-                        long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, fields, item.Path, out message);
-                        if (!string.IsNullOrEmpty(message))
+                        try
                         {
-                            logger.LogTaskItemWarning(item, message, item.Fields);
+                            Dictionary<string, string> fields = PreProcessFields(item, controller, logger);
+
+                            string message;
+                            long contentID = PercWrapper.CreateItemWrapper(controller, item.ContentType, fields, item.Path, out message);
+                            if (!string.IsNullOrEmpty(message))
+                            {
+                                logger.LogTaskItemWarning(item, message, item.Fields);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            string message = ex.ToString();
+                            logger.LogTaskItemError(item, message, item.Fields);
+                        }
+                        finally
+                        {
+                            logger.EndTaskItem();
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        string message = ex.ToString();
-                        logger.LogTaskItemError(item, message, item.Fields);
-                    }
-                    finally
-                    {
-                        logger.EndTaskItem();
-                    }
                 }
+
             }
         }
     }
