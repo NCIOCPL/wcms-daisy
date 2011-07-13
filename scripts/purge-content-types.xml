@@ -21,6 +21,7 @@
   <item><contenttype>genTCCarousel</contenttype><community>site</community></item>
   <item><contenttype>genTCItem</contenttype><community>site</community></item>
   <item><contenttype>gloImage</contenttype><community>site</community></item>
+  <item><contenttype>gloVideo</contenttype><community>site</community></item>
   <item><contenttype>gloVideoCarousel</contenttype><community>site</community></item>
   <item><contenttype>rffNavon</contenttype><community>site</community></item>
 
@@ -28,6 +29,7 @@
   <item><contenttype>genAppModPage</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genBrandingBar</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genConfigurationFile</contenttype><community>siteAdmin</community></item>
+  <item><contenttype>genForm</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genHome</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genSiteBanner</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genSiteFooter</contenttype><community>siteAdmin</community></item>
@@ -38,6 +40,7 @@
   <item><contenttype>genAppModPage</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genBrandingBar</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genConfigurationFile</contenttype><community>ctbAdmin</community></item>
+  <item><contenttype>genErrorPage</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genHome</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genJavaScriptExternalInfo</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genJavaScriptInternalInfo</contenttype><community>ctbAdmin</community></item>
