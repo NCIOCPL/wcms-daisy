@@ -17,7 +17,7 @@ namespace FileManipulation
         public NciFile(NciFileInfo info)
         {
             string shortTitle = info.Title.Substring(0, Math.Min(100, info.Title.Length));
-            string prettyUrlName = shortTitle.Replace(' ', '-');
+            string prettyUrlName = info.FileName.Replace(' ', '-');
 
             _fieldSet.Add("long_title", info.Title);
             _fieldSet.Add("short_title", shortTitle);
