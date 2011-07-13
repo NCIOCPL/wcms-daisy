@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Configuration;
 
 using NCI.CMS.Percussion.Manager.CMS;
 using NCI.CMS.Percussion.Manager.PercussionWebSvc;
+
+using Munger.Configuration;
 
 namespace Munger
 {
@@ -20,7 +20,10 @@ namespace Munger
 
             if (prettyUrl == "/")
             {
-                prettyUrl = "/homepage";
+                MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
+                prettyUrl = config.RootElementPath.Value;
+                if (string.IsNullOrEmpty(prettyUrl))
+                    prettyUrl = "/";
             }
             else if (prettyUrl.EndsWith("/"))
             {

@@ -43,5 +43,15 @@ namespace Munger.Configuration
         {
             get { return (RewritingListElement)base["Programmatic"]; }
         }
+
+        /// <summary>
+        /// Exposes the value in /MungerConfig/rootElementPath. This path is substituted
+        /// for / when looking up migration IDs.
+        /// </summary>
+        [ConfigurationProperty("rootElementPath")]
+        public SingleValueElement RootElementPath
+        {
+            get { return (SingleValueElement)base["rootElementPath"]; }
+        }
     }
 }

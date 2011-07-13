@@ -53,6 +53,7 @@
     <Compile Include="Configuration\MungerConfiguration.cs" />
     <Compile Include="Configuration\RewritingElement.cs" />
     <Compile Include="Configuration\RewritingListElement.cs" />
+    <Compile Include="Configuration\SingleValueElement.cs" />
     <Compile Include="HostSet.cs" />
     <Compile Include="ImageResolver.cs" />
     <Compile Include="DataAccess.cs" />
