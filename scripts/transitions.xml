@@ -7,6 +7,7 @@
   <item><contenttype>genExternalLink</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genFile</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genFacet</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
+  <item><contenttype>genForm</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genFundingOpp</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genGeneral</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>genLanding</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
@@ -19,21 +20,24 @@
   <item><contenttype>genTCItem</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>gloImage</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
   <item><contenttype>gloVideo</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
+  <item><contenttype>rffNavImage</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>site</community></item>
   <item><contenttype>rffNavon</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>site</community></item>
   <item><contenttype>rffNavTree</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>site</community></item>
 
-  <item><contenttype>genAppModPage</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
   <item><contenttype>genBrandingBar</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
-  <item><contenttype>genConfigurationFile</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
   <item><contenttype>genHome</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
   <item><contenttype>genSiteBanner</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
   <item><contenttype>genSiteFooter</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
   <item><contenttype>genStyleSheetInfo</contenttype><trigger>DirectToPublic</trigger><community>siteAdmin</community></item>
+  <item><contenttype>rffNavImage</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>siteAdmin</community></item>
+  <item><contenttype>rffNavon</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>siteAdmin</community></item>
+  <item><contenttype>rffNavTree</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>siteAdmin</community></item>
 
+  <item><contenttype>genAppModPage</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genAppModule</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
-  <item><contenttype>genBrandingBar</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genConfigurationFile</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
-  <item><contenttype>genHome</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
+  <item><contenttype>genErrorPage</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
+  <item><contenttype>genForm</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genJavaScriptExternalInfo</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genJavaScriptInternalInfo</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genMainNav</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
@@ -44,4 +48,7 @@
   <item><contenttype>genSiteBanner</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genSiteFooter</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
   <item><contenttype>genStyleSheetInfo</contenttype><trigger>DirectToPublic</trigger><community>ctbAdmin</community></item>
+  <item><contenttype>rffNavImage</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>ctbAdmin</community></item>
+  <item><contenttype>rffNavon</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>ctbAdmin</community></item>
+  <item><contenttype>rffNavTree</contenttype><trigger>DirectToPublicWithoutActions</trigger><community>ctbAdmin</community></item>
 </list>

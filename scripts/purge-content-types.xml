@@ -5,15 +5,13 @@
   <item><contenttype>genContentBlock</contenttype><community>site</community></item>
   <item><contenttype>genEvent</contenttype><community>site</community></item>
   <item><contenttype>genExternalLink</contenttype><community>site</community></item>
-  <item><contenttype>genFacet</contenttype><community>site</community></item>
   <item><contenttype>genFile</contenttype><community>site</community></item>
+  <item><contenttype>genFacet</contenttype><community>site</community></item>
   <item><contenttype>genForm</contenttype><community>site</community></item>
   <item><contenttype>genFundingOpp</contenttype><community>site</community></item>
   <item><contenttype>genGeneral</contenttype><community>site</community></item>
-  <item><contenttype>genHome</contenttype><community>site</community></item>
   <item><contenttype>genLanding</contenttype><community>site</community></item>
   <item><contenttype>genList</contenttype><community>site</community></item>
-  <item><contenttype>genNews</contenttype><community>site</community></item>
   <item><contenttype>genNews</contenttype><community>site</community></item>
   <item><contenttype>genNewsletterDetails</contenttype><community>site</community></item>
   <item><contenttype>genSecondaryURL</contenttype><community>site</community></item>
@@ -22,26 +20,24 @@
   <item><contenttype>genTCItem</contenttype><community>site</community></item>
   <item><contenttype>gloImage</contenttype><community>site</community></item>
   <item><contenttype>gloVideo</contenttype><community>site</community></item>
-  <item><contenttype>gloVideoCarousel</contenttype><community>site</community></item>
+  <item><contenttype>rffNavImage</contenttype><community>site</community></item>
   <item><contenttype>rffNavon</contenttype><community>site</community></item>
+  <item><contenttype>rffNavTree</contenttype><community>site</community></item>
 
-  <item><contenttype>genAggroWidget</contenttype><community>ctbAdmin</community></item>
-  <item><contenttype>genAppModPage</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genBrandingBar</contenttype><community>siteAdmin</community></item>
-  <item><contenttype>genConfigurationFile</contenttype><community>siteAdmin</community></item>
-  <item><contenttype>genForm</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genHome</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genSiteBanner</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genSiteFooter</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genStyleSheetInfo</contenttype><community>siteAdmin</community></item>
+  <item><contenttype>rffNavImage</contenttype><community>siteAdmin</community></item>
+  <item><contenttype>rffNavon</contenttype><community>siteAdmin</community></item>
+  <item><contenttype>rffNavTree</contenttype><community>siteAdmin</community></item>
 
-  <item><contenttype>genAggroWidget</contenttype><community>ctbAdmin</community></item>
-  <item><contenttype>genAppModule</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genAppModPage</contenttype><community>ctbAdmin</community></item>
-  <item><contenttype>genBrandingBar</contenttype><community>ctbAdmin</community></item>
+  <item><contenttype>genAppModule</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genConfigurationFile</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genErrorPage</contenttype><community>ctbAdmin</community></item>
-  <item><contenttype>genHome</contenttype><community>ctbAdmin</community></item>
+  <item><contenttype>genForm</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genJavaScriptExternalInfo</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genJavaScriptInternalInfo</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genMainNav</contenttype><community>ctbAdmin</community></item>
@@ -52,4 +48,7 @@
   <item><contenttype>genSiteBanner</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genSiteFooter</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>genStyleSheetInfo</contenttype><community>ctbAdmin</community></item>
+  <item><contenttype>rffNavImage</contenttype><community>ctbAdmin</community></item>
+  <item><contenttype>rffNavon</contenttype><community>ctbAdmin</community></item>
+  <item><contenttype>rffNavTree</contenttype><community>ctbAdmin</community></item>
 </list>
