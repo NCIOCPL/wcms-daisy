@@ -1,0 +1,60 @@
+<list>
+
+  <!-- Branding Banner -->
+  <item>
+    <mig_id>BCE172CF-3528-4428-9421-036EA9B55A9D</mig_id>
+    <contenttype>genBrandingBar</contenttype>
+    <community>siteAdmin</community>
+    <folder>/SharedItems/SiteBanner</folder>
+    <long_title>Branding Banner</long_title>
+    <bodyfield>
+      <![CDATA[<!-- Branding Bar Slot (#genSlotBrandingBar) // Color class on slot determined by Content Type field value  -->
+                <div id="genSlotBrandingBar" class="clearFix">
+                                <div class="slot-item only-SI">
+                                                <!-- Branding Bar Content // From Content Type in Slot -->
+                                                <div class="genSiteBrandingBarContainer clearFix red">
+                                                                <ul>
+                                                                                <li class="nciLogo"><a href="http://www.cancer.gov" title="The National Cancer Institute">The National Cancer Institute</a></li>
+                                                                                <li class="nciURL"><a href="http://www.cancer.gov" title="www.cancer.gov">www.cancer.gov</a></li>
+                                                                                <li class="nihText"><a href="http://www.nih.gov" title="The U.S. National Institutes of Health">The National Institutes of Health</a></li>
+                                                                </ul>
+                                                </div>
+                                                <!-- END Branding Bar Content -->]]>
+    </bodyfield>
+  </item>
+
+  <!-- Site Banner -->
+  <item>
+    <mig_id>6212F6A1-7FCD-4c78-BD3D-F2701846EE8F</mig_id>
+    <contenttype>genSiteBanner</contenttype>
+    <community>siteAdmin</community>
+    <folder>/SharedItems/SiteBanner</folder>
+    <long_title>Site Banner</long_title>
+    <bodyfield>
+      <![CDATA[
+                                                <!-- Site Banner Content // From Content Type in Slot -->
+                                                <h1 class="genSiteLogo"><a href="/">Cancer Imaging Program</a></h1>
+
+                                                <div class="genSiteUtilityContainer">
+                                                                <ol class="genSiteUtilityLinks">
+                                                                                <li><a href="/global/contact">Contact Us</a></li>
+                                                                </ol>
+
+                                                </div>
+                                                <!-- Site Banner Content -->]]>
+    </bodyfield>
+  </item>
+
+  <!-- Site Footer -->
+  <item>
+    <mig_id>A6A97480-17D4-4fa9-8031-561CAF10D859</mig_id>
+    <contenttype>genSiteFooter</contenttype>
+    <community>siteAdmin</community>
+    <folder>/SharedItems/SiteFooter</folder>
+    <long_title>Site Footer</long_title>
+    <bodyfield>
+      <![CDATA[<!-- Site Footer Content --><p><a class="footer" href="/">Home</a> | <a class="footer" href="/aboutcip">About CIP</a> | <a class="footer" href="/researchfunding">Research Funding</a> | <a class="footer" href="/programsandresources">Programs &amp; Resources</a> | <a class="footer" href="/clinicaltrials">Clinical Trials</a> | <a class="footer" href="/reportsandpublications">Reports &amp; Publications</a> | <a class="footer" href="/newsandmeetings">News &amp; Meetings</a> | <a class="footer" href="/patientsandproviders">Patients and Providers</a><br/><a class="footer" href="/global/contact">Contact CIP</a> | <a class="footer" href="http://www.cancer.gov/global/web/policies">NCI Web Policies</a> | <a class="footer" href="http://www.cancer.gov/global/web/policies/page4">NCI Web Accessibility</a></p><p><a href="http://www.cancer.gov"><img alt="National Cancer Institute" border="0" height="32" src="/publishedcontent/images/images/nci-logo.gif" width="65"/></a><a href="http://www.hhs.gov/"><img alt="Department of Health &amp; Human Services" border="0" height="32" src="/publishedcontent/images/images/hhs-logo.gif" width="47"/></a><a href="http://www.nih.gov"><img alt="National Institutes of Health" border="0" height="32" src="/publishedcontent/images/images/nih-logo.gif" width="47"/></a><a href="http://www.firstgov.gov/"><img alt="FirstGov.gov" border="0" height="32" src="/publishedcontent/images/images/firstgov-logo.gif" width="96"/></a></p><!-- END Site Footer Slot (#genSlotSiteFooter) -->]]>
+    </bodyfield>
+  </item>
+
+</list>

@@ -1,0 +1,1 @@
+..\Daisy\bin\Debug\daisy.exe cancer-imaging.xml

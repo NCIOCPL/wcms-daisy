@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MigrationTaskList>
+    <!-- Folder Creation -->
+    <MigrationTask xsi:type="FolderCreator" Name="Create folders">
+      <DataGetter xsi:type="XmlDataGetterOfFolderDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\proteomics\folder.xml">
+        <Mapper xsi:type="XmlFolderDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <!-- Content creation -->
+    <MigrationTask xsi:type="GeneralContentCreator" Name="Content for Site community">
+      <DataGetter xsi:type="XmlDataGetterOfFullItemDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\proteomics\siteContentItems.xml">
+        <Mapper xsi:type="XmlFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="GeneralContentCreator" Name="Content for Site Admin community">
+      <DataGetter xsi:type="XmlDataGetterOfFullItemDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\proteomics\siteAdminContentItems.xml">
+        <Mapper xsi:type="XmlFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="GeneralContentCreator" Name="Content for CTB General Admin community">
+      <DataGetter xsi:type="XmlDataGetterOfFullItemDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\proteomics\ctbAdminContentItems.xml">
+        <Mapper xsi:type="XmlFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <!-- Relationships -->
+    <MigrationTask xsi:type="RelationshipCreator" Name="Create relationships">
+      <DataGetter xsi:type="XmlDataGetterOfRelationshipDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\proteomics\relationships.xml">
+        <Mapper xsi:type="XmlRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <!-- Transition to public -->
+
+    <MigrationTask xsi:type="Transitioner" Name="Transition to public">
+      <DataGetter xsi:type="XmlDataGetterOfContentTypeTransitionDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\transitions.xml">
+        <Mapper xsi:type="XmlContentTypeTransitionDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+  </MigrationTaskList>
+</Migration>

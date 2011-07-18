@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cde:PageTemplateConfiguration xsi:schemaLocation="http://www.example.org/CDESchema CDESchema.xsd" xmlns:cde="http://www.example.org/CDESchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PageTemplateCollections>
+    <PageTemplateCollection Name="DefaultCancerGovTemplate">
+      <PageTemplateInfos>
+        <PageTemplateInfo DisplayVersion="Web">
+          <PageTemplatePath>~/PageTemplates/DefaultCancerGovTemplate.aspx</PageTemplatePath>
+          <StyleSheets>
+            <StyleSheetInfo>
+              <StyleSheetPath>~/StyleSheets/nci.css</StyleSheetPath>
+            </StyleSheetInfo>
+          </StyleSheets>
+        </PageTemplateInfo>
+        <PageTemplateInfo DisplayVersion="Print">
+          <PageTemplatePath>~/PageTemplates/DefaultCancerGovTemplate-Print.aspx</PageTemplatePath>
+          <StyleSheets>
+            <StyleSheetInfo>
+              <StyleSheetPath>~/StyleSheets/nci-print.css</StyleSheetPath>
+            </StyleSheetInfo>
+          </StyleSheets>
+        </PageTemplateInfo>
+      </PageTemplateInfos>
+    </PageTemplateCollection>
+  </PageTemplateCollections>
+</cde:PageTemplateConfiguration>

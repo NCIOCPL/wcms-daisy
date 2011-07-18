@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MigrationTaskList>
+	  <MigrationTask xsi:type="FolderCreator" Name="FolderCreator">
+		<DataGetter xsi:type="DatabaseDataGetterOfFolderDescription" ProcName="mig_createfolder" ConnectionName="IntranetInt">
+			<Mapper xsi:type="DatabaseFolderDescriptionMapper" />
+		</DataGetter>
+	  </MigrationTask>
+	  <MigrationTask xsi:type="RelationshipCreator" Name="Pete">
+		<DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_ADDlistItem" ConnectionName="IntranetInt">
+			<Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+		</DataGetter>
+	  </MigrationTask>
+  </MigrationTaskList>
+</Migration>
