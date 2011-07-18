@@ -77,6 +77,7 @@ namespace MigrationEngine.Tasks
                         // Don't bother trying to create a relationship if there's already an error.
                         if (error)
                         {
+                            logger.LogTaskItemError(relation, message, null);
                             continue;
                         }
 
