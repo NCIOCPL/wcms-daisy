@@ -88,6 +88,7 @@
     <Compile Include="Tasks\ContentFieldTask.cs" />
     <Compile Include="Tasks\FileContentUpdater.cs" />
     <Compile Include="Tasks\FolderCreatorBase.cs" />
+    <Compile Include="Tasks\HealthCheck.cs" />
     <Compile Include="Tasks\PurgeContent.cs" />
     <Compile Include="Tasks\RelationshipCreatorBase.cs" />
     <Compile Include="Tasks\ContentUpdaterBase.cs" />
