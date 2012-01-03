@@ -256,7 +256,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // If an error occurs, rollback item creation.
                 DeleteItemList(idList.ToArray());
