@@ -43,9 +43,6 @@ namespace MonikerProviders
 
         public void ReadXml(XmlReader reader)
         {
-            //XmlSerializer keySerializer = new XmlSerializer(typeof(string));
-            //XmlSerializer valueSerializer = new XmlSerializer(typeof(Moniker));
-
             XmlSerializer itemSerializer = new XmlSerializer(typeof(Moniker));
 
             bool wasEmpty = reader.IsEmptyElement;
@@ -56,11 +53,9 @@ namespace MonikerProviders
 
             while (reader.NodeType != XmlNodeType.EndElement)
             {
-                //reader.ReadStartElement("Moniker");
                 Moniker moniker = (Moniker)itemSerializer.Deserialize(reader);
-                //reader.ReadEndElement();
 
-                this.Add(moniker.Name, moniker);
+                this.Add(moniker.Name.ToLowerInvariant(), moniker);
 
                 reader.MoveToContent();
             }
@@ -69,25 +64,6 @@ namespace MonikerProviders
 
         public void WriteXml(XmlWriter writer)
         {
-            //XmlSerializer keySerializer = new XmlSerializer(typeof(string));
-            //XmlSerializer valueSerializer = new XmlSerializer(typeof(Moniker));
-
-            //foreach (string key in this.Keys)
-            //{
-            //    writer.WriteStartElement("item");
-
-            //    writer.WriteStartElement("key");
-            //    keySerializer.Serialize(writer, key);
-            //    writer.WriteEndElement();
-
-            //    writer.WriteStartElement("value");
-            //    Moniker value = this[key];
-            //    valueSerializer.Serialize(writer, value);
-            //    writer.WriteEndElement();
-
-            //    writer.WriteEndElement();
-            //}
-
             XmlSerializer itemSerializer = new XmlSerializer(typeof(Moniker));
             foreach (Moniker moniker in this.Values)
             {
