@@ -36,23 +36,23 @@ namespace MonikerProviders
 
         public override void Add(Moniker moniker)
         {
-            _monikerCollection.Add(moniker.Name, moniker);
+            _monikerCollection.Add(moniker.Name.ToLowerInvariant(), moniker);
             PersistToDisk();
         }
 
         public override Moniker Get(string name)
         {
-            return _monikerCollection[name];
+            return _monikerCollection[name.ToLowerInvariant()];
         }
 
         public override bool Contains(string name)
         {
-            return _monikerCollection.ContainsKey(name);
+            return _monikerCollection.ContainsKey(name.ToLowerInvariant());
         }
 
         public override void Delete(string name)
         {
-            _monikerCollection.Remove(name);
+            _monikerCollection.Remove(name.ToLowerInvariant());
             PersistToDisk();
         }
 
