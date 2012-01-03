@@ -24,7 +24,8 @@ namespace MigrationEngine.Mappers
             try
             {
                 description.Path = GetNamedFieldValue(item, PathNameField);
-                description.MigrationID = new Guid(GetNamedFieldValue(item, MigIDField));
+                description.UniqueIdentifier = GetNamedFieldValue(item, UniqueIDField);
+                description.ContentType = Constants.Types.NAVON;
 
                 CopyFields(item, description.Fields);
             }

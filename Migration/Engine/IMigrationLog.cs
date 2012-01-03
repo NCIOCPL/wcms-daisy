@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using MigrationEngine.Descriptors;
 
@@ -26,11 +24,11 @@ namespace MigrationEngine
         void EndTask();
 
         [Obsolete("Use BeginTaskItem(string taskName, int itemIndex, int total, MigrationData migItem, string path) instead.")]
-        void BeginTaskItem(string taskName, int itemIndex, int total, Guid itemMigrationID, string path);
+        void BeginTaskItem(string taskName, int itemIndex, int total, String itemMigrationID, string path);
         [Obsolete("Use LogTaskItemWarning(MigrationData migItem, string message, Dictionary<string, string> Fields) instead.")]
-        void LogTaskItemWarning(Guid migId, string message, Dictionary<string, string> Fields);
+        void LogTaskItemWarning(String migId, string message, Dictionary<string, string> Fields);
         [Obsolete("Use LogTaskItemError(MigrationData migItem, string message, Dictionary<string, string> Fields) instead.")]
-        void LogTaskItemError(Guid migId, string message, Dictionary<string, string> Fields);
+        void LogTaskItemError(String migId, string message, Dictionary<string, string> Fields);
 
         /// <summary>
         /// Call before starting work on an individual task item.
@@ -69,7 +67,7 @@ namespace MigrationEngine
         /// </summary>
         void EndTaskItem();
 
-        void LogError(String taskName, String message, Guid itemMigrationID, Dictionary<string, string> Fields);
+        void LogError(String taskName, String message, String itemMigrationID, Dictionary<string, string> Fields);
         void LogError(String taskName, String message, MigrationData migItem, Dictionary<string, string> Fields);
         void LogUnhandledException(String taskName, Exception ex);
     }

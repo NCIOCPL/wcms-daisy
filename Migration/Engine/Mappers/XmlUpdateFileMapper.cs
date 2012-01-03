@@ -23,7 +23,7 @@ namespace MigrationEngine.Mappers
 
             try
             {
-                description.MigrationID = new Guid(GetNamedFieldValue(item, MigIDField));
+                description.UniqueIdentifier = GetNamedFieldValue(item, UniqueIDField);
                 description.ContentType = GetNamedFieldValue(item, ContentTypeField);
                 description.OriginalUrl = GetNamedFieldValue(item, "url");
 

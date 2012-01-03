@@ -46,7 +46,8 @@ namespace MigrationEngine.Tasks
                     try
                     {
                         string message = "";
-                        PercussionGuid precID = PercWrapper.GetPercussionIDFromMigID(controller, item.MigrationID, item.ContentType);
+                        //PercussionGuid precID = PercWrapper.GetPercussionIDFromMigID(controller, item.UniqueIdentifier, item.ContentType);
+                        PercussionGuid precID = new PercussionGuid(MonikerStore.Get(item.UniqueIdentifier).ContentID);
                         if (precID == PercWrapper.ContentItemNotFound)
                         {
                             logger.LogTaskItemWarning(item, "Content Item Not Found", item.Fields);

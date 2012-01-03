@@ -24,7 +24,7 @@ namespace MigrationEngine.Mappers
             FullItemDescription description = new FullItemDescription();
 
             description.Path = row.Field<string>(PathNameField);
-            description.MigrationID = row.Field<Guid>(MigIDField);
+            description.UniqueIdentifier = row.Field<String>(UniqueIDField);
             description.Community = row.Field<string>(CommunityNameField);
             description.ContentType = row.Field<string>(ContentTypeField);
 

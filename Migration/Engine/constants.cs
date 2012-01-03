@@ -22,5 +22,10 @@ namespace MigrationEngine
         {
             public const string SITE = "site";
         }
+
+        public struct Types
+        {
+            public const string NAVON = "rffNavon";
+        }
     }
 }

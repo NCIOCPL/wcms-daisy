@@ -32,7 +32,8 @@ namespace MigrationEngine.Mappers
             FolderDescription description = new FolderDescription();
 
             description.Path = row.Field<String>(PathNameField);
-            description.MigrationID = row.Field<Guid>(MigIDField);
+            description.UniqueIdentifier = row.Field<String>(UniqueIDField);
+            description.ContentType = Constants.Types.NAVON;
 
             CopyFields(row, description.Fields);
 
