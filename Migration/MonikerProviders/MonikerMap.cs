@@ -24,10 +24,13 @@ namespace MonikerProviders
         {
             MonikerMap map = new MonikerMap();
 
-            XmlSerializer serialzer = new XmlSerializer(typeof(MonikerMap));
-            using (TextReader reader = new StreamReader(filename))
+            if (File.Exists(filename))
             {
-                map = (MonikerMap)serialzer.Deserialize(reader);
+                XmlSerializer serialzer = new XmlSerializer(typeof(MonikerMap));
+                using (TextReader reader = new StreamReader(filename))
+                {
+                    map = (MonikerMap)serialzer.Deserialize(reader);
+                }
             }
 
             return map;
