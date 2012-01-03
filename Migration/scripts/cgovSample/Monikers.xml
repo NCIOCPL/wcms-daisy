@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MonikerMap>
+  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>/migtest/folder1</Name>
+    <ContentID>129847</ContentID>
+    <ContentType>rffNavon</ContentType>
+  </Moniker>
+  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>/migtest/folder2</Name>
+    <ContentID>129849</ContentID>
+    <ContentType>rffNavon</ContentType>
+  </Moniker>
+  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>/migtest/folder3</Name>
+    <ContentID>129851</ContentID>
+    <ContentType>rffNavon</ContentType>
+  </Moniker>
+  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>aaaaaaaa-0000-0000-0000-200000000003</Name>
+    <ContentID>-665719801025</ContentID>
+    <ContentType>nciGeneral</ContentType>
+  </Moniker>
+  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>aaaaaaaa-0000-0000-0000-200000000004</Name>
+    <ContentID>-665719801024</ContentID>
+    <ContentType>nciGeneral</ContentType>
+  </Moniker>
+  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>The third page</Name>
+    <ContentID>-665719801023</ContentID>
+    <ContentType>nciGeneral</ContentType>
+  </Moniker>
+  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>The thrid page</Name>
+    <ContentID>-665719801022</ContentID>
+    <ContentType>nciGeneral</ContentType>
+  </Moniker>
+</MonikerMap>

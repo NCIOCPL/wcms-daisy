@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-200000000003</mig_id>
+    <community>site</community>
+    <contenttype>nciGeneral</contenttype>
+    <folder>/migtest/folder1</folder>
+    <long_title><![CDATA[Page 1]]></long_title>
+    <short_title><![CDATA[Page 1]]></short_title>
+    <bodyfield><![CDATA[This is Page 1]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-200000000004</mig_id>
+    <community>site</community>
+    <contenttype>nciGeneral</contenttype>
+    <folder>/migtest/folder1</folder>
+    <long_title><![CDATA[Page 2]]></long_title>
+    <short_title><![CDATA[Page 2]]></short_title>
+    <bodyfield><![CDATA[This is Page 2]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>The third page</mig_id>
+    <community>site</community>
+    <contenttype>nciGeneral</contenttype>
+    <folder>/migtest/folder1</folder>
+    <long_title><![CDATA[Page 3]]></long_title>
+    <short_title><![CDATA[Page 3]]></short_title>
+    <bodyfield><![CDATA[This is Page 3]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>The thrid page</mig_id>
+    <community>site</community>
+    <contenttype>nciGeneral</contenttype>
+    <folder>/migtest/folder1</folder>
+    <long_title><![CDATA[Page 4]]></long_title>
+    <short_title><![CDATA[Page 4]]></short_title>
+    <bodyfield><![CDATA[This is Page 4]]></bodyfield>
+  </item>
+</list>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000330</mig_id>
+    <folder>/migtest/folder1</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000008</mig_id>
+    <folder>/migtest/folder2</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <mig_id>aaaaaaaa-0000-0000-0000-100000000009</mig_id>
+    <folder>/migtest/folder3</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+
+</list>

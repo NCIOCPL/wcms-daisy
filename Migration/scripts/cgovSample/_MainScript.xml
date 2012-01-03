@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MigrationTaskList>
+
+    <!--<MigrationTask xsi:type="Reset" Name="Reset system" MonikerReset="true">
+	</MigrationTask>
+
+    <MigrationTask xsi:type="FolderCreator" Name="Create folders">
+      <DataGetter xsi:type="XmlDataGetterOfFolderDescription" FileName=".\folder.xml">
+        <Mapper xsi:type="XmlFolderDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>-->
+
+    <MigrationTask xsi:type="GeneralContentCreator" Name="Manual content creation">
+      <DataGetter xsi:type="XmlDataGetterOfFullItemDescription" FileName=".\siteContentItems.xml">
+        <Mapper xsi:type="XmlFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+	</MigrationTaskList>
+</Migration>
