@@ -51,6 +51,11 @@ namespace MonikerProviders
             provider.Add(moniker);
         }
 
+        public void Add(string name, long contentID, string contentType)
+        {
+            provider.Add(new Moniker(name, contentID, contentType));
+        }
+
         public bool Contains(string name)
         {
             return provider.Contains(name);
