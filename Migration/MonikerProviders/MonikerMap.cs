@@ -13,7 +13,7 @@ namespace MonikerProviders
     {
         // Make the underlying dictionary case-insensitive.
         public MonikerMap()
-            : base(StringComparer.InvariantCultureIgnoreCase)
+            : base(StringComparer.CurrentCultureIgnoreCase)
         {
         }
 
