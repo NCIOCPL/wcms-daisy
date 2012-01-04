@@ -50,13 +50,13 @@
     <Compile Include="Configuration\MonikerProviderConfiguration.cs" />
     <Compile Include="IMonikerStore.cs" />
     <Compile Include="Moniker.cs" />
-    <Compile Include="MonikerConfigurationException.cs" />
+    <Compile Include="Exceptions.cs" />
     <Compile Include="MonikerMap.cs" />
     <Compile Include="MonikerProvider.cs" />
     <Compile Include="MonikerStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Testing\MonikerObject.cs" />
-    <Compile Include="Testing\Test.cs" />
+    <Compile Include="Testing\MonikerStoreTests.cs" />
     <Compile Include="XmlPersistedMonikerProvider.cs" />
   </ItemGroup>
   <ItemGroup>

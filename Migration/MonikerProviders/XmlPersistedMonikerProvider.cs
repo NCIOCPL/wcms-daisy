@@ -36,23 +36,30 @@ namespace MonikerProviders
 
         public override void Add(Moniker moniker)
         {
-            _monikerCollection.Add(moniker.Name.ToLowerInvariant(), moniker);
+            _monikerCollection.Add(moniker.Name, moniker);
             PersistToDisk();
         }
 
         public override Moniker Get(string name)
         {
-            return _monikerCollection[name.ToLowerInvariant()];
+            if (!_monikerCollection.ContainsKey(name))
+            {
+                string fmt = "Unable to locate a moniker named \"{0}\".";
+                string message = string.Format(fmt, name);
+                throw new MonikerNotFoundException(message);
+            }
+
+            return _monikerCollection[name];
         }
 
         public override bool Contains(string name)
         {
-            return _monikerCollection.ContainsKey(name.ToLowerInvariant());
+            return _monikerCollection.ContainsKey(name);
         }
 
         public override void Delete(string name)
         {
-            _monikerCollection.Remove(name.ToLowerInvariant());
+            _monikerCollection.Remove(name);
             PersistToDisk();
         }
 

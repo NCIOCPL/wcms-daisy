@@ -11,6 +11,12 @@ namespace MonikerProviders
     public class MonikerMap
         : Dictionary<string, Moniker>, IXmlSerializable
     {
+        // Make the underlying dictionary case-insensitive.
+        public MonikerMap()
+            : base(StringComparer.InvariantCultureIgnoreCase)
+        {
+        }
+
         public static void PersistToFile(MonikerMap map, string filename)
         {
             XmlSerializer serialzer = new XmlSerializer(typeof(MonikerMap));
@@ -55,7 +61,7 @@ namespace MonikerProviders
             {
                 Moniker moniker = (Moniker)itemSerializer.Deserialize(reader);
 
-                this.Add(moniker.Name.ToLowerInvariant(), moniker);
+                this.Add(moniker.Name, moniker);
 
                 reader.MoveToContent();
             }

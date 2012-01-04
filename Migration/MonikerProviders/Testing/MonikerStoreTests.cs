@@ -13,7 +13,7 @@ using MonikerProviders.Configuration;
 namespace MonikerProviders.Testing
 {
     [TestFixture]
-    public class Test
+    public class MonikerStoreTests
     {
         const string MONIKER_STORE_NAME = "MonikerStoreProvider";
 
@@ -168,6 +168,32 @@ namespace MonikerProviders.Testing
 
             Moniker testMoniker = store2.Get(moniker2.Name);
             Assert.IsTrue(testMoniker == moniker2);
+        }
+
+        [Test]
+        public void CaseSensitivity()
+        {
+            MonikerStore store = new MonikerStore(MONIKER_STORE_NAME);
+
+            string name1 = "MoNiKer 1";
+            string name2 = "mOnIkeR 2";
+            string name3 = "MoNiKer 3";
+
+            store.Add(name1, 1, "testType");
+            store.Add(name2, 2, "testType");
+            store.Add(name3, 3, "testType");
+
+            Assert.IsTrue(store.Contains(name1));
+            Assert.IsTrue(store.Contains(name2));
+            Assert.IsTrue(store.Contains(name3));
+
+            Assert.IsTrue(store.Contains(name1.ToUpper()));
+            Assert.IsTrue(store.Contains(name2.ToUpper()));
+            Assert.IsTrue(store.Contains(name3.ToUpper()));
+
+            Assert.IsTrue(store.Contains(name1.ToLower()));
+            Assert.IsTrue(store.Contains(name2.ToLower()));
+            Assert.IsTrue(store.Contains(name3.ToLower()));
         }
     }
 }
