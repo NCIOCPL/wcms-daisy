@@ -55,6 +55,7 @@
     <Compile Include="constants.cs" />
     <Compile Include="Descriptors\ContentDescriptionBase.cs" />
     <Compile Include="Descriptors\ContentTypeDescription.cs" />
+    <Compile Include="Descriptors\FolderLinkDescription.cs" />
     <Compile Include="Descriptors\UpdateFileItem.cs" />
     <Compile Include="Descriptors\FolderDescription.cs" />
     <Compile Include="Descriptors\FullItemDescription.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="DataAccess\XmlDataGetter.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="IMigrationLog.cs" />
+    <Compile Include="Mappers\XmlFolderLinkDescriptionMapper.cs" />
     <Compile Include="Mappers\XmlUpdateItemMapper.cs" />
     <Compile Include="Mappers\XmlFolderDescriptionMapper.cs" />
     <Compile Include="Mappers\XmlRelationshipDescriptionMapper.cs" />
@@ -90,6 +92,7 @@
     <Compile Include="Tasks\FileContentUpdater.cs" />
     <Compile Include="Tasks\FolderCreatorBase.cs" />
     <Compile Include="Tasks\HealthCheck.cs" />
+    <Compile Include="Tasks\LinkToFolder.cs" />
     <Compile Include="Tasks\PurgeContent.cs" />
     <Compile Include="Tasks\RelationshipCreatorBase.cs" />
     <Compile Include="Tasks\ContentUpdaterBase.cs" />

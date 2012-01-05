@@ -34,13 +34,19 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <DataGetter xsi:type="XmlDataGetterOfUpdateFileItem" FileName=".\siteFileItemsDetails.xml">
         <Mapper xsi:type="XmlUpdateFileMapper" />
       </DataGetter>
-    </MigrationTask>-->
+    </MigrationTask>
 
 	<MigrationTask xsi:type="RelationshipCreator" Name="Create relationships">
       <DataGetter xsi:type="XmlDataGetterOfRelationshipDescription" FileName="relationships.xml">
         <Mapper xsi:type="XmlRelationshipDescriptionMapper" />
       </DataGetter>
-    </MigrationTask>
+    </MigrationTask>-->
 
+	<MigrationTask xsi:type="LinkToFolder" Name="Link item to a folder">
+      <DataGetter xsi:type="XmlDataGetterOfFolderLinkDescription" FileName="folderLinks.xml">
+        <Mapper xsi:type="XmlFolderLinkDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+	
 	</MigrationTaskList>
 </Migration>
