@@ -609,6 +609,16 @@ namespace NCI.CMS.Percussion.Manager.CMS
         }
 
         /// <summary>
+        /// Associates the specified Content Items with the specified Folder.
+        /// </summary>
+        /// <param name="folderPath">Folder to associate the content items with.</param>
+        /// <param name="idCollection">An array of content ids.</param>
+        public void AddFolderChildren(String folderPath, PercussionGuid[] idCollection)
+        {
+            PSWSUtils.AddFolderChildren(_contentService, siteRootPath + folderPath, Array.ConvertAll(idCollection, id => { return (long)id.ID; }));
+        }
+
+        /// <summary>
         /// Finds the content items contained in a folder.
         /// </summary>
         /// <param name="path">Path to the folder being investigated.</param>
