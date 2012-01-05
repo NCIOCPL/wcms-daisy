@@ -45,8 +45,8 @@ namespace MigrationEngine.Tasks
                         bool error = false;
                         string message = string.Empty; ;
 
-                        PercussionGuid ownerItem = new PercussionGuid(MonikerStore.Get(relation.OwnerUniqueIdentifier).ContentID);
-                        PercussionGuid dependentItem = new PercussionGuid(MonikerStore.Get(relation.DependentUniqueIdentifier).ContentID);
+                        PercussionGuid ownerItem = new PercussionGuid(LookupMoniker(relation.OwnerUniqueIdentifier, controller).ContentID);
+                        PercussionGuid dependentItem = new PercussionGuid(LookupMoniker(relation.DependentUniqueIdentifier, controller).ContentID);
 
                         if (ownerItem == PercWrapper.ContentItemNotFound)
                         {

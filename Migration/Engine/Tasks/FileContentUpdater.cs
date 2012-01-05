@@ -56,7 +56,7 @@ namespace MigrationEngine.Tasks
 
                         // Look up the content item.
                         //PercussionGuid percID = PercWrapper.GetPercussionIDFromMigID(controller, item.UniqueIdentifier, item.ContentType);
-                        PercussionGuid percID = new PercussionGuid(MonikerStore.Get(item.UniqueIdentifier).ContentID);
+                        PercussionGuid percID = new PercussionGuid(LookupMoniker(item.UniqueIdentifier, controller).ContentID);
                         string message = "";
                         if (percID == PercWrapper.ContentItemNotFound)
                         {

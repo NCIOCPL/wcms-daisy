@@ -268,10 +268,15 @@ namespace MigrationEngine.Utilities
 
         public static PercussionGuid GetNavon(CMSController controller, string folder, out string message)
         {
+            folder = folder.Trim();
+
+            string contentType = (folder == "/") ? "rffNavTree" : "rffNavon";
+            string contentTypeName = (folder == "/") ? "NavTree" : "Navon";
+
             try
             {
                 message = "";
-                PercussionGuid[] ids = controller.SearchForContentItems("rffNavon", folder, new Dictionary<string, string> { });
+                PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, new Dictionary<string, string> { });
 
                 if (ids.Count<PercussionGuid>() == 1)
                     return ids[0];
@@ -295,29 +300,7 @@ namespace MigrationEngine.Utilities
 
         public static PercussionGuid GetNavTree(CMSController controller, out string message)
         {
-            try
-            {
-                message = "";
-                PercussionGuid[] ids = controller.SearchForContentItems("rffNavTree", "/", new Dictionary<string, string> { });
-
-                if (ids.Count<PercussionGuid>() == 1)
-                    return ids[0];
-                else if (ids.Count<PercussionGuid>() == 0)
-                {
-                    message = "Navtree not found in /.";
-                    return ContentItemNotFound;
-                }
-                else
-                {
-                    message = string.Format("More than one Navon found in /.");
-                    return TooManyContentItemsFound;
-                }
-            }
-            catch (CMSSoapException ex)
-            {
-                message = ex.InnerException.Message;
-                return CmsErrorOccured;
-            }
+            return GetNavon(controller, "/", out message);
         }
 
         #region Disabled Code Block 3

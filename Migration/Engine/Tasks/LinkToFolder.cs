@@ -38,7 +38,7 @@ namespace MigrationEngine.Tasks
 
                     try
                     {
-                        PercussionGuid itemID = new PercussionGuid(MonikerStore.Get(item.ObjectMonikerName).ContentID);
+                        PercussionGuid itemID = new PercussionGuid(LookupMoniker(item.ObjectMonikerName, controller).ContentID);
                         controller.AddFolderChildren(item.Path, new PercussionGuid[] { itemID });
                     }
                     catch (Exception ex)

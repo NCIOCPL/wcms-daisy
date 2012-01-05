@@ -5,6 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
+using NCI.Util;
+using NCI.CMS.Percussion.Manager.CMS;
+using NCI.CMS.Percussion.Manager.PercussionWebSvc;
+
 using MigrationEngine.Configuration;
 using MonikerProviders;
 
@@ -67,5 +71,80 @@ namespace MigrationEngine.Tasks
 
             return community;
         }
+
+        protected Moniker LookupMoniker(string name, CMSController controller)
+        {
+            Moniker moniker = null;
+
+            // If the Moniker is in the store, return it.
+            if (MonikerStore.Contains(name))
+            {
+                moniker = MonikerStore.Get(name);
+            }
+            // If the moniker starts with a /, assume it's a folder and return the Navon.
+            else if (name.StartsWith("/"))
+            {
+                moniker = GetFolderMoniker(name, controller);
+                MonikerStore.Add(moniker);
+            }
+            // If the moniker is a number, check whether it's a content ID.
+            else if (Strings.ToLong(name) != -1)
+            {
+                moniker = GetContentItemMoniker(name, controller);
+                MonikerStore.Add(moniker);
+            }
+            else
+            {
+                string fmt = "Unable to locate or create a moniker for \"{0}\".";
+                throw new MonikerNotFoundException(string.Format(fmt, name));
+            }
+
+            return moniker;
+        }
+
+        #region Moniker look up helpers.
+
+        private Moniker GetFolderMoniker(string name, CMSController controller)
+        {
+            Moniker moniker;
+
+            string folder = name.Trim();
+            string contentType = (folder == "/") ? "rffNavTree" : "rffNavon";
+
+            PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, new Dictionary<string, string> { });
+
+            // Report any errors encontered while looking for a Navon.
+            if (ids.Length != 1)
+            {
+                throw new MonikerNotFoundException(string.Format("Unable to locate exactly one Navon/NavTree for folder {0}.", folder));
+            }
+
+            // A Navon was found.  Create a moniker for it.
+            moniker = new Moniker(name, ids[0].ID, contentType);
+
+            return moniker;
+        }
+
+        private Moniker GetContentItemMoniker(string name, CMSController controller)
+        {
+            Moniker moniker=null;
+
+            long contentID = Strings.ToLong(name);
+
+            PSItem[] itemList = controller.LoadContentItems(new long[] { contentID });
+
+            // Report any errors encontered while looking for an existing content item.
+            if (itemList.Length != 1)
+            {
+                throw new MonikerNotFoundException(string.Format("Unable to locate content item with ID {0}.", name));
+            }
+
+            // An item was found. Create a moniker for it.
+            moniker = new Moniker(name, itemList[0].id, itemList[0].contentType);
+
+            return moniker;
+        }
+
+        #endregion
     }
 }
