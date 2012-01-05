@@ -195,5 +195,27 @@ namespace MonikerProviders.Testing
             Assert.IsTrue(store.Contains(name2.ToLower()));
             Assert.IsTrue(store.Contains(name3.ToLower()));
         }
+
+        [Test]
+        public void Duplicate()
+        {
+            MonikerStore store = new MonikerStore(MONIKER_STORE_NAME);
+
+            Moniker moniker1 = new Moniker("moniker 1", 1, "testType");
+            Moniker moniker2 = new Moniker("moniker 2", 2, "testType");
+            Moniker moniker3 = new Moniker("moniker 3", 3, "testType");
+
+            store.Add(moniker1);
+            store.Add(moniker2);
+            store.Add(moniker3);
+
+            Assert.Throws(typeof(DuplicateMonikerException), delegate { store.Add(moniker1); });
+            Assert.Throws(typeof(DuplicateMonikerException), delegate { store.Add(moniker2); });
+            Assert.Throws(typeof(DuplicateMonikerException), delegate { store.Add(moniker3); });
+
+            Assert.Throws(typeof(DuplicateMonikerException), delegate { store.Add("moniker 1", 4, "testType2"); });
+            Assert.Throws(typeof(DuplicateMonikerException), delegate { store.Add("moniker 2", 5, "testType3"); });
+            Assert.Throws(typeof(DuplicateMonikerException), delegate { store.Add("moniker 3", 6, "testType4"); });
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace MonikerProviders
     }
 
     /// <summary>
-    /// Error thrown for errors loading moniker configuration data.
+    /// Thrown for errors loading moniker configuration data.
     /// </summary>
     [global::System.Serializable]
     public class MonikerConfigurationException : MonikerException
@@ -36,7 +36,7 @@ namespace MonikerProviders
     }
 
     /// <summary>
-    /// Error thrown when a moniker is not available in moniker store.
+    /// Thrown when a moniker is not available in moniker store.
     /// </summary>
     [global::System.Serializable]
     public class MonikerNotFoundException : MonikerException
@@ -45,6 +45,21 @@ namespace MonikerProviders
         public MonikerNotFoundException(string message) : base(message) { }
         public MonikerNotFoundException(string message, Exception inner) : base(message, inner) { }
         protected MonikerNotFoundException(
+          System.Runtime.Serialization.SerializationInfo info,
+          System.Runtime.Serialization.StreamingContext context)
+            : base(info, context) { }
+    }
+
+    /// <summary>
+    /// Thrown when a duplicate moniker is added to a store.
+    /// </summary>
+    [global::System.Serializable]
+    public class DuplicateMonikerException : MonikerException
+    {
+        public DuplicateMonikerException() { }
+        public DuplicateMonikerException(string message) : base(message) { }
+        public DuplicateMonikerException(string message, Exception inner) : base(message, inner) { }
+        protected DuplicateMonikerException(
           System.Runtime.Serialization.SerializationInfo info,
           System.Runtime.Serialization.StreamingContext context)
             : base(info, context) { }

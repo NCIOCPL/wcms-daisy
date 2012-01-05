@@ -66,5 +66,11 @@ namespace MonikerProviders
         {
             return !(lhs == rhs);
         }
+
+        public override string ToString()
+        {
+            string fmt = "{{Name: \"{0}\", ContentType: \"{1}\", ContentID: {2}}}";
+            return string.Format(fmt, this.Name, this.ContentType, this.ContentID);
+        }
     }
 }

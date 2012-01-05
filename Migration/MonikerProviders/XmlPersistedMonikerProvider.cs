@@ -36,6 +36,13 @@ namespace MonikerProviders
 
         public override void Add(Moniker moniker)
         {
+            if (_monikerCollection.ContainsKey(moniker.Name))
+            {
+                Moniker old = _monikerCollection[moniker.Name];
+                String fmt = "Attempt to add a moniker with the same name as an existing entry. Old: {0}, New: {1}.";
+                throw new DuplicateMonikerException(string.Format(fmt, old, moniker));
+            }
+
             _monikerCollection.Add(moniker.Name, moniker);
             PersistToDisk();
         }
