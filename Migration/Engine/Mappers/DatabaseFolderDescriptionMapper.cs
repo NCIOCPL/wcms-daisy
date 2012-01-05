@@ -31,8 +31,9 @@ namespace MigrationEngine.Mappers
 
             FolderDescription description = new FolderDescription();
 
+            // For folders, the Path *is* the unique identifier
             description.Path = row.Field<String>(PathNameField);
-            description.UniqueIdentifier = row.Field<String>(UniqueIDField);
+            description.UniqueIdentifier = row.Field<String>(PathNameField);
             description.ContentType = Constants.Types.NAVON;
 
             CopyFields(row, description.Fields);

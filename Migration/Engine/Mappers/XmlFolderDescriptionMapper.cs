@@ -23,8 +23,9 @@ namespace MigrationEngine.Mappers
 
             try
             {
+                // For folders, the Path *is* the unique identifier
                 description.Path = GetNamedFieldValue(item, PathNameField);
-                description.UniqueIdentifier = GetNamedFieldValue(item, UniqueIDField);
+                description.UniqueIdentifier = GetNamedFieldValue(item, PathNameField);
                 description.ContentType = Constants.Types.NAVON;
 
                 CopyFields(item, description.Fields);
