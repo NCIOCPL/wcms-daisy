@@ -13,13 +13,13 @@ namespace Blu82
         private static void GenerateDaisyInput(string inputFile)
         {
             var excel = new ExcelQueryFactory(inputFile);
-            excel.AddTransformation<DaisyFolder>(x => x.mig_id, cellValue => new Guid(cellValue));
-            // Technically, this line should probably be required, but LinqToExcel throws an exctption
-            // about a duplicate key.  The tranformation for DaisyFolder seems to carry over though,
-            // so this works because of magic.
-            //excel.AddTransformation<DaisyContentItem>(x => x.mig_id, cellValue => new Guid(cellValue));
-            excel.AddTransformation<DaisyRelationships>(x => x.ownerid, cellValue => new Guid(cellValue));
-            excel.AddTransformation<DaisyRelationships>(x => x.dependentid, cellValue => new Guid(cellValue));
+            //excel.AddTransformation<DaisyFolder>(x => x.mig_id, cellValue => new Guid(cellValue));
+            //// Technically, this line should probably be required, but LinqToExcel throws an exctption
+            //// about a duplicate key.  The tranformation for DaisyFolder seems to carry over though,
+            //// so this works because of magic.
+            ////excel.AddTransformation<DaisyContentItem>(x => x.mig_id, cellValue => new Guid(cellValue));
+            //excel.AddTransformation<DaisyRelationships>(x => x.ownerid, cellValue => new Guid(cellValue));
+            //excel.AddTransformation<DaisyRelationships>(x => x.dependentid, cellValue => new Guid(cellValue));
 
             //Get folders
             var folders = from folder in excel.Worksheet<DaisyFolder>("1 Folders")
@@ -50,8 +50,14 @@ namespace Blu82
             List<DaisyContentItem> ctbAdminCommunity = ExtractItems(siteColumnNames, ctbAdminContentitems, "ctbAdmin");
             SerializeCollection<DaisyContentItem>(ctbAdminCommunity, @".\ctbAdminContentItems.xml");
 
+            // Get Share to Folders
+            var folderLinks = from shareTo in excel.Worksheet<DaisyFolderLink>("3 Share To")
+                              select shareTo;
+            XmlSerializer shareSer = new XmlSerializer(typeof(List<DaisyFolderLink>), new XmlRootAttribute("list"));
+            SerializeCollection<DaisyFolderLink>(folderLinks, @".\folderLinks.");
+
             //Get relationships
-            var relationships = from relationship in excel.Worksheet<DaisyRelationships>("3 Relationships")
+            var relationships = from relationship in excel.Worksheet<DaisyRelationships>("4 Relationships")
                                 select relationship;
 
             XmlSerializer relsSer = new XmlSerializer(typeof(List<DaisyRelationships>), new XmlRootAttribute("list"));
@@ -92,7 +98,7 @@ namespace Blu82
                     DaisyContentItem item = new DaisyContentItem()
                     {
                         community = community,
-                        mig_id = new Guid(row["mig_id"].ToString()),
+                        mig_id = row["mig_id"],
                         contenttype = row["contenttype"],
                         folder = row["folder"]
                     };

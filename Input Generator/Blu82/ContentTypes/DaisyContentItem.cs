@@ -9,7 +9,7 @@ namespace Blu82
     [XmlRootAttribute("item")]
     public class DaisyContentItem : IXmlSerializable
     {
-        public Guid mig_id { get; set; }
+        public String mig_id { get; set; }
         public String community { get; set; }
         public String contenttype { get; set; }
         public String folder { get; set; }

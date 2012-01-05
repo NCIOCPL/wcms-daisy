@@ -7,9 +7,9 @@ using System.Xml.Serialization;
 namespace Blu82
 {
     [XmlRootAttribute("item")]
-    public class DaisyFolder
+    public class DaisyFolderLink
     {
-        public string folder { get; set; }
-        public int show_in_nav { get; set; }
+        public String folder { get; set; }
+        public String mig_id { get; set; }
     }
 }
