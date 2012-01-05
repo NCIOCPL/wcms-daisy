@@ -24,10 +24,7 @@ namespace MigrationEngine.Mappers
             try
             {
                 description.OwnerUniqueIdentifier = GetNamedFieldValue(item, "ownerid");
-                description.OwnerContentType = GetNamedFieldValue(item, "ownercontenttype");
-
                 description.DependentUniqueIdentifier = GetNamedFieldValue(item, "dependentid");
-                description.DependentContentType = GetNamedFieldValue(item, "dependentcontenttype");
 
                 description.SlotName = GetNamedFieldValue(item, "slot");
                 description.TemplateName = GetNamedFieldValue(item, "template");

@@ -22,10 +22,7 @@ namespace MigrationEngine.Mappers
             RelationshipDescription description = new RelationshipDescription();
 
             description.OwnerUniqueIdentifier = row.Field<String>("ownerid");
-            description.OwnerContentType = row.Field<String>("ownercontenttype");
-
             description.DependentUniqueIdentifier = row.Field<String>("dependentid");
-            description.DependentContentType = row.Field<String>("dependentcontenttype");
 
             description.SlotName = row.Field<String>("slot");
             description.TemplateName= row.Field<String>("template");
