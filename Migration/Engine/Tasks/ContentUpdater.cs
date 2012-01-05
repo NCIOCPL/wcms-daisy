@@ -46,20 +46,20 @@ namespace MigrationEngine.Tasks
                     try
                     {
                         string message = "";
-                        //PercussionGuid precID = PercWrapper.GetPercussionIDFromMigID(controller, item.UniqueIdentifier, item.ContentType);
-                        PercussionGuid precID = new PercussionGuid(MonikerStore.Get(item.UniqueIdentifier).ContentID);
-                        if (precID == PercWrapper.ContentItemNotFound)
+                        //PercussionGuid percID = PercWrapper.GetPercussionIDFromMigID(controller, item.UniqueIdentifier, item.ContentType);
+                        PercussionGuid percID = new PercussionGuid(MonikerStore.Get(item.UniqueIdentifier).ContentID);
+                        if (percID == PercWrapper.ContentItemNotFound)
                         {
                             logger.LogTaskItemWarning(item, "Content Item Not Found", item.Fields);
                             continue;
                         }
-                        else if (precID == PercWrapper.TooManyContentItemsFound)
+                        else if (percID == PercWrapper.TooManyContentItemsFound)
                         {
                             logger.LogTaskItemWarning(item, "Too Many Content Items Found", item.Fields);
                             continue;
 
                         }
-                        else if (precID == PercWrapper.CmsErrorOccured)
+                        else if (percID == PercWrapper.CmsErrorOccured)
                         {
                             logger.LogError(Name, message, item, item.Fields);
                             continue;
@@ -68,7 +68,7 @@ namespace MigrationEngine.Tasks
                         //convert HTML to XML and do Link Munging on fields 
                         Dictionary<string, string> fields = PreProcessFields(item, controller, logger);
 
-                        PercWrapper.UpdateItemWrapper(controller, precID, new FieldSet(fields), out message);
+                        PercWrapper.UpdateItemWrapper(controller, percID, new FieldSet(fields), out message);
                         if (!string.IsNullOrEmpty(message))
                         {
                             logger.LogTaskItemWarning(item, message, item.Fields);

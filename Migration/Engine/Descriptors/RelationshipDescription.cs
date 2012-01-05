@@ -12,9 +12,9 @@ namespace MigrationEngine.Descriptors
     public class RelationshipDescription : MigrationData
     {
         public String DependentContentType { get; set; }
-        public Guid DependentMigrationID { get; set; }
+        public String DependentUniqueIdentifier { get; set; }
         public String OwnerContentType { get; set; }
-        public Guid OwnerMigrationID { get; set; }
+        public String OwnerUniqueIdentifier { get; set; }
         public String SlotName { get; set; }
         public String TemplateName { get; set; }
 
@@ -23,13 +23,13 @@ namespace MigrationEngine.Descriptors
         {
             get
             {
-                string fmt = @"<OwnerContentType value=""{0}""/><OwnerMigrationID value=""{1}""/><DependentContentType value=""{2}""/><DependentMigrationID value=""{3}""/><SlotName value=""{4}""/><TemplateName value=""{5}""/>";
+                string fmt = @"<OwnerContentType value=""{0}""/><OwnerUniqueIdentifier value=""{1}""/><DependentContentType value=""{2}""/><DependentUniqueIdentifier value=""{3}""/><SlotName value=""{4}""/><TemplateName value=""{5}""/>";
 
                 return string.Format(fmt,
                     OwnerContentType,
-                    OwnerMigrationID,
+                    OwnerUniqueIdentifier,
                     DependentContentType,
-                    DependentMigrationID,
+                    DependentUniqueIdentifier,
                     SlotName,
                     TemplateName);
             }

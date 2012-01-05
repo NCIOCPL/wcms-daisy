@@ -23,10 +23,10 @@ namespace MigrationEngine.Mappers
 
             try
             {
-                description.OwnerMigrationID = new Guid(GetNamedFieldValue(item, "ownerid"));
+                description.OwnerUniqueIdentifier = GetNamedFieldValue(item, "ownerid");
                 description.OwnerContentType = GetNamedFieldValue(item, "ownercontenttype");
 
-                description.DependentMigrationID = new Guid(GetNamedFieldValue(item, "dependentid"));
+                description.DependentUniqueIdentifier = GetNamedFieldValue(item, "dependentid");
                 description.DependentContentType = GetNamedFieldValue(item, "dependentcontenttype");
 
                 description.SlotName = GetNamedFieldValue(item, "slot");

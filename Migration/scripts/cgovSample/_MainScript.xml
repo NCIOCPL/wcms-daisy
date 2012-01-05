@@ -10,11 +10,35 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <DataGetter xsi:type="XmlDataGetterOfFolderDescription" FileName=".\folder.xml">
         <Mapper xsi:type="XmlFolderDescriptionMapper" />
       </DataGetter>
-    </MigrationTask>-->
+    </MigrationTask>
 
     <MigrationTask xsi:type="GeneralContentCreator" Name="Manual content creation">
       <DataGetter xsi:type="XmlDataGetterOfFullItemDescription" FileName=".\siteContentItems.xml">
         <Mapper xsi:type="XmlFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="ContentUpdater" Name="Content update">
+      <DataGetter xsi:type="XmlDataGetterOfUpdateContentItem" FileName=".\siteUpdateItems.xml">
+        <Mapper xsi:type="XmlUpdateItemMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="GeneralContentCreator" Name="Create files">
+      <DataGetter xsi:type="XmlDataGetterOfFullItemDescription" FileName=".\siteFileItemsEmpty.xml">
+        <Mapper xsi:type="XmlFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="FileContentUpdater" Name="Create files">
+      <DataGetter xsi:type="XmlDataGetterOfUpdateFileItem" FileName=".\siteFileItemsDetails.xml">
+        <Mapper xsi:type="XmlUpdateFileMapper" />
+      </DataGetter>
+    </MigrationTask>-->
+
+	<MigrationTask xsi:type="RelationshipCreator" Name="Create relationships">
+      <DataGetter xsi:type="XmlDataGetterOfRelationshipDescription" FileName="relationships.xml">
+        <Mapper xsi:type="XmlRelationshipDescriptionMapper" />
       </DataGetter>
     </MigrationTask>
 

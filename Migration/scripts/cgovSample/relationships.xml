@@ -1,0 +1,11 @@
+<list>
+	<item>
+		<ownerid>/migtest/folder1</ownerid>
+		<ownercontenttype>rffNavon</ownercontenttype>
+		<dependentid>aaaaaaaa-0000-0000-0000-200000000003</dependentid>
+		<dependentcontenttype>nciGeneral</dependentcontenttype>
+		<slot>rffNavLandingPage</slot>
+		<template>cgvPgSinglePageContent</template>
+	</item>
+
+</list>

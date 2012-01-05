@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>Test PDF</mig_id>
+    <community>site</community>
+    <contenttype>nciFile</contenttype>
+    <folder>/migtest/folder1</folder>
+    <long_title><![CDATA[Test File 1]]></long_title>
+    <short_title><![CDATA[Test File 1]]></short_title>
+	<long_description><![CDATA[This is a file of some sort.]]></long_description>
+  </item>
+
+</list>
