@@ -2,8 +2,8 @@
 <Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MigrationTaskList>
-
-    <!--<MigrationTask xsi:type="Reset" Name="Reset system" MonikerReset="true">
+<!--
+    <MigrationTask xsi:type="Reset" Name="Reset system" MonikerReset="true">
 	</MigrationTask>
 
     <MigrationTask xsi:type="FolderCreator" Name="Create folders">
@@ -40,11 +40,20 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <DataGetter xsi:type="XmlDataGetterOfRelationshipDescription" FileName="relationships.xml">
         <Mapper xsi:type="XmlRelationshipDescriptionMapper" />
       </DataGetter>
-    </MigrationTask>-->
+    </MigrationTask>
 
 	<MigrationTask xsi:type="LinkToFolder" Name="Link item to a folder">
       <DataGetter xsi:type="XmlDataGetterOfFolderLinkDescription" FileName="folderLinks.xml">
         <Mapper xsi:type="XmlFolderLinkDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>-->
+
+    <MigrationTask xsi:type="Reset" Name="Reset system" MonikerReset="true">
+	</MigrationTask>
+
+	<MigrationTask xsi:type="RelationshipCreator" Name="Create relationships">
+      <DataGetter xsi:type="XmlDataGetterOfRelationshipDescription" FileName="relationship-with-blank-moniker.xml">
+        <Mapper xsi:type="XmlRelationshipDescriptionMapper" />
       </DataGetter>
     </MigrationTask>
 	

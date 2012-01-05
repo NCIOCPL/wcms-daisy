@@ -1,43 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MonikerMap>
   <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Name>/migtest/folder1</Name>
-    <ContentID>130024</ContentID>
-    <ContentType>rffNavon</ContentType>
-  </Moniker>
-  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Name>/migtest/folder2</Name>
-    <ContentID>130026</ContentID>
+    <ContentID>133305</ContentID>
     <ContentType>rffNavon</ContentType>
   </Moniker>
   <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Name>/migtest/folder3</Name>
-    <ContentID>130028</ContentID>
-    <ContentType>rffNavon</ContentType>
-  </Moniker>
-  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Name>aaaaaaaa-0000-0000-0000-200000000003</Name>
-    <ContentID>-665719800851</ContentID>
+    <Name>133339</Name>
+    <ContentID>1533303458011</ContentID>
     <ContentType>nciGeneral</ContentType>
-  </Moniker>
-  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Name>aaaaaaaa-0000-0000-0000-200000000004</Name>
-    <ContentID>-665719800850</ContentID>
-    <ContentType>nciGeneral</ContentType>
-  </Moniker>
-  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Name>The third page</Name>
-    <ContentID>-665719800849</ContentID>
-    <ContentType>nciGeneral</ContentType>
-  </Moniker>
-  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Name>The thrid page</Name>
-    <ContentID>-665719800848</ContentID>
-    <ContentType>nciGeneral</ContentType>
-  </Moniker>
-  <Moniker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Name>Test PDF</Name>
-    <ContentID>-665719800847</ContentID>
-    <ContentType>nciFile</ContentType>
   </Moniker>
 </MonikerMap>
