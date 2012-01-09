@@ -1,3 +1,5 @@
-rem svn --force export https://imbncipf01.nci.nih.gov/svn/wcmteam/ContentDeliveryEngine/branches/6.2/CDETemplates/StandardCDETemplates/PageTemplates PageTemplates
-rem svn --force export https://imbncipf01.nci.nih.gov/svn/WCMTeam/ContentDeliveryEngine/branches/6.2/CDETemplates/Proteomics Resources
-..\..\Blu82\bin\Debug\blu82.exe proteomics_inputs.xls
+rem svn --force export https://imbncipf01/svn/WCMTeam/content/branches/6.4/CancerGov-Mobile/Scripts js
+rem svn --force export https://imbncipf01/svn/WCMTeam/content/branches/6.4/CancerGov-Mobile/Stylesheets css
+rem svn --force export https://imbncipf01/svn/WCMTeam/content/branches/6.4/CancerGov-Mobile/PageTemplates templates
+rem svn --force export https://imbncipf01/svn/WCMTeam/content/branches/6.4/CancerGov-Mobile/Images images
+Blu82\bin\Debug\blu82.exe mobile_inputs.xls
