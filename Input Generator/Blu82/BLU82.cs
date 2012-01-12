@@ -54,7 +54,7 @@ namespace Blu82
             var folderLinks = from shareTo in excel.Worksheet<DaisyFolderLink>("3 Share To")
                               select shareTo;
             XmlSerializer shareSer = new XmlSerializer(typeof(List<DaisyFolderLink>), new XmlRootAttribute("list"));
-            SerializeCollection<DaisyFolderLink>(folderLinks, @".\folderLinks.");
+            SerializeCollection<DaisyFolderLink>(folderLinks, @".\shareTo.xml");
 
             //Get relationships
             var relationships = from relationship in excel.Worksheet<DaisyRelationships>("4 Relationships")
