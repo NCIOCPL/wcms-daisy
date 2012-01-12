@@ -53,15 +53,17 @@ namespace Blu82
             // Get Share to Folders
             var folderLinks = from shareTo in excel.Worksheet<DaisyFolderLink>("3 Share To")
                               select shareTo;
-            XmlSerializer shareSer = new XmlSerializer(typeof(List<DaisyFolderLink>), new XmlRootAttribute("list"));
             SerializeCollection<DaisyFolderLink>(folderLinks, @".\shareTo.xml");
 
             //Get relationships
             var relationships = from relationship in excel.Worksheet<DaisyRelationships>("4 Relationships")
                                 select relationship;
-
-            XmlSerializer relsSer = new XmlSerializer(typeof(List<DaisyRelationships>), new XmlRootAttribute("list"));
             SerializeCollection<DaisyRelationships>(relationships, @".\relationships.xml");
+
+            // Get translations
+            var translations = from translation in excel.Worksheet<DaisyTranslation>("5 Translations")
+                               select translation;
+            SerializeCollection<DaisyTranslation>(translations, @".\translations.xml");
 
             Console.WriteLine("Press Enter");
             Console.Read();
