@@ -1,12 +1,12 @@
 <list>
 	<item>
 		<folder>/migtest/folder2</folder>
-		<monikername>The third page</monikername>
+		<mig_id>The third page</mig_id>
 	</item>
 
 	<item>
 		<folder>/migtest/folder2</folder>
-		<monikername>Test PDF</monikername>
+		<mig_id>Test PDF</mig_id>
 	</item>
 
 </list>

@@ -56,6 +56,7 @@
     <Compile Include="Descriptors\ContentDescriptionBase.cs" />
     <Compile Include="Descriptors\ContentTypeDescription.cs" />
     <Compile Include="Descriptors\FolderLinkDescription.cs" />
+    <Compile Include="Descriptors\TranslationDescription.cs" />
     <Compile Include="Descriptors\UpdateFileItem.cs" />
     <Compile Include="Descriptors\FolderDescription.cs" />
     <Compile Include="Descriptors\FullItemDescription.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="DataAccess\XmlDataGetter.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="IMigrationLog.cs" />
+    <Compile Include="Mappers\XmlTranslationDescriptionMapper.cs" />
     <Compile Include="Mappers\XmlFolderLinkDescriptionMapper.cs" />
     <Compile Include="Mappers\XmlUpdateItemMapper.cs" />
     <Compile Include="Mappers\XmlFolderDescriptionMapper.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="Tasks\Transitioner.cs" />
     <Compile Include="Tasks\TransitionerBase.cs" />
     <Compile Include="Tasks\ContentUpdater.cs" />
+    <Compile Include="Tasks\TranslationRelationshipCreator.cs" />
     <Compile Include="Utilities\HtmlRectifier.cs" />
     <Compile Include="Utilities\PercWrapper.cs" />
   </ItemGroup>
