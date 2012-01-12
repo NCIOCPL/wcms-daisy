@@ -24,7 +24,7 @@ namespace MigrationEngine.Mappers
             try
             {
                 description.Path = GetNamedFieldValue(item, PathNameField);
-                description.ObjectMonikerName = GetNamedFieldValue(item, "monikername");
+                description.ObjectMonikerName = GetNamedFieldValue(item, UniqueIDField);
 
                 CopyFields(item, description.Fields);
             }
