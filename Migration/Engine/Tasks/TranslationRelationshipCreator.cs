@@ -44,6 +44,8 @@ namespace MigrationEngine.Tasks
                         PercussionGuid englishItem = new PercussionGuid(LookupMoniker(translation.EnglishIdentifier, controller).ContentID);
                         PercussionGuid spanishItem = new PercussionGuid(LookupMoniker(translation.SpanishIdentifier, controller).ContentID);
 
+                        PercWrapper.CreateTranslationRelationship(controller, englishItem, spanishItem);
+
                     }
                     catch (Exception ex)
                     {

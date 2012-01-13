@@ -41,7 +41,7 @@ namespace MigrationEngine.Utilities
             return id;
         }
 
-        public static long CreateItemWrapper(CMSController controller, string contentType, Dictionary<string, string> fields,IEnumerable<ChildFieldSet> childFields, string folder, out string warningMessage)
+        public static long CreateItemWrapper(CMSController controller, string contentType, Dictionary<string, string> fields, IEnumerable<ChildFieldSet> childFields, string folder, out string warningMessage)
         {
             warningMessage = "";
             List<string> invalidFields = new List<string>();
@@ -68,7 +68,7 @@ namespace MigrationEngine.Utilities
             //ContentItemForUpdating[] item = { new ContentItemForUpdating(id, (FieldSet)fields) };
             List<ContentItemForUpdating> item = new List<ContentItemForUpdating>();
             item.Add(new ContentItemForUpdating(id.ID, fields));
-            
+
             List<long> returned = controller.UpdateContentItemList(item, fieldName => { invalidFields.Add(fieldName); });
 
             if (invalidFields.Count > 0)
@@ -301,6 +301,11 @@ namespace MigrationEngine.Utilities
         public static PercussionGuid GetNavTree(CMSController controller, out string message)
         {
             return GetNavon(controller, "/", out message);
+        }
+
+        public static void CreateTranslationRelationship(CMSController controller, PercussionGuid original, PercussionGuid translation)
+        {
+            controller.CreateRelationship(original, translation, CMSController.TranslationRelationshipType);
         }
 
         #region Disabled Code Block 3

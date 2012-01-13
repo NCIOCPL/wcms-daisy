@@ -906,6 +906,11 @@ namespace NCI.CMS.Percussion.Manager.CMS
             }
         }
 
+        public PSRelationship CreateRelationship(PercussionGuid parentItemID, PercussionGuid childItemID, string relationshipType)
+        {
+            return CreateRelationship(parentItemID.ID, childItemID.ID, relationshipType);
+        }
+
         public PSRelationship CreateRelationship(long parentItemID, long childItemID, string relationshipType)
         {
             PSRelationship relationship = null;
