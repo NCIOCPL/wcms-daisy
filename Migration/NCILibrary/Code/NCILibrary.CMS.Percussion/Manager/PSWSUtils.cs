@@ -403,6 +403,34 @@ namespace NCI.CMS.Percussion.Manager.CMS
             return items;
         }
 
+        public static bool VerifyItemsExist(contentSOAP contentSvc, long[] idList)
+        {
+            bool found;
+
+            try
+            {
+                // If the item has revisions, it exists.  If it throws an exception, it doesn't.
+                PSRevisions[] revisions = contentSvc.FindRevisions(idList);
+                found = true;
+            }
+            catch (SoapException ex)
+            {
+                // Check that this is a Percussion error instead of connectivity.
+                if (ex.Code.Name == "Server.userException" &&
+                    ex.Message.StartsWith("java.rmi.RemoteException:"))
+                {
+                    found = false;
+                }
+                else
+                {
+                    // This is some other type of error, don't handle it.
+                    throw;
+                }
+            }
+
+            return found;
+        }
+
         /// <summary>
         /// Deletes a list of content items.
         /// </summary>

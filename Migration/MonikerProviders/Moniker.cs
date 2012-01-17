@@ -8,6 +8,13 @@ namespace MonikerProviders
     [XmlRoot("Moniker")]
     public class Moniker
     {
+        public struct ContentTypes
+        {
+            public const string Indeterminate = "Indeterminate";
+            public const string Navon = "rffNavon";
+            public const string NavTree = "rffNavTree";
+        }
+
         internal Moniker()
         {
         }

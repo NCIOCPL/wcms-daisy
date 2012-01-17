@@ -109,7 +109,7 @@ namespace MigrationEngine.Tasks
             Moniker moniker;
 
             string folder = name.Trim();
-            string contentType = (folder == "/") ? "rffNavTree" : "rffNavon";
+            string contentType = (folder == "/") ? Moniker.ContentTypes.NavTree : Moniker.ContentTypes.Navon;
 
             PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, new Dictionary<string, string> { });
 
@@ -131,16 +131,18 @@ namespace MigrationEngine.Tasks
 
             long contentID = Strings.ToLong(name);
 
-            PSItem[] itemList = controller.LoadContentItems(new long[] { contentID });
+            bool itemExists = controller.VerifySingleItemExists(contentID);
 
             // Report any errors encontered while looking for an existing content item.
-            if (itemList.Length != 1)
+            if (itemExists)
+            {
+                // An item was found. Create a moniker for it.
+                moniker = new Moniker(name, contentID, Moniker.ContentTypes.Indeterminate);
+            }
+            else
             {
                 throw new MonikerNotFoundException(string.Format("Unable to locate content item with ID {0}.", name));
             }
-
-            // An item was found. Create a moniker for it.
-            moniker = new Moniker(name, itemList[0].id, itemList[0].contentType);
 
             return moniker;
         }

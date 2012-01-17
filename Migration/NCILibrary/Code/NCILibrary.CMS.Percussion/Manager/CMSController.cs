@@ -805,6 +805,27 @@ namespace NCI.CMS.Percussion.Manager.CMS
             return PSWSUtils.LoadItems(_contentService, itemIDList);
         }
 
+        public bool VerifySingleItemExists(PercussionGuid itemID)
+        {
+            return VerifyItemsExist(new PercussionGuid[] { itemID });
+        }
+
+        public bool VerifySingleItemExists(long itemID)
+        {
+            return VerifyItemsExist(new long[] { itemID });
+        }
+
+        public bool VerifyItemsExist(PercussionGuid[] itemIDList)
+        {
+            long[] idList = Array.ConvertAll(itemIDList, item => (long)item.ID);
+            return PSWSUtils.VerifyItemsExist(_contentService, idList);
+        }
+
+        public bool VerifyItemsExist(long[] itemIDList)
+        {
+            return PSWSUtils.VerifyItemsExist(_contentService, itemIDList);
+        }
+
         public PercussionGuid[] SaveContentItems(PSItem[] itemList)
         {
             long[] returnIDs = PSWSUtils.SaveItem(_contentService, itemList);
