@@ -24,7 +24,11 @@ namespace Blu82
             //Get folders
             var folders = from folder in excel.Worksheet<DaisyFolder>("1 Folders")
                           select folder;
-
+            foreach (DaisyFolder entry in folders)
+            {
+                if(!entry.folder.StartsWith("/"))
+                    entry.folder = "/" + entry.folder.Trim();
+            }
             SerializeCollection<DaisyFolder>(folders, @".\folder.xml");
 
             var siteColumnNames = excel.GetColumnNames("2 Content Items");
@@ -34,6 +38,10 @@ namespace Blu82
                                    where contentitem["community"] == "site"
                                    select contentitem;
             List<DaisyContentItem> siteCommunity = ExtractItems(siteColumnNames, siteContentitems, "site");
+            siteCommunity.ForEach(entry => {
+                if(!entry.folder.StartsWith("/"))
+                    entry.folder = "/" + entry.folder.Trim();
+            });
             SerializeCollection<DaisyContentItem>(siteCommunity, @".\siteContentItems.xml");
 
             //Get Site Admin content items
@@ -41,6 +49,11 @@ namespace Blu82
                                         where contentitem["community"] == "siteAdmin"
                                         select contentitem;
             List<DaisyContentItem> siteAdminCommunity = ExtractItems(siteColumnNames, siteAdminContentitems, "siteAdmin");
+            siteAdminCommunity.ForEach(entry =>
+            {
+                if (!entry.folder.StartsWith("/"))
+                    entry.folder = "/" + entry.folder.Trim();
+            });
             SerializeCollection<DaisyContentItem>(siteAdminCommunity, @".\siteAdminContentItems.xml");
 
             //Get CTB Admin content items
@@ -48,6 +61,11 @@ namespace Blu82
                                        where contentitem["community"] == "ctbAdmin"
                                        select contentitem;
             List<DaisyContentItem> ctbAdminCommunity = ExtractItems(siteColumnNames, ctbAdminContentitems, "ctbAdmin");
+            ctbAdminCommunity.ForEach(entry =>
+            {
+                if (!entry.folder.StartsWith("/"))
+                    entry.folder = "/" + entry.folder.Trim();
+            });
             SerializeCollection<DaisyContentItem>(ctbAdminCommunity, @".\ctbAdminContentItems.xml");
 
             // Get Share to Folders
