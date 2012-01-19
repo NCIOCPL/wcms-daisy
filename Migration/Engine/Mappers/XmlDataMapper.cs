@@ -56,7 +56,7 @@ namespace MigrationEngine.Mappers
                     throw new DataFieldException(string.Format("No value found for field {0}.", fieldName));
                 }
 
-                fieldValue = namedNode.InnerText;
+                fieldValue = namedNode.InnerText.Trim();
             }
             catch (MigrationException ex)
             {
