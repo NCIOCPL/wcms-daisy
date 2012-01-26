@@ -24,12 +24,17 @@ namespace Blu82
             //Get folders
             var folders = from folder in excel.Worksheet<DaisyFolder>("1 Folders")
                           select folder;
+            // Items in a collection returned by a Linq query aren't mutable.
+            // To preserve any changes to the folders, we have to copy them over
+            // to another collection.
+            List<DaisyFolder> folderList = new List<DaisyFolder>();
             foreach (DaisyFolder entry in folders)
             {
                 if(!entry.folder.StartsWith("/"))
                     entry.folder = "/" + entry.folder.Trim();
+                folderList.Add(entry);
             }
-            SerializeCollection<DaisyFolder>(folders, @".\folder.xml");
+            SerializeCollection<DaisyFolder>(folderList, @".\folder.xml");
 
             var siteColumnNames = excel.GetColumnNames("2 Content Items");
 
