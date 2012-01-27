@@ -30,7 +30,6 @@
     <item_file_attachment_filename><![CDATA[DefaultCancerGovMobileNavTemplate.aspx]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[2207]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/xml]]></item_file_attachment_type>
-    <filename><![CDATA[DefaultCancerGovMobileNavTemplate.aspx]]></filename>
     <name><![CDATA[DefaultCancerGovMobileNavTemplate]]></name>
   </item>
   <item>
@@ -45,7 +44,6 @@
     <item_file_attachment_filename><![CDATA[DefaultCancerGovMobileGenTemplate.aspx]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[3553]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/xml]]></item_file_attachment_type>
-    <filename><![CDATA[DefaultCancerGovMobileGenTemplate.aspx]]></filename>
     <name><![CDATA[DefaultCancerGovMobileGenTemplate]]></name>
   </item>
   <item>
@@ -69,7 +67,6 @@
     <item_file_attachment_filename><![CDATA[nci-mobile.css]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[9759]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[text/css]]></item_file_attachment_type>
-    <filename><![CDATA[nci-mobile.css]]></filename>
   </item>
   <item>
     <mig_id>jquery.mobile-1.0rc2css</mig_id>
@@ -83,7 +80,6 @@
     <item_file_attachment_filename><![CDATA[jquery.mobile-1.0rc2.css]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[86977]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[text/css]]></item_file_attachment_type>
-    <filename><![CDATA[jquery.mobile-1.0rc2.css]]></filename>
   </item>
   <item>
     <mig_id>search</mig_id>
@@ -97,7 +93,6 @@
     <item_file_attachment_filename><![CDATA[search.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[664]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[search.js]]></filename>
     <name><![CDATA[search]]></name>
   </item>
   <item>
@@ -112,7 +107,6 @@
     <item_file_attachment_filename><![CDATA[sw-autocomplete.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[2803]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[sw-autocomplete.js]]></filename>
     <name><![CDATA[sw-autocomplete]]></name>
   </item>
   <item>
@@ -127,7 +121,6 @@
     <item_file_attachment_filename><![CDATA[NCIGeneralJS.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[1449]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[NCIGeneralJS.js]]></filename>
     <name><![CDATA[NCIGeneralJS.js]]></name>
   </item>
   <item>
@@ -142,7 +135,6 @@
     <item_file_attachment_filename><![CDATA[jquery.ui.widget.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[7014]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[jquery.ui.widget.js]]></filename>
     <name><![CDATA[jquery.ui.widget]]></name>
   </item>
   <item>
@@ -157,7 +149,6 @@
     <item_file_attachment_filename><![CDATA[jquery.ui.position.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[7347]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[jquery.ui.position.js]]></filename>
     <name><![CDATA[jquery.ui.position]]></name>
   </item>
   <item>
@@ -172,7 +163,6 @@
     <item_file_attachment_filename><![CDATA[jquery.ui.autocomplete.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[14966]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[jquery.ui.autocomplete.js]]></filename>
     <name><![CDATA[jquery.ui.autocomplete]]></name>
   </item>
   <item>
@@ -187,7 +177,6 @@
     <item_file_attachment_filename><![CDATA[jquery.mobile-1.0rc2.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[221783]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[jquery.mobile-1.0rc2]]></filename>
     <name><![CDATA[jquery.mobile-1.0rc2]]></name>
   </item>
   <item>
@@ -202,7 +191,6 @@
     <item_file_attachment_filename><![CDATA[jquery-ui.min.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[199940]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[jquery-ui.min.js]]></filename>
     <name><![CDATA[jquery-ui.min]]></name>
   </item>
   <item>
@@ -217,7 +205,6 @@
     <item_file_attachment_filename><![CDATA[jquery-1.6.4.min.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[91669]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[jquery-1.6.4.min.js]]></filename>
     <name><![CDATA[jquery-1.6.4.min]]></name>
   </item>
   <item>
@@ -232,7 +219,6 @@
     <item_file_attachment_filename><![CDATA[ajax-linking.js]]></item_file_attachment_filename>
     <item_file_attachment_size><![CDATA[194]]></item_file_attachment_size>
     <item_file_attachment_type><![CDATA[application/unknown]]></item_file_attachment_type>
-    <filename><![CDATA[ajax-linking.js]]></filename>
     <name><![CDATA[ajax-linking]]></name>
   </item>
   <item>
@@ -242,7 +228,6 @@
     <folder>/shareditems/SiteBanner</folder>
     <long_title><![CDATA[Mobile Site Banner - Spanish]]></long_title>
     <bodyfield><![CDATA[<div class="rxbodyfield" xmlns:o="urn:www.microsoft.com/office" xmlns:st1="urn:www.microsoft.com/smarttags" xmlns:st2="urn:www.microsoft.com/smarttags2" xmlns:w="urn:www.microsoft.com/word" xmlns:x="urn:www.microsoft.com/excel"><div class="header"><div cl]]></bodyfield>
-    <pretty_url_name><![CDATA[Mobilesitebanneres]]></pretty_url_name>
   </item>
   <item>
     <mig_id>Mobilesitebanneren</mig_id>
@@ -251,7 +236,6 @@
     <folder>/shareditems/SiteBanner</folder>
     <long_title><![CDATA[Mobile Site Banner - English]]></long_title>
     <bodyfield><![CDATA[<div class="rxbodyfield" xmlns:o="urn:www.microsoft.com/office" xmlns:st1="urn:www.microsoft.com/smarttags" xmlns:st2="urn:www.microsoft.com/smarttags2" xmlns:w="urn:www.microsoft.com/word" xmlns:x="urn:www.microsoft.com/excel"><div class="header"><div cl]]></bodyfield>
-    <pretty_url_name><![CDATA[Mobilesitebanneren]]></pretty_url_name>
   </item>
   <item>
     <mig_id>MobileSitefooteres</mig_id>
@@ -262,7 +246,6 @@
     <bodyfield><![CDATA[
 <div xmlns:st2="urn:www.microsoft.com/smarttags2" xmlns:st1="urn:www.microsoft.com/smarttags" xmlns:o="urn:www.microsoft.com/office" xmlns:x="urn:www.microsoft.com/excel" xmlns:w="urn:www.microsoft.com/word" class="rxbodyfield">
 <div style=" margin: 15px]]></bodyfield>
-    <pretty_url_name><![CDATA[MobileSitefooteres]]></pretty_url_name>
   </item>
   <item>
     <mig_id>MobileSitefooteren</mig_id>
@@ -273,7 +256,6 @@
     <bodyfield><![CDATA[
 <div xmlns:st2="urn:www.microsoft.com/smarttags2" xmlns:st1="urn:www.microsoft.com/smarttags" xmlns:o="urn:www.microsoft.com/office" xmlns:x="urn:www.microsoft.com/excel" xmlns:w="urn:www.microsoft.com/word" class="rxbodyfield">
 <div style=" margin: 15px]]></bodyfield>
-    <pretty_url_name><![CDATA[MobileSitefooteren]]></pretty_url_name>
   </item>
   <item>
     <mig_id>SiteWideSearchResults</mig_id>
