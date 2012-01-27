@@ -300,7 +300,7 @@ Monday through Friday  8:00 am to 8:00 pm ET</p>
     <short_title><![CDATA[Comuníquese con el NCI]]></short_title>
     <bodyfield><![CDATA[<p><strong>Si tiene preguntas  sobre el cáncer, comuníquese con el <a href="http://www.cancer.gov/espanol/instituto/cis">Servicio de Información  sobre el Cáncer del NCI</a></strong><br>
 El  Servicio de Información sobre el Cáncer del Instituto Nacional del Cáncer (NCI)  puede responder a una amplia variedad de preguntas relacionadas con el cáncer, ayudar  a encontrar un estudio clínico, prestar asistencia para dejar de fumar y proporcionar  publicaciones gratuitas. Nuestro servicio es gratis y confidencial y se ofrece  en <a href="http://www.cancer.gov/global/contact">inglés</a> y <a href="http://www.cancer.gov/espanol/global/contactenos">español</a>.  </p>
-<p> <strong>Teléfono</strong> <strong>1-800-422-6237 (<a href=""tel:18004226237"">1-800-4-CANCER</a>)</strong><br>
+<p> <strong>Teléfono</strong> <strong>1-800-422-6237 (<a href="tel:18004226237">1-800-4-CANCER</a>)</strong><br>
 Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
 <p><strong>Correo electrónico</strong><br>
 <a href="mailto:nciespanol@mail.nih.gov">nciespanol@mail.nih.gov</a></p>
@@ -311,11 +311,13 @@ Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
 Bethesda, MD 20892-8322</p>
 <p> <strong>Si necesita ayuda para  dejar de fumar, llame a la <a href="http://www.cancer.gov/espanol/cancer/tabaco">línea  para dejar de fumar del Instituto Nacional del Cáncer</a></strong><br>
 <strong>La línea para dejar  de fumar del NCI</strong> ofrece asesoramiento personalizado  para dejar de fumar, proporciona materiales gratuitos para el cese del hábito  de fumar, le ayuda a crear un plan para dejar el cigarrillo y ofrece  estrategias para prevenir una recaída. Nuestro servicio es gratis y  confidencial.<strong></strong></p>
-<p><strong>Teléfono1-877-448-7848 (<a href=""tel:18774487848"">1-877-44U-QUIT</a>)</strong><br>
+<p><strong>Teléfono1-877-448-7848 (<a href="tel:18774487848">1-877-44U-QUIT</a>)</strong><br>
 Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
 <p><strong>Importante:</strong> El Instituto  Nacional del Cáncer le proporciona información relacionada con el cáncer para  su conocimiento general y no es un sustituto para los consejos de un médico.</p>
 <p> <strong>Divisiones,  Oficinas y Centros del Instituto Nacional del Cáncer</strong><strong><br>
-</strong><a href="http://www.cancer.gov/aboutnci/organization">http://www.cancer.gov/aboutnci/organization</a></p>]]></bodyfield>
+</strong><a href="http://www.cancer.gov/aboutnci/organization">http://www.cancer.gov/aboutnci/organization</a></p>
+
+]]></bodyfield>
   </item>
   <item>
     <mig_id>topics_treatment_sideeffects</mig_id>
@@ -326,7 +328,8 @@ Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
     <cgv_m_template><![CDATA[cgvMPgLandingPageLvl2]]></cgv_m_template>
     <long_title><![CDATA[Side Effects]]></long_title>
     <short_title><![CDATA[Side Effects]]></short_title>
-    <bodyfield><![CDATA[If you are being treated for cancer, you may have side effects that affect your quality of life.  The tips that follow can help you cope with many common problems caused by chemotherapy and radiation therapy.]]></bodyfield>
+    <bodyfield><![CDATA[If you are being treated for cancer, you may have side effects that affect your quality of life.  The tips that follow can help you cope with many common problems caused by chemotherapy and radiation therapy.
+]]></bodyfield>
     <long_description><![CDATA[If you are being treated for cancer, you may have side effects that affect your quality of life.  The tips that follow can help you cope with many common side effects caused by chemotherapy and radiation therapy.]]></long_description>
   </item>
   <item>
@@ -350,7 +353,7 @@ Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
     <long_title><![CDATA[Coping with Chemotherapy Side Effects -  Anemia ]]></long_title>
     <short_title><![CDATA[Chemotherapy Side Effects -  Anemia ]]></short_title>
     <bodyfield><![CDATA[<h3>What it is and why it occurs </h3>
-<p><a href=""http://www.cancer.gov/dictionary?expand=r#red blood cell"">Red blood cells</a>carry oxygen throughout your body.<a href=""http://www.cancer.gov/dictionary?expand=a#anemia"">Anemia</a>is when you  have too few red blood cells to carry the oxygen your body needs. Your heart  works harder when your body does not get enough oxygen. This can make it feel  like your heart is pounding or beating very fast. Anemia can also make you feel  short of breath, weak, dizzy, faint, or very tired.</p>
+<p><a href="http://www.cancer.gov/dictionary?expand=r#red blood cell">Red blood cells</a> carry oxygen throughout your body. <a href="http://www.cancer.gov/dictionary?expand=a#anemia">Anemia</a> is when you  have too few red blood cells to carry the oxygen your body needs. Your heart  works harder when your body does not get enough oxygen. This can make it feel  like your heart is pounding or beating very fast. Anemia can also make you feel  short of breath, weak, dizzy, faint, or very tired.</p>
 <p>Some types of chemotherapy cause anemia because they make  it harder for bone marrow to produce new red blood cells. </p>
 <h3>Ways to manage </h3>
 <ul>
@@ -367,8 +370,7 @@ Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
   <li>You  feel dizzy or like you are going to faint</li>
   <li>You  feel short of breath</li>
   <li>It  feels like your heart is pounding or beating very fast</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Some types of chemotherapy may cause anemia.  This information can help you understand what anemia is, why it occurs, and how to manage it.]]></long_description>
   </item>
   <item>
@@ -405,7 +407,7 @@ Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
     <long_title><![CDATA[Coping with Chemotherapy Side Effects – Bleeding ]]></long_title>
     <short_title><![CDATA[Chemotherapy Side Effects – Bleeding ]]></short_title>
     <bodyfield><![CDATA[<h3><strong>What  it is and why it occurs</strong></h3>
-<p><a href=""http://www.cancer.gov/dictionary?expand=p#platelet"">Platelets</a> are cells that make your blood clot  when you bleed. Chemotherapy can lower the number of platelets because it  affects your bone marrow's ability to make them. A low platelet count is called <a href=""http://www.cancer.gov/dictionary?expand=t#thrombocytopenia"">thrombocytopenia</a>. This condition may cause  bruises (even when you have not been hit or have not bumped into anything),  bleeding from your nose or in your mouth, or a rash of tiny, red dots.</p>
+<p><a href="http://www.cancer.gov/dictionary?expand=p#platelet">Platelets</a> are cells that make your blood clot  when you bleed. Chemotherapy can lower the number of platelets because it  affects your bone marrow's ability to make them. A low platelet count is called <a href="http://www.cancer.gov/dictionary?expand=t#thrombocytopenia">thrombocytopenia</a>. This condition may cause  bruises (even when you have not been hit or have not bumped into anything),  bleeding from your nose or in your mouth, or a rash of tiny, red dots.</p>
 <h3><strong>Ways  to manage</strong></h3>
 <h3><strong>Do:</strong></h3>
 <ul>
@@ -481,7 +483,7 @@ Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
     <long_title><![CDATA[Coping with Chemotherapy Side Effects - Diarrhea]]></long_title>
     <short_title><![CDATA[Chemotherapy Side Effects - Diarrhea]]></short_title>
     <bodyfield><![CDATA[<h3><strong>What  it is and why it occurs</strong></h3>
-<p><a href=""http://www.cancer.gov/dictionary?expand=d#diarrhea"">Diarrhea</a> is frequent bowel movements that may  be soft, loose, or watery. Chemotherapy can cause diarrhea because it harms  healthy cells that line your large and small bowel. It may also speed up your  bowels. Diarrhea can also be caused by infections or drugs used to treat  constipation.</p>
+<p><a href="http://www.cancer.gov/dictionary?expand=d#diarrhea">Diarrhea</a> is frequent bowel movements that may  be soft, loose, or watery. Chemotherapy can cause diarrhea because it harms  healthy cells that line your large and small bowel. It may also speed up your  bowels. Diarrhea can also be caused by infections or drugs used to treat  constipation.</p>
 <h3><strong>Ways  to manage</strong></h3>
 <ul>
   <li><strong>Eat 5 or 6 small meals and snacks each day  instead of 3 large meals.</strong></li>
@@ -502,8 +504,7 @@ Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
   <li>Foods or drinks with caffeine, such as regular  coffee, black tea, cola, and chocolate</li>
   <li>Foods or drinks that cause gas, such as cooked  dried beans, cabbage, broccoli, and soy milk and other soy products</li>
   <li>Foods that are high in fiber, such as cooked  dried beans, raw fruits and vegetables, nuts, and whole-wheat breads and  cereals</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Some types of chemotherapy may cause diarrhea. This information can help you understand why this problem occurs and how to manage it.]]></long_description>
   </item>
   <item>
@@ -536,14 +537,14 @@ Lunes  a viernes de 8:00 a. m. a 8:00 p. m. hora del Este de EE. UU.</p>
 <p>Many people say they feel fatigue during chemotherapy and  even for weeks or months after treatment is over. Fatigue can be caused by the  type of chemotherapy, the effort of making frequent visits to the doctor, or  feelings such as stress, anxiety, and depression. If you receive radiation  therapy along with chemotherapy, your fatigue may be more severe.</p>
 <h3><strong>Fatigue  can also be caused by:</strong></h3>
 <ul>
-  <li> <a href=""http://www.cancer.gov/cancer/topics/coping/chemotherapy-and-you/page7#SE1"">Anemia</a></li>
-  <li><a href=""http://www.cancer.gov/cancer/topics/coping/chemotherapy-and-you/page7#SE13"">Pain</a></li>
+  <li><a href="http://www.cancer.gov/cancer/topics/coping/chemotherapy-and-you/page7#SE1">Anemia</a></li>
+  <li><a href="http://www.cancer.gov/cancer/topics/coping/chemotherapy-and-you/page7#SE13">Pain</a></li>
   <li>Medications</li>
-  <li><a href=""http://www.cancer.gov/cancer/topics/coping/chemotherapy-and-you/page7#SE2"">Appetite changes</a></li>
+  <li><a href="http://www.cancer.gov/cancer/topics/coping/chemotherapy-and-you/page7#SE2">Appetite changes</a></li>
   <li>Trouble sleeping</li>
   <li>Lack of activity</li>
   <li>Trouble breathing</li>
-  <li><a href=""http://www.cancer.gov/cancer/topics/coping/chemotherapy-and-you/page7#SE8"">Infection</a></li>
+  <li><a href="http://www.cancer.gov/cancer/topics/coping/chemotherapy-and-you/page7#SE8">Infection</a></li>
   <li>Doing too much at one time</li>
   <li>Other medical problems</li>
 </ul>
@@ -614,7 +615,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <long_title><![CDATA[Coping with Chemotherapy Side Effects - Hair Loss]]></long_title>
     <short_title><![CDATA[Chemotherapy Side Effects - Hair Loss]]></short_title>
     <bodyfield><![CDATA[<h3><strong>What  it is and why it occurs</strong></h3>
-<p>Hair loss (also called <a href=""http://www.cancer.gov/dictionary?expand=a#alopecia"">alopecia</a>) is when some or all of your hair  falls out. This can happen anywhere on your body: your head, face, arms, legs,  underarms, or the pubic area between your legs. Many people are upset by the  loss of their hair and find it the most difficult part of chemotherapy.</p>
+<p>Hair loss (also called <a href="http://www.cancer.gov/dictionary?expand=a#alopecia">alopecia</a>) is when some or all of your hair  falls out. This can happen anywhere on your body: your head, face, arms, legs,  underarms, or the pubic area between your legs. Many people are upset by the  loss of their hair and find it the most difficult part of chemotherapy.</p>
 <p>Some types of chemotherapy damage the cells that cause  hair growth. Hair loss often starts 2 to 3 weeks after chemotherapy begins.  Your scalp may hurt at first. Then you may lose your hair, either a little at a  time or in clumps. It takes about 1 week for all your hair to fall out. Almost  always, your hair will grow back 2 to 3 months after chemotherapy is over. You  may notice that your hair starts growing back even while you are getting  chemotherapy.</p>
 <p>Your hair will be very fine when it starts growing back.  Also, your new hair may not look or feel the same as it did before. For  instance, your hair may be thin instead of thick, curly instead of straight,  and darker or lighter in color.</p>
 <h3><strong>Ways  to manage</strong></h3>
@@ -642,8 +643,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li><strong>Stay warm.</strong> You may feel  colder once you lose your hair. Wear a hat, turban, scarf, or wig to help you  stay warm.</li>
   <li><strong>Sleep on a satin pillow case.</strong> Satin creates less friction than cotton when you sleep on it. Therefore, you  may find satin pillow cases more comfortable.</li>
   <li><strong>Talk about your feelings.</strong> Many people feel angry, depressed, or embarrassed about hair loss. If you are  very worried or upset, you might want to talk about these feelings with a  doctor, nurse, family member, close friend, or someone who has had hair loss  caused by cancer treatment.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Some types of chemotherapy may make your hair fall out.  This information can help you understand why this problem occurs and how to manage it.]]></long_description>
   </item>
   <item>
@@ -655,8 +655,8 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <long_title><![CDATA[Coping with Chemotherapy Side Effects - Infection]]></long_title>
     <short_title><![CDATA[Chemotherapy Side Effects - Infection]]></short_title>
     <bodyfield><![CDATA[<h3><strong>What  it is and why it occurs</strong></h3>
-<p>Some types of chemotherapy make it harder for your bone  marrow to produce new <a href=""http://www.cancer.gov/dictionary?expand=w#white blood cell"">white blood cells</a>. White blood cells help your  body fight infection. Therefore, it is important to avoid infections, since  chemotherapy decreases the number of your white blood cells. <br>
-  There are many types of white blood cells. One type is  called <a href=""http://www.cancer.gov/dictionary?expand=n#neutrophil"">neutrophil</a>. When your neutrophil count is low,  it is called <a href=""http://www.cancer.gov/dictionary?expand=n#neutropenia"">neutropenia</a>. Your doctor or nurse may do blood  tests to find out whether you have neutropenia.<br>
+<p>Some types of chemotherapy make it harder for your bone  marrow to produce new <a href="http://www.cancer.gov/dictionary?expand=w#white blood cell">white blood cells</a>. White blood cells help your  body fight infection. Therefore, it is important to avoid infections, since  chemotherapy decreases the number of your white blood cells. <br>
+  There are many types of white blood cells. One type is  called <a href="http://www.cancer.gov/dictionary?expand=n#neutrophil">neutrophil</a>. When your neutrophil count is low,  it is called <a href="http://www.cancer.gov/dictionary?expand=n#neutropenia">neutropenia</a>. Your doctor or nurse may do blood  tests to find out whether you have neutropenia.<br>
   It is important to watch for signs of infection when you  have neutropenia. Check for fever at least once a day, or as often as your  doctor or nurse tells you to. You may find it best to use a digital  thermometer. Call your doctor or nurse if your temperature is 100.5°F or  higher.</p>
 <h3><strong>Ways  to manage</strong>  </h3>
 <li><strong>Your doctor or nurse will check your white  blood cell count throughout your treatment.</strong> If chemotherapy is  likely to make your white blood cell count very low, you may get medicine to  raise your white blood cell count and lower your risk of infection.</li>
@@ -689,8 +689,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <li>Bloody  or cloudy urine </li>
     <li>Painful  or frequent need to urinate </li>
     <li>Sinus  pain or pressure</li>
-  </ul>
-]]></bodyfield>
+  </ul>]]></bodyfield>
     <long_description><![CDATA[Some types of chemotherapy may make you prone to infections. This information can help you understand why this problem occurs and how to manage it.]]></long_description>
   </item>
   <item>
@@ -702,8 +701,8 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <long_title><![CDATA[Coping with Chemotherapy Side Effects – Infertility]]></long_title>
     <short_title><![CDATA[Chemotherapy Side Effects – Infertility]]></short_title>
     <bodyfield><![CDATA[<h3>What it is and why it occurs</h3>
-<p>Some types of chemotherapy can cause <a href=""http://www.cancer.gov/dictionary?expand=i#infertility"">infertility</a>. For a woman, this means that you  may not be able to get pregnant. For a man, this means you may not be able to  get a woman pregnant. <br>
-  In women, chemotherapy may damage the ovaries. This damage  can lower the number of healthy eggs in the ovaries. It can also lower the  hormones produced by them. The drop in <a href=""http://www.cancer.gov/dictionary?expand=h#hormone"">hormones</a> can lead to early menopause. Early  menopause and fewer healthy eggs can cause infertility.<br>
+<p>Some types of chemotherapy can cause <a href="http://www.cancer.gov/dictionary?expand=i#infertility">infertility</a>. For a woman, this means that you  may not be able to get pregnant. For a man, this means you may not be able to  get a woman pregnant. <br>
+  In women, chemotherapy may damage the ovaries. This damage  can lower the number of healthy eggs in the ovaries. It can also lower the  hormones produced by them. The drop in <a href="http://www.cancer.gov/dictionary?expand=h#hormone">hormones</a> can lead to early menopause. Early  menopause and fewer healthy eggs can cause infertility.<br>
   In men, chemotherapy may damage sperm cells, which grow and  divide quickly. Infertility may occur because chemotherapy can lower the number  of sperm, make sperm less able to move, or cause other types of damage.<br>
   Whether or not you become infertile depends on the type of  chemotherapy you get, your age, and whether you have other health problems.  Infertility can last the rest of your life.</p>
 <h3><strong>Ways  to manage</strong></h3>
@@ -717,8 +716,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
 <ul>
   <li><strong>Whether you want to have children.</strong> Before you start chemotherapy, let your doctor or nurse know if you might want  to father children in the future. He or she may talk with you about ways to  preserve your sperm to use in the future or refer you to a fertility  specialist.</li>
   <li><strong>Birth control.</strong> It is very  important that your spouse or partner not get pregnant while you are getting  chemotherapy. Chemotherapy can damage your sperm and cause birth defects.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Some types of chemotherapy may cause infertility. This information can help you understand what infertility is, why it occurs, and how to manage it.]]></long_description>
   </item>
   <item>
@@ -1149,7 +1147,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <long_title><![CDATA[Coping with Radiation Therapy Side Effects – Hair Loss]]></long_title>
     <short_title><![CDATA[Radiation Therapy Side Effects – Hair Loss]]></short_title>
     <bodyfield><![CDATA[<h3><strong>What it is</strong></h3>
-<p>Hair loss (also called <a href=""http://www.cancer.gov/dictionary?expand=a#alopecia"">alopecia</a>) is when some or all of your hair  falls out.</p>
+<p>Hair loss (also called <a href="http://www.cancer.gov/dictionary?expand=a#alopecia">alopecia</a>) is when some or all of your hair  falls out.</p>
 <h3><strong>Why  it occurs</strong></h3>
 <p>Radiation therapy can cause hair loss because it damages  cells that grow quickly, such as those in your hair roots.</p>
 <p>Hair loss from radiation therapy only happens on the part  of your body being treated. This is not the same as hair loss from  chemotherapy, which happens all over your body. For instance, you may lose some  or all of the hair on your head when you get radiation to your brain. But if  you get radiation to your hip, you may lose pubic hair (between your legs) but  not the hair on your head.</p>
@@ -1170,8 +1168,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
 <ul>
   <li><strong>Protect your scalp.</strong> Your scalp may feel  tender after hair loss. Cover your head with a hat, turban, or scarf when you  are outside. Try not to be in places where the temperature is very cold or very  hot. This means staying away from the direct sun, sun lamps, and very cold air.</li>
   <li><strong>Stay warm.</strong> Your hair helps keep you warm,  so you may feel colder once you lose it. You can stay warmer by wearing a hat,  turban, scarf, or wig.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Radiation therapy may cause hair loss to the party of your body being treated. This information can help you understand why this problem occurs and how to manage it.]]></long_description>
   </item>
   <item>
@@ -1186,7 +1183,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
 <p>Radiation therapy to the  head or neck can cause problems such as:</p>
 <ul>
   <li>Mouth sores  (little cuts or ulcers in your mouth)</li>
-  <li>Dry mouth (also  called&nbsp;<a href=""http://www.cancer.gov/dictionary?expand=x#xerostomia"">xerostomia</a>)  and throat</li>
+  <li>Dry mouth (also  called&nbsp;<a href="http://www.cancer.gov/dictionary?expand=x#xerostomia">xerostomia</a>)  and throat</li>
   <li>Loss of taste</li>
   <li>Tooth decay</li>
   <li>Changes in taste  (such as a metallic taste when you eat meat)</li>
@@ -1204,8 +1201,8 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li><strong>Check your mouth every day.</strong>&nbsp;This way, you can see or feel problems as soon as they  start. Problems can include mouth sores, white patches, or infection.</li>
   <li><strong>Keep your mouth moist.</strong>&nbsp;You can do this by:</li>
 </ul>
-<ul type=""disc"">
-  <ul type=""circle"">
+<ul type="disc">
+  <ul type="circle">
     <li>Sipping water often during the day</li>
     <li>Sucking on ice chips</li>
     <li>Chewing sugar-free gum or sucking on        sugar-free hard candy</li>
@@ -1249,8 +1246,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li><strong>Medicine.</strong>&nbsp;Ask your doctor or nurse about medicines that can protect your saliva  glands and the moist tissues that line your mouth.</li>
   <li><strong>Call your doctor or nurse when your mouth  hurts.</strong>&nbsp;There are medicines and other  products, such as mouth gels, that can help control mouth pain.</li>
   <li><strong>You will need to take extra good care of your  mouth for the rest of your life.</strong>&nbsp;Ask  your dentist how often you will need dental check-ups and how best to take care  of your teeth and mouth after radiation therapy is over.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Radiation therapy to the head or neck may cause problems in your mouth. This information can help you understand what these problems are, why they occur, and how to manage them.]]></long_description>
   </item>
   <item>
@@ -1299,7 +1295,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
 </ul>
 <h3><strong>Problems for men include:</strong></h3>
 <ul>
-  <li><a href=""http://www.cancer.gov/dictionary?expand=i#impotence"">Impotence</a> (also called <a href=""http://www.cancer.gov/dictionary?expand=e#erectile dysfunction"">erectile dysfunction</a> or ED),  which means not being able to have or keep an erection</li>
+  <li><a href="http://www.cancer.gov/dictionary?expand=i#impotence">Impotence</a> (also called <a href="http://www.cancer.gov/dictionary?expand=e#erectile dysfunction">erectile dysfunction</a> or ED),  which means not being able to have or keep an erection</li>
   <li>Not being able to get a woman pregnant after  radiation therapy is over due to fewer or less effective sperm</li>
 </ul>
 <h3><strong>Why  they occur</strong></h3>
@@ -1314,7 +1310,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li><strong>Sexual  problems.</strong> You may or may not have sexual problems. Your doctor  or nurse can tell you about side effects you can expect and suggest ways for  coping with them.</li>
   <li><strong>Birth  control.</strong> It is very important that you do not get pregnant  while having radiation therapy. Radiation therapy can hurt the fetus at all  stages of pregnancy. If you have not yet gone through menopause, talk with your  doctor or nurse about birth control and ways to keep from getting pregnant.</li>
   <li><strong>Pregnancy.</strong> Make sure to tell your doctor or nurse if you are already pregnant.</li>
-  <li><strong>Stretching  your vagina.</strong> Vaginal stenosis is a common problem for women who  have radiation therapy to the pelvis. This can make it painful to have sex. You  can help by stretching your vagina using a <a href=""http://www.cancer.gov/dictionary?expand=d#dilator"">dilator</a> (a device that gently  stretches the tissues of the vagina). Ask your doctor or nurse where to find a  dilator and how to use it.</li>
+  <li><strong>Stretching  your vagina.</strong> Vaginal stenosis is a common problem for women who  have radiation therapy to the pelvis. This can make it painful to have sex. You  can help by stretching your vagina using a <a href="http://www.cancer.gov/dictionary?expand=d#dilator">dilator</a> (a device that gently  stretches the tissues of the vagina). Ask your doctor or nurse where to find a  dilator and how to use it.</li>
   <li><strong>Lubrication.</strong> Use a special lotion for your vagina (such as Replens®) once a day to keep it  moist. When you have sex, use a water- or mineral oil-based lubricant (such as  K-Y Jelly® or Astroglide®).</li>
   <li><strong>Sex.</strong> Ask your doctor or nurse whether it is okay for you to have sex during  radiation therapy. Most women can have sex, but it is a good idea to ask and be  sure. If sex is painful due to vaginal dryness, you can use a water- or mineral  oil-based lubricant.</li>
 </ul>
@@ -1339,7 +1335,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
 <p>Radiation therapy can cause skin changes in your  treatment area. Here are some common skin changes:</p>
 <ul>
   <li><strong>Redness.</strong> Your skin in the treatment area may look as  if you have a mild to severe sunburn or tan. This can occur on any part of your  body where you are getting radiation.</li>
-  <li><a href=""http://www.cancer.gov/dictionary?expand=p#pruritus""><strong>Pruritus</strong></a><strong>.</strong>The skin in your treatment area may itch so  much that you always feel like scratching. This causes problems because  scratching too much can lead to skin breakdown and infection.</li>
+  <li><a href="http://www.cancer.gov/dictionary?expand=p#pruritus"><strong>Pruritus</strong></a><strong>.</strong>The skin in your treatment area may itch so  much that you always feel like scratching. This causes problems because  scratching too much can lead to skin breakdown and infection.</li>
   <li><strong>Dry and peeling skin.</strong>This is when the skin in your treatment area  gets very dry - much drier than normal. In fact, your skin may be so dry that  it peels like it does after a sunburn.</li>
   <li><strong>Moist reaction.</strong> Radiation kills skin cells in your treatment  area, causing your skin to peel off faster than it can grow back. When this  happens, you can get sores or ulcers. The skin in your treatment area can also  become wet, sore, or infected. This is more common where you have skin folds,  such as your buttocks, behind your ears, under your breasts. It may also occur  where your skin is very thin, such as your neck.</li>
   <li><strong>Swollen skin.</strong>The skin in your treatment area may be swollen  and puffy.</li>
@@ -1392,7 +1388,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <long_title><![CDATA[Coping with Radiation Therapy Side Effects - Throat Changes]]></long_title>
     <short_title><![CDATA[Radiation Therapy Side Effects - Throat Changes]]></short_title>
     <bodyfield><![CDATA[<h3><strong>What they are</strong></h3>
-<p>Radiation therapy to the neck or chest can cause the  lining of your throat to become inflamed and sore. This is called <a href=""http://www.cancer.gov/dictionary?expand=e#esophagitis"">esophagitis</a>. You may feel as if you have a  lump in your throat or burning in your chest or throat. You may also have  trouble swallowing.</p>
+<p>Radiation therapy to the neck or chest can cause the  lining of your throat to become inflamed and sore. This is called <a href="http://www.cancer.gov/dictionary?expand=e#esophagitis">esophagitis</a>. You may feel as if you have a  lump in your throat or burning in your chest or throat. You may also have  trouble swallowing.</p>
 <h3><strong>Why  they occur</strong></h3>
 <p>Radiation therapy to the neck or chest can cause throat  changes because it not only kills cancer cells, but can also damage the healthy  cells that line your throat. Your risk for throat changes depends on how much  radiation you are getting, whether you are also having chemotherapy, and whether  you use tobacco and alcohol while you are getting radiation therapy.</p>
 <h3><strong>How  long they last</strong></h3>
@@ -1423,8 +1419,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   </ul>
   <li><strong>Talk with a dietitian.</strong> He  or she can help make sure you eat enough to maintain your weight. This may  include choosing foods that are high in calories and protein and foods that are  easy to swallow.</li>
   <li><strong>Talk with your doctor or nurse.</strong> Tell your doctor or nurse know if you notice throat changes, such as trouble  swallowing, feeling as if you are choking, or coughing while eating or  drinking. Also, let him or her know if you have pain or lose any weight. Your  doctor can prescribe medicines that may help relieve your symptoms, such as antacids,  gels that coat your throat, and pain killers.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Radiation therapy to your neck or chest can cause changes in your throat.  This information can help you understand what these problems are, why they happen, and how to manage them.]]></long_description>
   </item>
   <item>
@@ -1442,8 +1437,8 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li>Trouble starting to urinate</li>
   <li>Trouble emptying your bladder</li>
   <li>Frequent, urgent need to urinate</li>
-  <li>Cystitis, a swelling (<a href=""http://www.cancer.gov/dictionary?expand=i#inflammation"">inflammation</a>) in your urinary tract</li>
-  <li><a href=""http://www.cancer.gov/dictionary?expand=i#incontinence"">Incontinence</a>, when you cannot  control the flow of urine from your bladder, especially when coughing or  sneezing</li>
+  <li>Cystitis, a swelling (<a href="http://www.cancer.gov/dictionary?expand=i#inflammation">inflammation</a>) in your urinary tract</li>
+  <li><a href="http://www.cancer.gov/dictionary?expand=i#incontinence">Incontinence</a>, when you cannot  control the flow of urine from your bladder, especially when coughing or  sneezing</li>
   <li>Frequent need to get up during sleep to urinate</li>
   <li>Blood in your urine</li>
   <li>Bladder spasms, which are like painful muscle  cramps</li>
@@ -1459,8 +1454,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li><strong>Talk with your doctor or nurse</strong> if you think you have urinary or bladder problems. He or she may ask for a  urine sample to make sure that you do not have an infection.</li>
   <li><strong>Talk to your doctor or nurse</strong> if you have incontinence. He or she may refer you to a physical therapist who  will assess your problem. The therapist can give you exercises to improve  bladder control.</li>
   <li><strong>Medicine.</strong> Your doctor may  prescribe antibiotics if your problems are caused by an infection. Other  medicines can help you urinate, reduce burning or pain, and ease bladder  spasms.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Radiation therapy to the prostate or bladder can cause urinary and bladder problems. This information can help you understand what these problems are, why they happen, and how to manage them.]]></long_description>
   </item>
   <item>
@@ -2140,7 +2134,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <long_title><![CDATA[Cómo superar los efectos secundarios de la quimioterapia  -  Anemia ]]></long_title>
     <short_title><![CDATA[Los efectos secundarios de la quimioterapia  -  Anemia ]]></short_title>
     <bodyfield><![CDATA[<h3> ¿Qué es? ¿Por qué ocurre? </h3>
-<p>Los <a href=""http://www.cancer.gov/dictionary?CdrID=46124&lang=spanish"" target=""_blank"">glóbulos rojos</a> llevan el oxígeno a todo el cuerpo. La <a href=""http://www.cancer.gov/dictionary?CdrID=45360&lang=spanish"" target=""_blank"">anemia</a> ocurre cuando una persona no tiene suficientes glóbulos rojos para llevar el  oxígeno que el cuerpo necesita. El corazón trabaja más cuando el cuerpo no  recibe suficiente oxígeno. Por eso la anemia le puede hacer sentir que su  corazón late muy rápido. También le puede hacer sentir que le falta aire,  débil, mareado, como si fuera a desmayarse o muy cansado.</p>
+<p>Los <a href="http://www.cancer.gov/dictionary?CdrID=46124&lang=spanish" target="_blank">glóbulos rojos</a> llevan el oxígeno a todo el cuerpo. La <a href="http://www.cancer.gov/dictionary?CdrID=45360&lang=spanish" target="_blank">anemia</a> ocurre cuando una persona no tiene suficientes glóbulos rojos para llevar el  oxígeno que el cuerpo necesita. El corazón trabaja más cuando el cuerpo no  recibe suficiente oxígeno. Por eso la anemia le puede hacer sentir que su  corazón late muy rápido. También le puede hacer sentir que le falta aire,  débil, mareado, como si fuera a desmayarse o muy cansado.</p>
 <p>Algunos  tipos de quimioterapia causan anemia porque hacen más difícil que la médula  ósea produzca nuevos glóbulos rojos. </p>
 <h3>Qué hacer para  controlarla </h3>
 <ul>
@@ -2157,8 +2151,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li>Siente mareos o como  si se fuera a desmayar</li>
   <li>Siente que le falta  el aire</li>
   <li>Siente que el corazón  le late muy rápido</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden causar anemia. Esta información puede ayudarle a entender qué es la anemia, por qué ocurre y cómo controlarla.]]></long_description>
   </item>
   <item>
@@ -2195,7 +2188,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <long_title><![CDATA[Cómo superar los efectos secundarios de la quimioterapia  -  Sangrado ]]></long_title>
     <short_title><![CDATA[Los efectos secundarios de la quimioterapia  -  Sangrado ]]></short_title>
     <bodyfield><![CDATA[<h3><strong>¿Qué es? ¿Por qué ocurre?</strong></h3>
-<p>Las <a href=""http://www.cancer.gov/dictionary?CdrID=45840&lang=spanish"" target=""_blank"">plaquetas</a> son células que coagulan la  sangre. La médula ósea produce plaquetas que coagulan la sangre. Es decir,  cuando una persona está sangrando, las plaquetas ayudan a que pare de sangrar.  Pero la quimioterapia hace que sea más difícil que la médula ósea produzca  plaquetas. Cuando existe un nivel bajo de plaquetas ocurre algo que se llama <a href=""http://www.cancer.gov/dictionary?CdrID=45365&lang=spanish"" target=""_blank"">trombocitopenia</a>. Esta condición médica puede  causar hematomas (moretes o moretones, incluso si no se ha dado un golpe ni ha  tropezado con nada), sangrado de la nariz o en la boca, o sarpullido  (&quot;rash&quot; en inglés) de puntitos rojos.</p>
+<p>Las <a href="http://www.cancer.gov/dictionary?CdrID=45840&lang=spanish" target="_blank">plaquetas</a> son células que coagulan la  sangre. La médula ósea produce plaquetas que coagulan la sangre. Es decir,  cuando una persona está sangrando, las plaquetas ayudan a que pare de sangrar.  Pero la quimioterapia hace que sea más difícil que la médula ósea produzca  plaquetas. Cuando existe un nivel bajo de plaquetas ocurre algo que se llama <a href="http://www.cancer.gov/dictionary?CdrID=45365&lang=spanish" target="_blank">trombocitopenia</a>. Esta condición médica puede  causar hematomas (moretes o moretones, incluso si no se ha dado un golpe ni ha  tropezado con nada), sangrado de la nariz o en la boca, o sarpullido  (&quot;rash&quot; en inglés) de puntitos rojos.</p>
 <h3><strong><em>Qué  hacer para controlarlo:</em></strong></h3>
 <p><strong><em>Haga lo siguiente:</em></strong></p>
 <ul>
@@ -2236,8 +2229,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li>Dolores de cabeza o cambios en la vista</li>
   <li>Una sensación tibia o caliente en el brazo o la pierna</li>
   <li>Sensación de tener mucho sueño o confusión</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden causar hematomas (moretes o moretones), sangrado de la nariz o sarpullido de puntitos rojos. Esta información puede ayudarle a entender por qué ocurren estos problemas y cómo controlarlos.]]></long_description>
   </item>
   <item>
@@ -2271,7 +2263,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
     <long_title><![CDATA[Cómo superar los efectos secundarios de la quimioterapia  -  Diarrea ]]></long_title>
     <short_title><![CDATA[Los efectos secundarios de la quimioterapia  -  Diarrea ]]></short_title>
     <bodyfield><![CDATA[<h3><strong>¿Qué es? ¿Por qué ocurre?</strong></h3>
-<p>La <a href=""http://www.cancer.gov/diccionario?CdrID=306496"">diarrea</a> es la defecación frecuente que puede ser blanda, suelta o líquida. La  quimioterapia puede causar diarrea porque daña las células sanas que recubren  los intestinos grueso y delgado. Esto puede hacer que sus intestinos procesen  las heces más rápido. Además, las medicinas que se usan para tratar el  estreñimiento o las infecciones pueden causar diarrea.</p>
+<p>La <a href="http://www.cancer.gov/diccionario?CdrID=306496">diarrea</a> es la defecación frecuente que puede ser blanda, suelta o líquida. La  quimioterapia puede causar diarrea porque daña las células sanas que recubren  los intestinos grueso y delgado. Esto puede hacer que sus intestinos procesen  las heces más rápido. Además, las medicinas que se usan para tratar el  estreñimiento o las infecciones pueden causar diarrea.</p>
 <h3><strong>Qué hacer para controlarla</strong></h3>
 <ul>
   <li><strong>Coma  5 ó 6 comidas pequeñas en lugar de 3 comidas grandes.</strong></li>
@@ -2292,8 +2284,7 @@ These  symptoms may last from 1 to 3 days. An infection or the cancer itself can
   <li>Alimentos y bebidas con cafeína, como café regular, té negro,  chocolate y sodas (gaseosas) con cafeína</li>
   <li>Alimentos y bebidas que produzcan gas, como frijoles (habichuelas),  col, brócoli, leche de soya y demás productos de soya</li>
   <li>Alimentos que tengan mucha fibra, como frijoles (habichuelas), frutas  y vegetales crudos, nueces, así como panes y cereales integrales (&quot;whole  wheat&quot; en inglés)</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden causar diarrea. Esta información puede ayudarle a entender por qué ocurre este problema y cómo controlarlo.]]></long_description>
   </item>
   <item>
@@ -2406,7 +2397,7 @@ Dígale  a su doctor o enfermera si su visión es más borrosa o sus  ojos est�
     <long_title><![CDATA[Cómo superar los efectos secundarios de la quimioterapia  -  Caída del pelo   ]]></long_title>
     <short_title><![CDATA[Los efectos secundarios de la quimioterapia  -  Caída del pelo   ]]></short_title>
     <bodyfield><![CDATA[<h3><strong>¿Qué es? ¿Por qué ocurre?</strong></h3>
-<p>La  caída del pelo consiste en la caída de parte o todo el pelo. También se llama <a href=""http://www.cancer.gov/diccionario?CdrID=44642"">alopecia</a>. Esto puede suceder en cualquier parte del  cuerpo: la cabeza, la cara, los brazos, las piernas, las axilas o el área  púbica. Muchas personas se sienten molestas cuando pierden el pelo. Para muchas  es la parte más difícil de la quimioterapia.</p>
+<p>La  caída del pelo consiste en la caída de parte o todo el pelo. También se llama <a href="http://www.cancer.gov/diccionario?CdrID=44642">alopecia</a>. Esto puede suceder en cualquier parte del  cuerpo: la cabeza, la cara, los brazos, las piernas, las axilas o el área  púbica. Muchas personas se sienten molestas cuando pierden el pelo. Para muchas  es la parte más difícil de la quimioterapia.</p>
 <p>Algunos  tipos de quimioterapia dañan las células que hacen crecer el pelo. La caída del  pelo a menudo comienza 2 ó 3 semanas después de que empieza la quimioterapia.  Al principio le podría doler el cuero cabelludo (la piel debajo del pelo).  Luego se le podría caer el pelo, ya sea poco a poco o en mechones. La caída de  todo el pelo toma más o menos una semana. Casi siempre el pelo vuelve a crecer  2 ó 3 meses después de terminar la quimioterapia. Pero podría notar que el pelo  le empieza a crecer de nuevo incluso mientras recibe la quimioterapia.</p>
 <p>El  pelo será muy fino cuando comience a crecer de nuevo. Además, el pelo nuevo  podría no verse ni sentirse igual que antes. Por ejemplo, el pelo podría ser  fino en vez de grueso, rizado en vez de liso y de color más oscuro o más claro.</p>
 <h3><strong>Qué hacer para controlarla</strong></h3>
@@ -2434,8 +2425,7 @@ Dígale  a su doctor o enfermera si su visión es más borrosa o sus  ojos est�
   <li><strong>Manténgase  abrigado.</strong> Una vez que se le haya caído el pelo podría sentir más frío. Para ayudar a  sentirse calientito use un sombrero, turbante, pañuelo de cabeza o una peluca.</li>
   <li><strong>Para  dormir, use una almohada con una funda de satén.</strong> El satén (&quot;satin&quot; en  inglés) crea menos fricción que el algodón cuando se duerme sobre él. Por eso  podría descubrir que las fundas de almohada que están hechas de satén son más  cómodas.</li>
   <li><strong>Hable  sobre sus sentimientos.</strong> Mucha gente se siente enojada, deprimida o avergonzada cuando se le  cae el pelo. Si está demasiado preocupado o molesto, tal vez quiera hablar de  esos sentimientos con un doctor, una enfermera, un ser querido, un amigo  cercano o alguien a quien se le haya caído el pelo por causa del tratamiento  contra el cáncer.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden causar la caída del pelo. Esta información puede ayudarle a entender por qué ocurre este problema y cómo controlarlo.]]></long_description>
   </item>
   <item>
@@ -2447,8 +2437,8 @@ Dígale  a su doctor o enfermera si su visión es más borrosa o sus  ojos est�
     <long_title><![CDATA[Cómo superar los efectos secundarios de la quimioterapia  -  Infección ]]></long_title>
     <short_title><![CDATA[Los efectos secundarios de la quimioterapia  -  Infección ]]></short_title>
     <bodyfield><![CDATA[<h3><strong>¿Qué es? ¿Por qué ocurre?</strong></h3>
-<p>Algunos  tipos de quimioterapia hacen que sea difícil para el cuerpo producir nuevos <a href=""http://www.cancer.gov/dictionary?CdrID=45993&lang=spanish"" target=""_blank""><strong>glóbulos  blancos</strong></a>.  Los glóbulos blancos ayudan a su cuerpo a combatir las infecciones. Como la  quimioterapia le hace perder glóbulos blancos, es importante que evite las  infecciones. <br>
-  Existen  muchos tipos de glóbulos blancos. Uno de ellos se conoce como neutrófilo.  Cuando una persona tiene un nivel bajo de <a href=""http://www.cancer.gov/dictionary?CdrID=46270&lang=spanish"" target=""_blank""><strong>neutrófilos</strong></a>, padece una condición médica  llamada <a href=""http://www.cancer.gov/dictionary?CdrID=45361&lang=spanish"" target=""_blank""><strong>neutropenia</strong></a>. Su doctor o enfermera podría  hacerle pruebas de sangre para ver si usted tiene neutropenia.<br>
+<p>Algunos  tipos de quimioterapia hacen que sea difícil para el cuerpo producir nuevos <a href="http://www.cancer.gov/dictionary?CdrID=45993&lang=spanish" target="_blank"><strong>glóbulos  blancos</strong></a>.  Los glóbulos blancos ayudan a su cuerpo a combatir las infecciones. Como la  quimioterapia le hace perder glóbulos blancos, es importante que evite las  infecciones. <br>
+  Existen  muchos tipos de glóbulos blancos. Uno de ellos se conoce como neutrófilo.  Cuando una persona tiene un nivel bajo de <a href="http://www.cancer.gov/dictionary?CdrID=46270&lang=spanish" target="_blank"><strong>neutrófilos</strong></a>, padece una condición médica  llamada <a href="http://www.cancer.gov/dictionary?CdrID=45361&lang=spanish" target="_blank"><strong>neutropenia</strong></a>. Su doctor o enfermera podría  hacerle pruebas de sangre para ver si usted tiene neutropenia.<br>
   Si  tiene neutropenia, es importante que se fije si tiene señales de infección.  Chequee si tiene fiebre al menos una vez al día o cuantas veces su doctor o  enfermera le recomiende. Podría ser más fácil para usted usar un termómetro  digital. Llame a su doctor o enfermera si la fiebre es de 100.5°F (38°C) o más. </p>
 <h3><strong>Qué hacer para controlarla</strong></h3>
 <ul>
@@ -2483,7 +2473,8 @@ Dígale  a su doctor o enfermera si su visión es más borrosa o sus  ojos est�
     <li>Dolor al orinar o necesidad de orinar frecuentemente</li>
     <li>Dolor o presión alrededor de la nariz o los ojos</li>
   </ul>
-</ul>]]></bodyfield>
+</ul>
+]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden hacerlo propenso a infecciones. Esta información puede ayudarle a entender por qué ocurre este problema y cómo controlarlo.]]></long_description>
   </item>
   <item>
@@ -2495,8 +2486,8 @@ Dígale  a su doctor o enfermera si su visión es más borrosa o sus  ojos est�
     <long_title><![CDATA[Cómo superar los efectos secundarios de la quimioterapia  -  Infertilidad ]]></long_title>
     <short_title><![CDATA[Los efectos secundarios de la quimioterapia  -  Infertilidad ]]></short_title>
     <bodyfield><![CDATA[<h3>¿Qué es? ¿Por qué  ocurre?</h3>
-<p>Algunos  tipos de quimioterapia pueden causar infertilidad o <a href=""http://www.cancer.gov/diccionario?CdrID=46348"">esterilidad</a>. Para la mujer esto significa que tal vez no  pueda quedar embarazada. Para el hombre esto significa que tal vez no pueda  embarazar a una mujer. <br>
-  En la  mujer la quimioterapia puede dañar los ovarios. Este daño puede reducir la  cantidad de óvulos sanos en los ovarios. También puede hacer que los ovarios  produzcan menos hormonas. Cuando hay menos <a href=""http://www.cancer.gov/dictionary?CdrID=45713&lang=spanish"" target=""_blank""><strong>hormonas</strong></a> puede ocurrir una menopausia  temprana. La menopausia temprana y menos óvulos sanos pueden causar  infertilidad.<br>
+<p>Algunos  tipos de quimioterapia pueden causar infertilidad o <a href="http://www.cancer.gov/diccionario?CdrID=46348">esterilidad</a>. Para la mujer esto significa que tal vez no  pueda quedar embarazada. Para el hombre esto significa que tal vez no pueda  embarazar a una mujer. <br>
+  En la  mujer la quimioterapia puede dañar los ovarios. Este daño puede reducir la  cantidad de óvulos sanos en los ovarios. También puede hacer que los ovarios  produzcan menos hormonas. Cuando hay menos <a href="http://www.cancer.gov/dictionary?CdrID=45713&lang=spanish" target="_blank"><strong>hormonas</strong></a> puede ocurrir una menopausia  temprana. La menopausia temprana y menos óvulos sanos pueden causar  infertilidad.<br>
   En los  hombres, la quimioterapia puede dañar las células del esperma. La infertilidad  puede ocurrir porque la quimioterapia puede hacer que haya menos células del  esperma en el semen, hacer que las células del esperma se muevan menos o causar  otros tipos de daño. <br>
   La  posibilidad de que quede infértil (estéril) depende del tipo de quimioterapia  que reciba, su edad y si usted tiene o no otros problemas de salud. La  infertilidad puede durar el resto de su vida.</p>
 <h3><strong>Qué hacer para controlarla</strong></h3>
@@ -2510,8 +2501,7 @@ Dígale  a su doctor o enfermera si su visión es más borrosa o sus  ojos est�
 <ul>
   <li><strong>Si  desea o no tener hijos.</strong> Antes de comenzar la quimioterapia dígale a su doctor o enfermera si  desea tener hijos después de que termine el tratamiento. Su doctor podría  hablar con usted sobre formas de conservar el esperma para usarlo en el futuro.  O tal vez lo remita (recomiende) a un especialista en fertilidad.</li>
   <li><strong>Control  de la natalidad.</strong> Es muy importante que su esposa o pareja no quede embarazada mientras  usted recibe quimioterapia. La quimioterapia puede dañar las células del  esperma y causarle daño al feto. </li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden causar infertilidad. Esta información puede ayudarle a entender qué es la infertilidad, por qué ocurre y cómo controlarla.]]></long_description>
   </item>
   <item>
@@ -2584,7 +2574,7 @@ Dígale  a su doctor o enfermera si su visión es más borrosa o sus  ojos est�
     <bodyfield><![CDATA[<h3><strong>¿Qué son? ¿Por qué ocurren?</strong></h3>
 <p>Algunos  tipos de quimioterapia pueden causar náuseas, vómitos o ambos. Las náuseas  ocurren cuando uno se siente que va a vomitar. Vomitar es cuando arroja  (devuelve) lo que comió. Es posible que también tenga arcadas (&quot;dry  heaves&quot; en inglés). Éstas ocurren cuando su cuerpo intenta vomitar aunque  no tiene nada en el estómago.<br>
   Las  náuseas y los vómitos pueden suceder mientras recibe el tratamiento de  quimioterapia, justo después de la quimioterapia o muchas horas o días después  de la quimioterapia. Es probable que se sienta mejor en los días en que no  tenga sesión de quimioterapia.<br>
-  Hay  medicinas nuevas que pueden ayudar a prevenir las náuseas y los vómitos. Estas  medicinas se llaman <a href=""http://www.cancer.gov/dictionary?CdrID=46084&lang=spanish"" target=""_blank""><strong>antieméticos</strong></a> o antináuseas. Tal vez necesite  tomar estas medicinas una hora antes de cada tratamiento de quimioterapia y  durante unos días después. La cantidad de días que las tome después de la  quimioterapia dependerá de los tipos de quimioterapia que esté recibiendo.  También dependerá de cómo reaccione al tratamiento. Si un tipo de medicina  antináuseas no le va bien, su doctor puede recetarle otra diferente. Tal vez  tenga que tomar más de un tipo de medicina antináuseas. Es posible que la <a href=""http://www.cancer.gov/dictionary?CdrID=46724&lang=spanish"" target=""_blank""><strong>acupuntura</strong></a> también pueda ayudarle. Hable  con su doctor o enfermera sobre tratamientos para controlar las náuseas y los  vómitos causados por la quimioterapia. </p>
+  Hay  medicinas nuevas que pueden ayudar a prevenir las náuseas y los vómitos. Estas  medicinas se llaman <a href="http://www.cancer.gov/dictionary?CdrID=46084&lang=spanish" target="_blank"><strong>antieméticos</strong></a> o antináuseas. Tal vez necesite  tomar estas medicinas una hora antes de cada tratamiento de quimioterapia y  durante unos días después. La cantidad de días que las tome después de la  quimioterapia dependerá de los tipos de quimioterapia que esté recibiendo.  También dependerá de cómo reaccione al tratamiento. Si un tipo de medicina  antináuseas no le va bien, su doctor puede recetarle otra diferente. Tal vez  tenga que tomar más de un tipo de medicina antináuseas. Es posible que la <a href="http://www.cancer.gov/dictionary?CdrID=46724&lang=spanish" target="_blank"><strong>acupuntura</strong></a> también pueda ayudarle. Hable  con su doctor o enfermera sobre tratamientos para controlar las náuseas y los  vómitos causados por la quimioterapia. </p>
 <h3><strong>Qué hacer para controlarlos</strong></h3>
 <ul>
   <li><strong>Evite las náuseas</strong><strong>.</strong> Una manera de evitar vomitar es evitar las  náuseas. Trate de consumir alimentos y bebidas suaves y fáciles de digerir que  no le caigan mal. Estos incluyen galletas simples, pan tostado y gelatina. Para  aprender más, vea la lista de Comidas y bebidas que caen bien al estómago.</li>
@@ -2597,8 +2587,7 @@ Dígale  a su doctor o enfermera si su visión es más borrosa o sus  ojos est�
   <li><strong>Relájese antes del tratamiento.</strong> Es posible que sienta menos náuseas si se  relaja antes de cada tratamiento de quimioterapia. Puede realizar actividades  que disfrute, como meditar, hacer ejercicios de respiración profunda, imaginar  escenas o experiencias que le hagan sentir en paz,   leer un libro, escuchar música o tejer.</li>
   <li><strong>Si siente ganas de vomitar,  respire profunda y lentamente o tome aire fresco. </strong>También  podría distraerse al conversar con amigos o parientes, escuchar música o mirar  una película o la televisión.</li>
 </ul>
-<strong>Hable con su doctor o enfermera</strong><strong>.</strong> Su doctor le puede dar medicinas para ayudarle a prevenir las náuseas durante y  después de la quimioterapia. Tómese las medicinas exactamente como se lo diga  el doctor. Debe decirle a su doctor o enfermera si las medicinas no le hacen  efecto. También puede hablar con su doctor o enfermera sobre la acupuntura. Es  posible que la acupuntura pueda ayudarle a aliviar las náuseas y vómitos  causados por el tratamiento del cáncer.
-]]></bodyfield>
+<strong>Hable con su doctor o enfermera</strong><strong>.</strong> Su doctor le puede dar medicinas para ayudarle a prevenir las náuseas durante y  después de la quimioterapia. Tómese las medicinas exactamente como se lo diga  el doctor. Debe decirle a su doctor o enfermera si las medicinas no le hacen  efecto. También puede hablar con su doctor o enfermera sobre la acupuntura. Es  posible que la acupuntura pueda ayudarle a aliviar las náuseas y vómitos  causados por el tratamiento del cáncer.]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden causar náuseas y vómitos. Esta información puede ayudarle a entender estos problemas, saber por qué ocurren y cómo controlarlos.]]></long_description>
   </item>
   <item>
@@ -2684,7 +2673,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
     <bodyfield><![CDATA[<h3><strong>¿Qué son? ¿Por qué ocurren?</strong></h3>
 <p>Algunos  tipos de quimioterapia pueden causar cambios sexuales. Estos cambios son  diferentes en la mujer y en el hombre.</p>
 <p>En  la mujer, la quimioterapia puede causar daño en los ovarios, los cuales pueden  causar cambios en los niveles hormonales. Los cambios hormonales pueden causar  problemas como sequedad vaginal y menopausia temprana. </p>
-<p>En  el hombre, la quimioterapia puede causar   cambios hormonales, menos flujo de sangre al pene o daño a los nervios  que controlan el pene. Todos estos cambios sexuales pueden producir <a href=""http://www.cancer.gov/dictionary?CdrID=321376&lang=spanish"" target=""_blank""><strong>impotencia</strong></a> (también llamada disfunción  eréctil). </p>
+<p>En  el hombre, la quimioterapia puede causar   cambios hormonales, menos flujo de sangre al pene o daño a los nervios  que controlan el pene. Todos estos cambios sexuales pueden producir <a href="http://www.cancer.gov/dictionary?CdrID=321376&lang=spanish" target="_blank"><strong>impotencia</strong></a> (también llamada disfunción  eréctil). </p>
 <p>Que  usted tenga o no cambios sexuales durante la quimioterapia va a depender de si  ha tenido estos problemas antes, el tipo de quimioterapia que esté recibiendo,  su edad y si tiene o no alguna otra enfermedad. Algunos problemas tal vez  mejoren después de terminar la quimioterapia. Por ejemplo, si perdió el interés  en las relaciones sexuales durante la quimioterapia, es probable que vuelvan a  interesarle después de terminar el tratamiento.</p>
 <h3><strong>Los problemas en las MUJERES incluyen:</strong></h3>
 <ul>
@@ -2740,8 +2729,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   <li><strong>Hable de manera  abierta y honesta con su esposo/a o pareja.</strong> Hablen sobre sus sentimientos e inquietudes.</li>
   <li><strong>Busque nuevas  formas de compartir los momentos de intimidad con su pareja.</strong> Usted y su pareja podrían  demostrarse su amor mutuo de otras maneras mientras pasa por la quimioterapia.  Por ejemplo, si están teniendo relaciones sexuales con menos frecuencia tal vez  quieran abrazarse y acariciarse más, bañarse juntos, darse masajes el uno al  otro o probar otras actividades que les hagan sentirse cerca el uno del otro.</li>
   <li><strong>Hable con un  doctor, enfermera, trabajador social o consejero.</strong> Si usted y su pareja están  preocupados por los problemas sexuales, tal vez deban hablar con alguien que  les pueda ayudar. Por ejemplo un psiquiatra, un psicólogo, un trabajador  social, un consejero matrimonial, un terapeuta sexual, o un capellán, pastor o  sacerdote.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden causar cambios sexuales en hombres y mujeres. Esta información puede ayudarle a entender estos problemas, saber por qué ocurren y cómo controlarlos.]]></long_description>
   </item>
   <item>
@@ -2823,7 +2811,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   <li>Ardor  o dolor cuando comienza a orinar o después de vaciar la vejiga</li>
   <li>Necesidad  frecuente y urgente de orinar</li>
   <li>No  poder orinar</li>
-  <li>No  poder controlar el flujo de orina de la vejiga (<a href=""http://www.cancer.gov/diccionario?CdrID=46354"">incontinencia</a>)</li>
+  <li>No  poder controlar el flujo de orina de la vejiga (<a href="http://www.cancer.gov/diccionario?CdrID=46354">incontinencia</a>)</li>
   <li>Sangre  en la orina</li>
   <li>Fiebre</li>
   <li>Escalofríos  (temblores)</li>
@@ -2836,8 +2824,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   <li><strong>Beba  mucho líquido.</strong> Los  líquidos ayudan a eliminar la quimioterapia de la vejiga y los riñones. Vea las  listas de Líquidos claros y Alimentos para una dieta líquida. </li>
   <li><strong>Limite  las bebidas que contengan cafeína </strong>(por ejemplo, té negro, café y algunos productos de  cola).</li>
   <li><strong>Hable con su doctor o enfermera si tiene alguno de  los problemas mencionados arriba.</strong></li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
     <long_description><![CDATA[Algunos tipos de quimioterapia pueden dañar las células de los riñones y la vejiga. Esta información puede ayudarle a entender estos problemas, saber por qué ocurren y cómo controlarlos.]]></long_description>
   </item>
   <item>
@@ -2935,7 +2922,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
     <long_title><![CDATA[Cómo superar los efectos secundarios de la radioterapia – Caída del cabello]]></long_title>
     <short_title><![CDATA[Los efectos secundarios de la radioterapia – Caída del cabello]]></short_title>
     <bodyfield><![CDATA[<h3><strong>¿Qué es?</strong></h3>
-<p>La caída del cabello  consiste en la caída de parte o todo el cabello. También se llama <a href=""http://www.cancer.gov/diccionario?CdrID=44642""><strong>alopecia</strong></a>.</p>
+<p>La caída del cabello  consiste en la caída de parte o todo el cabello. También se llama <a href="http://www.cancer.gov/diccionario?CdrID=44642"><strong>alopecia</strong></a>.</p>
 <h3><strong>¿Por qué ocurre?</strong></h3>
 <p>La  radioterapia puede causar la caída del cabello porque daña las células que  crecen rápidamente, como las de las raíces del cabello.</p>
 <p>La  radioterapia causa la caída del cabello únicamente en la parte del cuerpo que  está recibiendo tratamiento. Esto no es lo mismo que la caída del cabello por  la quimioterapia, que sucede en todo el cuerpo. Es posible que se le caiga  parte o todo el cabello de la cabeza si recibe radiación en el cerebro. Pero si  recibe radiación en la cadera es posible que solamente se le caiga el vello  púbico (entre las piernas).</p>
@@ -2956,8 +2943,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
 <ul>
   <li><strong>Protéjase el cuero  cabelludo.</strong> Después  de la caída del cabello, es posible que el cuero cabelludo quede sensible.  Cuando esté al aire libre, cúbrase la cabeza con un sombrero, turbante o  pañuelo de cabeza. Trate de no estar en lugares con temperaturas muy bajas o  muy altas. Esto significa evitar el sol directo, las lámparas de rayos  ultravioletas y el aire muy frío.</li>
   <li><strong>Manténgase abrigado.</strong> El cabello le ayuda a mantenerse  abrigado, así que pudiera sentir más frío cuando se le caiga. Puede permanecer  más abrigado si usa sombrero, turbante, pañuelo de cabeza o una peluca.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
   </item>
   <item>
     <mig_id>es_cancer_tratamiento_efectossecundarios_radioterapia_boca</mig_id>
@@ -2971,7 +2957,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
 <p>La radioterapia que se recibe en la cabeza o el cuello puede causar problemas  tales como:</p>
 <ul>
   <li>Lesiones en la boca (pequeños cortes o úlceras en la  boca)</li>
-  <li>Boca seca (también llamada <a href=""http://www.cancer.gov/diccionario?CdrID=44537""><strong>xerostomía</strong></a>) y garganta seca</li>
+  <li>Boca seca (también llamada <a href="http://www.cancer.gov/diccionario?CdrID=44537"><strong>xerostomía</strong></a>) y garganta seca</li>
   <li>Pérdida del sentido del gusto</li>
   <li>Caries</li>
   <li>Cambios en el sentido del gusto (como sabor metálico  cuando come carne)</li>
@@ -2990,8 +2976,8 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   <li><strong>Revísese  la boca todos los días.</strong>&nbsp;Así podrá ver o sentir los problemas tan pronto como  empiecen. Los problemas pueden incluir lesiones en la boca, manchas blancas o  infecciones.</li>
   <li><strong>Mantenga  la boca húmeda.</strong>&nbsp;Puede:</li>
 </ul>
-<ul type=""disc"">
-  <ul type=""circle"">
+<ul type="disc">
+  <ul type="circle">
     <li>Beber sorbos de agua a menudo durante el día</li>
     <li>Chupar pedacitos de hielo</li>
     <li>Mascar goma (chicle) sin azúcar (&quot;sugar free&quot; en inglés) o        chupar caramelos duros sin azúcar (&quot;sugar free&quot; en inglés)</li>
@@ -3000,7 +2986,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   </ul>
 </ul>
 <ul>
-  <li><strong>Límpiese la boca, los dientes, las encías  y la lengua.</strong><strong> </strong></li>
+  <li><strong>Límpiese la boca, los dientes, las encías  y la lengua.</strong></li>
   <ul>
     <li>Cepíllese los dientes, las encías y la  lengua después de cada comida y antes de acostarse.</li>
     <li>Use un cepillo de dientes extra suave  (&quot;extra soft&quot; en inglés). Puede suavizar las cerdas del cepillo  poniéndolas bajo el chorro de agua tibia antes de cepillarse.</li>
@@ -3012,7 +2998,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
     <li>Si tiene dentadura postiza, asegúrese de  que quede bien. También limite el tiempo de su uso cada día. Si baja de peso,  es posible que su dentista necesite ajustarla.</li>
     <li>Todos los días, remoje y cepille su  dentadura postiza para mantenerla limpia.</li>
   </ul>
-  <li><strong>Tenga cuidado con lo que come si le duele  la boca.</strong><strong> </strong></li>
+  <li><strong>Tenga cuidado con lo que come si le duele  la boca.</strong></li>
   <ul>
     <li>Elija alimentos que sean fáciles de  masticar y tragar.</li>
     <li>Tome bocados pequeños. Mastique lentamente.  Beba a sorbos los líquidos con las comidas.</li>
@@ -3020,7 +3006,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
     <li>Humedezca y suavice los alimentos con  jugo de carne (&quot;gravy&quot; en inglés), salsa, caldo, yogur u otros líquidos.</li>
     <li>Coma alimentos que estén tibios o a  temperatura ambiente.</li>
   </ul>
-  <li><strong>Evite las cosas que puedan lastimar,  raspar o quemarle la boca como:</strong><strong> </strong></li>
+  <li><strong>Evite las cosas que puedan lastimar,  raspar o quemarle la boca como:</strong></li>
   <ul>
     <li>Alimentos afilados o crujientes, como  tacos hechos con tortillas fritas, papitas y chips de maíz</li>
     <li>Alimentos de temperatura caliente</li>
@@ -3037,8 +3023,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   <li><strong>Medicinas.</strong>&nbsp;Pregúntele  a su doctor o enfermera sobre medicinas que puedan proteger las glándulas  salivales y las partes húmedas dentro de la boca.</li>
   <li><strong>Llame  a su doctor o enfermera cuando le duela la boca.</strong>&nbsp;Existen  medicinas y otros productos, como geles bucales, que pueden ayudar a controlar  el dolor en la boca.</li>
   <li><strong>Deberá  tener cuidado adicional con su boca por el resto de su vida.</strong>&nbsp;Pregúntele  al dentista qué tan a menudo debe hacerse un chequeo dental. También pregunte  sobre la mejor manera de cuidarse los dientes y la boca después de terminar la  radioterapia.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
   </item>
   <item>
     <mig_id>es_cancer_tratamiento_efectossecundarios_radioterapia_nauseasyvomitos</mig_id>
@@ -3085,7 +3070,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
 </ul>
 <h4><strong>Los  cambios en los hombres incluyen, por ejemplo:</strong></h4>
 <ul>
-  <li><a href=""http://www.cancer.gov/diccionario?CdrID=321376""><strong>Impotencia</strong></a> (también llamada <a href=""http://www.cancer.gov/diccionario?CdrID=321372""><strong>disfunción eréctil</strong></a>), lo que significa no poder tener o  mantener una erección</li>
+  <li><a href="http://www.cancer.gov/diccionario?CdrID=321376"><strong>Impotencia</strong></a> (también llamada <a href="http://www.cancer.gov/diccionario?CdrID=321372"><strong>disfunción eréctil</strong></a>), lo que significa no poder tener o  mantener una erección</li>
   <li>No  poder embarazar a una mujer después de terminar la radioterapia. Esto puede  ocurrir si hay una menor cantidad de semen o menor eficacia del esperma</li>
 </ul>
 <h3><strong>¿Por qué ocurren?</strong></h3>
@@ -3100,7 +3085,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   <li><strong>Problemas sexuales.</strong> Existe una posibilidad de que usted tenga  problemas sexuales. Pero también es posible que no los tenga. Su doctor o  enfermera pueden decirle los efectos secundarios que puede esperar y sugerirle  maneras de controlarlos.</li>
   <li><strong>Control de la natalidad.</strong> Es muy importante que una mujer no quede  embarazada mientras recibe radioterapia. La radioterapia puede hacerle daño al  feto en todas las etapas del embarazo. Si aún no ha tenido la menopausia, hable  con su doctor o enfermera sobre métodos anticonceptivos.</li>
   <li><strong>Embarazo.</strong> Dígale a su doctor o enfermera si ya está embarazada.</li>
-  <li><strong>Dilatación de la vagina.</strong> La estenosis vaginal es un problema común en las  mujeres que reciben radioterapia en la pelvis. Puede causar dolor durante las  relaciones sexuales. Puede ser útil estirar la vagina usando un <a href=""http://www.cancer.gov/diccionario?CdrID=46449""><strong>dilatador</strong></a><strong>. </strong>Éste es un instrumento que estira  suavemente el tejido de la vagina. Pregúntele a su doctor o enfermera dónde  obtener un dilatador y cómo usarlo. </li>
+  <li><strong>Dilatación de la vagina.</strong> La estenosis vaginal es un problema común en las  mujeres que reciben radioterapia en la pelvis. Puede causar dolor durante las  relaciones sexuales. Puede ser útil estirar la vagina usando un <a href="http://www.cancer.gov/diccionario?CdrID=46449"><strong>dilatador</strong></a><strong>. </strong>Éste es un instrumento que estira  suavemente el tejido de la vagina. Pregúntele a su doctor o enfermera dónde  obtener un dilatador y cómo usarlo. </li>
   <li><strong>Lubricación.</strong> Una vez al día, use una loción especial (como el  producto Replens®) para mantener la vagina húmeda. Cuando tenga relaciones  sexuales, use lubricante a base de agua o aceite mineral (como los productos  K-Y Jelly® o Astroglide®).</li>
   <li><strong>Relaciones sexuales.</strong> Pregúntele a su doctor o enfermera si está bien  tener relaciones sexuales durante la radioterapia. La mayoría de las mujeres  puede tenerlas. Pero es mejor preguntar y estar segura. Si la sequedad vaginal  le causa dolor al tener relaciones sexuales, puede usar un lubricante a base de  agua o aceite mineral.</li>
 </ul>
@@ -3109,8 +3094,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   <li><strong>Fertilidad.</strong> Antes de comenzar la radioterapia, dígale a su  doctor o enfermera si piensa que querría tener hijos en el futuro. Antes de que  comience el tratamiento, pueden hablar con usted sobre cómo mantener la fertilidad.  Un ejemplo es utilizar los servicios de un banco de esperma (&quot;sperm  bank&quot; en inglés). El esperma se congela y se puede usar en el futuro para  lograr el embarazo en una mujer con la ayuda de doctores que usan métodos  especiales. Será necesario recoger su esperma antes de que comience la  radioterapia si quiere tener hijos en el futuro.</li>
   <li><strong>Impotencia.</strong> Su doctor o enfermera puede decirle si es posible  que usted quede impotente y cuánto puede durar esto. Su doctor puede recetarle  medicinas u otros tratamientos que quizás le ayuden.</li>
   <li><strong>Relaciones sexuales.</strong> Pregunte si está bien tener relaciones sexuales  durante la radioterapia. La mayoría de los hombres puede tenerlas, pero es  mejor preguntar y estar seguro.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
   </item>
   <item>
     <mig_id>es_cancer_tratamiento_efectossecundarios_radioterapia_piel</mig_id>
@@ -3175,7 +3159,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
     <long_title><![CDATA[Cómo superar los efectos secundarios de la radioterapia- Cambios en la garganta]]></long_title>
     <short_title><![CDATA[Los efectos secundarios de la radioterapia- Cambios en la garganta]]></short_title>
     <bodyfield><![CDATA[<h3><strong>¿Qué  son?</strong></h3>
-<p>La  radioterapia en el cuello o el pecho puede hacer que las paredes de la garganta  se inflamen y se vuelvan muy sensibles. A esto se le llama <a href=""http://www.cancer.gov/diccionario?CdrID=44947""><strong>esofaguitis</strong></a> (&quot;esophagitis&quot; en inglés). Es posible que se sienta como si tuviera  un nudo en la garganta o que le arda el pecho o la garganta. Tal vez también se  le haga difícil tragar.</p>
+<p>La  radioterapia en el cuello o el pecho puede hacer que las paredes de la garganta  se inflamen y se vuelvan muy sensibles. A esto se le llama <a href="http://www.cancer.gov/diccionario?CdrID=44947"><strong>esofaguitis</strong></a> (&quot;esophagitis&quot; en inglés). Es posible que se sienta como si tuviera  un nudo en la garganta o que le arda el pecho o la garganta. Tal vez también se  le haga difícil tragar.</p>
 <h3><strong>¿Por qué ocurren?</strong></h3>
 <p>La  radioterapia en el cuello o el pecho no sólo mata las células cancerosas sino  que también daña las células sanas de las paredes de la garganta. Por eso puede  causar cambios en la garganta. La posibilidad de que le ocurran a usted estos  cambios depende de cuánta radiación esté recibiendo, si también está recibiendo  quimioterapia o si usa tabaco o bebe alcohol mientras recibe la radioterapia.</p>
 <h3><strong>¿Cuánto duran?</strong></h3>
@@ -3206,8 +3190,7 @@ o Intente respirar profundamente, hacer yoga o tratar otras maneras de relajarse
   </ul>
   <li><strong>Hable con  un dietista o nutricionista.</strong> Él o ella puede ayudarle a que coma suficiente para que su peso se  mantenga igual. Esto podría incluir que usted escoja alimentos que tengan muchas  calorías y proteínas y alimentos que sean fáciles de tragar.</li>
   <li><strong>Hable con  su doctor o enfermera.</strong> Dígale a su doctor o enfermera si nota cambios en la garganta. Por  ejemplo, debe dejarle saber si se le hace difícil tragar, siente que se está  ahogando o tose mientras come o bebe algo. También dígale si tiene dolor en la  garganta o baja de peso. Su doctor le puede recetar medicinas que podrían  ayudar a aliviar los síntomas. Por ejemplo, podría recetarle antiácidos,  gelatinas (geles) que recubren la garganta y medicinas para el dolor.</li>
-</ul>
-]]></bodyfield>
+</ul>]]></bodyfield>
   </item>
   <item>
     <mig_id>es_cancer_tratamiento_efectossecundarios_radioterapia_urinarios-vejiga</mig_id>
