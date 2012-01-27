@@ -52,7 +52,6 @@
     <contenttype>cgvConfigurationFile</contenttype>
     <folder>/configuration/cde</folder>
     <long_title><![CDATA[CDE]]></long_title>
-    <pretty_url_name><![CDATA[CDEConfig]]></pretty_url_name>
     <sys_title><![CDATA[CDE]]></sys_title>
   </item>
   <item>
@@ -263,7 +262,6 @@
     <contenttype>nciAppWidget</contenttype>
     <folder>/shareditems</folder>
     <long_title><![CDATA[SiteWideSearchResults]]></long_title>
-    <pretty_url_name><![CDATA[SiteWideSearchResults]]></pretty_url_name>
     <snippet_control_path><![CDATA[~/SnippetTemplates/SiteWideSearch.ascx]]></snippet_control_path>
   </item>
 </list>
