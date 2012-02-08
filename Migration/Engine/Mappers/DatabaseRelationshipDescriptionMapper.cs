@@ -21,11 +21,8 @@ namespace MigrationEngine.Mappers
 
             RelationshipDescription description = new RelationshipDescription();
 
-            description.OwnerMigrationID = row.Field<Guid>("ownerid");
-            description.OwnerContentType = row.Field<String>("ownercontenttype");
-
-            description.DependentMigrationID = row.Field<Guid>("dependentid");
-            description.DependentContentType = row.Field<String>("dependentcontenttype");
+            description.OwnerUniqueIdentifier = row.Field<String>("ownerid");
+            description.DependentUniqueIdentifier = row.Field<String>("dependentid");
 
             description.SlotName = row.Field<String>("slot");
             description.TemplateName= row.Field<String>("template");

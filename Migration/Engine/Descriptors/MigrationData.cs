@@ -9,7 +9,7 @@ namespace MigrationEngine.Descriptors
     /// <summary>
     /// Base class 
     /// </summary>
-    public abstract class MigrationData : IMigrationData
+    public abstract class MigrationData
     {
         /// <summary>
         /// Storage for migration object data fields to be stored in Percussion.

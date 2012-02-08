@@ -1,1 +1,0 @@
-..\..\Daisy\bin\Debug\daisy.exe proteomics.xml

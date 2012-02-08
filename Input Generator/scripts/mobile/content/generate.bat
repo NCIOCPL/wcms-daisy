@@ -1,0 +1,1 @@
+..\..\..\Blu82\bin\Debug\blu82.exe mobile_content_inputs.xls

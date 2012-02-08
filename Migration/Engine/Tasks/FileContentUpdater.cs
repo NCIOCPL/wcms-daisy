@@ -55,14 +55,15 @@ namespace MigrationEngine.Tasks
                         NciFile nciFile = new NciFile(fileInfo);
 
                         // Look up the content item.
-                        PercussionGuid precID = PercWrapper.GetPercussionIDFromMigID(controller, item.MigrationID, item.ContentType);
+                        //PercussionGuid percID = PercWrapper.GetPercussionIDFromMigID(controller, item.UniqueIdentifier, item.ContentType);
+                        PercussionGuid percID = new PercussionGuid(LookupMoniker(item.UniqueIdentifier, controller).ContentID);
                         string message = "";
-                        if (precID == PercWrapper.ContentItemNotFound)
+                        if (percID == PercWrapper.ContentItemNotFound)
                         {
                             logger.LogTaskItemWarning(item, "Content item not found", item.Fields);
                             continue;
                         }
-                        else if (precID == PercWrapper.TooManyContentItemsFound)
+                        else if (percID == PercWrapper.TooManyContentItemsFound)
                         {
                             logger.LogTaskItemWarning(item, "Too many matching content items found", item.Fields);
                             continue;
@@ -71,7 +72,7 @@ namespace MigrationEngine.Tasks
                         {
                             // Must the right number of items.
                             // Update the copy in the CMS.
-                            PercWrapper.UpdateItemWrapper(controller, precID, nciFile.FieldSet, out message);
+                            PercWrapper.UpdateItemWrapper(controller, percID, nciFile.FieldSet, out message);
                             if (!string.IsNullOrEmpty(message))
                             {
                                 logger.LogTaskItemWarning(item, message, item.Fields);

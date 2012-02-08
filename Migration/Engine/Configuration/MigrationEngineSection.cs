@@ -20,5 +20,11 @@ namespace MigrationEngine.Configuration
         {
             get { return (SiteHostNameElement)base["siteHostName"]; }
         }
+
+        [ConfigurationProperty("monikerStoreProvider", IsRequired = true)]
+        public SingleValueElement MonikerStoreProviderName
+        {
+            get { return (SingleValueElement)base["monikerStoreProvider"]; }
+        }
     }
 }

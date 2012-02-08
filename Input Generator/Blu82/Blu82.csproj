@@ -59,7 +59,9 @@
     <Compile Include="ContentTypes\DaisyCollection.cs" />
     <Compile Include="ContentTypes\DaisyContentItem.cs" />
     <Compile Include="ContentTypes\DaisyFolder.cs" />
+    <Compile Include="ContentTypes\DaisyFolderLink.cs" />
     <Compile Include="ContentTypes\DaisyRelationships.cs" />
+    <Compile Include="ContentTypes\DaisyTranslation.cs" />
     <Compile Include="WebFileInfo.cs" />
     <Compile Include="ImageInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

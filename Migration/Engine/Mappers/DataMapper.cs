@@ -23,7 +23,7 @@ namespace MigrationEngine.Mappers
     public abstract class DataMapper<ReturnType>
     {
         // Common field names.
-        protected const string MigIDField = Constants.Fields.MIGRATION_ID;
+        protected const string UniqueIDField = Constants.Fields.MIGRATION_ID;
         protected const string ContentTypeField = Constants.Fields.CONTENT_TYPE;
         protected const string CommunityNameField = Constants.Fields.COMMUNITY_NAME;
         protected const string PathNameField = Constants.Fields.PATH;

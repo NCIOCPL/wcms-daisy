@@ -74,6 +74,8 @@ namespace MigrationEngine.Tasks
                             {
                                 logger.LogTaskItemWarning(item, message, item.Fields);
                             }
+
+                            MonikerStore.Add(item.UniqueIdentifier, contentID, item.ContentType);
                         }
                         catch (Exception ex)
                         {

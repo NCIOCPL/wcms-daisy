@@ -1,1 +1,1 @@
-..\Daisy\bin\Debug\daisy.exe cancer-imaging.xml
+..\Daisy\bin\Debug\daisy.exe .\mobile\mobile_inputs.xml

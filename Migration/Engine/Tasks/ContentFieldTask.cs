@@ -34,7 +34,7 @@ namespace MigrationEngine.Tasks
             CMSController controller, IMigrationLog logger)
         {
             Dictionary<string, string> processedFields =
-                            FieldHtmlRectifier.ConvertToXHtml(contentItem.MigrationID, contentItem.Fields, logger, controller);
+                            FieldHtmlRectifier.ConvertToXHtml(contentItem.UniqueIdentifier, contentItem.Fields, logger, controller);
 
             if (processedFields.ContainsKey(Constants.Fields.PRETTY_URL))
             {

@@ -50,14 +50,16 @@
     <Compile Include="Configuration\CommunityListElement.cs" />
     <Compile Include="Configuration\CommunityElement.cs" />
     <Compile Include="Configuration\MigrationEngineSection.cs" />
+    <Compile Include="Configuration\SingleValueElement.cs" />
     <Compile Include="Configuration\SiteHostNameElement.cs" />
     <Compile Include="constants.cs" />
     <Compile Include="Descriptors\ContentDescriptionBase.cs" />
     <Compile Include="Descriptors\ContentTypeDescription.cs" />
+    <Compile Include="Descriptors\FolderLinkDescription.cs" />
+    <Compile Include="Descriptors\TranslationDescription.cs" />
     <Compile Include="Descriptors\UpdateFileItem.cs" />
     <Compile Include="Descriptors\FolderDescription.cs" />
     <Compile Include="Descriptors\FullItemDescription.cs" />
-    <Compile Include="Descriptors\IMigrationData.cs" />
     <Compile Include="Descriptors\UpdateContentItem.cs" />
     <Compile Include="Descriptors\MigrationData.cs" />
     <Compile Include="Descriptors\RelationshipDescription.cs" />
@@ -67,6 +69,9 @@
     <Compile Include="DataAccess\XmlDataGetter.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="IMigrationLog.cs" />
+    <Compile Include="Mappers\XmlTranslationDescriptionMapper.cs" />
+    <Compile Include="Mappers\XmlFolderLinkDescriptionMapper.cs" />
+    <Compile Include="Mappers\XmlUpdateItemMapper.cs" />
     <Compile Include="Mappers\XmlFolderDescriptionMapper.cs" />
     <Compile Include="Mappers\XmlRelationshipDescriptionMapper.cs" />
     <Compile Include="Mappers\XmlUpdateFileMapper.cs" />
@@ -89,6 +94,7 @@
     <Compile Include="Tasks\FileContentUpdater.cs" />
     <Compile Include="Tasks\FolderCreatorBase.cs" />
     <Compile Include="Tasks\HealthCheck.cs" />
+    <Compile Include="Tasks\LinkToFolder.cs" />
     <Compile Include="Tasks\PurgeContent.cs" />
     <Compile Include="Tasks\RelationshipCreatorBase.cs" />
     <Compile Include="Tasks\ContentUpdaterBase.cs" />
@@ -97,9 +103,11 @@
     <Compile Include="Tasks\IMigrateTask.cs" />
     <Compile Include="Tasks\MigrationTask.cs" />
     <Compile Include="Tasks\RelationshipCreator.cs" />
+    <Compile Include="Tasks\Reset.cs" />
     <Compile Include="Tasks\Transitioner.cs" />
     <Compile Include="Tasks\TransitionerBase.cs" />
     <Compile Include="Tasks\ContentUpdater.cs" />
+    <Compile Include="Tasks\TranslationRelationshipCreator.cs" />
     <Compile Include="Utilities\HtmlRectifier.cs" />
     <Compile Include="Utilities\PercWrapper.cs" />
   </ItemGroup>
@@ -111,6 +119,10 @@
     <ProjectReference Include="..\HtmlAgilityPack\HtmlAgilityPack VS2008.csproj">
       <Project>{193BB801-054F-4729-9D5D-FCE1E32594BF}</Project>
       <Name>HtmlAgilityPack VS2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonikerProviders\MonikerProviders.csproj">
+      <Project>{98B281AE-E7D3-4617-99D4-88DC8A370190}</Project>
+      <Name>MonikerProviders</Name>
     </ProjectReference>
     <ProjectReference Include="..\Munger\Munger.csproj">
       <Project>{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}</Project>
@@ -124,6 +136,9 @@
       <Project>{898FF17C-C94A-4D85-8AAD-88764B72CFAE}</Project>
       <Name>NCILibrary.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Descriptors\ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

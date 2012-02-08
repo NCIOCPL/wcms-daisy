@@ -41,7 +41,7 @@ namespace MigrationEngine.Utilities
             return id;
         }
 
-        public static long CreateItemWrapper(CMSController controller, string contentType, Dictionary<string, string> fields,IEnumerable<ChildFieldSet> childFields, string folder, out string warningMessage)
+        public static long CreateItemWrapper(CMSController controller, string contentType, Dictionary<string, string> fields, IEnumerable<ChildFieldSet> childFields, string folder, out string warningMessage)
         {
             warningMessage = "";
             List<string> invalidFields = new List<string>();
@@ -68,7 +68,7 @@ namespace MigrationEngine.Utilities
             //ContentItemForUpdating[] item = { new ContentItemForUpdating(id, (FieldSet)fields) };
             List<ContentItemForUpdating> item = new List<ContentItemForUpdating>();
             item.Add(new ContentItemForUpdating(id.ID, fields));
-            
+
             List<long> returned = controller.UpdateContentItemList(item, fieldName => { invalidFields.Add(fieldName); });
 
             if (invalidFields.Count > 0)
@@ -268,10 +268,15 @@ namespace MigrationEngine.Utilities
 
         public static PercussionGuid GetNavon(CMSController controller, string folder, out string message)
         {
+            folder = folder.Trim();
+
+            string contentType = (folder == "/") ? "rffNavTree" : "rffNavon";
+            string contentTypeName = (folder == "/") ? "NavTree" : "Navon";
+
             try
             {
                 message = "";
-                PercussionGuid[] ids = controller.SearchForContentItems("rffNavon", folder, new Dictionary<string, string> { });
+                PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, new Dictionary<string, string> { });
 
                 if (ids.Count<PercussionGuid>() == 1)
                     return ids[0];
@@ -295,29 +300,12 @@ namespace MigrationEngine.Utilities
 
         public static PercussionGuid GetNavTree(CMSController controller, out string message)
         {
-            try
-            {
-                message = "";
-                PercussionGuid[] ids = controller.SearchForContentItems("rffNavTree", "/", new Dictionary<string, string> { });
+            return GetNavon(controller, "/", out message);
+        }
 
-                if (ids.Count<PercussionGuid>() == 1)
-                    return ids[0];
-                else if (ids.Count<PercussionGuid>() == 0)
-                {
-                    message = "Navtree not found in /.";
-                    return ContentItemNotFound;
-                }
-                else
-                {
-                    message = string.Format("More than one Navon found in /.");
-                    return TooManyContentItemsFound;
-                }
-            }
-            catch (CMSSoapException ex)
-            {
-                message = ex.InnerException.Message;
-                return CmsErrorOccured;
-            }
+        public static void CreateTranslationRelationship(CMSController controller, PercussionGuid original, PercussionGuid translation)
+        {
+            controller.CreateRelationship(original, translation, CMSController.TranslationRelationshipType);
         }
 
         #region Disabled Code Block 3

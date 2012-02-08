@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>The third page</mig_id>
+    <community>site</community>
+    <contenttype>nciGeneral</contenttype>
+    <folder>/migtest/folder1</folder>
+    <long_title><![CDATA[Page 3]]></long_title>
+    <short_title><![CDATA[Page 3]]></short_title>
+    <bodyfield><![CDATA[This is the third page]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>The thrid page</mig_id>
+    <community>site</community>
+    <contenttype>nciGeneral</contenttype>
+    <folder>/migtest/folder1</folder>
+    <long_title><![CDATA[Page 4]]></long_title>
+    <short_title><![CDATA[Page 4]]></short_title>
+    <bodyfield><![CDATA[I am the fourth page, not the third one.]]></bodyfield>
+  </item>
+</list>

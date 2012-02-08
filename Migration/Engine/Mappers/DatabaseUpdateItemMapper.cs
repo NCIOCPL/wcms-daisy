@@ -21,7 +21,7 @@ namespace MigrationEngine.Mappers
 
             UpdateContentItem description = new UpdateContentItem();
 
-            description.MigrationID = row.Field<Guid>(MigIDField);
+            description.UniqueIdentifier = row.Field<String>(UniqueIDField);
             description.ContentType = row.Field<string>(ContentTypeField);
 
             CopyFields(row, description.Fields);

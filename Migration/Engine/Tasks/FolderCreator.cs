@@ -5,6 +5,7 @@ using System.Text;
 
 using NCI.CMS.Percussion.Manager.CMS;
 
+using MonikerProviders;
 using MigrationEngine.Descriptors;
 using MigrationEngine.DataAccess;
 using MigrationEngine.Utilities;
@@ -68,6 +69,8 @@ namespace MigrationEngine.Tasks
                         }
 
                         PercWrapper.UpdateItemWrapper(controller, navonID, new FieldSet(folder.Fields), out message);
+
+                        MonikerStore.Add(folder.Path, navonID.ID, folder.ContentType);
 
                         if (!string.IsNullOrEmpty(message))
                         {

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <folder>/migtest/folder1</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/migtest/folder2</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/migtest/folder3</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+
+</list>

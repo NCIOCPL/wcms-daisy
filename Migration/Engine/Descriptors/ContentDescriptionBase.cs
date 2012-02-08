@@ -9,15 +9,15 @@ namespace MigrationEngine.Descriptors
     abstract public class ContentDescriptionBase : MigrationData
     {
         public String ContentType { get; set; }
-        public Guid MigrationID { get; set; }
+        public String UniqueIdentifier { get; set; }
 
         protected override string PropertyString
         {
             get
             {
-                string fmt = @"<MigrationID value=""{0}""/><ContentType value=""{1}""/>";
+                string fmt = @"<UniqueIdentifier value=""{0}""/><ContentType value=""{1}""/>";
 
-                return string.Format(fmt, MigrationID, ContentType);
+                return string.Format(fmt, UniqueIdentifier, ContentType);
             }
         }
     }

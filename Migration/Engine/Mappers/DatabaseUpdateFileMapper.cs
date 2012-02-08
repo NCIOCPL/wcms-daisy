@@ -21,7 +21,7 @@ namespace MigrationEngine.Mappers
 
             UpdateFileItem description = new UpdateFileItem();
 
-            description.MigrationID = row.Field<Guid>(MigIDField);
+            description.UniqueIdentifier = row.Field<String>(UniqueIDField);
             description.ContentType = row.Field<string>(ContentTypeField);
 
             description.OriginalUrl = row.Field<string>("url");

@@ -256,7 +256,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // If an error occurs, rollback item creation.
                 DeleteItemList(idList.ToArray());
@@ -609,6 +609,16 @@ namespace NCI.CMS.Percussion.Manager.CMS
         }
 
         /// <summary>
+        /// Associates the specified Content Items with the specified Folder.
+        /// </summary>
+        /// <param name="folderPath">Folder to associate the content items with.</param>
+        /// <param name="idCollection">An array of content ids.</param>
+        public void AddFolderChildren(String folderPath, PercussionGuid[] idCollection)
+        {
+            PSWSUtils.AddFolderChildren(_contentService, siteRootPath + folderPath, Array.ConvertAll(idCollection, id => { return (long)id.ID; }));
+        }
+
+        /// <summary>
         /// Finds the content items contained in a folder.
         /// </summary>
         /// <param name="path">Path to the folder being investigated.</param>
@@ -795,6 +805,27 @@ namespace NCI.CMS.Percussion.Manager.CMS
             return PSWSUtils.LoadItems(_contentService, itemIDList);
         }
 
+        public bool VerifySingleItemExists(PercussionGuid itemID)
+        {
+            return VerifyItemsExist(new PercussionGuid[] { itemID });
+        }
+
+        public bool VerifySingleItemExists(long itemID)
+        {
+            return VerifyItemsExist(new long[] { itemID });
+        }
+
+        public bool VerifyItemsExist(PercussionGuid[] itemIDList)
+        {
+            long[] idList = Array.ConvertAll(itemIDList, item => (long)item.ID);
+            return PSWSUtils.VerifyItemsExist(_contentService, idList);
+        }
+
+        public bool VerifyItemsExist(long[] itemIDList)
+        {
+            return PSWSUtils.VerifyItemsExist(_contentService, itemIDList);
+        }
+
         public PercussionGuid[] SaveContentItems(PSItem[] itemList)
         {
             long[] returnIDs = PSWSUtils.SaveItem(_contentService, itemList);
@@ -894,6 +925,11 @@ namespace NCI.CMS.Percussion.Manager.CMS
             {
                 PSWSUtils.ReleaseFromEdit(_contentService, parentCheckoutStatus);
             }
+        }
+
+        public PSRelationship CreateRelationship(PercussionGuid parentItemID, PercussionGuid childItemID, string relationshipType)
+        {
+            return CreateRelationship(parentItemID.ID, childItemID.ID, relationshipType);
         }
 
         public PSRelationship CreateRelationship(long parentItemID, long childItemID, string relationshipType)

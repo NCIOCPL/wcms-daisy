@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MigrationTaskList>
+    <MigrationTask xsi:type="Reset" Name="Reset system" MonikerReset="true"></MigrationTask>
+
+    <MigrationTask xsi:type="FolderCreator" Name="Create folders">
+      <DataGetter xsi:type="XmlDataGetterOfFolderDescription" FileName=".\folder.xml">
+        <Mapper xsi:type="XmlFolderDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="GeneralContentCreator" Name="Site Content">
+      <DataGetter xsi:type="XmlDataGetterOfFullItemDescription" FileName=".\siteContentItems.xml">
+        <Mapper xsi:type="XmlFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+	<MigrationTask xsi:type="LinkToFolder" Name="Share items to a folder">
+      <DataGetter xsi:type="XmlDataGetterOfFolderLinkDescription" FileName="shareTo.xml">
+        <Mapper xsi:type="XmlFolderLinkDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+    <MigrationTask xsi:type="RelationshipCreator" Name="Create relationships">
+      <DataGetter xsi:type="XmlDataGetterOfRelationshipDescription" FileName="relationships.xml">
+        <Mapper xsi:type="XmlRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+	<MigrationTask xsi:type="TranslationRelationshipCreator" Name="Create translations">
+      <DataGetter xsi:type="XmlDataGetterOfTranslationDescription" FileName="translations.xml">
+        <Mapper xsi:type="XmlTranslationDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+
+	</MigrationTaskList>
+</Migration>

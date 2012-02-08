@@ -45,31 +45,29 @@ namespace MigrationEngine.Tasks
                         bool error = false;
                         string message = string.Empty; ;
 
-                        PercussionGuid ownerItem =
-                            PercWrapper.GetPercussionIDFromMigID(controller, relation.OwnerMigrationID, relation.OwnerContentType);
-                        PercussionGuid dependentItem =
-                            PercWrapper.GetPercussionIDFromMigID(controller, relation.DependentMigrationID, relation.DependentContentType);
+                        PercussionGuid ownerItem = new PercussionGuid(LookupMoniker(relation.OwnerUniqueIdentifier, controller).ContentID);
+                        PercussionGuid dependentItem = new PercussionGuid(LookupMoniker(relation.DependentUniqueIdentifier, controller).ContentID);
 
                         if (ownerItem == PercWrapper.ContentItemNotFound)
                         {
-                            message = string.Format("No content item found for relationship owner with migid = {{{0}}}.", relation.OwnerMigrationID);
+                            message = string.Format("No content item found for relationship owner with migid = {{{0}}}.", relation.OwnerUniqueIdentifier);
                             error = true;
                         }
                         else if (ownerItem == PercWrapper.TooManyContentItemsFound)
                         {
-                            message = string.Format("Multiple content items found for relationship owner with migid = {{{0}}}.", relation.OwnerMigrationID);
+                            message = string.Format("Multiple content items found for relationship owner with migid = {{{0}}}.", relation.OwnerUniqueIdentifier);
                             error = true;
                         }
 
                         if (dependentItem == PercWrapper.ContentItemNotFound)
                         {
-                            message = string.Format("No content item found for relationship dependent with migid = {{{0}}}.", relation.DependentMigrationID);
+                            message = string.Format("No content item found for relationship dependent with migid = {{{0}}}.", relation.DependentUniqueIdentifier);
                             logger.LogTaskItemError(relation, message, relation.Fields);
                             error = true;
                         }
                         else if (dependentItem == PercWrapper.TooManyContentItemsFound)
                         {
-                            message = string.Format("Multiple content items found for relationship dependent with migid = {{{0}}}.", relation.DependentMigrationID);
+                            message = string.Format("Multiple content items found for relationship dependent with migid = {{{0}}}.", relation.DependentUniqueIdentifier);
                             logger.LogTaskItemError(relation, message, relation.Fields);
                             error = true;
                         }

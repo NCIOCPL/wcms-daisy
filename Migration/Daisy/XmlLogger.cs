@@ -61,7 +61,7 @@ namespace Daisy
             _migrationOutput.WriteLine("</task>");
         }
 
-        public void BeginTaskItem(string taskName, int itemIndex, int itemCount, Guid itemMigrationID, string path)
+        public void BeginTaskItem(string taskName, int itemIndex, int itemCount, String itemMigrationID, string path)
         {
             string timestamp = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
             Console.WriteLine("{0}\tItem {1} of {2}. MigID: {3}, path: {4}",
@@ -91,7 +91,7 @@ namespace Daisy
         }
         
 
-        public void LogTaskItemWarning(Guid migId, string message, Dictionary<string, string> Fields)
+        public void LogTaskItemWarning(String migId, string message, Dictionary<string, string> Fields)
         {
             StringBuilder sb = new StringBuilder();
             if (Fields != null)
@@ -139,7 +139,7 @@ namespace Daisy
             _migrationOutput.WriteLine("</warning>");
         }
 
-        public void LogTaskItemError(Guid migId, string message, Dictionary<string, string> Fields)
+        public void LogTaskItemError(String  migId, string message, Dictionary<string, string> Fields)
         {
             // Write log to console.
             StringBuilder sb = new StringBuilder();
@@ -202,7 +202,7 @@ namespace Daisy
             _migrationOutput.WriteLine("</item>");
         }
 
-        public void LogError(string taskName, string message, Guid itemMigrationID, Dictionary<string, string> Fields)
+        public void LogError(string taskName, string message, String itemMigrationID, Dictionary<string, string> Fields)
         {
             // Write to console
             StringBuilder sb = new StringBuilder();

@@ -16,7 +16,7 @@ namespace MigrationEngine.Mappers
         : DataMapper<ReturnType>
     {
         // List of fields which shouldn't be copied into a descriptor's field set.
-        private string[] ommittedFields = { ContentTypeField, CommunityNameField, PathNameField };
+        private string[] ommittedFields = { ContentTypeField, CommunityNameField, PathNameField, UniqueIDField };
 
         protected void CopyFields(XmlNode dataNode, Dictionary<String, String> fieldset)
         {
@@ -56,7 +56,7 @@ namespace MigrationEngine.Mappers
                     throw new DataFieldException(string.Format("No value found for field {0}.", fieldName));
                 }
 
-                fieldValue = namedNode.InnerText;
+                fieldValue = namedNode.InnerText.Trim();
             }
             catch (MigrationException ex)
             {

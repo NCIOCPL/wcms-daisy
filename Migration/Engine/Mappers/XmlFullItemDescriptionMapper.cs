@@ -24,7 +24,7 @@ namespace MigrationEngine.Mappers
             try
             {
                 description.Path = GetNamedFieldValue(item, PathNameField);
-                description.MigrationID = new Guid(GetNamedFieldValue(item, MigIDField));
+                description.UniqueIdentifier = GetNamedFieldValue(item, UniqueIDField);
                 description.Community = GetNamedFieldValue(item, CommunityNameField);
                 description.ContentType = GetNamedFieldValue(item, ContentTypeField);
 
