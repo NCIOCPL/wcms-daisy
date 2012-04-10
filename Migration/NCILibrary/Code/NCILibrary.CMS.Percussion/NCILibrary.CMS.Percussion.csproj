@@ -257,10 +257,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="C:\WCMTeam\trunk\GateKeeper\Core\CMSManager\PercussionWSDL\rhythmyx.wsdl">
+    <WebReferenceUrl Include="C:\WCMTeam\Tools\MigrationTools\branches\6.5\Migration\NCILibrary\Code\NCILibrary.CMS.Percussion\PercussionWSDL\rhythmyx.wsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\PercussionWebSvc\</RelPath>
-      <UpdateFromURL>C:\WCMTeam\trunk\GateKeeper\Core\CMSManager\PercussionWSDL\rhythmyx.wsdl</UpdateFromURL>
+      <UpdateFromURL>C:\WCMTeam\Tools\MigrationTools\branches\6.5\Migration\NCILibrary\Code\NCILibrary.CMS.Percussion\PercussionWSDL\rhythmyx.wsdl</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
