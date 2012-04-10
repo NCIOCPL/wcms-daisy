@@ -1,5 +1,5 @@
 <list>
-  <item><contenttype>genAggroWidget</contenttype><community>site</community></item>
+  <!--<item><contenttype>genAggroWidget</contenttype><community>site</community></item>
   <item><contenttype>genAudio</contenttype><community>site</community></item>
   <item><contenttype>genCitation</contenttype><community>site</community></item>
   <item><contenttype>genContentBlock</contenttype><community>site</community></item>
@@ -20,9 +20,9 @@
   <item><contenttype>genTCItem</contenttype><community>site</community></item>
   <item><contenttype>gloImage</contenttype><community>site</community></item>
   <item><contenttype>gloVideo</contenttype><community>site</community></item>
-  <item><contenttype>rffNavImage</contenttype><community>site</community></item>
+  <item><contenttype>rffNavImage</contenttype><community>site</community></item>-->
   <item><contenttype>rffNavon</contenttype><community>site</community></item>
-  <item><contenttype>rffNavTree</contenttype><community>site</community></item>
+  <!--<item><contenttype>rffNavTree</contenttype><community>site</community></item>
 
   <item><contenttype>genBrandingBar</contenttype><community>siteAdmin</community></item>
   <item><contenttype>genHome</contenttype><community>siteAdmin</community></item>
@@ -50,5 +50,5 @@
   <item><contenttype>genStyleSheetInfo</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>rffNavImage</contenttype><community>ctbAdmin</community></item>
   <item><contenttype>rffNavon</contenttype><community>ctbAdmin</community></item>
-  <item><contenttype>rffNavTree</contenttype><community>ctbAdmin</community></item>
+  <item><contenttype>rffNavTree</contenttype><community>ctbAdmin</community></item>-->
 </list>

@@ -2,7 +2,7 @@
 <Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<MigrationTaskList>
 	  <MigrationTask xsi:type="PurgeContent" Name="Purger">
-		<DataGetter xsi:type="XmlDataGetterOfContentTypeDescription" FileName="C:\WCMTeam\Tools\MigrationTools\branches\6.2\scripts\purge-content-types.xml">
+		<DataGetter xsi:type="XmlDataGetterOfContentTypeDescription" FileName="purge-content-types.xml">
 			<Mapper xsi:type="XmlContentTypeDescriptionMapper" />
 		</DataGetter>
 	  </MigrationTask>
