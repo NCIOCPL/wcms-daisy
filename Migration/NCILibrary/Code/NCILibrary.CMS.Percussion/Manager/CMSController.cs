@@ -76,7 +76,8 @@ namespace NCI.CMS.Percussion.Manager.CMS
         // the state of content items (or similar entities) between calls to
         // the controller's public methods.
 
-        private Dictionary<string, PercussionGuid> communityCollection = new Dictionary<string, PercussionGuid>();
+        private Dictionary<string, PercussionGuid> communityCollection =
+            new Dictionary<string, PercussionGuid>(StringComparer.CurrentCultureIgnoreCase);
 
         #endregion
 
