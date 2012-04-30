@@ -98,7 +98,7 @@ namespace MigrationEngine.Utilities
             try
             {
                 message = "";
-                PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, new Dictionary<string, string> { });
+                PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, true, new Dictionary<string, string> { });
 
                 if (ids.Count<PercussionGuid>() == 1)
                     return ids[0].ID;
@@ -126,7 +126,7 @@ namespace MigrationEngine.Utilities
             try
             {
                 message = "";
-                PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, new Dictionary<string, string> { });
+                PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, false, new Dictionary<string, string> { });
 
                 if (ids.Count<PercussionGuid>() == 1)
                     return ids[0];

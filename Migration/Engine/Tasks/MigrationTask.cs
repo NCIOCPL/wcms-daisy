@@ -111,7 +111,8 @@ namespace MigrationEngine.Tasks
             string folder = name.Trim();
             string contentType = (folder == "/") ? Moniker.ContentTypes.NavTree : Moniker.ContentTypes.Navon;
 
-            PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, new Dictionary<string, string> { });
+            // Search for Navon in a specific folder.
+            PercussionGuid[] ids = controller.SearchForContentItems(contentType, folder, false, new Dictionary<string, string> { });
 
             // Report any errors encontered while looking for a Navon.
             if (ids.Length != 1)

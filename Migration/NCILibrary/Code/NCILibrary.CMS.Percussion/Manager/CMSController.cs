@@ -1022,7 +1022,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// <returns>An array containing zero or more content item ID values.</returns>
         public PercussionGuid[] SearchForContentItems(string contentType, Dictionary<string, string> fieldCriteria)
         {
-            return SearchForContentItems(contentType, null, fieldCriteria);
+            return SearchForContentItems(contentType, null, true, fieldCriteria);
         }
 
         /// <summary>
@@ -1038,9 +1038,9 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// and values to search for</param>
         /// <returns>An array containing zero or more content item ID values.  The array may
         /// be empty, but is never null.</returns>
-        public PercussionGuid[] SearchForContentItems(string contentType, string path, Dictionary<string, string> fieldCriteria)
+        public PercussionGuid[] SearchForContentItems(string contentType, string path, bool searchSubFolders, Dictionary<string, string> fieldCriteria)
         {
-            return SearchForContentItems(contentType, null, path, fieldCriteria);
+            return SearchForContentItems(contentType, null, path, searchSubFolders, fieldCriteria);
         }
 
         /// <summary>
@@ -1059,7 +1059,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// An array containing zero or more content item ID values.  The array may
         /// be empty, but is never null.
         /// </returns>
-        public PercussionGuid[] SearchForContentItems(string contentType, string siteBasePath, string path, Dictionary<string, string> fieldCriteria)
+        public PercussionGuid[] SearchForContentItems(string contentType, string siteBasePath, string path, bool searchSubFolders, Dictionary<string, string> fieldCriteria)
         {
             PercussionGuid[] contentIdList;
 
@@ -1079,7 +1079,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
                 searchPath = siteBase + path;
 
 
-            PSSearchResults[] searchResults = PSWSUtils.FindItemByFieldValues(_contentService, contentType, searchPath, fieldCriteria);
+            PSSearchResults[] searchResults = PSWSUtils.FindItemByFieldValues(_contentService, contentType, searchPath, searchSubFolders, fieldCriteria);
             contentIdList = new PercussionGuid[searchResults.Length];
             for (int i = 0; i < searchResults.Length; i++)
             {

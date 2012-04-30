@@ -50,11 +50,8 @@ namespace MigrationEngine.Tasks
                         string message;
                         PercussionGuid navonID;
 
-                        if (folder.Path != "/")
-                            navonID = PercWrapper.GetNavon(controller, folder.Path, out message);
-                        else
-                            navonID = PercWrapper.GetNavTree(controller, out message);
-
+                        // Wrapper takes care of distinguishing Navon from NavTree.
+                        navonID = PercWrapper.GetNavon(controller, folder.Path, out message);
 
                         if (navonID == PercWrapper.ContentItemNotFound ||
                             navonID == PercWrapper.TooManyContentItemsFound)
