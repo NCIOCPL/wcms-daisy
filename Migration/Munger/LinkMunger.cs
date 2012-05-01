@@ -538,7 +538,7 @@ namespace Munger
 
         private bool LinkIsStaticPage(string linkUrl)
         {
-            string[] staticPageExtensions = { ".htm", ".html" };
+            string[] staticPageExtensions = { ".htm", ".html", ".txt", ".shtml" };
 
             // Remove doc fragment if necessary.
             int index = linkUrl.LastIndexOf('#');
@@ -547,7 +547,7 @@ namespace Munger
                 linkUrl = linkUrl.Substring(0, index);
             }
 
-            return Array.Exists(staticPageExtensions, extension => linkUrl.EndsWith(extension));
+            return Array.Exists(staticPageExtensions, extension => linkUrl.EndsWith(extension, StringComparison.InvariantCultureIgnoreCase));
         }
     }
 }
