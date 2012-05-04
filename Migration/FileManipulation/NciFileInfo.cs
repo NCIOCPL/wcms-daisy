@@ -22,9 +22,9 @@ namespace FileManipulation
         const string gz = ".gz";
         const string tgz = ".tgz";
         const string fil = ".fil";
+        const string ram = ".ram";
 
-
-        public static string[] KnownExtensions = { pdf, doc, docx, xls, xlsx, ppt, pptx, mp3, mov, exe, ics, zip, gz, tgz, fil };
+        public static string[] KnownExtensions = { pdf, doc, docx, xls, xlsx, ppt, pptx, mp3, mov, exe, ics, zip, gz, tgz, fil, ram };
 
         /// <summary>
         /// Gets a Base-64 Encoded string representing the data of the image
@@ -125,6 +125,7 @@ namespace FileManipulation
                 case gz: mimeType = "application/x-gzip"; break;
                 case tgz: mimeType = "application/x-compressed"; break;
                 case fil: mimeType = "application/octet-stream"; break;
+                case ram: mimeType = "audio/x-pn-realaudio"; break;
             }
 
             return mimeType;
