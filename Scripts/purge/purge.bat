@@ -1,1 +1,1 @@
-bin\Debug\daisy.exe purge.xml
+..\bin\daisy.exe purge.xml
