@@ -101,6 +101,13 @@ namespace Munger
                             RewriteAnchorTag(link, pageUrl);
                         }
                     }
+                    // Need to catch this separately since it explicitly has no href to retrieve.
+                    catch (NoLinkSpecifiedException ex)
+                    {
+                        string type = ex.GetType().Name;
+                        MessageLog.OutputLine("LinkMunger", type, pageUrl, "null", ex.Message);
+                        errors.Add(ex.Message);
+                    }
                     catch (LinkMungingException ex)
                     {
                         string mungeUrl = link.Attributes["href"].Value ?? "null";
