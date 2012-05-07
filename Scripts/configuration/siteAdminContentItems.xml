@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>DCEGSiteFooter</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genSiteFooter</contenttype>
+    <folder>/shareditems/sitefooter</folder>
+    <long_title><![CDATA[DCEG Footer]]></long_title>
+    <bodyfield><![CDATA[<!-- Site Footer Slot (#genSlotSiteFooter) --><div id="genSlotSiteFooter"><div class="slot-item only-SI"><!-- Site Footer Content // From Content Type in Slot --><ul class="genSiteFooterLinks"><li><a href="#">NCI Home</a></li><li><a href="#">Contact DCEG</a></li><li><a href="#">Policies</a></li><li><a href="#">Accessibility</a></li><li><a href="#">Viewing Files</a></li><li><a href="#">FOIA</a></li><li><a href="#">DCEG Sitemap</a></li></ul><ul class="genSiteAgencyLinks clearFix"><li><a href="http://www.hhs.gov/" class="genSiteFooterLinkHHS">Department of Health and Human Services</li><li><a href="http://www.nih.gov/" class="genSiteFooterLinkNIH">National Institutes of Health</a></li><li><a href="http:///www.cancer.gov" class="genSiteFooterLinkNCI">National Cancer Institute</li><li><a href="http://www.usa.gov/" class="genSiteFooterLinkUSA">USA.gov</li></ul><!-- END Site Footer Content // From Content Type in Slot --></div></div><!-- END Site Footer Slot (#genSlotSiteFooter) -->]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>DCEGSiteHeader</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genSiteBanner</contenttype>
+    <folder>/shareditems/sitebanner</folder>
+    <long_title><![CDATA[DCEG Banner]]></long_title>
+    <bodyfield><![CDATA[<!-- Site Banner Slot (#genSlotSiteBanner) --><div id="genSlotSiteBanner" class="clearFix"><!-- Site Banner Content // From Content Type in Slot --><h1 class="genSiteLogo">Division of Cancer Epidemiology & Genetics</h1><div class="genSiteUtilityContainer"><ol class="genSiteUtilityLinks"><li><a href="#">Contact DCEG</a></li><li><a href="#">Sitemap</a></li></ol><form action="/search" method="post" class="genSiteSearchForm"><input id="swKeywordQuery" maxlength="255" onfocus="value =''" type="text" value=" Search" /><input value="Search" id="swSearchButton" type="submit" /></form></div><!-- Site Banner Content --></div><!-- END Site Banner Slot (#genSlotSiteBanner) -->]]></bodyfield>
+  </item>
+  <item>
+    <mig_id>DCEGBrandingBar</mig_id>
+    <community>siteAdmin</community>
+    <contenttype>genBrandingBar</contenttype>
+    <folder>/shareditems/sitebanner</folder>
+    <long_title><![CDATA[Branding Banner]]></long_title>
+    <color><![CDATA[gray]]></color>
+  </item>
+</list>

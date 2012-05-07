@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <folder>/configuration</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/configuration/cde</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/configuration/css</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/configuration/js</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/shareditems</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/shareditems/sitebanner</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/shareditems/sitefooter</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/shareditems/navigation</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+  <item>
+    <folder>/images</folder>
+    <show_in_nav>0</show_in_nav>
+  </item>
+</list>
