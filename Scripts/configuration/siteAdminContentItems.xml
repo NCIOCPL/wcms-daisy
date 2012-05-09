@@ -14,7 +14,7 @@
     <contenttype>genSiteBanner</contenttype>
     <folder>/shareditems/sitebanner</folder>
     <long_title><![CDATA[DCEG Banner]]></long_title>
-    <bodyfield><![CDATA[<!-- Site Banner Slot (#genSlotSiteBanner) --><div id="genSlotSiteBanner" class="clearFix"><!-- Site Banner Content // From Content Type in Slot --><h1 class="genSiteLogo">Division of Cancer Epidemiology & Genetics</h1><div class="genSiteUtilityContainer"><ol class="genSiteUtilityLinks"><li><a href="#">Contact DCEG</a></li><li><a href="#">Sitemap</a></li></ol><form action="/search" method="post" class="genSiteSearchForm"><input id="swKeywordQuery" maxlength="255" onfocus="value =''" type="text" value=" Search" /><input value="Search" id="swSearchButton" type="submit" /></form></div><!-- Site Banner Content --></div><!-- END Site Banner Slot (#genSlotSiteBanner) -->]]></bodyfield>
+    <bodyfield><![CDATA[<!-- Site Banner Slot (#genSlotSiteBanner)  --><div class="clearFix" id="genSlotSiteBanner"><!-- Site Banner Content // From Content Type in Slot  --><h1 class="genSiteLogo"><a href="/">Division of Cancer Epidemiology &amp; Genetics</a></h1><div class="genSiteUtilityContainer"><ol class="genSiteUtilityLinks"><li><a href="#">Contact DCEG</a></li><li><a href="#">Sitemap</a></li></ol><form action="/search" class="genSiteSearchForm" method="post"><input id="swKeywordQuery" maxlength="255" onFocus="value =&#39;&#39;" type="text" value=" Search" /><input id="swSearchButton" type="submit" value="Search" /></form></div><!-- Site Banner Content  --></div><!-- END Site Banner Slot (#genSlotSiteBanner)  -->]]></bodyfield>
   </item>
   <item>
     <mig_id>DCEGBrandingBar</mig_id>

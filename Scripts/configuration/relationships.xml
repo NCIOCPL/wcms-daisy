@@ -373,12 +373,6 @@
     <template>genSnMainNav</template>
   </item>
   <item>
-    <ownerid>/</ownerid>
-    <dependentid>DCEGSectionNav</dependentid>
-    <slot>genSlotSectionNav</slot>
-    <template>genSnSectionNavRoot</template>
-  </item>
-  <item>
     <ownerid>DCEGSectionNav</ownerid>
     <dependentid>/</dependentid>
     <slot>genSlotSectionNavRootNavon</slot>
