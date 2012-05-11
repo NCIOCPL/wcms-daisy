@@ -379,12 +379,6 @@
     <template>genSnTitleLink</template>
   </item>
   <item>
-    <ownerid>/research/clinical-prevention-trials</ownerid>
-    <dependentid>clinical_prevention_trials</dependentid>
-    <slot>rffNavLandingPage</slot>
-    <template>genSnTitleLink</template>
-  </item>
-  <item>
     <ownerid>/research/milestones</ownerid>
     <dependentid>milestones</dependentid>
     <slot>rffNavLandingPage</slot>
