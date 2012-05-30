@@ -1,0 +1,4 @@
+<list>
+  <item><contenttype>genBiography</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
+  <item><contenttype>genSecondaryURL</contenttype><trigger>DirectToPublic</trigger><community>site</community></item>
+</list>
