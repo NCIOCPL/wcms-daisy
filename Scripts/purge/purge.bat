@@ -1,0 +1,1 @@
+..\bin\daisy.exe purge.xml

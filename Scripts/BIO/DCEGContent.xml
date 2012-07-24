@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MigrationTaskList>
+  
+   <MigrationTask xsi:type="Reset" Name="Reset system" MonikerReset="true"></MigrationTask>
+     
+	 
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_BIOcreatepage">
+      <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_BIOcreatepage" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+        
+    <MigrationTask xsi:type="GeneralContentCreator" Name="mig_BIOcreatesecondaryURL">
+      <DataGetter xsi:type="DatabaseDataGetterOfFullItemDescription" ProcName="mig_BIOcreatesecondaryURL" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseFullItemDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+	
+    
+	    <MigrationTask xsi:type="ContentUpdater" Name="mig_BIOupdatePageBody">
+      <DataGetter xsi:type="DatabaseDataGetterOfUpdateContentItem" ProcName="mig_BIOupdatePageBody" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseUpdateItemMapper" />
+      </DataGetter>
+    </MigrationTask>
+	
+	
+	 
+    
+
+    <MigrationTask xsi:type="RelationshipCreator" Name="mig_BIOADDSecondaryURL">
+      <DataGetter xsi:type="DatabaseDataGetterOfRelationshipDescription" ProcName="mig_BIOADDSecondaryURL" ConnectionName="IntranetInt">
+        <Mapper xsi:type="DatabaseRelationshipDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+  
+
+    
+	<MigrationTask xsi:type="Transitioner" Name="Transitioner">
+      <DataGetter xsi:type="XmlDataGetterOfContentTypeTransitionDescription" FileName="transitions.xml">
+        <Mapper xsi:type="XmlContentTypeTransitionDescriptionMapper" />
+      </DataGetter>
+    </MigrationTask>
+   </MigrationTaskList>
+   
+</Migration>

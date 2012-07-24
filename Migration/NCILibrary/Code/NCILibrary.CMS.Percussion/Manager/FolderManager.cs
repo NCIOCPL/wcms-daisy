@@ -283,7 +283,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         private void MakeNavonPublic(string folderPath)
         {
             // Get the Navon's content ID.
-            PSSearchResults[] searchResults = PSWSUtils.FindItemByFieldValues(_contentService, NavonContentType, folderPath, null);
+            PSSearchResults[] searchResults = PSWSUtils.FindItemByFieldValues(_contentService, NavonContentType, folderPath, true, null);
             if (searchResults.Length < 1)
                 throw new CMSOperationalException(string.Format("Navon not found for folder {0}.", folderPath));
             PSWSUtils.TransitionItems(_systemService, new long[] { PercussionGuid.GetID(searchResults[0].id) }, NavonPublicTransitionName);

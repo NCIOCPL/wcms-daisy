@@ -81,15 +81,15 @@ namespace MigrationEngine.Tasks
                                 else
                                     subsetSize = remainder; // Get the remainder.
 
-                                PercussionGuid[] listSubset = new PercussionGuid[subsetSize];
-                                Array.ConstrainedCopy(itemList, (i * MAX_REQUEST_SIZE), listSubset, 0, subsetSize);
-
-                                string fmt = "Deleting items {0} to {1}";
-                                string message = string.Format(fmt, first, first + subsetSize - 1);
-                                logger.LogTaskItemInfo(message);
-
                                 if (subsetSize > 0)
                                 {
+                                    PercussionGuid[] listSubset = new PercussionGuid[subsetSize];
+                                    Array.ConstrainedCopy(itemList, (i * MAX_REQUEST_SIZE), listSubset, 0, subsetSize);
+
+                                    string fmt = "Deleting items {0} to {1}";
+                                    string message = string.Format(fmt, first, first + subsetSize - 1);
+                                    logger.LogTaskItemInfo(message);
+
                                     controller.CheckInItems(listSubset);
                                     controller.DeleteItemList(listSubset);
                                 }

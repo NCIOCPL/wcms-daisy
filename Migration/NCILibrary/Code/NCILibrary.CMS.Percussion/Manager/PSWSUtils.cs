@@ -607,13 +607,14 @@ namespace NCI.CMS.Percussion.Manager.CMS
             }
         }
 
-        public static PSSearchResults[] FindItemByFieldValues(contentSOAP contentSvc, string contentType, Dictionary<string,string> fieldCriteria)
+        public static PSSearchResults[] FindItemByFieldValues(contentSOAP contentSvc, string contentType, bool searchSubFolders, Dictionary<string, string> fieldCriteria)
         {
-            return FindItemByFieldValues(contentSvc, contentType, null, fieldCriteria);
+            return FindItemByFieldValues(contentSvc, contentType, null, searchSubFolders, fieldCriteria);
         }
 
-        public static PSSearchResults[] FindItemByFieldValues(contentSOAP contentSvc, string contentType, string searchPath, Dictionary<string, string> fieldCriteria)
+        public static PSSearchResults[] FindItemByFieldValues(contentSOAP contentSvc, string contentType, string searchPath, bool searchSubFolders, Dictionary<string, string> fieldCriteria)
         {
+
             PSSearchResults[] results;
 
             // The contentSvc.FindItems() method will throw a low-level error if the folder doesn't exist.
@@ -642,7 +643,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
                 if (!string.IsNullOrEmpty(searchPath))
                 {
                     req.PSSearch.PSSearchParams.FolderFilter = new PSSearchParamsFolderFilter();
-                    req.PSSearch.PSSearchParams.FolderFilter.includeSubFolders = true;
+                    req.PSSearch.PSSearchParams.FolderFilter.includeSubFolders = searchSubFolders;
                     req.PSSearch.PSSearchParams.FolderFilter.Value = searchPath;
                 }
 

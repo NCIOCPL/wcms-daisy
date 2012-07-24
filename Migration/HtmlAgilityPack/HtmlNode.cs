@@ -101,8 +101,8 @@ namespace HtmlAgilityPack
             ElementsFlags.Add("area", HtmlElementFlag.Empty);
             ElementsFlags.Add("input", HtmlElementFlag.Empty);
             ElementsFlags.Add("basefont", HtmlElementFlag.Empty);
-
-            ElementsFlags.Add("form", HtmlElementFlag.CanOverlap | HtmlElementFlag.Empty);
+            // FIXME: could form be self contained? not sure if this is a correct fix, but resolve my problems.
+            ElementsFlags.Add("form", HtmlElementFlag.CanOverlap);// | HtmlElementFlag.Empty);
 
             // they sometimes contain, and sometimes they don 't...
             ElementsFlags.Add("option", HtmlElementFlag.Empty);
@@ -1825,7 +1825,7 @@ namespace HtmlAgilityPack
             HtmlAttribute att = Attributes["id"];
             if (att == null)
             {
-                return string.Empty;
+                return null;
             }
             return att.Value;
         }

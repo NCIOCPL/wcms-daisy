@@ -25,7 +25,7 @@ namespace Munger
 
             string decodedUrl = HttpUtility.UrlDecode(prettyUrl).Trim();
 
-            if (NciFileInfo.KnownExtensions.Any(extension => decodedUrl.EndsWith(extension)))
+            if (NciFileInfo.KnownExtensions.Any(extension => decodedUrl.EndsWith(extension, StringComparison.InvariantCultureIgnoreCase)))
             {
                 NciFileInfo fileInfo = NciFileInfo.DownloadImage(_hostname, decodedUrl);
                 NciFile nciFile = new NciFile(fileInfo);

@@ -76,9 +76,18 @@ namespace NCI.CMS.Percussion.Manager.CMS
         // the state of content items (or similar entities) between calls to
         // the controller's public methods.
 
-        private string siteRootPath = string.Empty;
+        private Dictionary<string, PercussionGuid> communityCollection =
+            new Dictionary<string, PercussionGuid>(StringComparer.CurrentCultureIgnoreCase);
 
-        private Dictionary<string, PercussionGuid> communityCollection = new Dictionary<string, PercussionGuid>();
+        #endregion
+
+        #region CMSController Session Properties
+
+        /// <summary>
+        /// Allows the site root path to be overridden.  This value defaults to a value
+        /// loaded from the siteRoot key in the Percussion configuration section.
+        /// </summary>
+        public string SiteRootPath { get; set; }
 
         #endregion
 
@@ -86,24 +95,9 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// Initializes a new instance of the CMSController class.
         /// </summary>
         public CMSController()
+            : this(null)
         {
-            // Percussion system login and any other needed intitialization goes here.
-            // The login ID and password are loaded from the application's configuration file.
-            PercussionConfig percussionConfig = (PercussionConfig)System.Configuration.ConfigurationManager.GetSection("PercussionConfig");
-
-            string username = percussionConfig.ConnectionInfo.UserName.Value;
-            string password = percussionConfig.ConnectionInfo.Password.Value;
-            string community = percussionConfig.ConnectionInfo.Community.Value;
-
-            string host = percussionConfig.ConnectionInfo.Host.Value;
-            string port = percussionConfig.ConnectionInfo.Port.Value;
-            string protocol = percussionConfig.ConnectionInfo.Protocol.Value;
-
-            int timeout = percussionConfig.ConnectionInfo.Timeout.Value;   //100000; // percussionConfig.Timeout;
-
-            Login(username, password, community, host, port, protocol, timeout);
-
-            siteRootPath = percussionConfig.ConnectionInfo.SiteRootPath.Value;
+            // Initialization logic is shared with and implemented by CMSController(string communityName).
         }
 
         /// <summary>
@@ -118,6 +112,15 @@ namespace NCI.CMS.Percussion.Manager.CMS
             // The login ID and password are loaded from the application's configuration file.
             PercussionConfig percussionConfig = (PercussionConfig)System.Configuration.ConfigurationManager.GetSection("PercussionConfig");
 
+            if (percussionConfig == null)
+                throw new CMSInitializationException("Unable to load Percussion Configuration section.");
+
+            string community;
+            if (string.IsNullOrEmpty(communityName))
+                community = percussionConfig.ConnectionInfo.Community.Value;
+            else
+                community = communityName;
+
             string username = percussionConfig.ConnectionInfo.UserName.Value;
             string password = percussionConfig.ConnectionInfo.Password.Value;
 
@@ -128,7 +131,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
             int timeout = percussionConfig.ConnectionInfo.Timeout.Value;  //100000; // percussionConfig.Timeout;
 
             Login(username, password, communityName, host, port, protocol, timeout);
-            siteRootPath = percussionConfig.ConnectionInfo.SiteRootPath.Value;
+            SiteRootPath = percussionConfig.ConnectionInfo.SiteRootPath.Value;
         }
 
 
@@ -565,8 +568,8 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// <param name="idcoll">The collection of tems to move.</param>
         public void MoveContentItemFolder(string sourcePath, string targetPath, long[] idcoll)
         {
-            sourcePath = siteRootPath + sourcePath;
-            targetPath = siteRootPath + targetPath;
+            sourcePath = SiteRootPath + sourcePath;
+            targetPath = SiteRootPath + targetPath;
 
             PSWSUtils.MoveFolderChildren(_contentService, targetPath, sourcePath, idcoll);
         }
@@ -581,7 +584,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// prepended before the attempt is made to create it.</remarks>
         public PSFolder GuaranteeFolder(string folderPath)
         {
-            return FolderManager.GuaranteeFolder(siteRootPath + folderPath, FolderManager.NavonAction.None);
+            return FolderManager.GuaranteeFolder(SiteRootPath + folderPath, FolderManager.NavonAction.None);
         }
 
         /// <summary>
@@ -594,7 +597,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// prepended before the attempt is made to create it.</remarks>
         public PSFolder GuaranteeFolder(string folderPath, FolderManager.NavonAction navonAction)
         {
-            return FolderManager.GuaranteeFolder(siteRootPath + folderPath, navonAction);
+            return FolderManager.GuaranteeFolder(SiteRootPath + folderPath, navonAction);
         }
 
         /// <summary>
@@ -615,7 +618,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// <param name="idCollection">An array of content ids.</param>
         public void AddFolderChildren(String folderPath, PercussionGuid[] idCollection)
         {
-            PSWSUtils.AddFolderChildren(_contentService, siteRootPath + folderPath, Array.ConvertAll(idCollection, id => { return (long)id.ID; }));
+            PSWSUtils.AddFolderChildren(_contentService, SiteRootPath + folderPath, Array.ConvertAll(idCollection, id => { return (long)id.ID; }));
         }
 
         /// <summary>
@@ -625,7 +628,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// <returns>A collection of zero or more objects describing the folder's contents.</returns>
         public PSItemSummary[] FindFolderChildren(string path)
         {
-            return PSWSUtils.FindFolderChildren(_contentService, siteRootPath + path);
+            return PSWSUtils.FindFolderChildren(_contentService, SiteRootPath + path);
         }
 
         /// <summary>
@@ -635,7 +638,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// <returns>True if the folder exists, false otherwise.</returns>
         public bool FolderExists(string path)
         {
-            return PSWSUtils.FolderExists(_contentService, siteRootPath + path);
+            return PSWSUtils.FolderExists(_contentService, SiteRootPath + path);
         }
 
         /// <summary>
@@ -963,8 +966,8 @@ namespace NCI.CMS.Percussion.Manager.CMS
                 return null;
 
             string path = pathFolder.path;
-            if (path.StartsWith(siteRootPath, StringComparison.InvariantCultureIgnoreCase))
-                return path.Substring(siteRootPath.Length);
+            if (path.StartsWith(SiteRootPath, StringComparison.InvariantCultureIgnoreCase))
+                return path.Substring(SiteRootPath.Length);
             else
                 return path;
         }
@@ -1019,9 +1022,8 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// <returns>An array containing zero or more content item ID values.</returns>
         public PercussionGuid[] SearchForContentItems(string contentType, Dictionary<string, string> fieldCriteria)
         {
-            return SearchForContentItems(contentType, null, fieldCriteria);
+            return SearchForContentItems(contentType, null, true, fieldCriteria);
         }
-
 
         /// <summary>
         /// Peforms a search of the CMS repository for content items via a the CMS database search
@@ -1030,25 +1032,54 @@ namespace NCI.CMS.Percussion.Manager.CMS
         /// field/values pairs.
         /// </summary>
         /// <param name="contentType">String naming the content type for limiting the search.</param>
-        /// <param name="path">Base path in which to search for content items.
+        /// <param name="path">Site sub path in which to search for content items.
         /// (Must begin with /, must not include the //Sites/sitename component.)</param>
         /// <param name="fieldCriteria">Optional list of name/value pairs identifying the fields
         /// and values to search for</param>
         /// <returns>An array containing zero or more content item ID values.  The array may
         /// be empty, but is never null.</returns>
-        public PercussionGuid[] SearchForContentItems(string contentType, string path, Dictionary<string, string> fieldCriteria)
+        public PercussionGuid[] SearchForContentItems(string contentType, string path, bool searchSubFolders, Dictionary<string, string> fieldCriteria)
+        {
+            return SearchForContentItems(contentType, null, path, searchSubFolders, fieldCriteria);
+        }
+
+        /// <summary>
+        /// Peforms a search of the CMS repository for content items via a the CMS database search
+        /// engine (as opposed to the full text search engine).
+        /// Search criteria must include a content type, and may optionally include a list of
+        /// field/values pairs.
+        /// </summary>
+        /// <param name="contentType">String naming the content type for limiting the search.</param>
+        /// <param name="siteBasePath">Path to the site's base folder. Use null for current/default site.</param>
+        /// <param name="path">Site sub path in which to search for content items.
+        /// (Must begin with /, must not include the //Sites/sitename component.)</param>
+        /// <param name="fieldCriteria">Optional list of name/value pairs identifying the fields
+        /// and values to search for</param>
+        /// <returns>
+        /// An array containing zero or more content item ID values.  The array may
+        /// be empty, but is never null.
+        /// </returns>
+        public PercussionGuid[] SearchForContentItems(string contentType, string siteBasePath, string path, bool searchSubFolders, Dictionary<string, string> fieldCriteria)
         {
             PercussionGuid[] contentIdList;
 
             string searchPath;
+            string siteBase;
 
-            if (!string.IsNullOrEmpty(path))
-                searchPath = siteRootPath + path;
+            // Allow override of default site root.
+            if (string.IsNullOrEmpty(siteBasePath))
+                siteBase = SiteRootPath;
             else
-                searchPath = null;
+                siteBase = siteBasePath;
+
+            // Allow path within site to be specified.
+            if (string.IsNullOrEmpty(path))
+                searchPath = siteBase;
+            else
+                searchPath = siteBase + path;
 
 
-            PSSearchResults[] searchResults = PSWSUtils.FindItemByFieldValues(_contentService, contentType, searchPath, fieldCriteria);
+            PSSearchResults[] searchResults = PSWSUtils.FindItemByFieldValues(_contentService, contentType, searchPath, searchSubFolders, fieldCriteria);
             contentIdList = new PercussionGuid[searchResults.Length];
             for (int i = 0; i < searchResults.Length; i++)
             {
