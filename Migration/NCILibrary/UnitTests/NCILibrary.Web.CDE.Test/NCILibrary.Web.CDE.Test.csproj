@@ -1,0 +1,145 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23CB2B33-1ADA-45BB-A900-C59C69FB6DA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NCILibrary.Web.CDE.Test</RootNamespace>
+    <AssemblyName>NCILibrary.Web.CDE.Test</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NVelocity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyDlls\nVelocity\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CGovTest.cs" />
+    <Compile Include="Configuration\Config.cs" />
+    <Compile Include="Configuration\HttpSimulatorSection.cs" />
+    <Compile Include="Configuration\PathInformationElement.cs" />
+    <Compile Include="DynamicListTest.cs" />
+    <Compile Include="FieldFilterDataTest.cs" />
+    <Compile Include="FileInstructionFactoryTest.cs" />
+    <Compile Include="Module_PageOptionsBox_Test.cs" />
+    <Compile Include="MultiPageAssemblyInstructionTest.cs" />
+    <Compile Include="PageAssemblyContextTest.cs" />
+    <Compile Include="PageAssemblyInstructionFactoryTest.cs" />
+    <Compile Include="PageAssemblyInstructionLoaderTest.cs" />
+    <Compile Include="PageTemplateConfigurationTest.cs" />
+    <Compile Include="PageTemplateResolverTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SectionDetailFactoryTest.cs" />
+    <Compile Include="SectionDetailTest.cs" />
+    <Compile Include="SinglePageAssemblyInstructionTest.cs" />
+    <Compile Include="SnippetInfoTest.cs" />
+    <Compile Include="WebAnalyticsOptionsTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="WenAnalytics.GenericTest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="XmlFiles\Schema\CDESchema.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Shadow Include="Test References\NCILibrary.Web.ContentDeliveryEngine.accessor" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthoringTests.txt" />
+    <Content Include="XmlFiles\PublishedContent\FileInstructions\CancerTopics\Test.pdf.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFiles\PublishedContent\PageInstructions\cancertopics.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFiles\PublishedContent\PageInstructions\cancertopics_not_wellformed.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFiles\PublishedContent\PageInstructions\Multicancertopics.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFiles\PublishedContent\PageInstructions\SinglePageAssemblyInstructionNotValid.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFiles\PublishedContent\PageTemplateConfigurations\PageTemplateConfiguration.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFiles\PublishedContent\SectionDetails\cancertopics\SectionDetails.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFiles\PublishedContent\SectionDetails\SectionDetails.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Code\NCILibrary.Core\NCILibrary.Core.csproj">
+      <Project>{898FF17C-C94A-4D85-8AAD-88764B72CFAE}</Project>
+      <Name>NCILibrary.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Code\NCILibrary.DataManager\NCILibrary.DataManager.csproj">
+      <Project>{F4C37116-861A-4FD6-B45D-578B258FEFC7}</Project>
+      <Name>NCILibrary.DataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Code\NCILibrary.TestingTools\NCILibrary.TestingTools.csproj">
+      <Project>{364BC997-48F1-450A-9751-8252FD5EBD78}</Project>
+      <Name>NCILibrary.TestingTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Code\NCILibrary.Web.CDE\NCILibrary.Web.CDE.csproj">
+      <Project>{EEE51BA0-18AE-4CF2-876F-7E75B5A2D1FF}</Project>
+      <Name>NCILibrary.Web.CDE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Code\NCILibrary.Web.UI.WebControls\NCILibrary.Web.UI.WebControls.csproj">
+      <Project>{5ADEF930-6ED8-485E-83DB-A9E14A4182F6}</Project>
+      <Name>NCILibrary.Web.UI.WebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

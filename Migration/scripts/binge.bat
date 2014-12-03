@@ -1,0 +1,1 @@
+..\Daisy\bin\Debug\daisy.exe .\mobile\mobile_inputs.xml

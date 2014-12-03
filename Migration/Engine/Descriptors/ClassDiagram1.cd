@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MigrationEngine.Descriptors.MigrationData">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAIAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Descriptors\MigrationData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MigrationEngine.Descriptors.UpdateFileItem">
+    <Position X="1.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Descriptors\UpdateFileItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MigrationEngine.Descriptors.ContentDescriptionBase">
+    <Position X="5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Descriptors\ContentDescriptionBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MigrationEngine.Descriptors.ContentTypeDescription">
+    <Position X="15.75" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Descriptors\ContentTypeDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MigrationEngine.Descriptors.ContentTypeTransitionDescription">
+    <Position X="12.75" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAQA=</HashCode>
+      <FileName>Descriptors\ContentTypeTransitionDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MigrationEngine.Descriptors.FolderDescription">
+    <Position X="8.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Descriptors\FolderDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MigrationEngine.Descriptors.FullItemDescription">
+    <Position X="6.25" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAIAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Descriptors\FullItemDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MigrationEngine.Descriptors.RelationshipDescription">
+    <Position X="10.25" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAgAAACAQAAAIIAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Descriptors\RelationshipDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MigrationEngine.Descriptors.UpdateContentItem">
+    <Position X="4" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Descriptors\UpdateContentItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
