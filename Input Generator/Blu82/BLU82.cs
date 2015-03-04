@@ -48,13 +48,9 @@ namespace Blu82
             //2. Loop through each sheet to find content sheets
             foreach (String sheetName in excel.GetWorksheetNames())
             {
-                //All content item sheets will start with "2 CT"
-                if (sheetName.ToLower().StartsWith("2 CT"))
+                //All content item sheets will start with "2 CT "
+                if (sheetName.ToLower().StartsWith("2 CT ") || sheetName.Equals("2 Content Items"))
                 {
-
-                    //String contentType = sheetName.Replace("2 CT", "").Trim();
-
-
                     //We should probably check to make sure that content_type is not null, but 
                     //nothing else in this file generates errors.  This would end up being a
                     //validation error for Daisy input.
