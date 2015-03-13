@@ -57,10 +57,16 @@
     <Compile Include="Configuration\FieldNameCollection.cs" />
     <Compile Include="Configuration\FieldNameElement.cs" />
     <Compile Include="Configuration\SheetConfigurationElement.cs" />
+    <Compile Include="Configuration\SlotItemCollection.cs" />
+    <Compile Include="Configuration\SlotItemElement.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PSFieldExtensions.cs" />
     <Compile Include="Storage\ContentTypeSheet.cs" />
     <Compile Include="Storage\ContentTypeSheetItem.cs" />
+    <Compile Include="Storage\RelationshipSheet.cs" />
+    <Compile Include="Storage\RelationshipSheetItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Migration\NCILibrary\Code\NCILibrary.CMS.Percussion\NCILibrary.CMS.Percussion.csproj">

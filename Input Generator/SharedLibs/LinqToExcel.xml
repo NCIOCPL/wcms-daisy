@@ -219,6 +219,11 @@
             Confirms all the worksheet columns are mapped to a property, and if not, throws a StrictMappingException
             </summary>
         </member>
+        <member name="P:LinqToExcel.IExcelQueryFactory.DatabaseEngine">
+            <summary>
+            Sets the database engine to use (spreadsheets ending in xlsx, xlsm, xlsb will always use the Ace engine)
+            </summary>
+        </member>
         <member name="M:LinqToExcel.Query.ExcelQueryExecutor.ExecuteScalar``1(Remotion.Data.Linq.QueryModel)">
             <summary>
             Executes a query with a scalar result, i.e. a query that ends with a result operator such as Count, Sum, or Average.
@@ -497,6 +502,13 @@
             Confirms all the worksheet columns are mapped to a property, and if not, throws a StrictMappingException
             </summary>
         </member>
+        <member name="P:LinqToExcel.ExcelQueryFactory.DatabaseEngine">
+            <summary>
+            Sets the database engine to use 
+            (Spreadsheets ending in xlsx, xlsm, and xlsb must use the Ace database engine)
+            (If running 64 bit this defaults to ACE (JET doesn't work anyway), if running 32 bit this detaults to JET)
+            </summary>
+        </member>
         <member name="M:LinqToExcel.Extensions.CommonExtensions.SetProperty(System.Object,System.String,System.Object)">
             <summary>
             Sets the value of a property
@@ -511,6 +523,31 @@
             <param name="methodName">Name of the method</param>
             <param name="args">Method arguments</param>
             <returns>Return value of the method</returns>
+        </member>
+        <member name="T:LinqToExcel.Query.StrictMappingType">
+            <summary>
+            Class property and worksheet mapping enforcemment type.
+            </summary>
+        </member>
+        <member name="F:LinqToExcel.Query.StrictMappingType.Both">
+            <summary>
+            All worksheet columns must map to a class property; all class properties must map to a worksheet columm.
+            </summary>
+        </member>
+        <member name="F:LinqToExcel.Query.StrictMappingType.ClassStrict">
+            <summary>
+            All class properties must map to a worksheet column; other worksheet columns are ignored.
+            </summary>
+        </member>
+        <member name="F:LinqToExcel.Query.StrictMappingType.None">
+            <summary>
+            No checks are made to enforce worksheet column or class property mappings.
+            </summary>
+        </member>
+        <member name="F:LinqToExcel.Query.StrictMappingType.WorksheetStrict">
+            <summary>
+            All worksheet columns must map to a class property; other class properties are ignored.
+            </summary>
         </member>
         <member name="M:LinqToExcel.Query.WhereClauseExpressionTreeVisitor.VisitUnaryExpression(System.Linq.Expressions.UnaryExpression)">
             <summary>

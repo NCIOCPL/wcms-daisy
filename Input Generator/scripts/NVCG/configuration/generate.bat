@@ -6,4 +6,4 @@ REM svn --force export https://imbncipf01/svn/WCMTeam/content/branches/6.4/Cance
 REM svn --force export https://imbncipf01/svn/WCMTeam/content/branches/6.4/CancerGov-Mobile/PageTemplates "C:\temp\Input Generator\scripts\mobile\templates"
 REM svn --force export https://imbncipf01/svn/WCMTeam/content/branches/6.4/CancerGov-Mobile/Images "C:\temp\Input Generator\scripts\mobile\images"
 REM svn --force export https://imbncipf01/svn/WCMTeam/content/branches/6.4/_CommonContent/global/JS "C:\temp\Input Generator\scripts\mobile\js"
-..\..\..\Blu82\bin\Debug\blu82.exe NVCG_configuration_inputs.xls
+..\..\..\Blu82\bin\Debug\blu82.exe output.xls

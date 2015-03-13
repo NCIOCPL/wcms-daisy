@@ -797,6 +797,12 @@ namespace NCI.CMS.Percussion.Manager.CMS
             return PSWSUtils.LoadItems(_contentService, idList);
         }
 
+        public PSItem[] LoadContentItems(PercussionGuid[] itemIDList, bool includeBinary)
+        {
+            long[] idList = Array.ConvertAll(itemIDList, item => (long)item.ID);
+            return PSWSUtils.LoadItemsWithBinaries(_contentService, idList);
+        }
+
         /// <summary>
         /// Retrieves a list of content items identified by the values in itemIDList.
         /// </summary>
@@ -806,6 +812,11 @@ namespace NCI.CMS.Percussion.Manager.CMS
         public PSItem[] LoadContentItems(long[] itemIDList)
         {
             return PSWSUtils.LoadItems(_contentService, itemIDList);
+        }
+
+        public PSItem[] LoadContentItems(long[] itemIDList, bool includeBinary)
+        {
+            return PSWSUtils.LoadItemsWithBinaries(_contentService, itemIDList);
         }
 
         public bool VerifySingleItemExists(PercussionGuid itemID)

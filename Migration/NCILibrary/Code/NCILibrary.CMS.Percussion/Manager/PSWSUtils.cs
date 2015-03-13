@@ -380,14 +380,31 @@ namespace NCI.CMS.Percussion.Manager.CMS
         public static PSItem[] LoadItems(contentSOAP contentSvc, long[] idList)
         {
             LoadItemsRequest req = new LoadItemsRequest();
+            req.IncludeFolderPath = true;
+            req.IncludeChildren = true;
+
+            return LoadItems(contentSvc, idList, req);
+        }
+
+        public static PSItem[] LoadItemsWithBinaries(contentSOAP contentSvc, long[] idList)
+        {
+            LoadItemsRequest req = new LoadItemsRequest();
+            req.IncludeFolderPath = true;
+            req.IncludeChildren = true;
+            req.IncludeBinary = true;
+            req.IncludeRelated = true;
+
+            return LoadItems(contentSvc, idList, req);
+        }
+
+        public static PSItem[] LoadItems(contentSOAP contentSvc, long[] idList, LoadItemsRequest req)
+        {
             PSItem[] items;
             try
             {
                 if (idList.Length > 0)
                 {
                     req.Id = idList;
-                    req.IncludeFolderPath = true;
-                    req.IncludeChildren = true;
                     items = contentSvc.LoadItems(req);
                 }
                 else

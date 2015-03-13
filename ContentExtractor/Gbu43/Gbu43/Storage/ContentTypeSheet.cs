@@ -13,5 +13,11 @@ namespace Gbu43.Storage
         {
             SheetName = sheetName;
         }
+
+        public ContentTypeSheetItem GetSheetItemByID(long contentID)
+        {
+            return this.FirstOrDefault(item => item.ContentID == contentID);
+        }
+
     }
 }

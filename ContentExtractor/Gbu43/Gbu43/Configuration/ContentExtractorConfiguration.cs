@@ -54,12 +54,102 @@ namespace Gbu43.Configuration
         /// <returns></returns>
         public string[] GetFieldsForType(string contentType)
         {
-            ContentTypeElement el = _config.ContentTypes.Cast<ContentTypeElement>().FirstOrDefault();
+            ContentTypeElement el = _config.ContentTypes.Cast<ContentTypeElement>().FirstOrDefault(cte => cte.Type == contentType);
 
             if (el == null)
                 throw new Exception("The type, " + contentType + " could not be found in the configuration.");
 
             return el.extractFieldnames.Cast<FieldNameElement>().Select(i => i.Value).ToArray();
+        }
+
+        /// <summary>
+        /// Gets a list of slots to be extracted
+        /// </summary>
+        /// <param name="contentType"></param>
+        /// <returns></returns>
+        public SlotItemElement[] GetSlotsForType(string contentType)
+        {
+            ContentTypeElement el = _config.ContentTypes.Cast<ContentTypeElement>().FirstOrDefault(cte => cte.Type == contentType);
+
+            if (el == null)
+                throw new Exception("The type, " + contentType + " could not be found in the configuration.");
+
+            return el.ExtractSlotItems.Cast<SlotItemElement>().ToArray();
+        }
+
+        /// <summary>
+        /// Determines if a field should be extracted for a specific type.
+        /// </summary>
+        /// <param name="contentType"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        public bool ExtractFieldForType(string contentType, string fieldName)
+        {
+            return GetFieldsForType(contentType).Contains(fieldName);
+        }
+
+        /// <summary>
+        /// Determines if a content item should be extracted an update.
+        /// </summary>
+        /// <param name="contentType"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        public bool ExtractAsUpdate(string contentType, long contentID)
+        {
+            ContentTypeElement el = _config.ContentTypes.Cast<ContentTypeElement>().FirstOrDefault(cte => cte.Type == contentType);
+
+            if (contentType == null)
+                return false;
+
+            return el.HandleAsUpdate(contentID); 
+        }
+
+        /// <summary>
+        /// Determines if a slot's contents should be extracted for a specific type.
+        /// </summary>
+        /// <param name="contentType"></param>
+        /// <param name="slotName"></param>
+        /// <returns></returns>
+        public SlotItemExtractionType ExtractSlotForType(string contentType, string slotName)
+        {
+            SlotItemElement sie = GetSlotsForType(contentType).FirstOrDefault(e => e.Value == slotName);
+            if (sie == null)
+                return SlotItemExtractionType.NoExtract; // If it does not exist, return nothing
+            else if (sie.IncludeUnextractedDependent)
+                return SlotItemExtractionType.Extract; //Extract no matter what
+            else
+                return SlotItemExtractionType.ExtractIfExists; //Only extract if mig ID exists
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="contentType"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool ShouldExtractItem(string contentType, long id)
+        {
+            ContentTypeElement el = _config.ContentTypes.Cast<ContentTypeElement>().FirstOrDefault(cte => cte.Type == contentType);
+
+            if (contentType == null)
+                return false;
+
+            return !el.IsExcludedContentItem(id); //Return the negation of Is Excluded
+        }
+
+        /// <summary>
+        /// Determines if this content should only be stored if Dependent in slot relationship
+        /// </summary>
+        /// <param name="contentType"></param>
+        /// <returns></returns>
+        public bool OnlyStoreCTIfDependent(string contentType)
+        {
+            ContentTypeElement el = _config.ContentTypes.Cast<ContentTypeElement>().FirstOrDefault(cte => cte.Type == contentType);
+
+            if (contentType == null)
+                return false;
+
+            return el.OnlyIncludeIfDependent; //Return the negation of Is Excluded
         }
 
         private ContentExtractorConfigurationSection _config;

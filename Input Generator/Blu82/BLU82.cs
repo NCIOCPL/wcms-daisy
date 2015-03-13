@@ -48,9 +48,15 @@ namespace Blu82
             //2. Loop through each sheet to find content sheets
             foreach (String sheetName in excel.GetWorksheetNames())
             {
+                Console.WriteLine("Testing: " + sheetName);
+
                 //All content item sheets will start with "2 CT "
-                if (sheetName.ToLower().StartsWith("2 CT ") || sheetName.Equals("2 Content Items"))
-                {
+                if (
+                    sheetName.StartsWith("2 CT ", StringComparison.InvariantCultureIgnoreCase) 
+                    || sheetName.Equals("2 Content Items", StringComparison.InvariantCultureIgnoreCase)
+                ){
+                    Console.WriteLine("Extracting: " + sheetName);
+
                     //We should probably check to make sure that content_type is not null, but 
                     //nothing else in this file generates errors.  This would end up being a
                     //validation error for Daisy input.
@@ -132,10 +138,12 @@ namespace Blu82
         {
             List<DaisyContentItem> rtnItems = new List<DaisyContentItem>();
 
+            Console.WriteLine("Extracting Items: " + community);
+
             foreach (Row row in contentitems)
             {
                 if (!String.IsNullOrEmpty(row["mig_id"]))
-                {
+                {                    
                     DaisyContentItem item = new DaisyContentItem()
                     {
                         community = community,
@@ -143,6 +151,8 @@ namespace Blu82
                         contenttype = row["contenttype"],
                         folder = CleanFolder(row["folder"])
                     };
+
+                    Console.WriteLine("Extracting Item: " + item.mig_id);
 
                     PopulateItemFields(columnNames, row, item);
 
