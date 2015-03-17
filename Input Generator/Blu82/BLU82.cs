@@ -11,7 +11,8 @@ namespace Blu82
     class BLU82
     {
         private static void GenerateDaisyInput(string inputFile)
-        {
+        {            
+
             var excel = new ExcelQueryFactory(inputFile);
             //excel.AddTransformation<DaisyFolder>(x => x.mig_id, cellValue => new Guid(cellValue));
             //// Technically, this line should probably be required, but LinqToExcel throws an exctption
@@ -21,8 +22,9 @@ namespace Blu82
             //excel.AddTransformation<DaisyRelationships>(x => x.ownerid, cellValue => new Guid(cellValue));
             //excel.AddTransformation<DaisyRelationships>(x => x.dependentid, cellValue => new Guid(cellValue));
 
-            //Get folders
+            //Get folders (but only where the folder is not null -- empty rows can result in empt DaisyFolder items
             var folders = from folder in excel.Worksheet<DaisyFolder>("1 Folders")
+                          where (!string.IsNullOrEmpty(folder.folder))
                           select folder;
             // Items in a collection returned by a Linq query aren't mutable.
             // To preserve any changes to the folders, we have to copy them over
@@ -30,71 +32,167 @@ namespace Blu82
             List<DaisyFolder> folderList = new List<DaisyFolder>();
             foreach (DaisyFolder entry in folders)
             {
-                if(!entry.folder.StartsWith("/"))
+                if (!entry.folder.StartsWith("/"))
                     entry.folder = "/" + entry.folder.Trim();
                 folderList.Add(entry);
             }
-            SerializeCollection<DaisyFolder>(folderList, @".\folder.xml");
+
+            if (folderList.Count > 0)
+            {
+                SerializeCollection<DaisyFolder>(folderList, @".\folder.xml");
+            }
+            else
+            {
+                Console.WriteLine("There are no folders to save");
+            }
 
             // ------------------
             // Content Extraction
             // ------------------
 
-            //1. Setup Lists for site content
-            List<DaisyContentItem> siteCommunity = new List<DaisyContentItem>();
-            List<DaisyContentItem> siteAdminCommunity = new List<DaisyContentItem>();
-            List<DaisyContentItem> ctbAdminCommunity = new List<DaisyContentItem>();
+            //1. Setup Lists for site content            
+            List<DaisyContentItem> newSiteCommunity = new List<DaisyContentItem>();
+            List<DaisyContentItem> newSiteAdminCommunity = new List<DaisyContentItem>();
+            List<DaisyContentItem> newCTBAdminCommunity = new List<DaisyContentItem>();
+
+            List<DaisyContentItem> updateSiteCommunity = new List<DaisyContentItem>();
+            List<DaisyContentItem> updateSiteAdminCommunity = new List<DaisyContentItem>();
+            List<DaisyContentItem> updateCTBAdminCommunity = new List<DaisyContentItem>();
 
             //2. Loop through each sheet to find content sheets
             foreach (String sheetName in excel.GetWorksheetNames())
             {
-                Console.WriteLine("Testing: " + sheetName);
-
                 //All content item sheets will start with "2 CT "
                 if (
                     sheetName.StartsWith("2 CT ", StringComparison.InvariantCultureIgnoreCase) 
                     || sheetName.Equals("2 Content Items", StringComparison.InvariantCultureIgnoreCase)
                 ){
-                    Console.WriteLine("Extracting: " + sheetName);
+                    Console.WriteLine("Extracting Sheet: " + sheetName);
 
-                    //We should probably check to make sure that content_type is not null, but 
-                    //nothing else in this file generates errors.  This would end up being a
-                    //validation error for Daisy input.
+                    //Daisy Handles Updates differently than with creates, so we need to follow
+                    //the Daisy moniker rules.  Long or folder path (for navon) is an update,
+                    //and anything that is not a long or does not start with a '/' is a new item.
 
-                    siteCommunity.AddRange(
-                        ExtractItemsForCommunity(excel, sheetName, "site")                    
+                    newSiteCommunity.AddRange(
+                        ExtractNewItemsForCommunity(excel, sheetName, "site")                    
                         );
 
-                    siteAdminCommunity.AddRange(
-                        ExtractItemsForCommunity(excel, sheetName, "siteAdmin")
+                    newSiteAdminCommunity.AddRange(
+                        ExtractNewItemsForCommunity(excel, sheetName, "siteAdmin")
                         );
 
-                    ctbAdminCommunity.AddRange(
-                        ExtractItemsForCommunity(excel, sheetName, "ctbAdmin")
+                    newCTBAdminCommunity.AddRange(
+                        ExtractNewItemsForCommunity(excel, sheetName, "ctbAdmin")
                         );
+
+                    updateSiteCommunity.AddRange(
+                        ExtractUpdateItemsForCommunity(excel, sheetName, "site")
+                        );
+
+                    updateSiteAdminCommunity.AddRange(
+                        ExtractUpdateItemsForCommunity(excel, sheetName, "siteAdmin")
+                        );
+
+                    updateCTBAdminCommunity.AddRange(
+                        ExtractUpdateItemsForCommunity(excel, sheetName, "ctbAdmin")
+                        );
+
                 }
             }
             
             //Now that we have looped through all the content sheets, output the Daisy Inputs
 
-            SerializeCollection<DaisyContentItem>(siteCommunity, @".\siteContentItems.xml");           
-            SerializeCollection<DaisyContentItem>(siteAdminCommunity, @".\siteAdminContentItems.xml");
-            SerializeCollection<DaisyContentItem>(ctbAdminCommunity, @".\ctbAdminContentItems.xml");
+            if (newSiteCommunity.Count > 0)
+            {
+                SerializeCollection<DaisyContentItem>(newSiteCommunity, @".\newSiteContentItems.xml");
+            }
+            else
+            {
+                Console.WriteLine("No new site items to save");
+            }
+
+            if (newSiteAdminCommunity.Count > 0) {
+                SerializeCollection<DaisyContentItem>(newSiteAdminCommunity, @".\newSiteAdminContentItems.xml");
+            }
+            else
+            {
+                Console.WriteLine("No new site admin items to save");
+            }
+
+            if (newCTBAdminCommunity.Count > 0) {
+                SerializeCollection<DaisyContentItem>(newCTBAdminCommunity, @".\newCTBAdminContentItems.xml");
+            }
+            else
+            {
+                Console.WriteLine("No new CTB Admin items to save");
+            }
+
+            if (updateSiteCommunity.Count > 0) {
+                SerializeCollection<DaisyContentItem>(updateSiteCommunity, @".\updateSiteContentItems.xml");
+            }
+            else
+            {
+                Console.WriteLine("No updated site items to save");
+            }
+
+            if (updateSiteAdminCommunity.Count > 0)
+            {
+                SerializeCollection<DaisyContentItem>(updateSiteAdminCommunity, @".\updateSiteAdminContentItems.xml");
+            }
+            else
+            {
+                Console.WriteLine("No updated site admin items to save");
+            }
+
+            if (updateCTBAdminCommunity.Count > 0) {
+                SerializeCollection<DaisyContentItem>(updateCTBAdminCommunity, @".\updateCTBAdminContentItems.xml");
+            }
+            else
+            {
+                Console.WriteLine("No updated CTB admin items to save");
+            }
+
 
             // Get Share to Folders
-            var folderLinks = from shareTo in excel.Worksheet<DaisyFolderLink>("3 Share To")
+            var shareItems = from shareTo in excel.Worksheet<DaisyFolderLink>("3 Share To")
+                              where (!string.IsNullOrEmpty(shareTo.mig_id))
                               select shareTo;
-            SerializeCollection<DaisyFolderLink>(folderLinks, @".\shareTo.xml");
+            if (shareItems.Count() > 0)
+            {
+                SerializeCollection<DaisyFolderLink>(shareItems, @".\shareTo.xml");
+            }
+            else
+            {
+                Console.WriteLine("No 'share to' items to save");
+            }
 
             //Get relationships
             var relationships = from relationship in excel.Worksheet<DaisyRelationships>("4 Relationships")
+                                where (!string.IsNullOrEmpty(relationship.ownerid))
                                 select relationship;
-            SerializeCollection<DaisyRelationships>(relationships, @".\relationships.xml");
+
+            if (relationships.Count() > 0)
+            {
+                SerializeCollection<DaisyRelationships>(relationships, @".\relationships.xml");
+            }
+            else
+            {
+                Console.WriteLine("No relationships to save");
+            }
 
             // Get translations
             var translations = from translation in excel.Worksheet<DaisyTranslation>("5 Translations")
+                               where (!string.IsNullOrEmpty(translation.english_id))
                                select translation;
-            SerializeCollection<DaisyTranslation>(translations, @".\translations.xml");
+
+            if (translations.Count() > 0)
+            {
+                SerializeCollection<DaisyTranslation>(translations, @".\translations.xml");
+            }
+            else
+            {
+                Console.WriteLine("No translations to save");
+            }
 
             Console.WriteLine("Press Enter");
             Console.Read();
@@ -109,18 +207,51 @@ namespace Blu82
         /// <param name="siteColumnNames"></param>
         /// <param name="community">The Community to get content for (site, siteAdmin, or ctbadmin)</param>
         /// <returns></returns>
-        private static List<DaisyContentItem> ExtractItemsForCommunity(ExcelQueryFactory excel, String sheetName, string community)
+        private static List<DaisyContentItem> ExtractNewItemsForCommunity(ExcelQueryFactory excel, String sheetName, string community)
         {
             var siteColumnNames = excel.GetColumnNames(sheetName);
 
+            var sheetItems = excel.Worksheet(sheetName).ToList()
+                .Where( 
+                    contentitem => contentitem["community"] == community
+                    && (contentitem["mig_id"] != null && contentitem["mig_id"].ToString().Trim() != "")
+                    && (!contentitem["mig_id"].ToString().StartsWith("/") && !IsLong(contentitem["mig_id"].ToString()))
+                );
+
             List<DaisyContentItem> items = ExtractItems(
                                             siteColumnNames,
-                                            (
-                                                //LINQ for all rows of a community
-                                                from contentitem in excel.Worksheet(sheetName)
-                                                where contentitem["community"] == community
-                                                select contentitem
-                                            ), 
+                                            sheetItems, 
+                                            community
+                                        );
+
+            return items;
+        }
+
+        /// <summary>
+        /// Extracts all the update items from a sheet that are of a certain content type within a community
+        /// </summary>
+        /// <param name="excel">The excel file</param>
+        /// <param name="sheetName">The name of the sheet</param>
+        /// <param name="contentType">The content type</param>
+        /// <param name="siteColumnNames"></param>
+        /// <param name="community">The Community to get content for (site, siteAdmin, or ctbadmin)</param>
+        /// <returns></returns>
+        private static List<DaisyContentItem> ExtractUpdateItemsForCommunity(ExcelQueryFactory excel, String sheetName, string community)
+        {
+            var siteColumnNames = excel.GetColumnNames(sheetName);
+
+
+            var sheetItems = excel.Worksheet(sheetName).ToList()
+                             .Where( 
+                                contentitem => contentitem["community"] == community
+                                && (contentitem["mig_id"] != null && contentitem["mig_id"].ToString().Trim() != "")
+                                && (contentitem["mig_id"].ToString().StartsWith("/") || IsLong(contentitem["mig_id"].ToString()))
+                              );
+
+
+            List<DaisyContentItem> items = ExtractItems(
+                                            siteColumnNames,
+                                            sheetItems,
                                             community
                                         );
 
@@ -134,7 +265,7 @@ namespace Blu82
         /// <param name="contentitems"></param>
         /// <param name="community"></param>
         /// <returns></returns>
-        private static List<DaisyContentItem> ExtractItems(IEnumerable<string> columnNames, IQueryable<Row> contentitems, string community)
+        private static List<DaisyContentItem> ExtractItems(IEnumerable<string> columnNames, IEnumerable<Row> contentitems, string community)
         {
             List<DaisyContentItem> rtnItems = new List<DaisyContentItem>();
 
@@ -224,6 +355,25 @@ namespace Blu82
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// Tests if a string is long.  Helper for determining mig_id type.
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        private static bool IsLong(string s)
+        {
+            bool isLong = false;
+
+            try
+            {
+                long.Parse(s);
+                isLong = true;
+            }
+            catch { }
+
+            return isLong;
         }
 
         private static void SerializeCollection<T>(IEnumerable<T> objToSer, String fileName)
