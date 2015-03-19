@@ -62,6 +62,8 @@
     <Compile Include="ContentTypes\DaisyFolderLink.cs" />
     <Compile Include="ContentTypes\DaisyRelationships.cs" />
     <Compile Include="ContentTypes\DaisyTranslation.cs" />
+    <Compile Include="MigrationTasks\MigrationDriver.cs" />
+    <Compile Include="MigrationTasks\MigrationTask.cs" />
     <Compile Include="WebFileInfo.cs" />
     <Compile Include="ImageInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
