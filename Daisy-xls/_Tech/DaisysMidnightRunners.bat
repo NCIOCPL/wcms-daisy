@@ -13,6 +13,9 @@ GOTO :eof
  set folder=%1
  cd %folder%
  echo.Handling Folder %folder%
+ del Monikers.xml
+ del LOG-*.xml
+ del *.log
  ..\..\Daisy\Daisy.exe _MainScript.xml 2>&1 > %folder%.log
  REM dir 2>&1 > %folder%.log
  cd ..
