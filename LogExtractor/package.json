@@ -1,0 +1,10 @@
+{
+    "name": "DaisyLogExtractor",
+    "version": "0.0.1",
+    "dependencies": {
+        "xml2js" : "0.4.4",
+        "lodash" : "2.4.1",
+        "graceful-fs" : "3.0.2"
+    }
+
+}
