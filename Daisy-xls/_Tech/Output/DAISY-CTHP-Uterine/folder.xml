@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <folder>/cancertopics/types/uterine</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/uterine/patient</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/uterine/hp</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/uterine/research</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/uterino</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/uterino/paciente</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/uterino/pro</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/uterino/investigacion</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+</list>

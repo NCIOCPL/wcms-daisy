@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>14454</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Bladder Cancer]]></long_title>
+    <short_title><![CDATA[Bladder Cancer ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Bladder Cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>The bladder is a hollow organ in the lower part of the abdomen that stores urine until it is passed out of the body.</p>
+<p>The most common type of bladder cancer is transitional cell carcinoma, which begins in urothelial cells that line the inside of the bladder. Urothelial cells are transitional cells, which are able to change shape and stretch when the bladder is full.  This type of cancer is also called urothelial carcinoma. Other types of bladder cancer include squamous cell carcinoma (cancer that begins in thin, flat cells lining the bladder) and adenocarcinoma (cancer that begins in cells that make and release mucus and other fluids).</p>
+<p>People who smoke have an increased risk of bladder cancer. Being exposed to certain chemicals and having chronic bladder infections can also increase the risk of bladder cancer.</p>
+<p>The most common sign of bladder cancer is blood in the urine.  Bladder cancer is often diagnosed at an early stage, when the cancer is easier to treat.</p>
+]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/bladder</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Bladder Cancer]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/bladder/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/bladder/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/bladder/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/bladder/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>153793</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de vejiga]]></long_title>
+    <short_title><![CDATA[Cáncer de vejiga]]></short_title>
+    <long_description><![CDATA[Cáncer de vejiga]]></long_description>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/vejiga</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de vejiga]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/vejiga/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/vejiga/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/vejiga/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/vejiga/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>15711</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/extracranial-germ-cell</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Extracranial Germ Cell Tumors]]></long_title>
+    <short_title><![CDATA[Extracranial Germ Cell Tumors]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about extracranial germ cell tumors.]]></long_description>
+    <bodyfield><![CDATA[<p>A germ cell is a type of cell that forms as a fetus develops. These cells later become sperm in the testicles or eggs in the ovaries. Sometimes, germ cells may develop into a germ cell tumor in other parts of the body, either before or after birth.</p>
+<p>An extracranial germ cell tumor is a germ cell tumor that forms in parts of the body other than the brain, such as the gonads (testicles and ovaries), chest, abdomen, or tailbone. Extracranial germ cell tumors are most common in teenagers 15 to 19 years of age.</p>
+<p>There are three types of extracranial germ cell tumors. The most common type is mature teratoma, a benign tumor that is not likely to become cancer. Other types are immature teratomas (which may become cancer) and malignant germ cell tumors (cancer).</p>
+<p>Extracranial germ cell tumors in children, especially ovarian germ cell tumors or testicular cancer, can usually be cured.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/extracranial-germ-cell</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/extracranial-germ-cell</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Extracranial Germ Cell Tumors]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/extracranial-germ-cell/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/extracranial-germ-cell/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/extracranial-germ-cell/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/extracranial-germ-cell/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>817230</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/extracraneal-celulas-germinativas</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Tumores extracraneales de células germinativas]]></long_title>
+    <short_title><![CDATA[Tumores extracraneales de células germinativas]]></short_title>
+    <long_description><![CDATA[Tumores de células germinativas extracraneales (infantil)]]></long_description>
+    <bodyfield><![CDATA[<p>Una célula germinativa es un tipo de célula que se forma a medida que el feto se desarrolla. Estas células más tarde se convierten en espermatozoides en los testículos u óvulos en los ovarios. A veces, las células germinativas se pueden convertir en un tumor de células germinativas en otras partes del cuerpo, ya sea antes o después del nacimiento.</p>
+<p>Un tumor extracraneal de células germinativas es un tumor de células germinativas que se forma en partes del cuerpo fuera del cerebro, como las gónadas (testículos y ovarios), el pecho, el abdomen o la rabadilla. Los tumores extracraneales de células germinativas son más comunes en los adolescentes de 15 a 19 años.</p>
+<p>Hay tres tipos de tumores extracraneales de células germinativas. El tipo más común es el teratoma maduro, un tumor benigno que no es probable que se convierta en cáncer. Otros tipos son los teratomas inmaduros (que se pueden convertir en cáncer) y los tumores malignos de células germinativas (cáncer).</p>
+<p>Los tumores extracraneales de células germinativas en los niños, especialmente los tumores de células germinativas del ovario o el cáncer de testículo, por lo general se pueden curar.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/extracraneal-celulas-germinativas</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/extracraneal-celulas-germinativas</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Tumores extracraneales de células germinativas]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/extracraneal-celulas-germinativas/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/extracraneal-celulas-germinativas/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/extracraneal-celulas-germinativas/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/extracraneal-celulas-germinativas/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

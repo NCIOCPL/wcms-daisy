@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Migration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MigrationTaskList>
+		<MigrationTask xsi:type="Reset" Name="Reset system" MonikerReset="true">
+		</MigrationTask>
+		<MigrationTask xsi:type="RelationshipCreator" Name="relationships">
+			<DataGetter xsi:type="XmlDataGetterOfRelationshipDescription" FileName="relationships.xml">
+				<Mapper xsi:type="XmlRelationshipDescriptionMapper" />
+			</DataGetter>
+		</MigrationTask>
+	</MigrationTaskList>
+</Migration>
+

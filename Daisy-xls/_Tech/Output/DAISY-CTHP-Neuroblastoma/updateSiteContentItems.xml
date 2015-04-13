@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13495</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/neuroblastoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Neuroblastoma]]></long_title>
+    <short_title><![CDATA[Neuroblastoma]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Neuroblastoma.]]></long_description>
+    <bodyfield><![CDATA[<p>Neuroblastoma is a disease in which malignant (cancer) cells form in certain types of nerve tissue. Neuroblastoma most often begins in the adrenal glands, which are on top of the kidneys. It can also form in nerve tissue in the neck, chest, abdomen, or spine.</p>
+<p>Neuroblastoma most often occurs in children younger than 5 years of age. Sometimes it forms before birth and is found during a routine pregnancy ultrasound. In children aged 6 months or younger, the disease sometimes goes away without treatment.</p>
+<p>Neuroblastoma is usually found when the tumor begins to grow and cause signs or symptoms. By the time it is diagnosed, the cancer has usually metastasized (spread to other parts of the body).</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/neuroblastoma</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/neuroblastoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Neuroblastoma]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/neuroblastoma/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/neuroblastoma/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/neuroblastoma/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/neuroblastoma/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>817158</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/neuroblastoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Neuroblastoma]]></long_title>
+    <short_title><![CDATA[Neuroblastoma]]></short_title>
+    <long_description><![CDATA[Neuroblastoma]]></long_description>
+    <bodyfield><![CDATA[<p>El neuroblastoma es una enfermedad por la que se forman células malignas (cancerosas) en ciertos tipos de tejido nervioso. El neuroblastoma comienza con mayor frecuencia en las glándulas suprarrenales, que se encuentran encima de los riñones. También se puede formar en el tejido nervioso del cuello, el pecho, el abdomen o la espalda.</p>
+<p>El neuroblastoma se presenta con más frecuencia en niños menores de 5 años. A veces, se forma antes de nacer y se encuentra durante una ecografía del embarazo de rutina. En los niños de 6 meses o menos, la enfermedad a veces desaparece sin tratamiento.</p>
+<p>El neuroblastoma generalmente se encuentra cuando el tumor comienza a crecer y causa signos o síntomas. En el momento en que se diagnostica, habitualmente el cáncer ya hizo metástasis (se diseminó a otras partes del cuerpo).</p>
+<p>Algunas veces se hereda (pasa de padres a hijos) un riesgo mayor de neuroblastoma . En el caso del neuroblastoma heredado, la enfermedad se puede formar en dos o más órganos.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/neuroblastoma</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/neuroblastoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Neuroblastoma]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/neuroblastoma/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/neuroblastoma/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/neuroblastoma/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/neuroblastoma/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

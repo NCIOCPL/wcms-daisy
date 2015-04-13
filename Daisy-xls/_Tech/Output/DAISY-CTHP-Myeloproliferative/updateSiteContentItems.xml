@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13892</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/myeloproliferative</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Myeloproliferative Neoplasms ]]></long_title>
+    <short_title><![CDATA[Myeloproliferative Neoplasms ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Myeloproliferative Neoplasms.]]></long_description>
+    <bodyfield><![CDATA[Myeloproliferative neoplasms and myelodysplastic syndromes are diseases of the blood cells. They include chronic myeloproliferative neoplasms, myelodysplastic syndromes, and myelodysplastic/myeloproliferative neoplasms.  
+Chronic myeloproliferative neoplasms are diseases in which the bone marrow makes too many red blood cells, platelets, or certain white blood cells.
+Myelodysplastic syndromes are a group of cancers in which immature blood  cells in the bone marrow do not mature or become healthy blood cells .
+Myelodysplastic/myeloproliferative neoplasms are diseases that have features of both myelodysplastic syndromes and myeloproliferative neoplasms. 
+Certain types of myeloproliferative neoplasms and myelodysplastic syndromes may become a type of blood cancer called acute leukemia.]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/myeloproliferative</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/myeloproliferative</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Myeloproliferative Neoplasms ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/myeloproliferative/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/myeloproliferative/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/myeloproliferative/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/myeloproliferative/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>14156</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/mieloproliferativas</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Neoplasias mieloproliferativas y síndromes mielodisplásicos]]></long_title>
+    <short_title><![CDATA[Neoplasias mieloproliferativas y síndromes mielodisplásicos]]></short_title>
+    <long_description><![CDATA[Neoplasias mieloproliferativas y síndromes mielodisplásicos]]></long_description>
+    <bodyfield><![CDATA[<p>Las neoplasias mieloproliferativas y los síndromes mielodisplásicos son enfermedades de las células sanguíneas. Incluyen las neoplasias mieloproliferativas crónicas, los síndromes mielodisplásicos y las neoplasias mielodisplásicas o mieloproliferativas.</p>
+<p>Las neoplasias mieloproliferativas crónicas son enfermedades por las que la médula ósea produce demasiados glóbulos rojos, plaquetas o ciertos glóbulos blancos.</p>
+<p>Los síndromes mielodisplásicos son un grupo de cánceres en los que las células madre no maduran hasta convertirse en células sanas. En cambio, se convierten en blastocitos anormales (inmaduros) en la sangre o la médula ósea.</p>
+<p>Las neoplasias mielodisplásicas o mieloproliferativas son enfermedades que tienen características de los síndromes mielodisplásicos y de las neoplasias mieloproliferativas.</p>
+<p>Ciertos tipos de neoplasias mieloproliferativas y síndromes mielodisplásicos se pueden convertir en un tipo de cáncer de la sangre que se llama leucemia aguda.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/mieloproliferativas</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/mieloproliferativas</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Neoplasias mieloproliferativas]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/mieloproliferativas/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/mieloproliferativas/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/mieloproliferativas/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/mieloproliferativas/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

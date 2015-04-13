@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <folder>/cancertopics/types/pheochromocytoma</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/pheochromocytoma/patient</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/pheochromocytoma/hp</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/pheochromocytoma/research</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/feocromocitoma</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/feocromocitoma/paciente</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/feocromocitoma/pro</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/feocromocitoma/investigacion</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+</list>

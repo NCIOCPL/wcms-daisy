@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13420</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/colorectal</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Colorectal Cancer]]></long_title>
+    <short_title><![CDATA[Colorectal Cancer]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about colorectal cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>Colorectal cancer is cancer that starts in the colon or rectum. The colon and the rectum are parts of the large intestine, which is the lower part of the body’s digestive system. During digestion, food moves through the stomach and small intestine into the colon. The colon absorbs water and nutrients from the food and stores waste matter (stool). Stool moves from the colon into the rectum before it leaves the body.</p>
+<p>Most colorectal cancers are adenocarcinomas (cancers that begin in cells that make and release mucus and other fluids). Colorectal cancer often begins as a growth called a polyp, which may form on the inner wall of the colon or rectum. Some polyps become cancer over time. Finding and removing polyps can prevent colorectal cancer.</p>
+<p>Colorectal cancer is the third most common type of cancer in men and women in the United States. Deaths from colorectal cancer have decreased with the use of colonoscopies and fecal occult blood tests, which check for blood in the stool.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/colorectal</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/colorectal</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Colorectal Cancer]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/colorectal/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/colorectal/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/colorectal/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/colorectal/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>153786</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/colorrectal</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer colorrectal]]></long_title>
+    <short_title><![CDATA[Cáncer colorrectal]]></short_title>
+    <long_description><![CDATA[Cáncer colorrectal]]></long_description>
+    <bodyfield><![CDATA[<p>El cáncer colorrectal es un cáncer que comienza en el colon o en el recto. El colon y el recto son partes del intestino grueso, que es la parte inferior del aparato digestivo del cuerpo. Durante la digestión, los alimentos se mueven a través del estómago y el intestino delgado hacia el colon. El colon absorbe agua y nutrientes de los alimentos y almacena los deshechos (materia fecal). La materia fecal pasa desde el colon hacia el recto antes de salir del cuerpo.</p>
+<p>La mayoría de los cánceres colorrectales son adenocarcinomas (cánceres que empiezan en las células que producen y liberan moco y otros líquidos). El cáncer colorrectal comienza a menudo como un crecimiento que se llama pólipo, que se puede formar en la pared interna del colon o el recto. Con el tiempo, algunos pólipos se vuelven cancerosos. Al encontrar y eliminar los pólipos se puede prevenir el cáncer colorrectal.</p>
+<p>En los Estados Unidos, el cáncer colorrectal es el tercer tipo más común de cáncer en hombres y mujeres. Las muertes por cáncer colorrectal han disminuido con el uso de las colonoscopias y prueba de sangre oculta en la materia fecal, mediante los que se comprueba si hay sangre en la materia fecal.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/colorrectal</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/colorrectal</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer colorrectal]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/colorrectal/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/colorrectal/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/colorrectal/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/colorrectal/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

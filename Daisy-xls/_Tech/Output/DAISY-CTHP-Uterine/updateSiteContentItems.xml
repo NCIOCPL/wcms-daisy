@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13890</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/uterine</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Uterine Cancer]]></long_title>
+    <short_title><![CDATA[Uterine Cancer]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about uterine cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>The uterus is a hollow, muscular organ where a fetus grows. Uterine cancer can start in different parts of the uterus. Most uterine cancers start in the endometrium (the inner lining of the uterus). This is called endometrial cancer. Most endometrial cancers are adenocarcinomas (cancers that begin in cells that make mucus and other fluids).</p>
+<p>Uterine sarcoma is an uncommon form of uterine cancer that forms in the muscle and tissue that support the uterus.</p>
+<p>Obesity, certain inherited conditions, and taking estrogen alone (without progesterone) can increase the risk of endometrial cancer. Radiation therapy to the pelvis can increase the risk of uterine sarcoma. Taking tamoxifen for breast cancer can increase the risk of both endometrial cancer and uterine sarcoma.</p>
+<p>The most common sign of endometrial cancer is unusual vaginal bleeding. Endometrial cancer can usually be cured. Uterine sarcoma is harder to cure.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/uterine</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/uterine</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Uterine Cancer ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/uterine/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/uterine/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/uterine/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/uterine/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>320767</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/uterino</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de útero]]></long_title>
+    <short_title><![CDATA[Cáncer de útero]]></short_title>
+    <long_description><![CDATA[Cáncer de útero]]></long_description>
+    <bodyfield><![CDATA[<p>El útero es un órgano muscular hueco donde crece el feto. El cáncer de útero puede comenzar en diferentes partes del útero. La mayoría de los cánceres de útero comienzan en el endometrio (el revestimiento interno del útero). Esto se conoce como cáncer de endometrio. La mayoría de los cánceres del endometrio son adenocarcinomas (cánceres que empieza en las células que elaboran moco y otros líquidos).</p>
+<p>El sarcoma uterino es una forma poco frecuente de cáncer de útero que se forma en el músculo y el tejido que sostienen el útero.</p>
+<p>La obesidad, ciertas enfermedades heredadas y la toma de estrógeno solo (sin progesterona) pueden aumentar el riesgo de cáncer de endometrio. La radioterapia dirigida a la pelvis puede aumentar el riesgo de sarcoma uterino. Tomar tamoxifeno para el cáncer de mama puede aumentar el riesgo tanto de cáncer de endometrio como de sarcoma uterino.</p>
+<p>El signo más común de cáncer de endometrio es el sangrado vaginal no habitual. El cáncer de endometrio generalmente se puede curar. El sarcoma uterino es más difícil de curar.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/uterino</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/uterino</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de útero]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/uterino/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/uterino/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/uterino/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/uterino/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

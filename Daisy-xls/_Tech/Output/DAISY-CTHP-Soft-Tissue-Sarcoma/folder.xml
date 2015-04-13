@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <folder>/cancertopics/types/soft-tissue-sarcoma</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/soft-tissue-sarcoma/patient</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/soft-tissue-sarcoma/hp</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/soft-tissue-sarcoma/research</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/sarcoma-de-tejido-blando</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/sarcoma-de-tejido-blando/paciente</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/sarcoma-de-tejido-blando/pro</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/sarcoma-de-tejido-blando/investigacion</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+</list>

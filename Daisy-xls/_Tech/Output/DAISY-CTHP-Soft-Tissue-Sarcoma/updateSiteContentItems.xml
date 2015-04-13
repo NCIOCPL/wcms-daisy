@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13832</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/soft-tissue-sarcoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Soft Tissue Sarcoma ]]></long_title>
+    <short_title><![CDATA[Soft Tissue Sarcoma ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about soft tissue sarcoma.]]></long_description>
+    <bodyfield><![CDATA[<p>Soft tissue sarcoma is a cancer that starts in soft tissues of the body, including muscle, tendons, fat, lymph vessels, blood vessels, nerves, and tissue around joints. The tumors can be found anywhere in the body but often form in the arms, legs, chest, or abdomen.</p>
+<p>Signs of soft tissue sarcoma include a lump or swelling in soft tissue. Sometimes there are no signs or symptoms until the tumor is big and presses on nearby nerves or other parts of the body.</p>
+<p>Both children and adults can develop soft tissue sarcoma.  Treatment often works  better in children and they may have a better chance of being cured than adults.</p>
+<p>There are many types of soft tissue sarcoma, based on the type of soft tissue cell in which the cancer formed. Different types may be treated differently.</p>
+<p>Rhabdomyosarcoma is the most common type of soft tissue sarcoma in children. It begins in muscles that are attached to bones and help the body move. Most rhabdomyosarcomas are diagnosed in children younger than 10 years. Rhabdomyosarcomas usually form lumps near the surface of the body and are found early.</p>
+<p>Gastrointestinal stromal tumors are soft tissue sarcomas that form in soft tissues of the gastrointestinal tract, usually in the stomach or small intestine. They are most common in adults, and may be benign (not cancer) or malignant (cancer). Gastrointestinal stromal tumors often do not cause early symptoms.</p>
+<p>Ewing sarcoma, Kaposi sarcoma, and uterine sarcoma are other types of soft tissue sarcoma.</p>
+<p>Radiation therapy and certain diseases and inherited conditions can increase the risk of soft tissue sarcoma.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/soft-tissue-sarcoma</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/soft-tissue-sarcoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Soft Tissue Sarcoma ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/soft-tissue-sarcoma/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/soft-tissue-sarcoma/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/soft-tissue-sarcoma/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/soft-tissue-sarcoma/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>817145</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/sarcoma-de-tejido-blando</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Sarcoma de tejido blando]]></long_title>
+    <short_title><![CDATA[Sarcoma de tejido blando]]></short_title>
+    <long_description><![CDATA[Sarcoma de tejido blando]]></long_description>
+    <bodyfield><![CDATA[<p>El sarcoma de tejido blando es un cáncer que comienza en los tejidos blandos del cuerpo, como los músculos, los tendones, la grasa, los vasos linfáticos, los vasos sanguíneos, los nervios y el tejido que rodea las articulaciones. Los tumores se pueden encontrar en cualquier parte del cuerpo, pero con frecuencia se forman en los brazos, las piernas, el pecho o el abdomen.</p>
+<p>Los signos del sarcoma de tejido blando incluyen un bulto o hinchazón en el tejido blando. A veces no hay signos o síntomas hasta que el tumor es grande y presiona los nervios cercanos u otras partes del cuerpo.</p>
+<p>Tanto los niños como los adultos pueden presentar sarcoma de tejido blando. A menudo, el tratamiento funciona mejor en los niños y pueden tener una probabilidad mejor de curarse que los adultos.</p>
+<p>Hay muchos tipos de sarcoma de tejido blando, según el tipo de células de tejido blando donde empezó el cáncer. Los diferentes tipos se pueden tratar de distinta manera.</p>
+<p>El rabdomiosarcoma es el tipo más común de sarcoma de tejido blando en los niños. Comienza en los músculos que se unen a los huesos y ayudan a mover el cuerpo. La mayoría de los rabdomiosarcomas se diagnostican en niños menores de 10 años. Los rabdomiosarcomas suelen formar bultos cerca de la superficie del cuerpo y se detectan pronto.</p>
+<p>Los tumores del estroma gastrointestinal son sarcomas de tejido blando que se forman en los tejidos blandos del tracto gastrointestinal; por lo general en el estómago o el intestino delgado. Son más comunes en los adultos, y pueden ser benignos (no cancerosos) o malignos (cancerosos). Los tumores del estroma gastrointestinal suelen no producir síntomas tempranos.</p>
+<p>El sarcoma de Ewing, el sarcoma de Kaposi y el sarcoma uterino son otros tipos de sarcoma de tejido blando.</p>
+<p>La radioterapia y ciertas enfermedades y afecciones heredadas pueden aumentar el riesgo de presentar un sarcoma de tejido blando.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/sarcoma-de-tejido-blando</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/sarcoma-de-tejido-blando</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Sarcoma de tejido blando]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/sarcoma-de-tejido-blando/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/sarcoma-de-tejido-blando/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/sarcoma-de-tejido-blando/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/sarcoma-de-tejido-blando/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

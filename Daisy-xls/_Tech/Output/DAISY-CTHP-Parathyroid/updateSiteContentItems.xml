@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>15830</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/parathyroid</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Parathyroid Cancer]]></long_title>
+    <short_title><![CDATA[Parathyroid Cancer]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Parathyroid Cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>The parathyroid glands are four tiny glands in the neck near the thyroid gland. The parathyroid glands make parathyroid hormone (PTH), which helps the body use calcium and keeps the amount of calcium in the blood at normal levels.</p>
+<p>Tumors in the parathyroid are usually benign (not cancer). These are called adenomas. Fewer than 100 people a year are diagnosed with parathyroid cancer in the United States.</p>
+<p>Having certain inherited disorders can increase the risk of parathyroid cancer. These include familial isolated hyperparathyroidism (FIHP) and multiple endocrine neoplasia type 1 (MEN1) syndrome. Having radiation therapy to the neck can increase the risk of benign parathyroid tumors.</p>
+<p>With either a benign tumor or cancer, the gland may make too much PTH. This causes hypercalcemia (too much calcium in the blood), which is a serious and life-threatening condition. There may be no signs or symptoms of a parathyroid tumor until there is too much calcium in the blood.  Signs and symptoms include weakness and feeling tired. Larger parathyroid tumors may cause a lump in the neck near the thyroid.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/parathyroid</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/parathyroid</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Parathyroid Cancer]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/parathyroid/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/parathyroid/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/parathyroid/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/parathyroid/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>320768</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/paratiroides</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de paratiroides]]></long_title>
+    <short_title><![CDATA[Cáncer de paratiroides]]></short_title>
+    <long_description><![CDATA[Cáncer de paratiroides]]></long_description>
+    <bodyfield><![CDATA[<p>Las glándulas paratiroides son cuatro glándulas diminutas del cuello cercanas a la glándula tiroides. Las glándulas paratiroides elaboran la hormona paratiroidea (HPT), que ayuda al cuerpo a usar el calcio y mantiene concentraciones normales de calcio en el cuerpo.</p>
+<p>Los tumores en la glándula paratiroidea generalmente son benignos (no cancerosos). Se llaman adenomas. En los Estados Unidos, les diagnostican cáncer de paratiroides a menos de 100 personas por año.</p>
+<p>Tener ciertos trastornos heredados puede aumentar el riesgo de cáncer de paratiroides. Entre ellos se encuentra el hiperparatiroidismo familiar aislado (FIHP) y el síndrome de neoplasia endocrina múltiple tipo 1 (NEM1). La administración de radioterapia dirigida al cuello puede aumentar el riesgo de tumores paratiroides benignos.</p>
+<p>La glándula produce demasiada HPT tanto en el caso de un tumor benigno o un cáncer. Esto produce hipercalcemia (exceso de calcio en la sangre), que es una afección grave y que pone en peligro la vida. Puede que no haya signos o síntomas de un tumor paratiroideo hasta que haya un exceso de calcio en la sangre. Los signos y síntomas incluyen debilidad y sensación de cansancio. Los tumores paratiroides más grandes pueden causar una masa en el cuello, cerca de la tiroides.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/paratiroides</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/paratiroides</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de paratiroides]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/paratiroides/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/paratiroides/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/paratiroides/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/paratiroides/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

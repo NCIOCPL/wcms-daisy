@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <folder>/cancertopics/types/leukemia</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/leukemia/patient</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/leukemia/hp</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/leukemia/research</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/leucemia</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/leucemia/paciente</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/leucemia/pro</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/leucemia/investigacion</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+</list>

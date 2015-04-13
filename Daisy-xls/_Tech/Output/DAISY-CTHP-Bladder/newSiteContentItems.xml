@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>en_bladder_cthp_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/bladder/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Bladder Cancer&#8211;for health professionals]]></long_title>
+    <short_title><![CDATA[Bladder Cancer ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Bladder Cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>This Web page provides evidence-based cancer information for health professionals about the screening and treatment of bladder cancer, as well as resources for supportive and palliative care. Information on bladder cancer research, such as active clinical trials, clinical trial results, and other research findings, is also provided.</p>
+<p>The PDQ® cancer information summaries provide comprehensive, peer-reviewed, evidence-based information intended to inform and assist clinicians who care for cancer patients. The summaries include level-of-evidence designations to help readers understand the strength of the evidence supporting the use of specific interventions or approaches.</p>]]></bodyfield>
+    <audience><![CDATA[health_professional]]></audience>
+  </item>
+  <item>
+    <mig_id>en_bladder_research_page</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerResearch</contenttype>
+    <folder>/cancertopics/types/bladder/research</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Bladder Cancer Research]]></long_title>
+    <short_title><![CDATA[Research]]></short_title>
+  </item>
+  <item>
+    <mig_id>en_bladder_card_treatment_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Bladder Cancer Patient]]></unique_title>
+    <card_title><![CDATA[Treatment]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[PDQ Treatment Information]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>en_bladder_card_treatment_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/bladder/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Bladder Cancer Health Professional]]></unique_title>
+    <card_title><![CDATA[Treatment]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[PDQ Treatment Information]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>en_bladder_card_causes_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Bladder Cancer Patient]]></unique_title>
+    <card_title><![CDATA[Causes & Prevention]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[PDQ Prevention Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about prevention of bladder cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_bladder_card_causes_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/bladder/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Bladder Cancer Health Professional]]></unique_title>
+    <card_title><![CDATA[Causes & Prevention]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[PDQ Prevention Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about prevention of bladder cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_bladder_card_screening_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Bladder Cancer Patient]]></unique_title>
+    <card_title><![CDATA[Screening]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[PDQ Screening Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about screening for bladder cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_bladder_card_screening_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/bladder/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Bladder Cancer Health Professional]]></unique_title>
+    <card_title><![CDATA[Screening]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[PDQ Screening Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about screening for bladder cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_bladder_card_survivial</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPFeaturedCard</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Survival Rates & Prognosis Bladder Cancer]]></unique_title>
+    <card_title><![CDATA[Survival Rates & Prognosis]]></card_title>
+    <theme><![CDATA[cthp-survival]]></theme>
+  </item>
+  <item>
+    <mig_id>en_ext_link_survival</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Seer]]></long_title>
+    <short_title><![CDATA[Seer]]></short_title>
+    <long_description><![CDATA[Bladder cancer statistics based on data from large groups of patients to be used as a general guide.]]></long_description>
+    <url><![CDATA[http://seer.cancer.gov/statfacts/html/urinb.html]]></url>
+  </item>
+  <item>
+    <mig_id>en_ext_link_treatment_1</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Clinical Trials to Treat Bladder Cancer]]></long_title>
+    <short_title><![CDATA[Clinical Trials to Treat Bladder Cancer]]></short_title>
+    <url><![CDATA[http://www.cancer.gov/clinicaltrials/search/results?protocolsearchid=6190190&vers=1]]></url>
+  </item>
+  <item>
+    <mig_id>en_section_nav</mig_id>
+    <community>site</community>
+    <contenttype>nciSectionNav</contenttype>
+    <folder>/cancertopics/types/bladder</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <section_nav_title><![CDATA[Bladder Cancer Section Nav]]></section_nav_title>
+    <levels_to_show><![CDATA[5]]></levels_to_show>
+  </item>
+  <item>
+    <mig_id>es_bladder_cthp_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/vejiga/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de vejiga&#8211;para profesionales de salud]]></long_title>
+    <short_title><![CDATA[Cáncer de vejiga]]></short_title>
+    <long_description><![CDATA[Cáncer de vejiga]]></long_description>
+    <audience><![CDATA[health_professional]]></audience>
+  </item>
+  <item>
+    <mig_id>es_bladder_research_page</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerResearch</contenttype>
+    <folder>/espanol/tipos/vejiga/investigacion</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de vejiga investigación ]]></long_title>
+    <short_title><![CDATA[Investigación ]]></short_title>
+  </item>
+  <item>
+    <mig_id>es_bladder_card_treatment_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Cáncer de vejiga Patient]]></unique_title>
+    <card_title><![CDATA[Tratamiento]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[Informacion sobre el tratamiento del PDQ]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>es_bladder_card_treatment_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/vejiga/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Cáncer de vejiga Health Professional]]></unique_title>
+    <card_title><![CDATA[Tratamiento]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[Informacion sobre el tratamiento del PDQ]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>es_bladder_card_causes_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Cáncer de vejiga Patient]]></unique_title>
+    <card_title><![CDATA[Causas y prevención]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[Informacion sobre el prevención del PDQ]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los causas y prevención del cáncer de vejiga.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_bladder_card_causes_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/vejiga/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Cáncer de vejiga Health Professional]]></unique_title>
+    <card_title><![CDATA[Causas y prevención]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[Informacion sobre el prevención del PDQ]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los causas y prevención del cáncer de vejiga.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_bladder_card_screening_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Cáncer de vejiga Patient]]></unique_title>
+    <card_title><![CDATA[Exámenes de detección]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[Informacion sobre el exámenes de detección del PDQ]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los exámenes de detección del cáncer de vejiga.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_bladder_card_screening_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/vejiga/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Cáncer de vejiga Health Professional]]></unique_title>
+    <card_title><![CDATA[Exámenes de detección]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[Informacion sobre el exámenes de detección del PDQ]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los exámenes de detección del cáncer de vejiga.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_bladder_card_survivial</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPFeaturedCard</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Survival Rates & Prognosis Cáncer de vejiga ]]></unique_title>
+    <card_title><![CDATA[Índices de supervivencia y pronóstico]]></card_title>
+    <theme><![CDATA[cthp-survival]]></theme>
+  </item>
+  <item>
+    <mig_id>es_ext_link_survival</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Seer]]></long_title>
+    <short_title><![CDATA[Seer]]></short_title>
+    <long_description><![CDATA[Estadísticas del cáncer de vejiga basadas en datos de grupos grandes de pacientes que se usarán como guía general (solo disponibles en inglés).]]></long_description>
+    <url><![CDATA[http://seer.cancer.gov/statfacts/html/urinb.html]]></url>
+  </item>
+  <item>
+    <mig_id>es_ext_link_treatment_1</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Estudios clínicos para tratar el cáncer de vejiga]]></long_title>
+    <short_title><![CDATA[Estudios clínicos para tratar el cáncer de vejiga]]></short_title>
+    <long_description><![CDATA[Estudios clínicos para tratar el cáncer de vejiga]]></long_description>
+    <url><![CDATA[http://www.cancer.gov/clinicaltrials/search/results?protocolsearchid=6190190&vers=1]]></url>
+  </item>
+  <item>
+    <mig_id>es_section_nav</mig_id>
+    <community>site</community>
+    <contenttype>nciSectionNav</contenttype>
+    <folder>/espanol/tipos/vejiga</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <section_nav_title><![CDATA[Cáncer de vejiga Section Nav]]></section_nav_title>
+    <levels_to_show><![CDATA[5]]></levels_to_show>
+  </item>
+</list>

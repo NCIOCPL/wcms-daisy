@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>14653</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/kidney</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Kidney Cancer ]]></long_title>
+    <short_title><![CDATA[Kidney Cancer ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Kidney Cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>There are two kidneys, one on each side of the spine, above the waist. The kidneys clean the blood to take out waste and make urine. Urine collects in the renal pelvis, the area at the center of the kidney, and then passes through the ureter, into the bladder, and out of the body. The kidneys also make hormones that help control blood pressure and signal the bone marrow to make red blood cells when needed.</p>
+<p>There are three main types of kidney cancer. Renal cell cancer is the most common type in adults and Wilms tumors are the most common in children. These types form in the tissues of the kidney that make urine. Transitional cell cancer forms in the renal pelvis and ureter in adults.</p>
+<p>Smoking and taking certain pain medicines for a long time can increase the risk of adult kidney cancer. Certain inherited disorders can increase the risk of kidney cancer in children and adults.  These include von Hippel-Lindau syndrome, hereditary leiomyomatosis and renal cell cancer, Birt-Hogg-Dubé syndrome, and hereditary papillary renal cancer.</p>
+<p>Kidney cancer is often diagnosed at an advanced stage because usually there are no early signs or symptoms.</p>
+<p>Kidney tumors may be benign or malignant.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/kidney</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/kidney</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Kidney Cancer ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/kidney/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/kidney/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/kidney/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/kidney/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>153790</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/rinon</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de riñón]]></long_title>
+    <short_title><![CDATA[Cáncer de riñón ]]></short_title>
+    <long_description><![CDATA[Cáncer de riñón (incluye el cáncer de células renales, el cáncer de células transicionales de la pelvis renal y el tumor de Wilms)]]></long_description>
+    <bodyfield><![CDATA[<p>Hay dos riñones, uno a cada lado de la columna vertebral, por encima de la cintura. Los riñones limpian la sangre para sacar los residuos y elaboran orina. La orina se acumula en la pelvis renal, el área en el centro del riñón, y luego pasa a través del uréter a la vejiga y afuera del cuerpo. Los riñones también elaboran hormonas que ayudan a controlar la presión arterial y envían señales a la médula ósea para que produzca glóbulos rojos cuando es necesario.</p>
+<p>Hay tres tipos principales de cáncer de riñón. El cáncer de células renales es el tipo más común en los adultos y los tumores de Wilms son los más comunes en los niños. Estos tipos se forman en los tejidos del riñón que elaboran la orina. El cáncer de células de transición se forma en la pelvis renal y el uréter en los adultos.</p>
+<p>Fumar y tomar ciertos analgésicos durante mucho tiempo pueden aumentar el riesgo de cáncer de riñón en los adultos. Ciertos trastornos hereditarios pueden aumentar el riesgo de cáncer de riñón en niños y adultos. Estos son el síndrome de von Hippel-Lindau, la leiomiomatosis hereditaria y el cáncer de células renales, el síndrome de Birt-Hogg-Dubé y el cáncer renal papilar hereditario.</p>
+<p>El cáncer de riñón a menudo se diagnostica en un estadio avanzado porque suele no presentar signos o síntomas tempranos.</p>
+<p>Los tumores renales pueden ser benignos o malignos.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/rinon</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/rinon</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de riñón]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/rinon/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/rinon/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/rinon/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/rinon/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

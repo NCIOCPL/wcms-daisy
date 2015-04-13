@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <folder>/cancertopics/types/bladder</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/bladder/patient</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/bladder/hp</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/cancertopics/types/bladder/research</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/vejiga</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/vejiga/paciente</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/vejiga/pro</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+  <item>
+    <folder>/espanol/tipos/vejiga/investigacion</folder>
+    <show_in_nav>1</show_in_nav>
+  </item>
+</list>

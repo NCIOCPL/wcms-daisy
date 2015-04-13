@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13712</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/mesothelioma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Malignant Mesothelioma]]></long_title>
+    <short_title><![CDATA[Malignant Mesothelioma ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Malignant Mesothelioma.]]></long_description>
+    <bodyfield><![CDATA[<p>Malignant mesothelioma is a disease in which malignant (cancer) cells form in the thin layer of tissue that covers the lung, chest wall, or abdomen. It may also form in the heart or testicles, but this is rare.</p>
+<p>The type of malignant mesothelioma depends on the cell in which it began. The most common type of malignant mesothelioma is epithelial mesothelioma, which forms in the cells that line organs. The other types begin in spindle-shaped cells called sarcomatoid cells or are a mixture of both cell types. Epithelial mesothelioma may grow more slowly and have a better prognosis than other types.</p>
+<p>The major cause of malignant mesothelioma is being exposed to asbestos over a period of time. This includes people who were exposed to asbestos in the workplace and their family members.</p>
+<p>After a person is exposed to asbestos, it usually takes at least 20 years for malignant mesothelioma to form.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/mesothelioma</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/mesothelioma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Malignant Mesothelioma]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/mesothelioma/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/mesothelioma/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/mesothelioma/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/mesothelioma/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>320774</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/mesotelioma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Mesotelioma maligno]]></long_title>
+    <short_title><![CDATA[Mesotelioma maligno]]></short_title>
+    <long_description><![CDATA[Mesotelioma maligno]]></long_description>
+    <bodyfield><![CDATA[<p>El mesotelioma maligno es una enfermedad por la que se forman células malignas (cancerosas) en la capa delgada de tejido que cubre el pulmón, la pared torácica o el abdomen. También se puede formar en el corazón o los testículos, pero esto es poco frecuente.</p>
+<p>El tipo de mesotelioma maligno depende de la célula en la que comenzó. El tipo más común de mesotelioma maligno es el mesotelioma epitelial, que se forma en las células que revisten los órganos. Los otros tipos comienzan en las células en forma de huso que se llaman células sarcomatoides o son una mezcla de ambos tipos de células. El mesotelioma epitelial puede crecer más lentamente y tiene un mejor pronóstico que los otros tipos.</p>
+<p>La causa principal del mesotelioma maligno es la exposición al amianto (asbesto) durante un período de tiempo. Esto incluye a las personas que estuvieron expuestas al amianto en el lugar de trabajo y sus familiares.</p>
+<p>Después de que una persona se expuso al amianto, por lo general toma por lo menos 20 años para que se forme un mesotelioma maligno.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/mesotelioma</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/mesotelioma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Mesotelioma maligno]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/mesotelioma/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/mesotelioma/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/mesotelioma/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/mesotelioma/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>
