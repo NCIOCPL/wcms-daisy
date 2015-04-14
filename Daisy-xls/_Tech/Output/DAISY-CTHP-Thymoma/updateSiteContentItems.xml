@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13211</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/thymoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Thymoma and Thymic Carcinoma ]]></long_title>
+    <short_title><![CDATA[Thymoma and Thymic Carcinoma ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about thymoma and thymic carcinoma.]]></long_description>
+    <bodyfield><![CDATA[<p>Thymomas and thymic carcinomas are rare tumors that form in cells on the outside surface of the thymus. The thymus is a small organ that lies in the upper chest under the breastbone.  It is part of the lymph system and makes certain types of white blood cells that help the body fight infection.</p>
+<p>The tumor cells in a thymoma look like the normal cells of the thymus, grow slowly, and rarely spread beyond the thymus.</p>
+<p>The tumor cells in a thymic carcinoma look very different from the normal cells of the thymus.  They grow more quickly and have usually spread to other parts of the body when the cancer is found. Thymic carcinoma is harder to treat than thymoma.</p>
+<p>People with thymoma often also have autoimmune disorders such as myasthenia gravis and rheumatoid arthritis.</p>
+<p>Thymoma and thymic carcinoma may not cause early signs or symptoms. The cancer may be found during a chest x-ray or CT scan that is done for another reason.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/thymoma</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/thymoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Thymoma and Thymic Carcinoma ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/thymoma/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/thymoma/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/thymoma/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/thymoma/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>320775</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/timoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Timoma y carcinoma tímico]]></long_title>
+    <short_title><![CDATA[Timoma y carcinoma tímico]]></short_title>
+    <long_description><![CDATA[Timoma y carcinoma tímico]]></long_description>
+    <bodyfield><![CDATA[<p>Los timomas y los carcinomas tímicos son tumores poco frecuentes que se forman en las células de la superficie externa del timo. El timo es un órgano pequeño que descansa en la parte superior del pecho, debajo del esternón. Forma parte del sistema linfático y elabora ciertos tipos de glóbulos blancos que ayudan al cuerpo a combatir infecciones.</p>
+<p>Las células tumorales de un timoma se parecen a las células normales del timo, crecen lentamente y se diseminan rara vez más allá del timo.</p>
+<p>Las células tumorales de un carcinoma tímico son muy diferentes a las células normales del timo. Crecen más rápido y, por lo general, se diseminaron a otras partes del cuerpo cuando se encuentra el cáncer. El carcinoma tímico es más difícil de tratar que el timoma.</p>
+<p>Las personas con timoma a menudo también presentan ciertos trastornos autoinmunitarios como la miastenia grave y la artritis reumatoide.</p>
+<p>El timoma y el carcinoma tímico pueden no causar signos o síntomas tempranos. El cáncer se puede encontrar durante una radiografía de tórax o una tomografía computarizada que se realizan por otra razón.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/timoma</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/timoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Timoma y carcinoma tímico]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/timoma/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/timoma/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/timoma/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/timoma/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

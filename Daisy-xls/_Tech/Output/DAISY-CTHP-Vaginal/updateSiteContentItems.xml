@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>14707</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/vaginal</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Vaginal Cancer ]]></long_title>
+    <short_title><![CDATA[Vaginal Cancer ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about vaginal cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>The vagina (birth canal) leads from the cervix (the opening of the uterus) to the outside of the body.</p>
+<p>The most common type of vaginal cancer is squamous cell carcinoma, which begins in the thin, flat cells that line the vagina. Other types of vaginal cancer are adenocarcinoma (cancer that begins in cells that make mucus and other fluids), melanoma, and sarcoma.</p>
+<p>Infection with certain types of human papillomavirus (HPV) causes most vaginal cancer. Vaccines that protect against infection with these types of HPV may reduce the risk of vaginal cancer.</p>
+<p>Vaginal cancer often does not cause early signs or symptoms. It may be found during a routine pelvic exam. When found early, vaginal cancer can often be cured.</p>
+]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/vaginal</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/vaginal</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Vaginal Cancer ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/vaginal/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/vaginal/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/vaginal/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/vaginal/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>320764</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/vagina</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de vagina]]></long_title>
+    <short_title><![CDATA[Cáncer de vagina]]></short_title>
+    <long_description><![CDATA[Cáncer de vagina]]></long_description>
+    <bodyfield><![CDATA[<p>La vagina (canal del parto) se extiende desde el cuello del útero (la abertura del útero) hasta el exterior del cuerpo.</p>
+<p>El tipo más común de cáncer de vagina es el carcinoma de células escamosas, que comienza en las células delgadas y planas que revisten la vagina. Otros tipos de cáncer de vagina son el adenocarcinoma (cáncer que comienza en las células que elaboran moco y otros líquidos), el melanoma y el sarcoma.</p>
+<p>La infección por ciertos tipos de virus del papiloma humano (VPH) causa la mayoría de los cánceres de vagina. Las vacunas que protegen contra la infección por estos tipos de HPV pueden reducir el riesgo de cáncer de vagina.</p>
+<p>Con frecuencia, el cáncer de vagina no causa signos o síntomas tempranos. Se puede encontrar durante un examen pélvico de rutina. Cuando se detecta a tiempo, el cáncer de vagina a menudo se puede curar.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/vagina</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/vagina</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de vagina]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/vagina/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/vagina/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/vagina/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/vagina/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

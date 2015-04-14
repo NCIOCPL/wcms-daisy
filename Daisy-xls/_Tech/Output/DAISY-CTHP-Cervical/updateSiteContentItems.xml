@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>14756</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/cervical</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Cervical Cancer ]]></long_title>
+    <short_title><![CDATA[Cervical Cancer ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about cervical cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>The cervix is the lower, narrow end of the uterus (the organ where a fetus grows). The cervix leads from the uterus to the vagina (birth canal).</p>
+<p>The main types of cervical cancer are squamous cell carcinoma and adenocarcinoma. Squamous cell carcinoma begins in the thin, flat cells that line the cervix. Adenocarcinoma begins in cervical cells that make mucus and other fluids.</p>
+<p>Long-lasting infections with certain types of human papillomavirus (HPV) cause almost all cases of cervical cancer. Vaccines that protect against infection with these types of HPV can greatly reduce the risk of cervical cancer. Having a Pap test to check for abnormal cells in the cervix or a test to check for HPV can find cells that may become cervical cancer.  These cells can be treated before cancer forms.</p>
+<p>Cervical cancer can usually be cured if it is found and treated in the early stages.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/cervical</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/cervical</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Cervical Cancer ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/cervical/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/cervical/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/cervical/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/cervical/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>14691</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/cuello-uterino</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de cuello uterino]]></long_title>
+    <short_title><![CDATA[Cáncer de cuello uterino]]></short_title>
+    <long_description><![CDATA[El cuello uterino es el extremo inferior, angosto del útero (el órgano donde crece el feto). El cuello del útero se extiende desde el útero a la vagina (canal del parto)]]></long_description>
+    <bodyfield><![CDATA[<p>Los tipos principales de cáncer de cuello uterino son el carcinoma de células escamosas y el adenocarcinoma. El carcinoma de células escamosas comienza en las células delgadas y planas que revisten el cuello uterino. El adenocarcinoma comienza en las células del cuello del útero que elaboran moco y otros líquidos.</p>
+<p>Las infecciones prolongadas por ciertos tipos de virus del papiloma humano (VPH) causan casi todos los casos de cáncer de cuello uterino. Las vacunas que protegen contra la infección por estos tipos de VPH pueden reducir en gran medida el riesgo de cáncer de cuello uterino. Una prueba de Papanicolaou para detectar células anormales en el cuello uterino o una prueba para determinar si el VPH está presente permiten encontrar células que se pueden convertir en cáncer de cuello uterino. Estas células se pueden tratar antes de que se forme un cáncer.</p>
+<p>El cáncer cervical se puede curar si se detecta y se trata en las primeras etapas.</p>
+<p>Habitualmente, el cáncer de cuello uterino se puede curar cuando se encuentra y trata en los estadios tempranos.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/cuello-uterino</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/cuello-uterino</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de cuello uterino]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/cuello-uterino/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/cuello-uterino/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/cuello-uterino/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/cuello-uterino/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

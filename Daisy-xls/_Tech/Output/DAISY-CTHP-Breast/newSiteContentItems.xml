@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>en_breast_cthp_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/breast/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Breast Cancer&#8211;for health professionals]]></long_title>
+    <short_title><![CDATA[Breast Cancer]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about breast cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>This Web page provides evidence-based cancer information for health professionals about the genetics, prevention, screening, and treatment of breast cancer, as well as resources for supportive and palliative care. Information on breast cancer research, such as active clinical trials, clinical trial results, and other research findings, is also provided.</p>
+<p>The PDQ® cancer information summaries provide comprehensive, peer-reviewed, evidence-based information intended to inform and assist clinicians who care for cancer patients. The summaries include level-of-evidence designations to help readers understand the strength of the evidence supporting the use of specific interventions or approaches.</p>]]></bodyfield>
+    <audience><![CDATA[health_professional]]></audience>
+  </item>
+  <item>
+    <mig_id>en_breast_research_page</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerResearch</contenttype>
+    <folder>/cancertopics/types/breast/research</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Breast Cancer Research]]></long_title>
+    <short_title><![CDATA[Research]]></short_title>
+  </item>
+  <item>
+    <mig_id>en_breast_card_treatment_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Breast Cancer Patient]]></unique_title>
+    <card_title><![CDATA[Treatment]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[PDQ Treatment Information]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>en_breast_card_treatment_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/breast/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Breast Cancer Health Professional]]></unique_title>
+    <card_title><![CDATA[Treatment]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[PDQ Treatment Information]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>en_breast_card_causes_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Breast Cancer Patient]]></unique_title>
+    <card_title><![CDATA[Causes & Prevention]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[PDQ Prevention Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about prevention of breast cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_breast_card_causes_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/breast/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Breast Cancer Health Professional]]></unique_title>
+    <card_title><![CDATA[Causes & Prevention]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[PDQ Prevention Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about prevention of breast cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_breast_card_genetics_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/breast/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Genetics Breast Cancer Health Professional]]></unique_title>
+    <card_title><![CDATA[Genetics]]></card_title>
+    <theme><![CDATA[cthp-genetics]]></theme>
+    <pdq_label><![CDATA[PDQ Genetics Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about genetics of breast cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_breast_card_screening_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Breast Cancer Patient]]></unique_title>
+    <card_title><![CDATA[Screening]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[PDQ Screening Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about screening for breast cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_breast_card_screening_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/breast/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Breast Cancer Health Professional]]></unique_title>
+    <card_title><![CDATA[Screening]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[PDQ Screening Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about screening for breast cancer.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_breast_card_survivial</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPFeaturedCard</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Survival Rates & Prognosis Breast Cancer]]></unique_title>
+    <card_title><![CDATA[Survival Rates & Prognosis]]></card_title>
+    <theme><![CDATA[cthp-survival]]></theme>
+  </item>
+  <item>
+    <mig_id>en_breast_card_coping_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPFeaturedCard</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Coping Breast Cancer Patient]]></unique_title>
+    <card_title><![CDATA[General Resources on Coping]]></card_title>
+    <theme><![CDATA[cthp-general]]></theme>
+  </item>
+  <item>
+    <mig_id>en_breast_card_coping_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPFeaturedCard</contenttype>
+    <folder>/cancertopics/types/breast/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Coping Breast Cancer HP]]></unique_title>
+    <card_title><![CDATA[General Resources on Coping]]></card_title>
+    <theme><![CDATA[cthp-general]]></theme>
+  </item>
+  <item>
+    <mig_id>en_ext_link_survival</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Seer]]></long_title>
+    <short_title><![CDATA[Seer]]></short_title>
+    <long_description><![CDATA[Breast cancer statistics based on data from large groups of patients to be used as a general guide.]]></long_description>
+    <url><![CDATA[http://seer.cancer.gov/statfacts/html/breast.html]]></url>
+  </item>
+  <item>
+    <mig_id>en_ext_link_causes_1</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Clinical Trials to Prevent Breast Cancer]]></long_title>
+    <short_title><![CDATA[Clinical Trials to Prevent Breast Cancer]]></short_title>
+    <url><![CDATA[http://www.cancer.gov/clinicaltrials/search/results?protocolsearchid=6118383&vers=1]]></url>
+  </item>
+  <item>
+    <mig_id>en_ext_link_causes_2</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Breast Cancer Risk Assessment Tool]]></long_title>
+    <short_title><![CDATA[Breast Cancer Risk Assessment Tool]]></short_title>
+    <url><![CDATA[http://www.cancer.gov/bcrisktool/]]></url>
+  </item>
+  <item>
+    <mig_id>en_ext_link_screening_1</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[National Breast and Cervical Cancer Early Detection Program (NBCCEDP)]]></long_title>
+    <short_title><![CDATA[National Breast and Cervical Cancer Early Detection Program (NBCCEDP)]]></short_title>
+    <url><![CDATA[http://www.cdc.gov/cancer/nbccedp/]]></url>
+  </item>
+  <item>
+    <mig_id>en_ext_link_screening_2</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Find an FDA Certified Mammogram Facility]]></long_title>
+    <short_title><![CDATA[Find an FDA Certified Mammogram Facility]]></short_title>
+    <url><![CDATA[http://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfMQSA/mqsa.cfm]]></url>
+  </item>
+  <item>
+    <mig_id>en_ext_link_screening_3</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Clinical Trials to Screen for Breast Cancer]]></long_title>
+    <short_title><![CDATA[Clinical Trials to Screen for Breast Cancer]]></short_title>
+    <url><![CDATA[http://www.cancer.gov/clinicaltrials/search/results?protocolsearchid=6175345&vers=1]]></url>
+  </item>
+  <item>
+    <mig_id>en_ext_link_treatment_1</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Clinical Trials to Treat Breast Cancer]]></long_title>
+    <short_title><![CDATA[Clinical Trials to Treat Breast Cancer]]></short_title>
+    <url><![CDATA[http://www.cancer.gov/clinicaltrials/search/results?protocolsearchid=6211756&vers=1]]></url>
+  </item>
+  <item>
+    <mig_id>en_section_nav</mig_id>
+    <community>site</community>
+    <contenttype>nciSectionNav</contenttype>
+    <folder>/cancertopics/types/breast</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <section_nav_title><![CDATA[Breast Cancer Section Nav]]></section_nav_title>
+    <levels_to_show><![CDATA[5]]></levels_to_show>
+  </item>
+  <item>
+    <mig_id>es_breast_cthp_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/seno/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de mama&#8211;para profesionales de salud]]></long_title>
+    <short_title><![CDATA[Cáncer de mama]]></short_title>
+    <long_description><![CDATA[Cáncer de mama]]></long_description>
+    <bodyfield><![CDATA[<p>Esta página de Internet para profesionales de la salud ofrece información sobre el cáncer sustentada en datos probatorios sobre genética, prevención, exámenes de detección y tratamiento del cáncer de mama; asimismo, recursos para cuidados médicos de apoyo y paliativos. También se provee información sobre la investigación de los tumores cerebrales, como ensayos clínicos en curso, resultados de ensayos clínicos y otros resultados de las investigaciones. Los sumarios del PDQ® con información sobre el cáncer proveen información integral, revisada por expertos, con base en los datos probatorios con el propósito de servir como fuente de información y ayuda para los médicos que atienden a pacientes con cáncer. Los sumarios incluyen designaciones de los grados de comprobación científica con el propósito de ayudar al lector a evaluar la solidez de los hechos científico-estadísticos que sustentan el uso de intervenciones o abordajes específicos.</p>]]></bodyfield>
+    <audience><![CDATA[health_professional]]></audience>
+  </item>
+  <item>
+    <mig_id>es_breast_research_page</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerResearch</contenttype>
+    <folder>/espanol/tipos/seno/investigacion</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de mama investigación]]></long_title>
+    <short_title><![CDATA[Investigación]]></short_title>
+  </item>
+  <item>
+    <mig_id>es_breast_card_treatment_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Cáncer de mama Patient]]></unique_title>
+    <card_title><![CDATA[Tratamiento]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre tratamiento]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>es_breast_card_treatment_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/seno/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Cáncer de mama Health Professional]]></unique_title>
+    <card_title><![CDATA[Tratamiento]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre tratamiento]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>es_breast_card_causes_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Cáncer de mama Patient]]></unique_title>
+    <card_title><![CDATA[Causas y prevención]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre prevención]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los causas y prevención del cáncer de mama.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_breast_card_causes_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/seno/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Cáncer de mama Health Professional]]></unique_title>
+    <card_title><![CDATA[Causas y prevención]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre prevención]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los causas y prevención del cáncer de mama.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_breast_card_genetics_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/seno/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Genetics Breast Cáncer de mama Health Professional]]></unique_title>
+    <card_title><![CDATA[Genética]]></card_title>
+    <theme><![CDATA[cthp-genetics]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre genética]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los genética del cáncer de mama.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_breast_card_screening_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Cáncer de mama Patient]]></unique_title>
+    <card_title><![CDATA[Exámenes de detección]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre exámenes de detección]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los exámenes de detección del cáncer de mama.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_breast_card_screening_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/seno/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Cáncer de mama Health Professional]]></unique_title>
+    <card_title><![CDATA[Exámenes de detección]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre exámenes de detección]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los exámenes de detección del cáncer de mama.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_breast_card_survivial</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPFeaturedCard</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Survival Rates & Prognosis Cáncer de mama]]></unique_title>
+    <card_title><![CDATA[Índices de supervivencia y pronóstico]]></card_title>
+    <theme><![CDATA[cthp-survival]]></theme>
+  </item>
+  <item>
+    <mig_id>es_ext_link_survival</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Seer]]></long_title>
+    <short_title><![CDATA[Seer]]></short_title>
+    <long_description><![CDATA[Estadísticas del cáncer de mama basadas en datos de grupos grandes de pacientes que se usarán como guía general (solo disponibles en inglés).]]></long_description>
+    <url><![CDATA[http://seer.cancer.gov/statfacts/html/breast.html]]></url>
+  </item>
+  <item>
+    <mig_id>es_ext_link_causes_1</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Estudios clínicos para prevenir el cáncer de seno]]></long_title>
+    <short_title><![CDATA[Estudios clínicos para prevenir el cáncer de seno]]></short_title>
+    <long_description><![CDATA[Estudios clínicos para prevenir el cáncer de seno]]></long_description>
+    <url><![CDATA[http://www.cancer.gov/clinicaltrials/search/results?protocolsearchid=6118383&vers=1]]></url>
+  </item>
+  <item>
+    <mig_id>es_ext_link_screening_3</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Estudios clínicos para detectar el cáncer de seno]]></long_title>
+    <short_title><![CDATA[Estudios clínicos para detectar el cáncer de seno]]></short_title>
+    <long_description><![CDATA[Estudios clínicos para detectar el cáncer de seno]]></long_description>
+    <url><![CDATA[http://www.cancer.gov/clinicaltrials/search/results?protocolsearchid=6175345&vers=1]]></url>
+  </item>
+  <item>
+    <mig_id>es_ext_link_treatment_1</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Estudios clínicos para tratar el cáncer de seno]]></long_title>
+    <short_title><![CDATA[Estudios clínicos para tratar el cáncer de seno]]></short_title>
+    <long_description><![CDATA[Estudios clínicos para tratar el cáncer de seno]]></long_description>
+    <url><![CDATA[http://www.cancer.gov/clinicaltrials/search/results?protocolsearchid=6211756&vers=1]]></url>
+  </item>
+  <item>
+    <mig_id>es_section_nav</mig_id>
+    <community>site</community>
+    <contenttype>nciSectionNav</contenttype>
+    <folder>/espanol/tipos/seno</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <section_nav_title><![CDATA[Cáncer de mama Section Nav]]></section_nav_title>
+    <levels_to_show><![CDATA[5]]></levels_to_show>
+  </item>
+</list>

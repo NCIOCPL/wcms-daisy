@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13896</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/pancreatic</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Pancreatic Cancer ]]></long_title>
+    <short_title><![CDATA[Pancreatic Cancer ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Pancreatic Cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>The pancreas lies behind the stomach and in front of the spine. There are two kinds of cells in the pancreas. Exocrine pancreas cells make enzymes that are released into the small intestine to help the body digest food. Neuroendocrine pancreas cells (such as islet cells) make several hormones, including insulin and glucagon, that help control sugar levels in the blood.</p>
+<p>Most pancreatic cancers form in exocrine cells. These tumors do not secrete hormones and do not cause signs or symptoms. This makes it hard to diagnose this type of pancreatic cancer early. For most patients with exocrine pancreatic cancer, current treatments do not cure the cancer.</p>
+<p>Some types of malignant pancreatic neuroendocrine tumors, such as islet cell tumors, have a better prognosis than pancreatic exocrine cancers.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/pancreatic</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/pancreatic</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Pancreatic Cancer ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/pancreatic/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/pancreatic/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/pancreatic/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/pancreatic/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>153794</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/pancreas</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de páncreas]]></long_title>
+    <short_title><![CDATA[Cáncer de páncreas]]></short_title>
+    <long_description><![CDATA[Cáncer de páncreas]]></long_description>
+    <bodyfield><![CDATA[<p>El páncreas se encuentra detrás del estómago y delante de la columna vertebral. En el páncreas hay dos tipos de células. Las células pancreáticas exocrinas producen enzimas que se liberan hacia el intestino delgado para ayudar al cuerpo a digerir los alimentos. Las células del páncreas neuroendocrino (como las células de los islotes) elaboran varias hormonas, como la insulina y el glucagón, que ayudan a controlar las concentraciones de azúcar en la sangre.</p>
+<p>La mayoría de los cánceres de páncreas se forman en las células exocrinas. Estos tumores no segregan hormonas y no causan signos o síntomas. Esto hace que sea difícil diagnosticar temprano este tipo de cáncer de páncreas. Los tratamientos actuales para la mayoría de los pacientes de cáncer de páncreas exocrino no curan el cáncer.</p>
+<p>Algunos tipos de tumores neuroendocrinos pancreáticos malignos, como los tumores de células de los islotes, tienen un mejor pronóstico que los cánceres de páncreas exocrino.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/pancreas</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/pancreas</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de páncreas]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/pancreas/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/pancreas/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/pancreas/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/pancreas/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

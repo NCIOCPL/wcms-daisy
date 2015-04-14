@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>14506</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/adrenocortical</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Adrenocortical Carcinoma]]></long_title>
+    <short_title><![CDATA[Adrenocortical Carcinoma]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about adrenocortical carcinoma.]]></long_description>
+    <bodyfield><![CDATA[<p>Adrenocortical cancer is a rare disease in which cancer forms in the cortex (outer layer) of an adrenal gland. There are two adrenal glands. One sits on top of each kidney. The adrenal cortex makes important hormones, including ones that keep water and salt in balance, control blood pressure, and help the body use energy.</p>
+<p>Adrenocortical tumors usually make extra amounts of one or more adrenal hormones, which may cause symptoms.</p>
+<p>Certain inherited disorders increase the risk of adrenocortical cancer. These include Li-Fraumeni syndrome, Beckwith-Wiedemann syndrome, and Carney complex.</p>
+<p>Adrenocortical cancer may also be called adrenal cortical carcinoma.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/adrenocortical</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/adrenocortical</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Adrenocortical Carcinoma]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/adrenocortical/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/adrenocortical/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/adrenocortical/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/adrenocortical/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>320769</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/suprarrenal</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de la corteza suprarrenal]]></long_title>
+    <short_title><![CDATA[Cáncer de la corteza suprarrenal]]></short_title>
+    <long_description><![CDATA[Cáncer de la corteza suprarrenal]]></long_description>
+    <bodyfield><![CDATA[<p>El cáncer de la corteza suprarrenal es una enfermedad poco frecuente que se forma en la corteza (capa externa) de la glándula suprarrenal. Hay dos glándulas suprarrenales. Cada una descansa en la parte superior de cada riñón. La corteza suprarrenal elabora hormonas importantes, como las que mantienen el equilibrio entre el agua y la sal, las que controlan la presión arterial y las que ayudan al cuerpo a usar la energía.</p>
+<p>Los tumores suprarrenales suelen elaborar cantidades adicionales de una o más hormonas suprarrenales, que pueden causar síntomas.</p>
+<p>Ciertos trastornos hereditarios aumentan el riesgo de cáncer de la corteza suprarrenal. Estos son el síndrome de Li-Fraumeni, el síndrome de Beckwith-Wiedemann y el complejo de Carney.</p>
+<p>El cáncer de la corteza suprarrenal también se puede llamar carcinoma de la corteza suprarrenal.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/suprarrenal</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/suprarrenal</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Carcinoma de corteza suprarrenal]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/suprarrenal/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/suprarrenal/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/suprarrenal/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/suprarrenal/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

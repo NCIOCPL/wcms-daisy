@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>en_lymphoma_cthp_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/lymphoma/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Lymphoma&#8211;for health professionals]]></long_title>
+    <short_title><![CDATA[Lymphoma ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about lymphoma.]]></long_description>
+    <bodyfield><![CDATA[<p>This Web page provides evidence-based cancer information for health professionals about the treatment of lymphoma, as well as resources for supportive and palliative care. Information on lymphoma research, such as active clinical trials, clinical trial results, and other research findings, is also provided./p>
+<p>The PDQ® cancer information summaries provide comprehensive, peer-reviewed, evidence-based information intended to inform and assist clinicians who care for cancer patients. The summaries include level-of-evidence designations to help readers understand the strength of the evidence supporting the use of specific interventions or approaches./p>]]></bodyfield>
+    <audience><![CDATA[health_professional]]></audience>
+  </item>
+  <item>
+    <mig_id>en_lymphoma_research_page</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerResearch</contenttype>
+    <folder>/cancertopics/types/lymphoma/research</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Lymphoma Research]]></long_title>
+    <short_title><![CDATA[Research]]></short_title>
+  </item>
+  <item>
+    <mig_id>en_lymphoma_card_treatment_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/lymphoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Lymphoma Patient]]></unique_title>
+    <card_title><![CDATA[Treatment]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[PDQ Treatment Information]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>en_lymphoma_card_treatment_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/lymphoma/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Lymphoma Health Professional]]></unique_title>
+    <card_title><![CDATA[Treatment]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[PDQ Treatment Information]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>en_lymphoma_card_causes_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/lymphoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Lymphoma Patient]]></unique_title>
+    <card_title><![CDATA[Causes & Prevention]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[PDQ Prevention Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about prevention of lymphoma.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_lymphoma_card_causes_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/lymphoma/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Lymphoma Health Professional]]></unique_title>
+    <card_title><![CDATA[Causes & Prevention]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[PDQ Prevention Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about prevention of lymphoma.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_lymphoma_card_screening_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/lymphoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Lymphoma Patient]]></unique_title>
+    <card_title><![CDATA[Screening]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[PDQ Screening Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about screening for lymphoma.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_lymphoma_card_screening_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/cancertopics/types/lymphoma/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Lymphoma Health Professional]]></unique_title>
+    <card_title><![CDATA[Screening]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[PDQ Screening Information]]></pdq_label>
+    <card_text><![CDATA[NCI does not have PDQ evidence-based information about screening for lymphoma.]]></card_text>
+  </item>
+  <item>
+    <mig_id>en_lymphoma_card_survivial</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPFeaturedCard</contenttype>
+    <folder>/cancertopics/types/lymphoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <unique_title><![CDATA[Card Survival Rates & Prognosis Lymphoma]]></unique_title>
+    <card_title><![CDATA[Survival Rates & Prognosis]]></card_title>
+    <theme><![CDATA[cthp-survival]]></theme>
+  </item>
+  <item>
+    <mig_id>en_ext_link_survival</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/cancertopics/types/lymphoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Seer]]></long_title>
+    <short_title><![CDATA[Seer]]></short_title>
+    <long_description><![CDATA[Lymphoma statistics based on data from large groups of patients to be used as a general guide.]]></long_description>
+    <url><![CDATA[http://seer.cancer.gov/statfacts/html/nhl.html]]></url>
+  </item>
+  <item>
+    <mig_id>en_section_nav</mig_id>
+    <community>site</community>
+    <contenttype>nciSectionNav</contenttype>
+    <folder>/cancertopics/types/lymphoma</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <section_nav_title><![CDATA[Lymphoma Section Nav]]></section_nav_title>
+    <levels_to_show><![CDATA[5]]></levels_to_show>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_cthp_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/linfoma/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Linfoma&#8211;para profesionales de salud]]></long_title>
+    <short_title><![CDATA[Linfoma]]></short_title>
+    <long_description><![CDATA[Linfoma]]></long_description>
+    <bodyfield><![CDATA[<p>Esta página de Internet para profesionales de la salud ofrece información sobre el cáncer sustentada en datos probatorios sobre el tratamiento del linfoma; asimismo, recursos para cuidados médicos de apoyo y paliativos. También se provee información sobre la investigación del linfoma, como ensayos clínicos en curso, resultados de ensayos clínicos y otros resultados de las investigaciones. Los sumarios del PDQ® con información sobre el cáncer proveen información integral, revisada por expertos, con base en los datos probatorios con el propósito de servir como fuente de información y ayuda para los médicos que atienden a pacientes con cáncer. Los sumarios incluyen designaciones de los grados de comprobación científica con el propósito de ayudar al lector a evaluar la solidez de los hechos científico-estadísticos que sustentan el uso de intervenciones o abordajes específicos.</p>]]></bodyfield>
+    <audience><![CDATA[health_professional]]></audience>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_research_page</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerResearch</contenttype>
+    <folder>/espanol/tipos/linfoma/investigacion</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Linfoma Investigación]]></long_title>
+    <short_title><![CDATA[Investigación]]></short_title>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_card_treatment_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/linfoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Linfoma Patient]]></unique_title>
+    <card_title><![CDATA[Tratamiento]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre tratamiento]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_card_treatment_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/linfoma/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Treatment Linfoma Health Professional]]></unique_title>
+    <card_title><![CDATA[Tratamiento]]></card_title>
+    <theme><![CDATA[cthp-treatment]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre tratamiento]]></pdq_label>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_card_causes_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/linfoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Linfoma Patient]]></unique_title>
+    <card_title><![CDATA[Causas y prevención]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre prevención]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los causas y prevención del linfoma.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_card_causes_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/linfoma/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Causes & Prevention Linfoma Health Professional]]></unique_title>
+    <card_title><![CDATA[Causas y prevención]]></card_title>
+    <theme><![CDATA[cthp-causes]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre prevención]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los causas y prevención del linfoma.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_card_screening_p</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/linfoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Linfoma Patient]]></unique_title>
+    <card_title><![CDATA[Exámenes de detección]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre exámenes de detección]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los exámenes de detección del linfoma.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_card_screening_hp</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPGuideCard</contenttype>
+    <folder>/espanol/tipos/linfoma/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Screening Linfoma Health Professional]]></unique_title>
+    <card_title><![CDATA[Exámenes de detección]]></card_title>
+    <theme><![CDATA[cthp-screening]]></theme>
+    <pdq_label><![CDATA[Información de PDQ sobre exámenes de detección]]></pdq_label>
+    <card_text><![CDATA[El NCI no cuenta con información en el PDQ sobre datos probatorios relacionados con los exámenes de detección del linfoma.]]></card_text>
+  </item>
+  <item>
+    <mig_id>es_lymphoma_card_survivial</mig_id>
+    <community>site</community>
+    <contenttype>cgvCTHPFeaturedCard</contenttype>
+    <folder>/espanol/tipos/linfoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <unique_title><![CDATA[Card Survival Rates & Prognosis Lymphoma]]></unique_title>
+    <card_title><![CDATA[Índices de supervivencia y pronóstico]]></card_title>
+    <theme><![CDATA[cthp-survival]]></theme>
+  </item>
+  <item>
+    <mig_id>es_ext_link_survival</mig_id>
+    <community>site</community>
+    <contenttype>nciLink</contenttype>
+    <folder>/espanol/tipos/linfoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Seer]]></long_title>
+    <short_title><![CDATA[Seer]]></short_title>
+    <long_description><![CDATA[Estadísticas del linfoma basadas en datos de grupos grandes de pacientes que se usarán como guía general (solo disponibles en inglés).]]></long_description>
+    <url><![CDATA[http://seer.cancer.gov/statfacts/html/nhl.html]]></url>
+  </item>
+  <item>
+    <mig_id>es_section_nav</mig_id>
+    <community>site</community>
+    <contenttype>nciSectionNav</contenttype>
+    <folder>/espanol/tipos/linfoma</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <section_nav_title><![CDATA[Linfoma Section Nav]]></section_nav_title>
+    <levels_to_show><![CDATA[5]]></levels_to_show>
+  </item>
+</list>

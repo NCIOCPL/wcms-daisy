@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>15005</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/unknown-primary</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Carcinoma of Unknown Primary]]></long_title>
+    <short_title><![CDATA[Carcinoma of Unknown Primary]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Carcinoma of Unknown Primary.]]></long_description>
+    <bodyfield><![CDATA[<p>Cancer of unknown primary is a rare disease in which cancer cells have spread in the body but the place the primary cancer began is unknown.</p>
+<p>There are a number of reasons why the primary cancer may not be found. The primary tumor may be too small to find, or the body’s immune system may have already destroyed it. It’s also possible that the primary tumor was removed during surgery for another condition and doctors didn’t know the cancer was there.</p>
+<p>A physical exam and tests and procedures are done to try to find the primary tumor. It is important to know the type of cancer so the best treatments for that type of cancer can be used. If the primary tumor is found, treatment is based on that type of cancer.</p>
+<p>If the primary tumor cannot be found, treatment is based on what the doctors can learn about the cancer cells. Important information may include the place in the body where the cancer cells were found, the type of cancer cell, and how different the cancer cells are from normal cells. Signs and symptoms caused by the cancer of unknown primary, and the results of the tests and procedures, are also used to plan treatment.</p>
+<p>Since cancer of unknown primary is cancer that has already spread in the body, current treatments often do not cure the cancer.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/unknown-primary</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/unknown-primary</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Carcinoma of Unknown Primary]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/unknown-primary/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/unknown-primary/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/unknown-primary/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/unknown-primary/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>15147</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/primario-desconocido</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Carcinoma de tumor primario desconocido]]></long_title>
+    <short_title><![CDATA[Carcinoma de tumor primario desconocido]]></short_title>
+    <long_description><![CDATA[Carcinoma de tumor primario desconocido]]></long_description>
+    <bodyfield><![CDATA[<p>El cáncer de origen primario desconocido es una enfermedad poco frecuente por la que las células cancerosas se diseminaron en el cuerpo, pero no se conoce el lugar donde comenzó el cáncer.</p>
+<p>Hay una serie de razones por las que no se puede encontrar el cáncer primario. El tumor primario puede ser demasiado pequeño para encontrar, o el sistema inmunitario del cuerpo puede haberlo destruido. También es posible que se extirpara el tumor primario durante una cirugía para tratar otra afección y los médicos no sabían que allí había un cáncer.</p>
+<p>Para tratar de encontrar el tumor primario, se realiza un examen físico, y pruebas y procedimientos. Es importante conocer el tipo de cáncer para poder utilizar el mejor tratamiento para ese tipo de cáncer. Si se encuentra el tumor primario, el tratamiento se basa en ese tipo de cáncer.</p>
+<p>Si no se puede encontrar el tumor primario, el tratamiento se basa en lo que los médicos pueden conocer acerca de las células cancerosas. La información adicional puede incluir el lugar del cuerpo donde se encuentran las células cancerosas, el tipo de célula cancerosa y cuán diferente son las células cancerosas de las células normales. Para planificar el tratamiento, también se usan los signos y síntomas que causa el cáncer de origen primario desconocido y los resultados de las pruebas y procedimientos.</p>
+<p>Debido a que el cáncer de origen primario desconocido es un cáncer que ya se diseminó en el cuerpo, los tratamientos actuales a menudo no curan el cáncer.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/primario-desconocido</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/primario-desconocido</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Carcinoma de tumor primario desconocido]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/primario-desconocido/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/primario-desconocido/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/primario-desconocido/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/primario-desconocido/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

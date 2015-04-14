@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13916</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/ovarian</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Ovarian, Fallopian Tube, and Primary Peritoneal Cancer]]></long_title>
+    <short_title><![CDATA[Ovarian, Fallopian Tube, and Primary Peritoneal Cancer]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Ovarian, Fallopian Tube, and Primary Peritoneal Cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>The <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046687&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000046687&#38;version=Patient&#38;language=English'); return false;">ovaries</a> and fallopian tubes are part of the female <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046564&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000046564&#38;version=Patient&#38;language=English'); return false;">reproductive system</a>. There is one ovary and one fallopian tube on each side of the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046645&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000046645&#38;version=Patient&#38;language=English'); return false;">uterus</a> (the hollow, pear-shaped organ where a <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046400&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000046400&#38;version=Patient&#38;language=English'); return false;">fetus</a> grows). The ovaries store eggs and make female <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045713&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000045713&#38;version=Patient&#38;language=English'); return false;">hormones</a>. Eggs pass from the ovaries, through the fallopian tubes, to the uterus. The <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045829&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000045829&#38;version=Patient&#38;language=English'); return false;">peritoneum</a> is the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000046683&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000046683&#38;version=Patient&#38;language=English'); return false;">tissue</a> that lines the <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045070&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000045070&#38;version=Patient&#38;language=English'); return false;">abdomen</a> wall and covers organs in the abdomen. Part of the peritoneum is close to the ovaries and fallopian tubes.</p>
+
+<p>The most common type of ovarian cancer is called ovarian epithelial cancer. It begins in the tissue that covers the ovaries. <a class="definition" href="/Common/PopUps/popDefinition.aspx?id=CDR0000045333&#38;version=Patient&#38;language=English" onclick="javascript:popWindow('defbyid','CDR0000045333&#38;version=Patient&#38;language=English'); return false;">Cancer</a> sometimes begins at the end of the fallopian tube near the ovary and spreads to the ovary. Cancer can also begin in the peritoneum and spread to the ovary. The stages and treatment are the same for ovarian epithelial, fallopian tube, and primary peritoneal cancers.</p>
+
+<p>Another type of ovarian cancer is ovarian germ cell tumor, which is much less common. It begins in the germ (egg) cells in the ovary. Ovarian low malignant potential tumor (OLMPT) is a type of ovarian disease in which abnormal cells form in the tissue that covers the ovaries. OLMPT rarely becomes cancer.</p>
+
+<p>Cancers of the ovaries, fallopian tubes, and primary peritoneum are the fifth leading cause of cancer death in women in the U.S. These cancers are often found at advanced stages. This is partly because they may not cause early signs or symptoms and there are no good screening tests for them.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/ovarian</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/ovarian</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Ovarian, Fallopian Tube, and Primary Peritoneal Cancer]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/ovarian/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/ovarian/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/ovarian/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/ovarian/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>153795</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/ovario</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de ovario, de trompa de Falopio y primario de peritoneo]]></long_title>
+    <short_title><![CDATA[Cáncer de ovario, de trompa de Falopio y primario de peritoneo]]></short_title>
+    <long_description><![CDATA[Cáncer de ovario, de trompa de Falopio y primario de peritoneo]]></long_description>
+    <bodyfield><![CDATA[<p>Los ovarios y las trompas de Falopio forman parte del aparato reproductor femenino. Hay un ovario y una trompa de Falopio a cada lado del útero (el órgano hueco, en forma de pera donde crece el feto). Los ovarios almacenan los óvulos y elaboran hormonas femeninas. Los óvulos pasan de los ovarios al útero a través de las trompas de Falopio. El peritoneo es el tejido que reviste la pared del abdomen y cubre los órganos del abdomen. Parte del peritoneo está cerca de los ovarios y las trompas de Falopio.</p>
+<p>El tipo más común de cáncer de ovario se llama cáncer epitelial de ovario. Comienza en el tejido que cubre los ovarios. El cáncer a veces comienza en el extremo de la trompa de Falopio cerca del ovario y se disemina al ovario. El cáncer también puede empezar en el peritoneo y diseminarse al ovario. Los estadios y el tratamiento son los mismos para los cánceres epitelial de ovario, de trompa de Falopio y primario de peritoneo.</p>
+<p>Otro tipo de cáncer de ovario es el tumor de células germinativas del ovario, que es mucho menos común. Comienza en las células germinativas (óvulos) del ovario. El tumor del ovario de bajo potencial maligno (TOBPM) es un tipo de enfermedad de ovario por la que se forman células anormales en el tejido que cubre los ovarios. El TOBPM se convierte en cáncer con muy poca frecuencia.</p>
+<p>Los cánceres de ovario, de trompa de Falopio y primario de peritoneo son la quinta causa principal de muerte por cáncer en las mujeres en los Estados Unidos. Estos cánceres a menudo se encuentran cuando ya están en estadios avanzados. Esto se debe en parte a que pueden no causar signos o síntomas tempranos y a que no se cuenta con buenas pruebas para detectarlos.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/ovario</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/ovario</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de ovario]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/ovario/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/ovario/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/ovario/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/ovario/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

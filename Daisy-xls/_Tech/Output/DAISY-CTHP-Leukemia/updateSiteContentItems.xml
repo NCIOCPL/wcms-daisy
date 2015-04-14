@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>14790</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/leukemia</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Leukemia]]></long_title>
+    <short_title><![CDATA[Leukemia]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about leukemia.]]></long_description>
+    <bodyfield><![CDATA[<p>Leukemia is cancer of the blood cells. Most blood cells form in the bone marrow. In leukemia, cancerous blood cells form and crowd out the healthy blood cells in the bone marrow.</p>
+<p>The type of leukemia depends on the type of blood cell that has become cancerous. For example, acute lymphoblastic leukemia is a cancer of the lymphoblasts (white blood cells that fight infection). White blood cells are the most common type of blood cell to become cancer. But red blood cells (cells that carry oxygen from the lungs to the rest of the body) and platelets (cells that clot the blood) may also become cancer.</p>
+<p>Leukemia occurs most often in adults older than 55 years, and it is the most common cancer in children younger than 15 years.</p>
+<p>Leukemia is either acute or chronic. Acute leukemia is a fast-growing cancer that usually gets worse quickly. Chronic leukemia is a slower-growing cancer that gets worse slowly over time. The treatment and prognosis for leukemia depend on the type of blood cell affected and whether the leukemia is acute or chronic. Chemotherapy is often used to treat leukemia.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/leukemia</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/leukemia</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Leukemia]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/leukemia/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/leukemia/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/leukemia/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/leukemia/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>14921</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/leucemia</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Leucemia]]></long_title>
+    <short_title><![CDATA[Leucemia]]></short_title>
+    <long_description><![CDATA[Leucemia]]></long_description>
+    <bodyfield><![CDATA[<p>La leucemia es un cáncer de las células sanguíneas. La mayoría de las células de la sangre se forman en la médula ósea. En el caso de la leucemia, las células sanguíneas inmaduras se vuelven cancerosas. Estas células no funcionan como deberían y congestionan a las células sanguíneas sanas en la médula ósea.</p>
+<p>Los diferentes tipos de leucemia dependen del tipo de célula sanguínea que se vuelve cancerosa. Por ejemplo, la leucemia linfoblástica es un cáncer de los linfoblastos (glóbulos blancos que combaten las infecciones). Los glóbulos blancos son el tipo más común de célula sanguínea que se vuelve cancerosa. Sin embargo, los glóbulos rojos (células que transportan oxígeno desde los pulmones al resto del cuerpo) y las plaquetas (células que coagulan la sangre) también se pueden convertir en cáncer.</p>
+<p>La leucemia es más frecuente en los adultos mayores de 55 años, pero también es el cáncer más común en los niños menores de 15 años.</p>
+<p>La leucemia puede ser aguda o crónica. La leucemia aguda es un cáncer de crecimiento rápido que generalmente empeora de prisa. La leucemia crónica es un cáncer de crecimiento lento que empeora despacio con el tiempo. El tratamiento y el pronóstico de la leucemia dependen del tipo de célula sanguínea afectada y de que la leucemia sea aguda o crónica.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/leucemia</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/leucemia</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Leucemia]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/leucemia/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/leucemia/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/leucemia/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/leucemia/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

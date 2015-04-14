@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>13813</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/head-and-neck</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Head and Neck Cancer ]]></long_title>
+    <short_title><![CDATA[Head and Neck Cancer ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about head and neck cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>Head and neck cancers are cancers that start in the tissues and organs of the head and neck.  They include cancers of the larynx (voice box), throat, lips, mouth, nose, and salivary glands.</p>
+<p>Most types of head and neck cancers begin in squamous cells that line the moist surfaces inside the head and neck (for example, the mouth, nose, and throat).</p>
+<p>Tobacco use, heavy alcohol use, and infection with the human papilloma virus (HPV) increase the risk of many types of head and neck cancer.</p>
+<p>To get the right information about treatment and prognosis, you need to know exactly what type of head and neck cancer you have and what stage it is.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/head-and-neck</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/head-and-neck</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Head and Neck Cancer ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/head-and-neck/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/head-and-neck/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/head-and-neck/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/head-and-neck/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>14860</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/cabeza-cuello</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de cabeza y cuello]]></long_title>
+    <short_title><![CDATA[Cáncer de cabeza y cuello]]></short_title>
+    <long_description><![CDATA[Cáncer de cabeza y cuello]]></long_description>
+    <bodyfield><![CDATA[<p>Los cánceres de cabeza y cuello son cánceres que empiezan en los tejidos y órganos de la cabeza y el cuello. Son los cánceres de laringe, garganta, labio, boca, nariz y glándulas salivales.</p>
+<p>La mayoría de los cánceres de cabeza y cuello comienzan en las células escamosas, que son células que revisten superficies húmedas como las que hay adentro de la cabeza y cuello (por ejemplo, la boca, la nariz y la garganta). Las glándulas salivales tienen muchos tipos diferentes de células que se pueden convertir en cáncer; por eso, hay muchos tipos diferentes de cáncer de la glándula salival.</p>
+<p>El consumo de tabaco, consumo excesivo de alcohol, y la infección por el virus del papiloma humano (VPH) aumentan el riesgo de presentar muchos tipos de cáncer de cabeza y cuello.</p>
+<p>Para obtener la información correcta sobre el tratamiento y el pronóstico, usted necesita saber exactamente qué tipo de cáncer de cabeza y cuello tiene y en qué estadio se encuentra.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/cabeza-cuello</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/cabeza-cuello</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de cabeza y cuello]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/cabeza-cuello/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/cabeza-cuello/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/cabeza-cuello/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/cabeza-cuello/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

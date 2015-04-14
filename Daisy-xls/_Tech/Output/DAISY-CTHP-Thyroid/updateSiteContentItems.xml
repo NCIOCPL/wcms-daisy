@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>15562</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/thyroid</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Thyroid Cancer]]></long_title>
+    <short_title><![CDATA[Thyroid Cancer ]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about thyroid cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>The thyroid is a gland at the base of the throat near the windpipe. It is shaped like a butterfly, with a right lobe and a left lobe. A thin piece of tissue connects the two lobes. The thyroid makes hormones that help control heart rate, blood pressure, body temperature, and weight.</p>
+<p>There are four types of thyroid cancer.  These are papillary, follicular, medullary, and anaplastic thyroid cancer. Papillary is the most common type of thyroid cancer.</p>
+<p>Anaplastic thyroid cancer is hard to cure with current treatment.  Other types of thyroid cancer can usually be cured.</p>
+<p>Being exposed to radiation to the head and neck as a child increases the risk of thyroid cancer. Having certain genetic conditions such as familial medullary thyroid cancer, multiple endocrine neoplasia type 2A syndrome, and multiple endocrine neoplasia type 2B syndrome can also increase the risk of thyroid cancer.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/thyroid</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/thyroid</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Thyroid Cancer ]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/thyroid/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/thyroid/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/thyroid/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/thyroid/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>153789</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/tiroides</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de tiroides]]></long_title>
+    <short_title><![CDATA[Cáncer de tiroides]]></short_title>
+    <long_description><![CDATA[Cáncer de tiroides]]></long_description>
+    <bodyfield><![CDATA[<p>La tiroides es una glándula ubicada en la base de la garganta cerca de la tráquea. Tiene la forma de una mariposa, con un lóbulo derecho y un lóbulo izquierdo. Una pieza delgada de tejido conecta los dos lóbulos. La tiroides produce hormonas que ayudan controlar la frecuencia cardíaca, la presión arterial, la temperatura corporal y el peso.</p>
+<p>Hay cuatro tipos de cáncer de tiroides: el cáncer de tiroides papilar, el cáncer de tiroides folicular, el cáncer de tiroides medular y el cáncer de tiroides anaplásico. El cáncer de tiroides papilar es el tipo más común de cáncer de tiroides.</p>
+<p>El cáncer de tiroides anaplásico es difícil de curar con el tratamiento actual. Otros tipos de cáncer de tiroides habitualmente se pueden curar.</p>
+<p>La exposición a la radiación en la cabeza y el cuello en la niñez aumenta el riesgo de cáncer de tiroides. Ciertas enfermedades genéticas, como el cáncer de tiroides medular familiar, el síndrome de neoplasia endocrina múltiple tipo 2A y el síndrome de neoplasia endocrina múltiple tipo2B también pueden aumentar el riesgo de cáncer de tiroides.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/tiroides</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/tiroides</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de tiroides]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/tiroides/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/tiroides/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/tiroides/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/tiroides/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

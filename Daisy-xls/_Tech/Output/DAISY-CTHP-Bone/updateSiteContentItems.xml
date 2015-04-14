@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>15577</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/bone</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Bone Cancer]]></long_title>
+    <short_title><![CDATA[Bone Cancer]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about bone cancer.]]></long_description>
+    <bodyfield><![CDATA[<p>There are several types of bone cancer.</p>
+<p>Osteosarcoma is the most common bone cancer. It starts in bone cells that make new bone tissue. It usually forms at the end of long bones, such as the leg bones, but can form in any bone. It is most common in teenagers and in adults older than 65 years. Malignant fibrous histiocytoma of bone is a very rare bone cancer.  It is treated like osteosarcoma.</p>
+<p>Ewing sarcoma includes several types of bone tumors. Ewing sarcoma tumors usually form in the hip bones, the ribs, or in the middle of long bones. The disease occurs most often in teenagers and young adults. Ewing tumors are most common in bone but can also form in soft tissue.</p>
+<p>Having past treatment with radiation can increase the risk of osteosarcoma. A small number of bone cancers are caused by inherited conditions. Signs and symptoms of bone tumors include a lump, swelling, and pain.</p>
+<p>Bone cancer is rare. Most bone tumors are benign (not cancer).</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/bone</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/bone</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Bone Cancer]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/bone/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/bone/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/bone/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/bone/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>12984</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/hueso</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Cáncer de hueso]]></long_title>
+    <short_title><![CDATA[Cáncer de hueso]]></short_title>
+    <long_description><![CDATA[Cáncer de hueso]]></long_description>
+    <bodyfield><![CDATA[<p>Hay varios tipos de cáncer de hueso.</p>
+<p>El osteosarcoma es el cáncer de hueso más común. Comienza en las células óseas que elaboran nuevo tejido óseo. Por lo general, se forma en el extremo de los huesos largos, como los huesos de la pierna, pero se puede formar en cualquier hueso. Es más común en los adolescentes y en los adultos mayores de 65 años. El histiocitoma fibroso maligno de hueso es un cáncer de hueso muy poco frecuente. Se trata como el osteosarcoma.</p>
+<p>El sarcoma de Ewing incluye varios tipos de tumores óseos. Los tumores del sarcoma de Ewing habitualmente se forman en los huesos de la cadera, en las costillas o en el medio de los huesos largos. La enfermedad se presenta con mayor frecuencia en adolescentes y adultos jóvenes. Los tumores de Ewing son más comunes en el hueso, pero también se pueden formar en el tejido blando.</p>
+<p>Un tratamiento anterior con radiación puede aumentar el riesgo de osteosarcoma. Un pequeño número de cánceres de hueso son causados por afecciones heredadas. Los signos y síntomas de los tumores óseos incluyen un bulto, hinchazón y dolor.</p>
+<p>El cáncer de huesos es poco frecuente. La mayoría de los tumores óseos son benignos (no cancerosos).</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/hueso</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/hueso</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Cáncer de hueso]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/hueso/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/hueso/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/hueso/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/hueso/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>

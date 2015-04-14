@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <mig_id>14519</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/cancertopics/types/pituitary</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <long_title><![CDATA[Pituitary Tumors]]></long_title>
+    <short_title><![CDATA[Pituitary Tumors]]></short_title>
+    <long_description><![CDATA[NCI's gateway for information about Pituitary Tumor.]]></long_description>
+    <bodyfield><![CDATA[<p>The pituitary gland is a pea-sized gland at the base of the brain, just above the back of the nose. It makes different hormones that affect the way many parts of the body work.</p>
+<p>Most pituitary tumors are benign (not cancer), and are called pituitary adenomas. These tumors grow very slowly. They do not spread from the pituitary gland to distant parts of the body, but they sometimes spread to the bones of the skull or sinus cavity near the pituitary gland. A very small number of pituitary tumors are malignant (cancer) and can spread to distant parts of the body.</p>
+<p>Most pituitary tumors make more hormones than normal pituitary cells.  The extra hormones may cause signs or symptoms of disease.  The signs and symptoms depend on which hormone is being made.</p>
+<p>A family history of multiple endocrine neoplasia type 1 (MEN1) syndrome, Carney complex, or isolated familial acromegaly increases the risk of pituitary tumors.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/pituitary</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/pituitary</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Pituitary Tumors]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/pituitary/patient</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/pituitary/patient</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Patient]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/cancertopics/types/pituitary/hp</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/cancertopics/types/pituitary/hp</folder>
+    <sys_lang><![CDATA[en-us]]></sys_lang>
+    <nav_title><![CDATA[Health Professional]]></nav_title>
+  </item>
+  <item>
+    <mig_id>320771</mig_id>
+    <community>site</community>
+    <contenttype>cgvCancerTypeHome</contenttype>
+    <folder>/espanol/tipos/hipofisis</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <long_title><![CDATA[Tumores de hipófisis]]></long_title>
+    <short_title><![CDATA[Tumores de hipófisis]]></short_title>
+    <long_description><![CDATA[Tumores de hipófisis]]></long_description>
+    <bodyfield><![CDATA[<p>La hipófisis es una glándula del tamaño de un guisante situada en la base del cerebro, justo por encima de la parte posterior de la nariz. Elabora diferentes hormonas que afectan la forma en que funcionan muchas partes del cuerpo.</p>
+<p>La mayoría de los tumores de la hipófisis son benignos (no cancerosos) y se llaman adenomas hipofisarios. Estos tumores crecen muy lentamente. No se diseminan desde la hipófisis a partes distantes del cuerpo, pero a veces se diseminan a los huesos del cráneo o a los senos paranasales cercanos a la hipófisis. Un número muy bajo de los tumores hipofisarios son malignos (cáncer) y se pueden diseminar a partes distantes del cuerpo.</p>
+<p>La mayoría de los tumores de la hipófisis se llaman tumores funcionantes, esto significa que elaboran más hormonas que las células normales de la hipófisis. Las hormonas adicionales pueden causar signos o síntomas de enfermedad. Los signos y síntomas dependen de la hormona que se elabora.</p>
+<p>Los antecedentes familiares de síndrome de neoplasia endocrina múltiple tipo 1 (NEM1), complejo de Carney o acromegalia familiar aislada aumentan el riesgo de tumores de la hipófisis.</p>]]></bodyfield>
+    <audience><![CDATA[patient]]></audience>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/hipofisis</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/hipofisis</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Tumores de hipófisis]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/hipofisis/paciente</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/hipofisis/paciente</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Paciente]]></nav_title>
+  </item>
+  <item>
+    <mig_id>/espanol/tipos/hipofisis/pro</mig_id>
+    <community>site</community>
+    <contenttype>rffNavon</contenttype>
+    <folder>/espanol/tipos/hipofisis/pro</folder>
+    <sys_lang><![CDATA[es-us]]></sys_lang>
+    <nav_title><![CDATA[Profesionales de salud]]></nav_title>
+  </item>
+</list>
