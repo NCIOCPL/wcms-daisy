@@ -267,7 +267,7 @@ namespace Blu82
                 SerializeCollection<DaisyTranslation>(translations, @".\translations.xml");
                 driver.Add(new MigrationTask()
                 {
-                    MigrationTaskType = MigrationTaskTypes.ContentUpdater,
+                    MigrationTaskType = MigrationTaskTypes.TranslationRelationshipCreator,
                     Name = "translations",
                     Filename = "translations.xml"
                 });
