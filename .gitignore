@@ -1,0 +1,22 @@
+
+# Visual Studio files.
+*.suo
+*.ncb
+*.user
+*.aps
+*.eto
+_ReSharper.*
+
+# Compiler output
+[Bb]in
+obj
+[Dd]ebug
+[Rr]elease
+
+
+# Output Files
+LOG-*.log
+LOG-*.xml
+review
+temp_migrate.*
+
