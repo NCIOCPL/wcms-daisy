@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using NUnit.Framework;
+using Xunit;
 
 namespace MonikerProviders.Testing
 {
-    [TestFixture]
     public class MonikerObject
     {
-        [Test]
+        [Fact]
 #pragma warning disable 1718 // Disable warning about comparing the same variable
         public void MonikerEquivalance()
         {
@@ -19,14 +18,14 @@ namespace MonikerProviders.Testing
 
             Moniker moniker2 = new Moniker("moniker 2", 2, "testType");
 
-            Assert.IsTrue(moniker1 == moniker1);
-            Assert.IsTrue(moniker1 == moniker1a);
-            Assert.IsFalse(moniker1 == moniker2);
+            Assert.True(moniker1 == moniker1);
+            Assert.True(moniker1 == moniker1a);
+            Assert.False(moniker1 == moniker2);
         }
 #pragma warning restore 1718
 
 
-        [Test]
+        [Fact]
         public void PropertyValues()
         {
             string name = "moniker";
@@ -35,9 +34,9 @@ namespace MonikerProviders.Testing
 
             Moniker moniker = new Moniker(name, contentID, contentType);
 
-            Assert.IsTrue(name == moniker.Name);
-            Assert.IsTrue(contentID == moniker.ContentID);
-            Assert.IsTrue(contentType == moniker.ContentType);
+            Assert.True(name == moniker.Name);
+            Assert.True(contentID == moniker.ContentID);
+            Assert.True(contentType == moniker.ContentType);
         }
 
     }

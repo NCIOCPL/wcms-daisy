@@ -6,6 +6,8 @@
 *.aps
 *.eto
 _ReSharper.*
+.vs/
+packages/
 
 # Compiler output
 [Bb]in
