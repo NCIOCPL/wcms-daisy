@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCILibrary.CMS.Percussion",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Munger", "Munger\Munger.csproj", "{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack VS2008", "HtmlAgilityPack\HtmlAgilityPack VS2008.csproj", "{193BB801-054F-4729-9D5D-FCE1E32594BF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeTypes", "SerializeTypes\SerializeTypes.csproj", "{F667B3F1-78C4-48B2-B5E6-DDF8C534C050}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManipulation", "FileManipulation\FileManipulation.csproj", "{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}"
@@ -49,10 +47,6 @@ Global
 		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA37596E-6BFF-4DEE-970C-FA493DFBBC46}.Release|Any CPU.Build.0 = Release|Any CPU
-		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F667B3F1-78C4-48B2-B5E6-DDF8C534C050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F667B3F1-78C4-48B2-B5E6-DDF8C534C050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F667B3F1-78C4-48B2-B5E6-DDF8C534C050}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -140,10 +140,6 @@
       <Project>{3E70E645-1E05-4008-8D4C-ABA44C1D8C76}</Project>
       <Name>FileManipulation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HtmlAgilityPack\HtmlAgilityPack VS2008.csproj">
-      <Project>{193BB801-054F-4729-9D5D-FCE1E32594BF}</Project>
-      <Name>HtmlAgilityPack VS2008</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MonikerProviders\MonikerProviders.csproj">
       <Project>{98B281AE-E7D3-4617-99D4-88DC8A370190}</Project>
       <Name>MonikerProviders</Name>
