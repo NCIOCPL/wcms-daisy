@@ -8,6 +8,8 @@ namespace MigrationEngine.Descriptors
 {
     abstract public class ContentDescriptionBase : MigrationData
     {
+        const string LOCALE_FIELD = "sys_lang";
+
         public String ContentType { get; set; }
         public String UniqueIdentifier { get; set; }
 
@@ -18,6 +20,17 @@ namespace MigrationEngine.Descriptors
                 string fmt = @"<UniqueIdentifier value=""{0}""/><ContentType value=""{1}""/>";
 
                 return string.Format(fmt, UniqueIdentifier, ContentType);
+            }
+        }
+
+        public string Locale
+        {
+            get
+            {
+                if (this.Fields.ContainsKey(LOCALE_FIELD))
+                    return this.Fields[LOCALE_FIELD];
+
+                throw new DataFieldException("Locale not set.");
             }
         }
     }

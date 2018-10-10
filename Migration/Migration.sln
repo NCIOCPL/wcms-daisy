@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeImageUploads", "Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonikerProviders", "MonikerProviders\MonikerProviders.csproj", "{98B281AE-E7D3-4617-99D4-88DC8A370190}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine.Tests", "Engine.Tests\Engine.Tests.csproj", "{45EB3AD2-788B-4A7E-BB39-A8D433C3AECF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{98B281AE-E7D3-4617-99D4-88DC8A370190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98B281AE-E7D3-4617-99D4-88DC8A370190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98B281AE-E7D3-4617-99D4-88DC8A370190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45EB3AD2-788B-4A7E-BB39-A8D433C3AECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45EB3AD2-788B-4A7E-BB39-A8D433C3AECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45EB3AD2-788B-4A7E-BB39-A8D433C3AECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45EB3AD2-788B-4A7E-BB39-A8D433C3AECF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
