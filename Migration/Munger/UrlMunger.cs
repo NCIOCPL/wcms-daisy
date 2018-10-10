@@ -9,7 +9,7 @@ using NCI.CMS.Percussion.Manager.CMS;
 
 namespace Munger
 {
-    public class UrlMunger
+    public class UrlMunger : IUrlMunger
     {
         private ImageMunger _imageMunger;
         private LinkMunger _linkMunger;
@@ -84,10 +84,11 @@ namespace Munger
                 + docBody
                 + "</body></html>";
 
-            XmlReaderSettings settings = new XmlReaderSettings();
-            //settings.DtdProcessing = DtdProcessing.Parse;
-            settings.ProhibitDtd = false;
-            settings.ValidationType = ValidationType.DTD;
+            XmlReaderSettings settings = new XmlReaderSettings
+            {
+                ProhibitDtd = false,
+                ValidationType = ValidationType.DTD
+            };
 
             StringReader xml_sr = new StringReader(xml_string);
 

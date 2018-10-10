@@ -1,24 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using AngleSharp;
+using AngleSharp.Dom;
+using AngleSharp.Parser.Html;
+
 using NCI.CMS.Percussion.Manager.CMS;
 using Munger;
+using MigrationEngine.Descriptors;
 
 namespace MigrationEngine.Utilities
 {
-    static class FieldHtmlRectifier
+    static public class FieldHtmlRectifier
     {
         // List of fields containing HTML content.
         static string[] fieldToBeRectified = { "bodyfield", "contact_text", "contact", "additional_information" };
 
-        public static Dictionary<string, string> ConvertToXHtml(String UniqueIdentifier, Dictionary<string, string> fields, IMigrationLog logger, CMSController controller)
+        public static Dictionary<string, string> ConvertToXHtml(ContentDescriptionBase contentItem, IMigrationLog logger, IUrlMunger munger)
         {
+            //String UniqueIdentifier = contentItem.UniqueIdentifier;
+            Dictionary<string, string> fields = contentItem.Fields;
+
             Dictionary<string, string> outgoing = new Dictionary<string, string>();
-            //HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
-            //doc.OptionOutputAsXml = true;
-            UrlMunger munger = new UrlMunger(controller);
+
+            // Create a parser for the current item's locale.
+            IConfiguration config = AngleSharp.Configuration.Default.SetCulture(contentItem.Locale);
+            HtmlParser parser = new HtmlParser(config);
 
             foreach (KeyValuePair<string, string> field in fields)
             {
@@ -27,6 +35,10 @@ namespace MigrationEngine.Utilities
                 {
                     // TODO: Convert HTML entities to Unicode.
                     string HtmlOut = field.Value;
+
+                    // Load the field into a DOM.  At this point, all HTML entities have been converted to their
+                    // Unicode equivalents, and the markup is well-formed.
+                    IDocument document = parser.Parse(field.Value);
 
                     // TODO: Get the cleaned  up HTML and record any errors.
                     //doc.LoadHtml(HtmlEntity.DeEntitize(HtmlOut));
@@ -52,7 +64,7 @@ namespace MigrationEngine.Utilities
                             StringBuilder sb = new StringBuilder();
                             sb.Append("Link Munger warnings: \n");
                             sb.Append(mungeMessage);
-                            logger.LogTaskItemWarning(UniqueIdentifier, sb.ToString(), null);
+                            logger.LogTaskItemWarning(contentItem.UniqueIdentifier, sb.ToString(), null);
                         }
                     }
                     

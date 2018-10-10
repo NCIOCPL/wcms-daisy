@@ -23,11 +23,8 @@ namespace MigrationEngine
         /// </summary>
         void EndTask();
 
-        [Obsolete("Use BeginTaskItem(string taskName, int itemIndex, int total, MigrationData migItem, string path) instead.")]
         void BeginTaskItem(string taskName, int itemIndex, int total, String itemMigrationID, string path);
-        [Obsolete("Use LogTaskItemWarning(MigrationData migItem, string message, Dictionary<string, string> Fields) instead.")]
         void LogTaskItemWarning(String migId, string message, Dictionary<string, string> Fields);
-        [Obsolete("Use LogTaskItemError(MigrationData migItem, string message, Dictionary<string, string> Fields) instead.")]
         void LogTaskItemError(String migId, string message, Dictionary<string, string> Fields);
 
         /// <summary>

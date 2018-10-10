@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Munger</RootNamespace>
     <AssemblyName>Munger</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -80,6 +80,7 @@
     <Compile Include="HostSet.cs" />
     <Compile Include="ImageResolver.cs" />
     <Compile Include="DataAccess.cs" />
+    <Compile Include="IUrlMunger.cs" />
     <Compile Include="MigrationIDResolver.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="FileResolver.cs" />

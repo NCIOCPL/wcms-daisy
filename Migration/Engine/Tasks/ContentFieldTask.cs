@@ -9,6 +9,7 @@ using NCI.CMS.Percussion.Manager.CMS;
 using MigrationEngine;
 using MigrationEngine.Descriptors;
 using MigrationEngine.Utilities;
+using Munger;
 
 namespace MigrationEngine.Tasks
 {
@@ -33,8 +34,10 @@ namespace MigrationEngine.Tasks
         protected virtual Dictionary<string, string> PreProcessFields(ContentDescriptionBase contentItem,
             CMSController controller, IMigrationLog logger)
         {
+            UrlMunger munger = new UrlMunger(controller);
+
             Dictionary<string, string> processedFields =
-                            FieldHtmlRectifier.ConvertToXHtml(contentItem.UniqueIdentifier, contentItem.Fields, logger, controller);
+                            FieldHtmlRectifier.ConvertToXHtml(contentItem, logger, munger);
 
             if (processedFields.ContainsKey(Constants.Fields.PRETTY_URL))
             {

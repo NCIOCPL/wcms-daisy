@@ -23,6 +23,9 @@ namespace MigrationEngine.Descriptors
             }
         }
 
+        /// <summary>
+        /// Retrieve the content item's locale.
+        /// </summary>
         public string Locale
         {
             get
