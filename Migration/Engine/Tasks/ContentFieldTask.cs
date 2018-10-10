@@ -37,7 +37,7 @@ namespace MigrationEngine.Tasks
             UrlMunger munger = new UrlMunger(controller);
 
             Dictionary<string, string> processedFields =
-                            FieldHtmlRectifier.ConvertToXHtml(contentItem, logger, munger);
+                            FieldHtmlRectifier.RewriteHtml(contentItem, logger, munger);
 
             if (processedFields.ContainsKey(Constants.Fields.PRETTY_URL))
             {
