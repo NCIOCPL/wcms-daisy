@@ -136,6 +136,7 @@
     <Compile Include="Tasks\ContentUpdater.cs" />
     <Compile Include="Tasks\TranslationRelationshipCreator.cs" />
     <Compile Include="Utilities\HtmlRectifier.cs" />
+    <Compile Include="Utilities\ParseErrorCollection.cs" />
     <Compile Include="Utilities\PercWrapper.cs" />
   </ItemGroup>
   <ItemGroup>

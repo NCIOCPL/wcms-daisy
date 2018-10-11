@@ -87,6 +87,7 @@
     <Compile Include="Descriptors\ContentDescriptionBase.Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\FieldHtmlRectifier.RewriteHtml.Test.cs" />
+    <Compile Include="Utilities\ParseErrorCollectionTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.csproj">

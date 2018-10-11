@@ -10,6 +10,7 @@ using AngleSharp.Parser.Html;
 using NCI.CMS.Percussion.Manager.CMS;
 using Munger;
 using MigrationEngine.Descriptors;
+using AngleSharp.Dom.Events;
 
 namespace MigrationEngine.Utilities
 {
@@ -25,21 +26,33 @@ namespace MigrationEngine.Utilities
 
             Dictionary<string, string> outgoing = new Dictionary<string, string>();
 
+            ParseErrorCollection errors = new ParseErrorCollection();
+
             // Create a parser for the current item's locale.
-            IConfiguration config = AngleSharp.Configuration.Default.SetCulture(contentItem.Locale);
-            HtmlParser parser = new HtmlParser(config);
+            HtmlParser parser = CreateParser(contentItem.Locale, errors);
+
+            // We're working with HTML snippets, but the parser expects Documents.  To avoid parsing errors for the
+            // missing skeleton, we provide one.
+            const string htmlEnvelope = "<!DOCTYPE html><html><body>{0}</body></html>";
 
             foreach (KeyValuePair<string, string> field in fields)
             {
                 // Is this one of the fields which is supposed to contain HTML?
                 if (fieldToBeRectified.Contains(field.Key))
                 {
+                    // Clear any errors from previous fields.
+                    errors.Clear();
 
                     // Load the field into a DOM.  At this point, all HTML entities have been converted to their
                     // Unicode equivalents, and the markup is well-formed.
-                    IDocument document = parser.Parse(field.Value);
+                    IDocument document = parser.Parse(String.Format(htmlEnvelope, field.Value));
 
-                    // TODO: record any errors.
+                    // Record any parse errors.
+                    if(errors.Count > 0)
+                    {
+                        string message = errors.ToString();
+                        logger.LogTaskItemWarning(contentItem.UniqueIdentifier, message, null);
+                    }
 
                     string HtmlOut = document.Body.InnerHtml;
 
@@ -72,5 +85,25 @@ namespace MigrationEngine.Utilities
             return outgoing;  
         }
 
+        /// <summary>
+        /// Helper method to encapsulate set up of an HtmlParser instance.
+        /// </summary>
+        /// <param name="locale">The locale to use when parsing a content item (e.g. en-us).</param>
+        /// <param name="errorCollection">Reference to a ParseErrorCollection which will receive any errors
+        /// which occur while processing the HTML snippet.</param>
+        /// <returns>An HtmlParser object.</returns>
+        private static HtmlParser CreateParser(string locale, ParseErrorCollection errorCollection)
+        {
+            IConfiguration config = AngleSharp.Configuration.Default.SetCulture(locale);
+            HtmlParser parser = new HtmlParser(config);
+
+            // Capture parsing errors.
+            parser.Context.ParseError += (obj, ev) => {
+                HtmlErrorEvent ex = ev as HtmlErrorEvent;
+                errorCollection.Add(String.Format("Error: {0} Offset: {1}.", ex.Message, ex.Position.Position));
+            };
+
+            return parser;
+        }
     }
 }
