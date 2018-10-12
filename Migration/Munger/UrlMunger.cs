@@ -1,47 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
 
+using AngleSharp.Dom;
+
 using NCI.CMS.Percussion.Manager.CMS;
+using Munger.Configuration;
 
 namespace Munger
 {
     public class UrlMunger : IUrlMunger
     {
         private ImageMunger _imageMunger;
-        private LinkMunger _linkMunger;
+        private ILinkMunger _linkMunger;
         private static Logger _logger;
 
         public UrlMunger(CMSController controller)
         {
+            MungerConfiguration configuration = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
+
             if (_logger == null)
                 _logger = new Logger();
-            _imageMunger = new ImageMunger(controller, _logger);
-            _linkMunger = new LinkMunger(controller, _logger);
+            _imageMunger = new ImageMunger(controller, _logger, configuration);
+            _linkMunger = new LinkMunger(controller, _logger, configuration);
         }
 
-        public string RewriteUrls(string docBody, string pageUrl, out string messages)
+        public void RewriteUrls(IDocument document, string pageUrl, out string messages)
         {
             string rewritten;
+
+            // TODO: Remove XmlDocument dependency.
             XmlDocument fullDoc;
             try
             {
-                fullDoc = CreateXmlDocument(docBody);
+                fullDoc = CreateXmlDocument(document.Body.InnerHtml);
             }
             catch (Exception ex)
             {
                 messages = "ERROR from UrlMunger - NOT MUNGED , " + ex.ToString();
-                return docBody;
+                return;// document.Body.InnerHtml;
             }
 
             List<string> errors = new List<string>();
 
             _imageMunger.RewriteImageReferences(fullDoc, pageUrl, errors);
 
-            _linkMunger.RewriteLinkReferences(fullDoc, pageUrl, errors);
+            _linkMunger.RewriteLinkReferences(document, pageUrl, errors);
 
             rewritten = GetDocumentBody(fullDoc);
 
@@ -53,7 +61,7 @@ namespace Munger
                 messages = rollup;
             }
 
-            return rewritten;
+            //return rewritten;
         }
 
         public string RewriteSingleUrl(string url, out string messages)

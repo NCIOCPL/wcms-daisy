@@ -8,6 +8,11 @@ namespace Munger.Configuration
     /// </summary>
     public class HostListElement : ConfigurationElementCollection
     {
+        public void Add(HostElement element)
+        {
+            BaseAdd(element);
+        }
+
         protected override ConfigurationElement CreateNewElement()
         {
             return new HostElement();

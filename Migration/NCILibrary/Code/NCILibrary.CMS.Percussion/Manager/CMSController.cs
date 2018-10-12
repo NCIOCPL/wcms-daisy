@@ -22,7 +22,7 @@ namespace NCI.CMS.Percussion.Manager.CMS
     /// This class is the sole means by which any code in the GateKeeper system may interact with Percussion.
     /// It manages the single login session used for all interations, and performs all needed operations.
     /// </summary>
-    public class CMSController : IDisposable
+    public class CMSController : IDisposable, ICMSController
     {
         #region Public Constants
 

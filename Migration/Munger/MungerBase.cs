@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.Text;
 
@@ -12,20 +11,18 @@ namespace Munger
 {
     abstract class MungerBase
     {
-        protected CMSController CMSController;
-        protected Logger MessageLog;
+        protected ICMSController CMSController;
+        protected ILogger MessageLog;
 
         // List of hosts which are considered aliases for the site being migrated;
         protected HostSet HostAliases { get; private set; }
 
         protected string CanonicalHostName { get; private set; }
 
-        public MungerBase(CMSController controller, Logger messageLog)
+        public MungerBase(ICMSController controller, ILogger messageLog, IMungerConfiguration config)
         {
             CMSController = controller;
             MessageLog = messageLog;
-
-            MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
 
             HostAliases = new HostSet();
             foreach (HostElement item in config.HostList)

@@ -15,13 +15,12 @@ namespace Munger
     {
         Dictionary<string, string> _replacementMap;
 
-        public LinkSubstituter()
+        public LinkSubstituter(IMungerConfiguration config)
         {
             if (_replacementMap == null)
             {
                 _replacementMap = new Dictionary<string, string>();
 
-                MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
                 foreach (RewritingElement item in config.SubstitutionList)
                 {
                     _replacementMap.Add(item.OldPath, item.NewPath);

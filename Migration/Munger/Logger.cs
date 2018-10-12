@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Munger
 {
-    public class Logger
+    public class Logger : ILogger
     {
         public Logger()
         {

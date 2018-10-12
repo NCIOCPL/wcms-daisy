@@ -22,8 +22,8 @@ namespace Munger
         // This object is not thread-safe.
         private static Dictionary<string, PercussionGuid> _imageUrlMap = new Dictionary<string, PercussionGuid>();
 
-        public ImageMunger(CMSController controller, Logger messageLog)
-            : base (controller, messageLog)
+        public ImageMunger(CMSController controller, ILogger messageLog, IMungerConfiguration config)
+            : base (controller, messageLog, config)
         {
         }
 

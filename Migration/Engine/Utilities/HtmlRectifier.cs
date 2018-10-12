@@ -54,13 +54,11 @@ namespace MigrationEngine.Utilities
                         logger.LogTaskItemWarning(contentItem.UniqueIdentifier, message, null);
                     }
 
-                    string HtmlOut = document.Body.InnerHtml;
-
                     //Munge
-                    if (HtmlOut.Trim().Length > 0)
+                    if (document.Body.InnerHtml.Trim().Length > 0)
                     {
                         string mungeMessage = string.Empty;
-                        HtmlOut = munger.RewriteUrls(HtmlOut, null, out mungeMessage);
+                        munger.RewriteUrls(document, null, out mungeMessage);
                         if (String.IsNullOrEmpty(mungeMessage) == false)
                         {
                             StringBuilder sb = new StringBuilder();
@@ -69,7 +67,9 @@ namespace MigrationEngine.Utilities
                             logger.LogTaskItemWarning(contentItem.UniqueIdentifier, sb.ToString(), null);
                         }
                     }
-                    
+
+                    string HtmlOut = document.Body.InnerHtml;
+
                     //Build output list 
                     outgoing.Add(field.Key, HtmlOut);
 

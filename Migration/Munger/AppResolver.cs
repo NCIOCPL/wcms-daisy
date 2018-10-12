@@ -13,7 +13,7 @@ namespace Munger
 
     class AppResolver : ILinkResolver
     {
-        public LinkCmsDetails ResolveLink(CMSController controller, string prettyUrl)
+        public LinkCmsDetails ResolveLink(ICMSController controller, string prettyUrl)
         {
             throw new NotImplementedException();
         }

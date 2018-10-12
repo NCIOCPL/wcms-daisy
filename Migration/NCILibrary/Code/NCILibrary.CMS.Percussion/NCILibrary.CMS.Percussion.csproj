@@ -83,6 +83,7 @@
     <Compile Include="Manager\ContentTypeToTemplateInfo.cs" />
     <Compile Include="Manager\FieldSet.cs" />
     <Compile Include="Manager\FolderManager.cs" />
+    <Compile Include="Manager\ICMSController.cs" />
     <Compile Include="Manager\PercussionGuid.cs" />
     <Compile Include="Manager\PSItemUtils.cs" />
     <Compile Include="Manager\ContentItemForUpdating.cs" />

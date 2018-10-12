@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Munger.Configuration
 {
-    public class MungerConfiguration : ConfigurationSection
+    public class MungerConfiguration : ConfigurationSection, IMungerConfiguration
     {
         /// <summary>
         /// Exposes a list of host names which are valid for accessing the site

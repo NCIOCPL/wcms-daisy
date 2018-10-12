@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Globalization;
@@ -10,10 +11,11 @@ using System.Xml;
 using NCI.CMS.Percussion.Manager.CMS;
 
 using Munger.Configuration;
+using AngleSharp.Dom;
 
 namespace Munger
 {
-    class LinkMunger : MungerBase
+    class LinkMunger : MungerBase, ILinkMunger
     {
         // Map of link URLs to Percussion content IDs.
         // Deliberately static so it won't go away between calls.
@@ -31,32 +33,34 @@ namespace Munger
             = new List<KeyValuePair<string, PercussionGuid>>();
 
         // Map of URL substitutions
-        LinkSubstituter _linkSubstituter = new LinkSubstituter();
+        LinkSubstituter _linkSubstituter;
 
         // Map of programmatic link substitutions
         private static Dictionary<string, string> _programmaticLinks;
 
         private PercussionGuid _inlineLinkSlotID;
 
-        public LinkMunger(CMSController controller, Logger messageLog)
-            : base(controller, messageLog)
+        public LinkMunger(ICMSController controller, ILogger messageLog, IMungerConfiguration config)
+            : base(controller, messageLog, config)
         {
-            SlotInfo inlineLinkSlot = CMSController.SlotManager["sys_inline_link"];
-            _inlineLinkSlotID = inlineLinkSlot.CmsGuid;
-            foreach (ContentTypeToTemplateInfo info in inlineLinkSlot.AllowedContentTemplatePairs)
-            {
-                _slotContentTypeToTemplateIDMap.Add(new KeyValuePair<string, PercussionGuid>(info.ContentTypeName, info.TemplateID));
-            }
+            _linkSubstituter = new LinkSubstituter(config);
 
-            if (_programmaticLinks == null)
-            {
-                _programmaticLinks = new Dictionary<string, string>();
-                MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
-                foreach (RewritingElement item in config.ProgrammaticLinkList)
-                {
-                    _programmaticLinks.Add(item.OldPath.ToLowerInvariant(), item.NewPath);
-                }
-            }
+            //SlotInfo inlineLinkSlot = CMSController.SlotManager["sys_inline_link"];
+            //_inlineLinkSlotID = inlineLinkSlot.CmsGuid;
+            //foreach (ContentTypeToTemplateInfo info in inlineLinkSlot.AllowedContentTemplatePairs)
+            //{
+            //    _slotContentTypeToTemplateIDMap.Add(new KeyValuePair<string, PercussionGuid>(info.ContentTypeName, info.TemplateID));
+            //}
+
+            //if (_programmaticLinks == null)
+            //{
+            //    _programmaticLinks = new Dictionary<string, string>();
+            //    MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
+            //    foreach (RewritingElement item in config.ProgrammaticLinkList)
+            //    {
+            //        _programmaticLinks.Add(item.OldPath.ToLowerInvariant(), item.NewPath);
+            //    }
+            //}
         }
 
         /// <summary>
@@ -67,71 +71,71 @@ namespace Munger
         /// <param name="pageUrl">The URL for the page the fragment is stored in.</param>
         /// <param name="messages">Output parameter containing any errors from processing.</param>
         /// <returns>A copy of docBody with rewritten a tags.</returns>
-        public void RewriteLinkReferences(XmlDocument doc, string pageUrl, List<string> messages)
+        public void RewriteLinkReferences(IDocument document, string pageUrl, List<string> messages)
         {
             List<string> errors = new List<string>();
 
-            try
-            {
-                XmlNodeList links = doc.GetElementsByTagName("a");
+            //try
+            //{
+            //    XmlNodeList links = document.GetElementsByTagName("a");
 
-                foreach (XmlNode link in links)
-                {
-                    try
-                    {
-                        XmlAttribute hrefAttrib = link.Attributes["href"];
-                        XmlAttribute nameAttrib = link.Attributes["name"];
+            //    foreach (XmlNode link in links)
+            //    {
+            //        try
+            //        {
+            //            XmlAttribute hrefAttrib = link.Attributes["href"];
+            //            XmlAttribute nameAttrib = link.Attributes["name"];
 
-                        if (hrefAttrib == null && nameAttrib != null)
-                        {   // Don't process <a name="foo">.
-                            continue;
-                        }
-                        else if (hrefAttrib == null && nameAttrib == null)
-                        {
-                            string message =
-                                string.Format("LinkMunger doesn't know how to translate links without an href. Link: {0}",
-                                link.OuterXml);
-                            throw new NoLinkSpecifiedException(message);
-                        }
+            //            if (hrefAttrib == null && nameAttrib != null)
+            //            {   // Don't process <a name="foo">.
+            //                continue;
+            //            }
+            //            else if (hrefAttrib == null && nameAttrib == null)
+            //            {
+            //                string message =
+            //                    string.Format("LinkMunger doesn't know how to translate links without an href. Link: {0}",
+            //                    link.OuterXml);
+            //                throw new NoLinkSpecifiedException(message);
+            //            }
 
-                        string linkTarget = hrefAttrib.Value;
+            //            string linkTarget = hrefAttrib.Value;
 
-                        if (LinkIsSiteInternal(linkTarget))
-                        {
-                            RewriteAnchorTag(link, pageUrl);
-                        }
-                    }
-                    // Need to catch this separately since it explicitly has no href to retrieve.
-                    catch (NoLinkSpecifiedException ex)
-                    {
-                        string type = ex.GetType().Name;
-                        MessageLog.OutputLine("LinkMunger", type, pageUrl, "null", ex.Message);
-                        errors.Add(ex.Message);
-                    }
-                    catch (LinkMungingException ex)
-                    {
-                        string mungeUrl = link.Attributes["href"].Value ?? "null";
-                        string type = ex.GetType().Name;
-                        MessageLog.OutputLine("LinkMunger", type, pageUrl, mungeUrl, ex.Message);
-                        errors.Add(ex.Message);
-                    }
-                    catch (Exception ex)
-                    {
-                        string mungeUrl = link.Attributes["href"].Value ?? "null";
-                        string type = ex.GetType().Name;
-                        MessageLog.OutputLine("LinkMunger", type, pageUrl, mungeUrl, ex.ToString());
-                        string message = string.Format("Unknown error: {0}.", ex.ToString());
-                        errors.Add(message);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                string type = ex.GetType().Name;
-                MessageLog.OutputLine("LinkMunger", type, pageUrl, "none", ex.ToString());
-                string message = string.Format("Unknown error: {0}.", ex.ToString());
-                errors.Add(message);
-            }
+            //            if (LinkIsSiteInternal(linkTarget))
+            //            {
+            //                RewriteAnchorTag(link, pageUrl);
+            //            }
+            //        }
+            //        // Need to catch this separately since it explicitly has no href to retrieve.
+            //        catch (NoLinkSpecifiedException ex)
+            //        {
+            //            string type = ex.GetType().Name;
+            //            MessageLog.OutputLine("LinkMunger", type, pageUrl, "null", ex.Message);
+            //            errors.Add(ex.Message);
+            //        }
+            //        catch (LinkMungingException ex)
+            //        {
+            //            string mungeUrl = link.Attributes["href"].Value ?? "null";
+            //            string type = ex.GetType().Name;
+            //            MessageLog.OutputLine("LinkMunger", type, pageUrl, mungeUrl, ex.Message);
+            //            errors.Add(ex.Message);
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            string mungeUrl = link.Attributes["href"].Value ?? "null";
+            //            string type = ex.GetType().Name;
+            //            MessageLog.OutputLine("LinkMunger", type, pageUrl, mungeUrl, ex.ToString());
+            //            string message = string.Format("Unknown error: {0}.", ex.ToString());
+            //            errors.Add(message);
+            //        }
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    string type = ex.GetType().Name;
+            //    MessageLog.OutputLine("LinkMunger", type, pageUrl, "none", ex.ToString());
+            //    string message = string.Format("Unknown error: {0}.", ex.ToString());
+            //    errors.Add(message);
+            //}
 
             if (errors.Count > 0)
             {

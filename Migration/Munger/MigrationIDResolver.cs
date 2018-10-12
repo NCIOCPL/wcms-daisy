@@ -14,13 +14,13 @@ namespace Munger
     /// </summary>
     class MigrationIDResolver :ILinkResolver
     {
-        public LinkCmsDetails ResolveLink(CMSController controller, string prettyUrl)
+        public LinkCmsDetails ResolveLink(ICMSController controller, string prettyUrl)
         {
             LinkCmsDetails details = null;
 
             if (prettyUrl == "/")
             {
-                MungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
+                IMungerConfiguration config = (MungerConfiguration)ConfigurationManager.GetSection("MungerConfig");
                 prettyUrl = config.RootElementPath.Value;
                 if (string.IsNullOrEmpty(prettyUrl))
                     prettyUrl = "/";

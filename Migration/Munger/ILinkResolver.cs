@@ -10,6 +10,6 @@ namespace Munger
     /// </summary>
     interface ILinkResolver
     {
-        LinkCmsDetails ResolveLink(CMSController controller, string prettyUrl);
+        LinkCmsDetails ResolveLink(ICMSController controller, string prettyUrl);
     }
 }

@@ -19,7 +19,7 @@ namespace Munger
             _hostname = hostname;
         }
 
-        public LinkCmsDetails ResolveLink(CMSController controller, string prettyUrl)
+        public LinkCmsDetails ResolveLink(ICMSController controller, string prettyUrl)
         {
             LinkCmsDetails details = null;
 

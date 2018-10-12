@@ -54,6 +54,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>..\packages\AngleSharp.0.9.10\lib\net45\AngleSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -73,11 +76,14 @@
     <Compile Include="AppResolver.cs" />
     <Compile Include="Configuration\HostElement.cs" />
     <Compile Include="Configuration\HostListElement.cs" />
+    <Compile Include="Configuration\IMungerConfiguration.cs" />
     <Compile Include="Configuration\MungerConfiguration.cs" />
     <Compile Include="Configuration\RewritingElement.cs" />
     <Compile Include="Configuration\RewritingListElement.cs" />
     <Compile Include="Configuration\SingleValueElement.cs" />
     <Compile Include="HostSet.cs" />
+    <Compile Include="ILinkMunger.cs" />
+    <Compile Include="ILogger.cs" />
     <Compile Include="ImageResolver.cs" />
     <Compile Include="DataAccess.cs" />
     <Compile Include="IUrlMunger.cs" />
@@ -91,6 +97,7 @@
     <Compile Include="LinkSubstituter.cs" />
     <Compile Include="MungerBase.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="MungerFactory.cs" />
     <Compile Include="UrlMunger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -114,6 +121,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

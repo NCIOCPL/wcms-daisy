@@ -8,6 +8,7 @@ using MigrationEngine;
 using MigrationEngine.Descriptors;
 using MigrationEngine.Utilities;
 using Munger;
+using AngleSharp.Dom;
 
 namespace Engine.Tests.Utilities.FieldHtmlRectifierTest
 {
@@ -23,7 +24,7 @@ namespace Engine.Tests.Utilities.FieldHtmlRectifierTest
         {
             // Set up the fake munger.
             string mungeMessage = String.Empty;
-            mockMunger.Setup(x => x.RewriteUrls(It.IsAny<string>(), It.IsAny<string>(), out mungeMessage)).Returns((string s, string t, string u) => s).Verifiable();
+            mockMunger.Setup(x => x.RewriteUrls(It.IsAny<IDocument>(), It.IsAny<string>(), out mungeMessage)).Verifiable();
         }
 
 
@@ -52,7 +53,7 @@ namespace Engine.Tests.Utilities.FieldHtmlRectifierTest
             // Create a munger which doesn't rewrite anything.
             Mock<IUrlMunger> mockMunger = new Mock<IUrlMunger>();
             string mungeMessage = String.Empty;
-            mockMunger.Setup( x => x.RewriteUrls(It.IsAny<string>(), It.IsAny<string>(), out mungeMessage)).Returns((string s, string t, string u) => s).Verifiable();
+            mockMunger.Setup( x => x.RewriteUrls(It.IsAny<IDocument>(), It.IsAny<string>(), out mungeMessage)).Verifiable();
             
             Dictionary<string, string> cleanFields = FieldHtmlRectifier.RewriteHtml(item, null, mockMunger.Object);
 
